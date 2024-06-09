@@ -1,0 +1,60 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:gru_bike_riding_gru",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 20,
+                "max": 20
+            },
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:jump.static": {},
+            "minecraft:type_family": {
+                "family": [
+                    "vehicle"
+                ]
+            },
+            "minecraft:behavior.float": {},
+            "minecraft:scale": {
+                "value": 1.0
+            },
+            "minecraft:input_ground_controlled": {},
+            "minecraft:movement": {
+                "value": 0.25
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:knockback_resistance": {
+                "value": 100,
+                "max": 100
+            },
+            "minecraft:can_climb": {}
+        },
+        "events": {}
+    }
+}

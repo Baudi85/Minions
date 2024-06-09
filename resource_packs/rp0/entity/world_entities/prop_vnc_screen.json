@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "cyd:prop_vnc_screen",
+        "materials": {
+          "default": "zombie"
+        },
+        "textures": {
+          "default": "textures/entity/vnc_screen",
+          "off": "textures/entity/vnc_screen_off"
+        },
+        "geometry": {
+          "default": "geometry.vnc_screen"
+        },
+        "animations": {
+          "trigger": "animation.vnc_screen.speaker",
+          "ctrl":"controller.animation.rp.lair.vnc_screen"
+        },
+        "scripts": {
+          "animate": ["ctrl"]
+        },
+        "spawn_egg": {
+          "base_color": "#4287f5",
+          "overlay_color": "#e6efff"
+        },
+        "render_controllers": [
+          "controller.render.vnc_screen"
+        ]
+      }
+    }
+  }
+  

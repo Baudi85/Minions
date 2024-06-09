@@ -1,0 +1,90 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:cart",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:minecart",
+      "scripts": {
+        "animate": [
+          "north",
+          "south",
+          "east",
+          "west",
+          "nwest",
+          "neast",
+          "seast",
+          "swest",
+          "blocks"
+        ]
+      },
+      "animations": {
+        "north": "animation.chase.north",
+        "south": "animation.chase.south",
+        "east": "animation.chase.east",
+        "west": "animation.chase.west",
+        "neast": "animation.chase.neast",
+        "nwest": "animation.chase.nwest",
+        "seast": "animation.chase.seast",
+        "swest": "animation.chase.swest",
+        "blocks": "animation.base.blocks"
+      }
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:type_family": {
+        "family": [
+          "minecart",
+          "inanimate",
+          "chasereset"
+        ]
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:rail_movement": {
+        "max_speed": 0.710
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "interact_text": "action.interact.ride.minecart",
+        "pull_in_entities": true,
+        "seats": {
+          "position": [
+            0,
+            3.5,
+            0
+          ]
+        }
+      },
+      "minecraft:addrider": {
+        "entity_type": "cyd:chase_entity"
+      },
+      "minecraft:rail_sensor": {
+        "eject_on_activate": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+  "events": {
+    "evt:despawn": {
+      "add": {
+        "component_groups": [
+          "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

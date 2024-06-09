@@ -1,0 +1,81 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:target_box_large",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 1.8,
+                "height": 1.8
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "no_stick",
+                    "target_box"
+                ]
+            },
+            "minecraft:physics":{},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

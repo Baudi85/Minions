@@ -1,0 +1,98 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:elevator",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "snd_ctrl": "controller.animation.sound.elevator.ctrl",
+                "open":"animation.elevator.open"
+            },
+            "scripts": {
+                "animate": [
+                    "snd_ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1"
+                    ]
+                }
+            }
+        }
+    }
+}

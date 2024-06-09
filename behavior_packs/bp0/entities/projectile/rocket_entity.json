@@ -1,0 +1,140 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:rocket_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "track": "animation.cyd.item.projectile2",
+                "placearrow": "animation.cyd.item.place2",
+                "animate_shoot":"animation.dialogue.shoot_turret"
+            },
+            "scripts": {
+                "animate": [
+                    "track",
+                    "placearrow",
+                    "animate_shoot"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:despawn": {}
+            },
+            "cyd:transform": {
+                "minecraft:scale": {
+                    "value": 0.5
+                }
+            },
+            "cyd:explode": {
+                "minecraft:explode": {
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 1.0,
+                    "causes_fire": false,
+                    "breaks_blocks":false,
+                    "fire_affected_by_griefing": true,
+                    "destroy_affected_by_griefing": true
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.31,
+                "height": 0.31
+            },
+            "minecraft:physics": {},
+            "minecraft:jump.static": {},
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:movement": {
+                "value": 0.01
+            },
+            "minecraft:equipment": {
+                "table":"loot_tables/rocket.json"
+            },
+            "minecraft:navigation.walk": {
+                "avoid_water": true,
+                "avoid_damage_blocks": true,
+                "can_path_over_water": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:movement.amphibious": {
+                "max_turn": 5
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "explode"
+                        },
+                        "event": "evt:explode"
+                    },
+                    {
+                        "filters": {
+                            "test": "has_tag",
+                            "value": "shrink"
+                        },
+                        "event": "evt:transform"
+                    }
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 30
+                    }
+                ],
+                "must_see": false,
+                "must_see_forget_duration": 25
+            }
+        },
+        "events": {
+            "evt:transform": {
+                "add": {
+                    "component_groups": [
+                        "cyd:transform"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:explode": {
+                "add": {
+                    "component_groups": [
+                        "cyd:explode"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:world_mutant_minion",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:cow",
+            "animations": {
+                "snd": "controller.animation.sound.mutant_minion",
+                "atk": "animation.sound.mutant_minion.atk"
+            },
+            "scripts": {
+                "animate": [
+                    "snd",
+                    "saved_ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:jelly": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:movement": {
+                    "value": 0.0
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 2,
+                    "time_down_event": {
+                        "event": "evt:transform"
+                    }
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:transform": {
+                "minecraft:transformation": {
+                    "into": "cyd:minion_costume"
+                  }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "moon_minion",
+                    "jelly"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.9
+            },
+            "minecraft:follow_range": {
+                "value": 128
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "is_amphibious": true,
+                "can_pass_doors": true,
+                "can_walk": true,
+                "can_break_doors": true
+            },
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": true
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:attack": {
+                "damage": 3
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "none_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "value": "cyd:jamgun"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "value": "cyd:plasma_jamgun"
+                                    }
+                                ]
+                            }
+                        },
+                        "deals_damage": false
+                    },
+                    
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_damage",
+                                        "subject": "self",
+                                        "operator": "==",
+                                        "value": "fatal"
+                                    }
+                                ]
+                            },
+                            "event": "evt:jelly"
+                        },
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.delayed_attack": {
+                "priority": 1,
+                "reach_multiplier": 1,
+                "track_target": true,
+                "attack_duration": 1,
+                "hit_delay_pct": 0.32,
+                "attack_once": false
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 7,
+                "speed_multiplier": 1,
+                "y_dist":1
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 8,
+                "look_distance": 6,
+                "probability": 0.02
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 9
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "must_see_forget_duration": 17.0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "subject": "self",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "max_dist": 90
+                    }
+                ]
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "evt:jelly": {
+                "add": {
+                    "component_groups": [
+                        "cyd:jelly"
+                    ]
+                }
+            },
+            "evt:transform": {
+                "add": {
+                    "component_groups": [
+                        "cyd:transform"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

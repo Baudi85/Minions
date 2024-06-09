@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:safe_door",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/safe_door_lg"
+      },
+      "geometry": {
+        "default": "geometry.safe_door_lg"
+      },
+      "sound_effects": {
+        "safe_open": "cyd.mission.bank.safe_laser"
+      },
+      "particle_effects": {
+        "particle": "cyd:key_card_marker_2"
+      },
+      "animations": {
+          "trigger": "animation.safe_door.trigger",
+          "ctrl": "controller.animation.rp.wk_door",
+          "particle":"animation.prop.particles"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

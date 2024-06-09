@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:quest_marker",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/none"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

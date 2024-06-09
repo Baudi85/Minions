@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:banana_bag",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/banana_bag",
+        "indicator": "textures/entity/world/banana_indicator"
+      },
+      "geometry": {
+        "default": "geometry.banana_bag",
+        "indicator": "geometry.banana_indicator"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.banana"
+      ],
+      "particle_effects": {
+        "particle": "cyd:banana_event"
+      },
+      "animations": {
+        "trigger": "animation.banana_bag.trigger",
+        "spawn": "animation.banana_bag.spawn",
+        "ctrl": "controller.animation.rp.banana",
+        "particle":"animation.fart.particle"
+      },
+      "scripts": {
+        "animate": [
+          "spawn",
+          "ctrl"
+        ]
+      }
+    }
+  }
+}

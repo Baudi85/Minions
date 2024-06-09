@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:jelly_launcher_prop",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/moon/jelly_gun_prop"
+      },
+      "geometry": {
+        "default": "geometry.jelly_gun_prop"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "vanish": "query.skin_id == 1"
+          }
+        ]
+      },
+      "animations": {
+        "vanish": "animation.sticky_hand_prop.idle_grabbed"
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.minion_costume": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "default_*": "query.skin_id == 0 || query.skin_id == 3 || query.skin_id == 5 || query.skin_id == 7 || query.skin_id == 16"
+                },
+                {
+                    "default_boot_*": "query.skin_id == 0 || query.skin_id == 3 || query.skin_id == 4 || query.skin_id == 5 || query.skin_id == 6 || query.skin_id == 7 || query.skin_id == 10 || query.skin_id == 11 || query.skin_id == 12 || query.skin_id == 14 || query.skin_id == 15 || query.skin_id == 16"
+                },
+                {
+                    "costume_aloha_*": "query.skin_id == 1"
+                },
+                {
+                    "costume_beach_*": "query.skin_id == 2"
+                },
+                {
+                    "costume_builder_*": "query.skin_id == 3"
+                },
+                {
+                    "costume_flashlight_*": "query.skin_id == 4"
+                },
+                {
+                    "costume_glowing_*": "query.skin_id == 5"
+                },
+                {
+                    "costume_golf_*": "query.skin_id == 6"
+                },
+                {
+                    "costume_knight_*": "query.skin_id == 7"
+                },
+                {
+                    "costume_kungfu_*": "query.skin_id == 8"
+                },
+                {
+                    "costume_magician_*": "query.skin_id == 9"
+                },
+                {
+                    "costume_maid_*": "query.skin_id == 10"
+                },
+                {
+                    "costume_maid": "query.skin_id == 10"
+                },
+                {
+                    "costume_minecraft_*": "query.skin_id == 11"
+                },
+                {
+                    "costume_mutant_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_tourist_*": "query.skin_id == 13"
+                },
+                {
+                    "costume_tuba_*": "query.skin_id == 14"
+                },
+                {
+                    "costume_dj_*": "query.skin_id == 15"
+                },
+                {
+                    "costume_firefighter_*": "query.skin_id == 16"
+                },
+                {
+                    "*_middle": "query.is_sheared"
+                },
+                {
+                    "*_middle_*": "query.is_sheared"
+                },
+                {
+                    "body_top_mouth_frown": "query.is_sheared"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.minion_statue": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "default_*": "query.skin_id == 3 || query.skin_id == 5 || query.skin_id == 7 || query.skin_id == 16"
+                },
+                {
+                    "default_boot_*": "query.skin_id == 3 || query.skin_id == 4 || query.skin_id == 5 || query.skin_id == 6 || query.skin_id == 7 || query.skin_id == 10 || query.skin_id == 11 || query.skin_id == 12 || query.skin_id == 14 || query.skin_id == 15 || query.skin_id == 16"
+                },
+                {
+                    "costume_aloha_*": "query.skin_id == 1"
+                },
+                {
+                    "costume_beach_*": "query.skin_id == 2"
+                },
+                {
+                    "costume_builder_*": "query.skin_id == 3"
+                },
+                {
+                    "costume_flashlight_*": "query.skin_id == 4"
+                },
+                {
+                    "costume_glowing_*": "query.skin_id == 5"
+                },
+                {
+                    "costume_golf_*": "query.skin_id == 6"
+                },
+                {
+                    "costume_knight_*": "query.skin_id == 7"
+                },
+                {
+                    "costume_kungfu_*": "query.skin_id == 8"
+                },
+                {
+                    "costume_magician_*": "query.skin_id == 9"
+                },
+                {
+                    "costume_maid_*": "query.skin_id == 10"
+                },
+                {
+                    "costume_maid": "query.skin_id == 10"
+                },
+                {
+                    "costume_minecraft_*": "query.skin_id == 11"
+                },
+                {
+                    "costume_mutant_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_tourist_*": "query.skin_id == 13"
+                },
+                {
+                    "costume_tuba_*": "query.skin_id == 14"
+                },
+                {
+                    "costume_dj_*": "query.skin_id == 15"
+                },
+                {
+                    "costume_firefighter_*": "query.skin_id == 16"
+                },
+                {
+                    "*_middle": "query.is_illager_captain"
+                },
+                {
+                    "*_middle_*": "query.is_illager_captain"
+                },
+                {
+                    "body_bottom": "query.skin_id != 0"
+                },
+                {
+                    "body_top*": "query.skin_id != 0"
+                },
+                {
+                    "hair*": "query.skin_id != 0"
+                },
+                {
+                    "goggles*": "query.skin_id != 0"
+                },
+                {
+                    "eye_left*": "query.skin_id != 0"
+                },
+                {
+                    "eye_right*": "query.skin_id != 0"
+                },
+                {
+                    "leg_*": "query.skin_id != 0"
+                },
+                {
+                    "foot_*": "query.skin_id != 0"
+                },
+                {
+                    "hand_*": "query.skin_id != 0"
+                },
+                {
+                    "arm_*": "query.skin_id != 0"
+                },
+                {
+                    "body_top_mouth_frown": "query.is_sheared"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.mutant_minion": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "default_*": "query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12"
+                },
+                {
+                    "default_boot_*": "query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 0 || query.skin_id == 12 || query.skin_id == 12 || query.skin_id == 12"
+                },
+                {
+                    "costume_aloha_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_beach_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_builder_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_flashlight_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_glowing_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_golf_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_knight_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_kungfu_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_magician_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_maid_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_maid": "query.skin_id == 12"
+                },
+                {
+                    "costume_minecraft_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_mutant_*": "query.skin_id == 0"
+                },
+                {
+                    "costume_tourist_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_tuba_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_dj_*": "query.skin_id == 12"
+                },
+                {
+                    "costume_firefighter_*": "query.skin_id == 12"
+                },
+                {
+                    "*_middle": "query.is_sheared"
+                },
+                {
+                    "*_middle_*": "query.is_sheared"
+                },
+                {
+                    "body_top_mouth_frown": "query.is_sheared"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.random_eye": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "eye_middle_*": "query.skin_id == 1"
+                },
+                {
+                    "eye_left_*": "query.skin_id == 2"
+                },
+                {
+                    "eye_right_*": "query.skin_id == 2"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

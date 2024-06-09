@@ -1,0 +1,767 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.trigger.finishline.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function chase/scene/finishline"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.loadingwait": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/load/chase/loadchase",
+        "0.5": "/function missions/load/chase/loadchase2",
+        "1.0": "/function missions/load/chase/loadchase3",
+        "1.5": "/function missions/load/chase/loadchase4",
+        "2.0": "/function missions/load/chase/loadchase5",
+        "2.5": "/function missions/load/chase/loadchase6",
+        "2.6": ["/event entity @e[type=cyd:barrier_x] evt:sid_1", "/event entity @e[type=cyd:barrier_arrow] evt:sid_1", "/event entity @e[type=cyd:path_arrow] evt:sid_1"],
+        "2.9": "/event entity @s evt:despawn"
+      },
+      "animation_length": 3
+    },
+    "animation.trigger.unloadingwait": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/load/chase/loadnormal",
+        "0.5": "/function missions/load/chase/loadnormal2",
+        "1.0": "/function missions/load/chase/loadnormal3",
+        "1.5": "/function missions/load/chase/loadnormal4",
+        "2.0": "/function missions/load/chase/loadnormal5",
+        "2.5": "/function missions/load/chase/loadnormal6",
+        "2.9": [
+          "/function chase/endticking",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.trigger.chaseintro.entity.start": {
+      "loop": false,
+      "timeline": {
+        "1.39": "/camerashake add @s 0.03 0.2 rotational",
+        "2.59": "/tp @e[type=cyd:chase_entity_intro ~ ~40 ~",
+        "2.60": [
+          "/effect @e[type=cyd:chase_entity_intro] invisibility 999 255 true",
+          "/event entity @e[type=cyd:chase_entity_intro evt:despawn"
+        ]
+      },
+      "animation_length": 4.6
+    },
+    "animation.trigger.nunloop_trigger.entity.start": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function chase/scene/nunloop",
+          "/event entity @e[type=cyd:belle_trigger] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-39,y=81,z=1740,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-36,y=81,z=1793,r=50] evt:despawn"
+        ],
+        "0.68": [
+          "/summon cyd:nunchuck_throw_projectile -228 115 1771"
+        ]
+      },
+      "animation_length": 1.7
+    },
+    "animation.trigger.bellerace.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/effect @e[type=cyd:chase_entity] clear",
+          "/playanimation @e[type=cyd:chase_entity] chase",
+          "/function chase/scene/belle"
+        ],
+        "1.0": [
+          "/function playerbase/objectives/m2_1"
+        ],
+        "5.0": [
+          "/setblock -35 76 1794 redstone_torch",
+          "/tag @e[type=cyd:chase_entity] add placeblocks",
+          "/event entity @e[type=cyd:chase_entity] evt:chase",
+          "/tag @e[type=cyd:chase_entity] add cancatch"
+        ]
+      },
+      "animation_length": 5.1
+    },
+    "animation.trigger.chase.entity.start": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/start"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.system.chase.scenes": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function chase/scene/scene"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.chase.entity.stop": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/stop"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.sticky.entity.start": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/sticky/start"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.sticky.entity.stop": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/sticky/stop"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.wk.entity.start": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/wk/start"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.wk.entity.stop": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/wk/stop"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.stronghold_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+        "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:stronghold_chase_entity] ~ ~ ~ event entity @s evt:sid_1",
+        "/setblock -35 76 1794 redstone_torch",
+        "/tag @e[type=cyd:chase_entity] add placeblocks",
+        "/event entity @e[type=cyd:chase_entity] evt:chase",
+        "/tag @e[type=cyd:chase_entity] add cancatch"]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.stronghold_triggerp1.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:stronghold_chase_entity] ~ ~ ~ event entity @s evt:sid_2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.train_1.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:train_chase_2] ~ ~ ~ playanimation @s move_upwards",
+          "/effect @e[type=cyd:train_chase_2] clear"
+        ],
+        "2.6": [
+          "/execute @a ~ ~ ~ playsound cyd.mission.race.tram.idle @s",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1909 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1909 barrier"
+        ],
+        "2.8": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1910 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -36 104 1910 barrier"
+        ],
+        "3.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1911 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1911 barrier"
+        ],
+        "3.2": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1912 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1909 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1912 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1909 air"
+        ],
+        "3.4": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1913 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1910 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1913 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1910 air"
+        ],
+        "3.6": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1914 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1911 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1914 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1911 air"
+        ],
+        "3.8": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1915 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1912 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1915 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1912 air"
+        ],
+        "4.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1916 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1913 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1916 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1913 air"
+        ],
+        "4.1": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1917 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1914 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1917 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1914 air"
+        ],
+        "4.2": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1918 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1915 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1918 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1915 air"
+        ],
+        "4.3": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1919 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1916 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1919 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1916 air"
+        ],
+        "4.4": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1917 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1918 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 105 1919 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1917 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1918 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -37 104 1919 air"
+        ]
+      },
+      "animation_length": 4.5
+    },
+    "animation.trigger.train_2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:train_chase_1] ~ ~ ~ playanimation @s move_downwards",
+          "/effect @e[type=cyd:train_chase_1] clear"
+        ],
+        "2.6": [
+          "/execute @a ~ ~ ~ playsound cyd.mission.race.tram.idle @s",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1920 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1920 barrier"
+        ],
+        "2.8": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1919 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1919 barrier"
+        ],
+        "3.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1918 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1918 barrier"
+        ],
+        "3.2": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1917 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1920 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1917 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1920 air"
+        ],
+        "3.4": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1916 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1919 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1916 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1919 air"
+        ],
+        "3.6": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1915 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1918 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1915 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1918 air"
+        ],
+        "3.8": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1914 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1917 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1914 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1917 air"
+        ],
+        "4.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1913 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1916 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1913 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1916 air"
+        ],
+        "4.1": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1912 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1915 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1912 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1915 air"
+        ],
+        "4.2": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1911 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1914 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1911 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1914 air"
+        ],
+        "4.3": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1910 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1910 barrier",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1913 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1913 air"
+        ],
+        "4.5": [
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1912 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1911 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 105 1910 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1912 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1911 air",
+          "/execute @p[tag=!dev] ~ ~ ~ /setblock -122 104 1910 air"
+        ]
+      },
+      "animation_length": 4.6
+    },
+    "animation.trigger.train_2_3.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:train_chase_2] ~ ~ ~ event entity @s evt:sid_1",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:train_chase_3] ~ ~ ~ event entity @s evt:sid_1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.stronghold_trigger_2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:stronghold_chase_entity_2] ~ ~ ~ event entity @s evt:sid_1",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-238,y=106,z=1915,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-181,y=106,z=1915,r=50] evt:despawn"
+      ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.stronghold_triggerp1_2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:stronghold_chase_entity_2] ~ ~ ~ event entity @s evt:sid_2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.treefall_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_tree] ~ ~ ~ event entity @s evt:sid_1",
+          "/execute @p[tag=!dev] ~ ~ ~ fill 68 81 1788 75 80 1797 barrier 0 replace air",
+          "/execute @p[tag=!dev] ~ ~ ~ function missions/dialogue/chase/scene4p3",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-8,y=106,z=1915,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-55,y=126,z=1914,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=47,y=101,z=1895,r=50] evt:despawn"
+        ],
+        "2.9": [
+          "/execute @p[tag=!dev] ~ ~ ~ fill 82 80 1792 95 81 1792 barrier 0 replace air"
+        ]
+      },
+      "animation_length": 4.2
+    },
+    "animation.trigger.svengence_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:sven_car_chase,c=1] ~ ~ ~ event entity @s evt:sid_1",
+          "/execute @a ~ ~ ~ cyd.mission.race.sven.intro1 @s",
+          "/effect @e[type=cyd:sven_car_chase,c=1] clear",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-308,y=90,z=1913,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-273,y=90,z=1829,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-233,y=90,z=1771,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-181,y=90,z=1771,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-121,y=90,z=1777,r=50] evt:despawn"
+        ],
+        "0.1": "/function missions/dialogue/chase/scene3p1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.sven.entity.startinvis": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/effect @s invisibility 99999999 255 true"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.svengence_trigger2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:sven_car_chase2,c=1] ~ ~ ~ event entity @s evt:sid_2",
+          "/execute @a ~ ~ ~ cyd.mission.race.sven.intro2 @s",
+          "/effect @e[type=cyd:sven_car_chase2,c=1] clear",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=23,y=82,z=1633,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=64,y=82,z=1682,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=81,y=82,z=1746,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=67,y=82,z=1795,r=50] evt:despawn"
+        ],
+        "0.1": "/function missions/dialogue/chase/scene3p2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.nunchuck_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:nunchuck_throw] ~ ~ ~ event entity @s evt:sid_1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.bellebottom_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:chase_entity] ~ ~ ~ event entity @s evt:mv_1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.roofjumper_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ say trigger"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.marketstallfood.entity.start": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function chase/scene/stall"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.foodcart_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:market_stall] ~ ~ ~ event entity @s evt:sid_1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cranedrop_trigger2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:crane_load] ~ ~ ~ event entity @s evt:sid_1",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_car_chase] ~ ~ ~ event entity @s evt:sid_2",
+          "/execute @p[tag=!dev] ~ ~ ~ fill 49 104 1915 44 105 1911 barrier 0 replace air",
+          "/execute @p[tag=!dev] ~ ~ ~ function missions/dialogue/chase/scene4p1",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-120,y=106,z=1915,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-55,y=106,z=1915,r=50] evt:despawn"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cranedrop_trigger3.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_car_chase] ~ ~ ~ event entity @s evt:sid_3",
+          "/execute @p[tag=!dev] ~ ~ ~ function missions/dialogue/chase/scene4p2"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cranedrop_trigger4.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @a ~ ~ ~ playsound cyd.mission.race.jean.jump @s",
+          "/execute @p[tag=!dev] ~ ~ ~ playanimation @e[type=cyd:jeanclawed_car_chase2] jump2",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_car_chase2] ~ ~ ~ effect @s clear"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cranedrop_trigger5.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @a ~ ~ ~ playsound cyd.mission.race.jean.jump @s",
+          "/execute @p[tag=!dev] ~ ~ ~ playanimation @e[type=cyd:jeanclawed_car_chase3] jump3",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_car_chase3] ~ ~ ~ effect @s clear"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cranedrop_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:jeanclawed_car_chase] ~ ~ ~ event entity @s evt:sid_1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.singletrain_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ say trigger"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.doubletrain_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @p[tag=!dev] ~ ~ ~ say trigger"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.shortcut_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/setblock -303 84 1827 redstone_block"
+        ]
+      },
+      "animation_length": 2.1
+    },
+    "animation.trigger.boost_trigger.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/fill -146 88 1625 -164 90 1625 air 0 replace barrier",
+          "/function missions/dialogue/chase/boost",
+          "/execute @a ~ ~ ~ playsound cyd.mission.race.boost @s",
+          "/playanimation @e[type=cyd:gru_bike] boost",
+          "/effect @e[type=cyd:gru_bike] speed 5 20 true",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-159,y=82,z=1633,r=50] evt:despawn",
+          "/event entity @e[type=!cyd:chase_entity,type=!cyd:cart,family=chasereset,x=-55,y=82,z=1633,r=50] evt:despawn"
+        ]
+      },
+      "animation_length": 2.1
+    },
+    "animation.trigger.stronghold_entity.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/function missions/dialogue/chase/scene1p1",
+          "/tag @e[type=cyd:trigger_chase_system] add boostable"
+        ],
+        "1.8": [
+          "/execute @s ~ ~ ~ summon cyd:knockback_entity -96 87 1795"
+        ]
+      },
+      "animation_length": 4.2
+    },
+    "animation.trigger.stronghold_entityp1.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/function missions/dialogue/chase/scene1p2"
+        ],
+        "1.8": [
+          "/execute @s ~ ~ ~ summon cyd:knockback_entity -120 88 1775"
+        ]
+      },
+      "animation_length": 4.2
+    },
+    "animation.trigger.stronghold_entity_2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/function missions/dialogue/chase/scene1p1"
+        ],
+        "1.1": [
+          "/execute @s ~ ~ ~ summon cyd:knockback_entity -83 104 1912"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.trigger.stronghold_entityp1_2.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0": [
+          "/execute @s[tag=!used] ~ ~ ~ /function missions/dialogue/chase/scene1p2"
+        ],
+        "1.3": [
+          "/execute @s ~ ~ ~ summon cyd:knockback_entity -63 104 1917"
+        ],
+        "1.4": "/tag @s add used"
+      },
+      "animation_length": 3
+    },
+    "animation.trigger.sven.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.1": [
+          "/tag @s add startmoving",
+          "/execute @s[type=cyd:sven_car_chase2] ~ ~ ~ tag @a add safe"
+        ]
+      },
+      "animation_length": 2
+    },
+    "animation.trigger.sven.entity.teleport": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/tp @s ~-1 ~ ~",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ tp @s ~ ~ ~",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ effect @s slowness 2 255 true",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ summon cyd:explode ~1 ~ ~"
+        ]
+      },
+      "animation_length": 0.01
+    },
+    "animation.trigger.sven.entity.teleport2": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/tp @s ~1 ~ ~",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ tp @s ~ ~ ~",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ effect @s slowness 2 255 true",
+          "/execute @e[type=cyd:gru_bike,r=1] ~ ~ ~ summon cyd:explode ~-1 ~ ~"
+        ]
+      },
+      "animation_length": 0.01
+    },
+    "animation.trigger.belle_chase.entity.start": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @s ~ ~ ~ summon cyd:knockback_entity ^ ^8 ^"
+      },
+      "animation_length": 3
+    },
+    "animation.trigger.system.start_chase": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/start_countdown"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.interrupt_chase": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/interrupt_countdown"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.start_sticky": {
+      "loop": false,
+      "timeline": {
+        "0.1": [
+          "/tickingarea add -24 0 1736 -24 0 1736 recordshop",
+          "/tickingarea add -118 45 2038 -118 45 2038 temp_sticky2",
+          "/tickingarea add -95 36 1962 -95 36 1962 temp_sticky1",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @a add startm1music",
+          "/execute @p[tag=!dev] ~ ~ ~ fill -25 81 1737 -25 81 1736 barrier 0 replace air",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ tag @s add cs1"
+        ],
+        "0.3": [
+          "/function missions/cutscene/sticky/scene_m1_01",
+          "/title @a title §2"
+        ],
+        "2.1": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ function sticky/structures_load"
+        ],
+        "7.8": [
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s"
+        ],
+        "8.0": [
+          "/function missions/cutscene/sticky/scene_m1_02"
+        ],
+        "13.8": [
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s"
+        ],
+        "14.0": [
+          "/function missions/cutscene/sticky/scene_m1_03"
+        ],
+        "19.8": [
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s"
+        ],
+        "20.0": [
+          "/function missions/cutscene/sticky/scene_m1_04"
+        ],
+        "25.8": [
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s"
+        ],
+        "26.0": [
+          "/function missions/cutscene/sticky/scene_m1_05"
+        ],
+        "31.8": [
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.world.vnc_dialogue @s"
+        ],
+        "32.0": [
+          "/function missions/cutscene/sticky/scene_m1_06"
+        ],
+        "38.0": [
+          "/function missions/cutscene/sticky/scene_m1_07"
+        ],
+        "44.0": [
+          "/function missions/cutscene/sticky/scene_m1_08"
+        ],
+        "50.0": [
+          "/function missions/cutscene/sticky/scene_m1_09"
+        ],
+        "56.0": [
+          "/function missions/cutscene/sticky/scene_m1_10",
+          "/title @a title §1",
+          "/function cutscene_cage_rm",
+          "/execute @e[tag=cs1] ~ ~ ~ tag @s remove cs1"
+        ],
+        "56.1": "/function missions/trigger_system/sticky/start_countdown_v2",
+        "56.3": [
+          "/event entity @s evt:sid_0",
+          "/execute @p[tag=!dev] ~ ~ ~ event entity @e[type=cyd:trigger_sticky] evt:despawn"
+        ]
+      },
+      "animation_length": 57
+    },
+    "animation.trigger.system.interrupt_sticky": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/sticky/interrupt_countdown"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.start_wk": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/trigger_system/wk/prepare_stage",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s"
+        ],
+        "0.2": "/execute @p[r=2,tag=!dev,tag=completedkun] ~ ~ ~ function missions/trigger_system/wk/start_countdown",
+        "0.8": [
+          "/event entity @s evt:sid_0"
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.trigger.system.end_wk": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/wk/end_wk",
+        "0.5": "/tickingarea remove tempwk"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.end_chase": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/end_chase"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.fail_chase": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/trigger_system/chase/fail_chase"
+      },
+      "animation_length": 1
+    },
+    "animation.trigger.system.finish_chase": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @s[tag=chsstarted,tag=!end_chs,tag=!fail_chs] ~ ~ ~ execute @a[x=-111,y=88,z=1641,dx=-17,dy=5,dz=-20,tag=!caught] ~ ~ ~ tag @e[type=cyd:trigger_chase_system] remove start_chs",
+          "/execute @s[tag=chsstarted,tag=!end_chs,tag=!fail_chs] ~ ~ ~ execute @a[x=-111,y=88,z=1641,dx=-17,dy=5,dz=-20,tag=!caught] ~ ~ ~ tag @e[type=cyd:trigger_chase_system] add end_chs"
+        ]
+      },
+      "animation_length": 0.2
+    }
+  }
+}

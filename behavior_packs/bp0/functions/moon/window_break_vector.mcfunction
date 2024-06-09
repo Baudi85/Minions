@@ -1,0 +1,16 @@
+particle cyd:moon_glassbreak_1 3 88 1996
+particle cyd:moon_glassbreak_1 1 88 1996
+particle cyd:moon_glassbreak_1 -1 88 1996
+particle cyd:moon_glassbreak_1 -3 88 1996
+particle cyd:moon_glassbreak_1 4 88 1994
+particle cyd:moon_glassbreak_1 2 88 1994
+particle cyd:moon_glassbreak_1 0 88 1994
+particle cyd:moon_glassbreak_1 -2 88 1994
+particle cyd:moon_glassbreak_1 -4 88 1994
+particle cyd:moon_glassbreak_1 3 88 1992
+particle cyd:moon_glassbreak_1 1 88 1992
+particle cyd:moon_glassbreak_1 -1 88 1992
+particle cyd:moon_glassbreak_1 -3 88 1992
+particle cyd:moon_glassbreak_1 2 88 1990
+particle cyd:moon_glassbreak_1 0 88 1990
+particle cyd:moon_glassbreak_1 -2 88 1990

@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:flying_car",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/vehicles/gru_car_flying"
+      },
+      "geometry": {
+        "default": "geometry.gru_car_flying"
+      },
+      "particle_effects": {
+        "exhaust_particle": "cyd:exhaust",
+        "wind_particle": "cyd:wind",
+        "crash_particle": "cyd:crash"
+      },
+      "animations": {
+        "exhaust_ctrl":"controller.animation.vehicle.exhaust.ctrl",
+        "wind_ctrl":"controller.animation.vehicle.wind.ctrl",
+        "exhaust_particle":"animation.vehicle.dual_exhaust.particle",
+        "wind_particle":"animation.vehicle.wind.particle",
+        "crash_ctrl":"controller.animation.vehicle.crash",
+        "crash":"animation.vehicle.crash.particle",
+        "ride": "animation.gru_car_flying.ride",
+        "idle": "animation.gru_car_flying.idle",
+        "ride_ctrl": "controller.animation.driving"
+      },
+      "scripts": {
+        "animate": [
+          "exhaust_ctrl",
+          "wind_ctrl",
+          "crash_ctrl",
+          "ride_ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "texture":"CYD_ROGUE",
+        "texture_index": 7
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:cutscene_v6_race",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/cutscene_v6_race"
+      },
+      "geometry": {
+        "default": "geometry.cutscene_v6_race"
+      },
+      "animations": {
+        "intro1": "animation.cutscene_v6_race.intro1",
+        "intro2": "animation.cutscene_v6_race.intro2"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "cyd:prop_mode_select",
+        "materials": {
+          "default": "zombie"
+        },
+        "textures": {
+          "default": "textures/entity/world/mode_select"
+        },
+        "geometry": {
+          "default": "geometry.mode_select"
+        },
+        "animations": {
+          "adventure": "animation.mode_select.adventure",
+          "sandbox":"animation.mode_select.sandbox",
+          "ctrl":"controller.animation.trigger.mode_select.rp"
+        },
+        "scripts": {
+          "animate": ["ctrl"]
+        },
+        "spawn_egg": {
+          "base_color": "#4287f5",
+          "overlay_color": "#e6efff"
+        },
+        "render_controllers": [
+          "controller.render.mode_select"
+        ]
+      }
+    }
+  }
+  

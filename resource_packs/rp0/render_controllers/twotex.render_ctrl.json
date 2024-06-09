@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cyd.twotex": {
+      "arrays": {
+        "textures": {
+          "Array.tex": [
+            "Texture.default",
+            "Texture.alt"
+          ]
+        }
+      },
+      "rebuild_animation_matrices": true,
+      "geometry": "Geometry.default",
+      "materials": [{
+        "*": "Material.default"
+      }],
+      "textures": ["Array.tex[query.skin_id]"]
+    }
+  }
+}

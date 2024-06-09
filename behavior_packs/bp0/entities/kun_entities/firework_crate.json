@@ -1,0 +1,120 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:firework_crate",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "sound_ctrl"
+        ]
+      },
+      "animations": {
+        "sound_ctrl": "controller.animation.kunfu.fireworkcrate"
+      }
+    },
+    "component_groups": {
+      "cyd:knockback": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "spawn_entity": "cyd:firework_knockback",
+            "single_use": true,
+            "num_to_spawn": 1,
+            "should_leash": false
+          }
+        ],
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:reset": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": [
+        {
+          "deals_damage": false,
+          "on_damage": {
+            "event": "cyd:hit"
+          }
+        }
+      ],
+      "minecraft:type_family": {
+        "family": [
+          "prop"
+        ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:movement": {
+        "value": 0
+      }
+    },
+    "events": {
+      "cyd:hit": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:knockback"
+              ]
+            },
+            "filters": {
+              "test": "has_component",
+              "subject": "self",
+              "operator": "not",
+              "value": "minecraft:spawn_entity"
+            }
+          }
+        ]
+      },
+      "cyd:reset": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:reset"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "cyd:knockback"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

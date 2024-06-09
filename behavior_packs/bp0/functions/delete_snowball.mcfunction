@@ -1,0 +1,1 @@
+execute @p[tag=player1,r=2] ~ ~ ~ execute @s[tag=player1] ~ ~ ~ event entity @s "cyd:despawn"

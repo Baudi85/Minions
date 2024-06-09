@@ -1,0 +1,52 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:despawn",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:despawn":{
+                "minecraft:instant_despawn":{}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:timer": {
+                "looping": true,
+                "time": 1,
+                "time_down_event": {
+                  "event": "evt:despawn"
+                }
+              }
+        },
+        "events": {
+            "evt:despawn":{
+                "add":{
+                    "component_groups":[
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+titleraw @a[r=10] actionbar {"rawtext":[{"translate":"teleport.airport.city"}]}

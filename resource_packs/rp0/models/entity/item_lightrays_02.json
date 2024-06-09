@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"geometry.item_lightrays_02": {
+		"texturewidth": 16,
+		"textureheight": 16,
+		"visible_bounds_width": 39,
+		"visible_bounds_height": 39,
+		"visible_bounds_offset": [0, 13.5, 0],
+		"bones": [
+			{
+				"name": "base",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-8, -8, 0], "size": [16, 16, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

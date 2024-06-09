@@ -1,0 +1,153 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.collectible_container": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "location_name_1": "query.variant == 6"
+                },
+                {
+                    "location_name_2": "query.variant == 4"
+                },
+                {
+                    "location_name_3": "query.variant == 3"
+                },
+                {
+                    "location_name_4": "query.variant == 2"
+                },
+                {
+                    "location_name_5": "query.variant == 1"
+                },
+                {
+                    "location_name_6": "query.variant == 7"
+                },
+                {
+                    "location_name_7": "query.variant == 8"
+                },
+                {
+                    "location_name_8": "query.variant == 20"
+                },
+                {
+                    "location_name_9": "query.variant == 9"
+                },
+                {
+                    "location_name_10": "query.variant == 5"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.vehicle_container": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "screen_icon_1": "query.variant == 6"
+                },
+                {
+                    "screen_icon_2": "query.variant == 4"
+                },
+                {
+                    "screen_icon_3": "query.variant == 3"
+                },
+                {
+                    "screen_icon_4": "query.variant == 10"
+                },
+                {
+                    "screen_icon_5": "query.variant == 5"
+                },
+                {
+                    "screen_icon_6": "query.variant == 9"
+                },
+                {
+                    "screen_icon_7": "query.variant == 1"
+                },
+                {
+                    "screen_icon_8": "query.variant == 7"
+                },
+                {
+                    "screen_icon_9": "query.variant == 8"
+                },
+                {
+                    "screen_icon_10": "query.variant == 2"
+                },
+
+
+                {
+                    "screen_icon_1_locked": "query.variant == 16"
+                },
+                {
+                    "screen_icon_2_locked": "query.variant == 14"
+                },
+                {
+                    "screen_icon_3_locked": "query.variant == 13"
+                },
+                {
+                    "screen_icon_4_locked": "query.variant == 20"
+                },
+                {
+                    "screen_icon_5_locked": "query.variant == 15"
+                },
+                {
+                    "screen_icon_6_locked": "query.variant == 19"
+                },
+                {
+                    "screen_icon_7_locked": "query.variant == 11"
+                },
+                {
+                    "screen_icon_8_locked": "query.variant == 17"
+                },
+                {
+                    "screen_icon_9_locked": "query.variant == 18"
+                },
+                {
+                    "screen_icon_10_locked": "query.variant == 12"
+                },
+                {
+                    "vehicle_name_1": "query.variant == 6"
+                },
+                {
+                    "vehicle_name_2": "query.variant == 4"
+                },
+                {
+                    "vehicle_name_3": "query.variant == 3"
+                },
+                {
+                    "vehicle_name_4": "query.variant == 10"
+                },
+                {
+                    "vehicle_name_5": "query.variant == 5"
+                },
+                {
+                    "vehicle_name_6": "query.variant == 9"
+                },
+                {
+                    "vehicle_name_7": "query.variant == 1"
+                },
+                {
+                    "vehicle_name_8": "query.variant == 7"
+                },
+                {
+                    "vehicle_name_9": "query.variant == 8"
+                },
+                {
+                    "vehicle_name_10": "query.variant == 2"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

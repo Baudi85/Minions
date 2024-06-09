@@ -1,0 +1,367 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.trigger.guard.entity.turning": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/pathing_turning"
+      },
+      "animation_length": 0.2
+    },
+    "animation.system.fall_tp_mainroom": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/v6_floor_tp"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.entity.turning_r": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/pathing_turning_r"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.entity.pacing": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/pathing_pacing"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.entity.zigzag": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/pathing_zigzag"
+      },
+      "animation_length": 0.2
+    },
+    "animation.sticky.face": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function sticky/face_snowball",
+        "0.2": "@s evt:sticky_return"
+      },
+      "animation_length": 0.4
+    },
+    "animation.sticky.init_direct": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/sticky_init_direct"
+      },
+      "animation_length": 0.2
+    },
+    "animation.sticky.return": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/tp_snowball"
+      },
+      "animation_length": 0.02
+    },
+    "animation.sticky.stuck": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/tp_stuck"
+      },
+      "animation_length": 0.01
+    },
+    "animation.trigger.guard.detect": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/detect_player_5"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.large_box": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/summon cyd:target_box_large ^ ^ ^3"
+      },
+      "animation_length": 1.1
+    },
+    "animation.detect_honey": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/player_detect_honey"
+      },
+      "animation_length": 0.2
+    },
+    "animation.rm_honey": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function sticky/hay_cone"
+      },
+      "animation_length": 1.0
+    },
+    "animation.rm_hay": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function sticky/honey_cone"
+      },
+      "animation_length": 1.0
+    },
+    "animation.young_nefario.record": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/event entity @e[type=cyd:system_storage] evt:rm_ignited",
+          "/function missions/dialogue/sticky/nefario_1"
+        ],
+        "2.5": [
+          "/event entity @e[type=cyd:record_player,c=1] evt:var_1"
+        ],
+        "4.0": [
+          "/function missions/dialogue/sticky/nefario_2"
+        ],
+        "6.5": [
+          "/event entity @s evt:var_1"
+        ],
+        "8.0": [
+          "/function missions/dialogue/sticky/nefario_3"
+        ],
+        "12.5": [
+          "/function playerbase/objectives/m1_2",
+          "/event entity @s evt:var_0",
+          "/event entity @s evt:sid_0"
+        ]
+      },
+      "animation_length": 12.6
+    },
+    "animation.secretary.talk": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/sticky/assistant.1"
+        ],
+        "4.0": [
+          "/function missions/dialogue/sticky/assistant.2"
+        ]
+      },
+      "animation_length": 4.1
+    },
+    "animation.elevator.open": {
+      "loop": false,
+      "timeline": {
+        "2.4": [
+          "/fill -117 39 1950 -119 36 1950 air 0 replace barrier"
+        ]
+      },
+      "animation_length": 2.6
+    },
+    "animation.record_player": {
+      "loop": false,
+      "timeline": {
+        "0.5": [
+          "/tickingarea add circle ~ ~ ~ 1 temp_record",
+          "/execute @p[tag=!dev] ~ ~ ~ clear @s cyd:record_key 0 1",
+          "/playsound cyd.mission.sticky.record_place @a",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_had_prop] ~ ~ ~ kill @e[type=cyd:gadget_godrays,c=1]",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ kill @e[type=cyd:sticky_hand_prop]",
+          "/execute @p[tag=!dev] ~ ~ ~ function sticky/structures_delete",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ structure load secretary4 -110.60 36.06 1969.55 0_degrees"
+        ],
+        "3.0": [
+          "/playsound cyd.mission.sticky.Record_Player_Play @a"
+        ],
+        "5.5": [
+          "/tp @a -118 36 1948 facing -118 38 1957"
+        ],
+        "5.6": [
+          "/playsound cyd.mission.sticky.elevator.moving @a"
+        ],
+        "8.0": [
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ summon cyd:gadget_godrays -95 36 1962",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ summon cyd:sticky_hand_prop -95 36 1962",
+          "/function missions/dialogue/sticky/prompt/prompt.coordinate.0.0",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ event entity @e[type=cyd:elevator] evt:sid_1",
+          "/execute @p[tag=!dev] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ function playerbase/objectives/m1_3",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_vent,c=1,r=5,x=-96,y=41,z=1972] ~ ~ ~ tag @s add tutorial",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_box_large,c=1,r=5,x=-88,y=40,z=1982] ~ ~ ~ tag @s add tutorial",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:sticky_box_small,c=1,r=5,x=-105,y=37,z=1971] ~ ~ ~ tag @s add tutorial"
+        ],
+        "10.0": [
+          "/tickingarea remove temp_record",
+          "/event entity @s evt:sid_0"
+        ]
+      },
+      "animation_length": 11.0
+    },
+    "animation.zodiac_stone.item": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function sticky/zodiac_stone"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.particle.explosion": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/particle cyd:floor_explosion ~ ~ ~"
+        ]
+      },
+      "animation_length": 1.0
+    },
+    "animation.fan_sound_loop": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.sticky.Sticky_Fan_Loop @a[r=13] ~ ~ ~ 0.3"
+        ]
+      },
+      "animation_length": 2.0
+    },
+    "animation.sml_box_stuck": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/sml_box_stuck"
+      },
+      "animation_length": 0.2
+    },
+    "animation.guard.peripheral": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/detect_player_peripheral"
+      },
+      "animation_length": 0.2
+    },
+    "animation.sticky.despawn_timer": {
+      "loop": false,
+      "animation_length": 1.0
+    },
+    "animation.large_box.sound": {
+      "loop": false,
+      "timeline": {
+        "0.8": "/playsound cyd.mission.sticky.Sticky_Box_Large_Impact @a"
+      },
+      "animation_length": 0.9
+    },
+    "animation.sticky.reset_end": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function sticky/end_stk"
+        ],
+        "0.2": [
+          "/tp @a -12 80 1737 facing -27 80 1737"
+        ],
+        "0.4": [
+          "/tag @s remove end_stk",
+          "/tickingarea remove recordshop"
+        ]
+      },
+      "animation_length": 0.5
+    },
+    "animation.coords.system": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/coord_messages"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.1": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.2.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.2": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.1.1",
+        "4.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.1.2"
+      },
+      "animation_length": 4.1
+    },
+    "animation.coords.system.3": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.3.1",
+        "4.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.3.2"
+      },
+      "animation_length": 4.1
+    },
+    "animation.coords.system.4": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.4.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.5": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.5.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.6": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.6.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.7": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.coordinate.7.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.coords.system.prox": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/prompt/prompt.proximity"
+      },
+      "animation_length": 0.2
+    },
+    "animation.system.tut1": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.1",
+          "/execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ execute @e[type=cyd:elevator] ~ ~ ~ event entity @s evt:sid_2"
+        ],
+        "4.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.2",
+        "8.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.1.3"
+      },
+      "animation_length": 8.2
+    },
+    "animation.system.tut2": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.2.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.system.tut3": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/sticky/tutorial/prompt.tutorial.3.1"
+      },
+      "animation_length": 0.2
+    },
+    "animation.system.readynext": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function sticky/tut_messages"
+      },
+      "animation_length": 0.2
+    },
+    "animation.fan.hit_sound": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.mission.sticky.hit_fan @a[r=5]",
+        "0.1": [
+          "/tag @s remove open",
+          "@s evt:rm_ignite"
+        ]
+      },
+      "animation_length": 1.0
+    }
+  }
+}

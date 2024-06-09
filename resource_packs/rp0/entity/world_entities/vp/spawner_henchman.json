@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:spawner_raid_henchman",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/trashcan"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

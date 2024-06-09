@@ -1,0 +1,264 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.henchman": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "animations": [
+            {
+              "walk1": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "standing": "query.any_animation_finished"
+            },
+            {
+              "attacking": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 1"
+            },
+            {
+              "attacking2": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 2"
+            },
+            {
+              "attacking3": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 5"
+            },
+            {
+              "attacking4": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 3"
+            },
+            {
+              "attacking5": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 4"
+            }
+          ]
+        },
+        "moving2": {
+          "animations": [
+            {
+              "walk2": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "standing": "query.modified_move_speed < 0.1"
+            },
+            {
+              "attacking": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 1"
+            },
+            {
+              "attacking2": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 2"
+            },
+            {
+              "attacking3": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 5"
+            },
+            {
+              "attacking4": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 3"
+            },
+            {
+              "attacking5": "query.is_delayed_attacking == 1 && math.random_integer(1, 5) == 4"
+            }
+          ]
+        },
+        "standing": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "moving": "query.modified_move_speed > 0.1 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.modified_move_speed > 0.1 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attack1": "query.is_delayed_attacking == 1"
+            },
+            {
+              "walk1": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            {
+              "attack2": "query.is_delayed_attacking == 1"
+            },
+            {
+              "walk2": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "attacking3": {
+          "animations": [
+            {
+              "attack3": "query.is_delayed_attacking == 1"
+            },
+            {
+              "walk2": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "attacking4": {
+          "animations": [
+            {
+              "attack4": "query.is_delayed_attacking == 1"
+            },
+            {
+              "walk2": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "attacking5": {
+          "animations": [
+            {
+              "attack5": "query.is_delayed_attacking == 1"
+            },
+            {
+              "walk2": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "moving2": "query.is_delayed_attacking == 0 && math.random_integer(1, 2) == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.ceiling": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "ceiling_breach1": "math.random_integer(1, 2) == 1"
+            },
+            {
+              "ceiling_breach2": "math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "ceiling_breach1": {
+          "animations": [
+            "ceiling_breach1"
+          ]
+        },
+        "ceiling_breach2": {
+          "animations": [
+            "ceiling_breach2"
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.henchman.death": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "death1": "math.random_integer(1, 2) == 1"
+            },
+            {
+              "death2": "math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "death1": {
+          "animations": [
+            "death1"
+          ]
+        },
+        "death2": {
+          "animations": [
+            "death2"
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.ceiling3": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "ceiling_breach1": "math.random_integer(1, 2) == 1"
+            },
+            {
+              "ceiling_breach2": "math.random_integer(1, 2) == 2"
+            }
+          ]
+        },
+        "ceiling_breach1": {
+          "animations": [
+            "ceiling_breach1"
+          ],
+          "transitions": [
+            {
+              "slam": "query.all_animations_finished"
+            }
+          ]
+        },
+        "ceiling_breach2": {
+          "animations": [
+            "ceiling_breach2"
+          ],
+          "transitions": [
+            {
+              "slam": "query.all_animations_finished"
+            }
+          ]
+        },
+        "slam": {
+          "animations": [
+            {
+              "slam": "query.is_roaring == 1"
+            }
+          ],
+          "transitions": [
+            {
+              "slam": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

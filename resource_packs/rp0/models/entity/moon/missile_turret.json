@@ -1,0 +1,206 @@
+{
+	"format_version": "1.10.0",
+	"geometry.missile_turret": {
+		"texturewidth": 96,
+		"textureheight": 96,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 8.75,
+		"visible_bounds_offset": [0, 1.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "missile_turret",
+				"parent": "all",
+				"pivot": [-8, 56, 0],
+				"cubes": [
+					{"origin": [-8.5, 32, -3], "size": [1, 32, 6], "uv": [0, 32]},
+					{"origin": [-7.75, 58, -2], "size": [6, 2, 4], "uv": [24, 0]},
+					{"origin": [-7.75, 36, -2], "size": [6, 2, 4], "uv": [24, 0]},
+					{"origin": [-4.75, 36, -1], "size": [2, 24, 2], "uv": [30, 61], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "turret_mount",
+				"parent": "missile_turret",
+				"pivot": [-3.75, 48, 0],
+				"rotation": [0, -10, 0],
+				"cubes": [
+					{"origin": [-6.75, 38, -6], "size": [6, 20, 12], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "door_bottom",
+				"parent": "turret_mount",
+				"pivot": [-0.75, 39, 0],
+				"cubes": [
+					{"origin": [-1.25, 39, -5], "size": [1, 9, 10], "uv": [56, 56]}
+				]
+			},
+			{
+				"name": "door_top",
+				"parent": "turret_mount",
+				"pivot": [-0.75, 57, 0],
+				"cubes": [
+					{"origin": [-1.25, 48, -5], "size": [1, 9, 10], "uv": [44, 46]}
+				]
+			},
+			{
+				"name": "turret_rail",
+				"parent": "turret_mount",
+				"pivot": [4, 56, 0]
+			},
+			{
+				"name": "missile_arm_a_1",
+				"parent": "turret_rail",
+				"pivot": [-0.75, 44, 0],
+				"rotation": [0, 0, 10],
+				"cubes": [
+					{"origin": [-1.75, 43.5, -0.5], "size": [14, 1, 1], "uv": [36, 20], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "missile_arm_b_1",
+				"parent": "missile_arm_a_1",
+				"pivot": [12.5, 44, 0],
+				"cubes": [
+					{"origin": [12, 43.5, -0.5], "size": [14, 1, 1], "uv": [36, 20]}
+				]
+			},
+			{
+				"name": "missile_arm_c_1",
+				"parent": "missile_arm_b_1",
+				"pivot": [26, 44, 0],
+				"cubes": [
+					{"origin": [25.25, 43.5, -0.5], "size": [14, 1, 1], "uv": [36, 20], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "missile_front_1",
+				"parent": "missile_arm_c_1",
+				"pivot": [44, 44, -7.5]
+			},
+			{
+				"name": "missile_middle_1",
+				"parent": "missile_front_1",
+				"pivot": [44, 44, 6.5]
+			},
+			{
+				"name": "missile_back_1",
+				"parent": "missile_middle_1",
+				"pivot": [44, 44, 19.5]
+			},
+			{
+				"name": "missile_1",
+				"parent": "missile_back_1",
+				"pivot": [44, 44, 0],
+				"cubes": [
+					{"origin": [39, 39, -5.5], "size": [10, 10, 11], "uv": [25, 25]},
+					{"origin": [40.5, 40.5, -6.5], "size": [7, 7, 13], "uv": [36, 0]},
+					{"origin": [44, 40.5, -7.5], "size": [0, 7, 1], "uv": [0, 0]},
+					{"origin": [40.5, 44, -7.5], "size": [7, 0, 1], "uv": [23, 6]},
+					{"origin": [43, 43, 6.5], "size": [2, 2, 13], "uv": [14, 46]}
+				]
+			},
+			{
+				"name": "missile_fins_a_1",
+				"parent": "missile_1",
+				"pivot": [44, 44, 0],
+				"rotation": [0, 0, 45],
+				"cubes": [
+					{"origin": [44, 38.5, 15.5], "size": [0, 11, 8], "uv": [14, 53]},
+					{"origin": [44, 32.5, 1.5], "size": [0, 23, 4], "uv": [14, 28]}
+				]
+			},
+			{
+				"name": "missile_fins_b_1",
+				"parent": "missile_1",
+				"pivot": [44, 44, 0],
+				"rotation": [0, 0, 135],
+				"cubes": [
+					{"origin": [44, 38.5, 15.5], "size": [0, 11, 8], "uv": [14, 53]},
+					{"origin": [44, 32.5, 1.5], "size": [0, 23, 4], "uv": [14, 28]}
+				]
+			},
+			{
+				"name": "missile_arm_a_2",
+				"parent": "turret_rail",
+				"pivot": [-0.75, 52, 0],
+				"rotation": [0, 0, -10],
+				"cubes": [
+					{"origin": [-1.75, 51.5, -0.5], "size": [14, 1, 1], "uv": [36, 20], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "missile_arm_b_2",
+				"parent": "missile_arm_a_2",
+				"pivot": [12.5, 52, 0],
+				"cubes": [
+					{"origin": [12, 51.5, -0.5], "size": [14, 1, 1], "uv": [36, 20]}
+				]
+			},
+			{
+				"name": "missile_arm_c_2",
+				"parent": "missile_arm_b_2",
+				"pivot": [26, 52, 0],
+				"cubes": [
+					{"origin": [25.25, 51.5, -0.5], "size": [14, 1, 1], "uv": [36, 20], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "missile_front_2",
+				"parent": "missile_arm_c_2",
+				"pivot": [44, 52, -7.5]
+			},
+			{
+				"name": "missile_middle_2",
+				"parent": "missile_front_2",
+				"pivot": [44, 52, 6.5]
+			},
+			{
+				"name": "missile_back_2",
+				"parent": "missile_middle_2",
+				"pivot": [44, 52, 19.5]
+			},
+			{
+				"name": "missile_2",
+				"parent": "missile_back_2",
+				"pivot": [44, 52, 0],
+				"cubes": [
+					{"origin": [39, 47, -5.5], "size": [10, 10, 11], "uv": [25, 25]},
+					{"origin": [40.5, 48.5, -6.5], "size": [7, 7, 13], "uv": [36, 0]},
+					{"origin": [44, 48.5, -7.5], "size": [0, 7, 1], "uv": [0, 0]},
+					{"origin": [40.5, 52, -7.5], "size": [7, 0, 1], "uv": [23, 6]},
+					{"origin": [43, 51, 6.5], "size": [2, 2, 13], "uv": [14, 46]}
+				]
+			},
+			{
+				"name": "missile_fins_a_2",
+				"parent": "missile_2",
+				"pivot": [44, 52, 0],
+				"rotation": [0, 0, 45],
+				"cubes": [
+					{"origin": [44, 46.5, 15.5], "size": [0, 11, 8], "uv": [14, 53]},
+					{"origin": [44, 40.5, 1.5], "size": [0, 23, 4], "uv": [14, 28]}
+				]
+			},
+			{
+				"name": "missile_fins_b_2",
+				"parent": "missile_2",
+				"pivot": [44, 52, 0],
+				"rotation": [0, 0, 135],
+				"cubes": [
+					{"origin": [44, 46.5, 15.5], "size": [0, 11, 8], "uv": [14, 53]},
+					{"origin": [44, 40.5, 1.5], "size": [0, 23, 4], "uv": [14, 28]}
+				]
+			}
+		]
+	}
+}

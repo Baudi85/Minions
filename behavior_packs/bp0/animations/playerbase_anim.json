@@ -1,0 +1,1348 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.coremusic": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function music/core"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.playermusic": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function music/playermusic"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vp.prox": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/vp.prox.msg"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.costume.prox": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/costume_msg"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.gadget.prox": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/gadget_msg"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.wardrobe.prox": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/wardrobe_msg"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.interact.done": {
+            "loop": false,
+            "timeline": {
+                "2.0": [
+                    "/event entity @s evt:rm_ignite"
+                ]
+            },
+            "animation_length": 2.1
+        },
+        "animation.teleporter.name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~-4 ~2 ~ summon cyd:quest_marker \"Lair Teleporter\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vehicle.name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~2 ~ summon cyd:quest_marker \"Vehicle Selector\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.collectible.name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~3 ~ summon cyd:quest_marker \"Collectibles Container\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.holo_map.done": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/holomap"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.holo_map.stuck": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function holo_stuck"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.sewer_tp": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=!sewertp] ~ ~ ~ tag @s add sewertp",
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=sewertp] ~ ~ ~ function missions/teleportpetin",
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=sewertp] ~ ~ ~ summon cyd:sewer_tp_pet -128 81 1736"
+                ],
+                "0.15": [
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=sewertp] ~ ~ ~ tp @a -128 81 1736 facing -125 82 1736"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.tp.petfix": {
+            "loop": false,
+            "timeline": {
+                "0.18": [
+                    "/execute @p[r=6,tag=!dev] ~ ~ ~ function missions/teleportpetout",
+                    "/execute @p[r=6,tag=!dev] ~ ~ ~ tag @a remove sewertp"
+                ],
+                "0.19": [
+                    "/execute @p[r=6,tag=!dev] ~ ~ ~ function missions/teleportpetout",
+                    "/execute @p[r=6,tag=!dev] ~ ~ ~ tag @a remove sewertp"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.playercount": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playercount"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.teleporter.inc": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/teleporter_inc",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.teleporter.dec": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/teleporter_dec",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.teleporter.button.left": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:lair_teleporter,family=lair_unlocked] evt:mv_2",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.teleporter.button.right": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:lair_teleporter,family=lair_unlocked] evt:mv_1",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.collectible.button.left": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:collectable_container,family=lair_unlocked] evt:mv_2",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.collectible.button.right": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:collectable_container,family=lair_unlocked] evt:mv_1",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vehicle.button.left": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/event entity @e[type=cyd:vehicle_container,family=lair_unlocked] evt:mv_0",
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:vehicle_container,family=lair_unlocked] evt:mv_2"
+                ],
+                "0.2": [
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.4
+        },
+        "animation.vehicle.button.right": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/event entity @e[type=cyd:vehicle_container,family=lair_unlocked] evt:mv_0",
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:vehicle_container,family=lair_unlocked] evt:mv_1"
+                ],
+                "0.2": [
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.4
+        },
+        "animation.collectible.ctrl.switch": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/collectible_switch"
+                ],
+                "0.2": [
+                    "/event entity @s evt:sid_0"
+                ]
+            },
+            "animation_length": 0.3
+        },
+        "animation.trophy.ctrl.switch": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/trophy_switch"
+                ],
+                "0.2": [
+                    "/event entity @s evt:var_0"
+                ]
+            },
+            "animation_length": 0.3
+        },
+        "animation.collectible.inc": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/collectible_inc"
+                ],
+                "0.1": [
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vehicle.inc": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/vehicle_inc"
+                ]
+            },
+            "animation_length": 0.4
+        },
+        "animation.collectible.dec": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/collectible_dec"
+                ],
+                "0.1": [
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vehicle.dec": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/vehicle_dec"
+                ]
+            },
+            "animation_length": 0.4
+        },
+        "animation.vehicle.activate": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/vehicle_activate"
+                ],
+                "3": [
+                    "/execute @p[x=-112,y=83,z=1052,r=1] ~ ~ ~ function cutscene_cage_rm",
+                    "/effect @p[x=-112,y=83,z=1052,r=1] clear",
+                    "/execute @e[type=cyd:vehicle_container] ~ ~ ~ tp @p[x=-112,y=83,z=1052,r=1] -121 79 1040 facing -120 79 1040"
+                ],
+                "3.1": [
+                    "/event entity @s evt:sid_0"
+                ]
+            },
+            "animation_length": 6
+        },
+        "animation.teleporter.button.open": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_button_door_open @a[r=12]",
+                    "/event entity @e[type=cyd:lair_teleporter,family=lair_unlocked] evt:sid_1",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mode.select.story": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:prop_mode_select] evt:var_1",
+                    "/event entity @e[type=cyd:mode_button_play] evt:var_1",
+                    "/function playerbase/mode_story_msg",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mode.select.explore": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/event entity @e[type=cyd:prop_mode_select] evt:var_2",
+                    "/event entity @e[type=cyd:mode_button_play] evt:var_2",
+                    "/function playerbase/mode_sandbox_msg",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mode.button.story": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/tp @a -136 58 1030 facing -138 58 1030",
+                    "/spawnpoint @a -136 58 1030",
+                    "/setworldspawn -136 58 1030",
+                    "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @a add startworldmusic",
+                    "/function start_delete",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mode.button.explore": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tickingarea add circle ~ ~ ~ 1 sandbox1",
+                    "/tickingarea add -38 80 1747 -38 80 1747 sandbox2",
+                    "/tickingarea add -184 88 1782 -184 88 1782 sandbox3",
+                    "/playsound cyd.general.teleporter_computer_location_select_button @a[r=12]",
+                    "/tp @a -136 58 1030 facing -138 58 1030",
+                    "/spawnpoint @a -136 58 1030",
+                    "/setworldspawn -136 58 1030",
+                    "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @a add startworldmusic",
+                    "/function unlocked_everything"
+                ],
+                "2.0": [
+                    "/summon cyd:trigger_chase -38 80 1747",
+                    "/summon cyd:minions_race -35 80 1747",
+                    "/summon cyd:trigger_showdown -184 88 1782",
+                    "/function start_delete",
+                    "/event entity @s evt:mv_0"
+                ],
+                "3.5": [
+                    "/tickingarea remove sandbox3",
+                    "/tickingarea remove sandbox2",
+                    "/tickingarea remove sandbox1",
+                    "/function start_delete",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 4
+        },
+        "animation.vehicle.button.open": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.general.teleporter_button_door_open @a[r=12]",
+                    "/event entity @e[type=cyd:vehicle_container,family=lair_unlocked] evt:sid_1",
+                    "/event entity @s evt:mv_0"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.chinatown": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/chinatown_tp"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.bratts": {
+            "loop": true,
+            "timeline": {
+                "0.1": [
+                    "/function playerbase/bratt_tp"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.vectors": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/vector_tp"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.sub": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/sub_tp"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.machos": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/macho_tp"
+                ]
+            },
+            "animation_length": 1.0
+        },
+        "animation.telepor.home": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/home_tp"
+                ]
+            },
+            "animation_length": 1.0
+        },
+        "animation.telepor.upper_sf": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/upper_sf_tp"
+                ]
+            },
+            "animation_length": 1.0
+        },
+        "animation.telepor.lower_sf": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/lower_sf_tp"
+                ]
+            },
+            "animation_length": 1.0
+        },
+        "animation.telepor.residential": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/residential_tp"
+                ]
+            },
+            "animation_length": 1.0
+        },
+        "animation.telepor.freedonia": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/freedonia_tp"
+                ]
+            },
+            "animation_length": 0.12
+        },
+        "animation.name.sticky": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Sticky Hand\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.name.fart": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Fart Grenade\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.name.cheese": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Cheeze Ray\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.name.chi": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Chi Nunchuck\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.name.jelly": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Jelly Launcher\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.name.shrink": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!named] ~ ~ ~ summon cyd:quest_marker \"Shrink Ray\"",
+                    "/execute @s[tag=!named] ~ ~ ~ tag @s add named"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.sticky": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.mission.sticky.sticky_pickup @a[r=8]",
+                    "/clear @p cyd:slingshot 0 1",
+                    "/give @p cyd:slingshot 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.shrink": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.mission.moon.shrink_pickup @a[r=8]",
+                    "/clear @p cyd:shrinkray 0 1",
+                    "/give @p cyd:shrinkray 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.jam": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.mission.moon.jelly_pickup @a[r=8]",
+                    "/clear @p cyd:jamgun 0 1",
+                    "/give @p cyd:jamgun 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.nunchuck": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.mission.kun.pickup @a[r=8]",
+                    "/clear @p cyd:chi_nunchuk 0 1",
+                    "/give @p cyd:chi_nunchuk 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.cheese": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.mission.bank.cheese_pickup @a[r=8]",
+                    "/clear @p cyd:cheesegun 0 1",
+                    "/give @p cyd:cheesegun 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.fart": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.generic.fart_pickup @a[r=8]",
+                    "/clear @p cyd:fartgrenade 0 1",
+                    "/give @p cyd:fartgrenade 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.lair.interact_prop": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/interact_msg"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.map.interact_prop": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/map_interact_msg"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.telepor.moon": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/moon_tp"
+                ]
+            },
+            "animation_length": 0.12
+        },
+        "animation.telepor.trap_moon": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/trap_moon_tp"
+                ]
+            },
+            "animation_length": 0.12
+        },
+        "animation.villain_points_5_trashcan": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.trash_can_trigger @a[r=20]",
+                    "/function playerbase/villain_points_5",
+                    "/event entity @s evt:sid_2"
+                ]
+            },
+            "animation_length": 1
+        },
+        "animation.villain_points_5_pot": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/villain_points_5",
+                    "/event entity @s evt:sid_2",
+                    "/playsound cyd.world.pot.break @a[r=20]"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.villain_points_15_lockbox": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/villain_points_15",
+                    "/event entity @s evt:var_1",
+                    "/playsound cyd.mission.bank.deposit_box_open @a[r=20]"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.villain_points_10_ruin": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/villain_points_10",
+                    "/event entity @s evt:sid_2"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.villain_points_15_stall": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function playerbase/villain_points_15",
+                    "/event entity @s evt:var_1",
+                    "/playsound cyd.mission.race.stall @a[r=20]"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.villain_points_banana": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!used] ~ ~ ~ execute @p[r=1] ~ ~ ~ execute @s[tag=!dev] ~ ~ ~ /function playerbase/villain_points_banana",
+                    "/execute @p[r=1] ~ ~ ~ execute @s[tag=!dev] ~ ~ ~ /event entity @e[type=cyd:banana,c=1,r=1] evt:despawn"
+                ]
+            },
+            "animation_length": 0.1
+        },
+        "animation.villain_points_banana_event": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function banana/event"
+                ],
+                "5.0": [
+                    "/function banana/spawn",
+                    "/function banana/timer"
+                ],
+                "6.0": [
+                    "/function banana/timer"
+                ],
+                "7.0": [
+                    "/function banana/timer"
+                ],
+                "8.0": [
+                    "/function banana/timer"
+                ],
+                "9.0": [
+                    "/function banana/timer"
+                ],
+                "10.0": [
+                    "/function banana/timer"
+                ],
+                "11.0": [
+                    "/function banana/timer"
+                ],
+                "12.0": [
+                    "/function banana/timer"
+                ],
+                "13.0": [
+                    "/function banana/timer"
+                ],
+                "14.0": [
+                    "/function banana/timer"
+                ],
+                "15.0": [
+                    "/function banana/timer"
+                ],
+                "16.0": [
+                    "/function banana/timer"
+                ],
+                "17.0": [
+                    "/function banana/timer"
+                ],
+                "18.0": [
+                    "/function banana/timer"
+                ],
+                "19.0": [
+                    "/function banana/timer"
+                ],
+                "20.0": [
+                    "/function banana/timer"
+                ],
+                "21.0": [
+                    "/function banana/timer"
+                ],
+                "22.0": [
+                    "/function banana/timer"
+                ],
+                "23.0": [
+                    "/function banana/timer"
+                ],
+                "24.0": [
+                    "/function banana/timer"
+                ],
+                "25.0": [
+                    "/function banana/timer"
+                ],
+                "26.0": [
+                    "/function banana/timer"
+                ],
+                "27.0": [
+                    "/function banana/timer"
+                ],
+                "28.0": [
+                    "/function banana/timer"
+                ],
+                "29.0": [
+                    "/function banana/timer"
+                ],
+                "30.0": [
+                    "/function banana/timer"
+                ],
+                "31.0": [
+                    "/function banana/timer"
+                ],
+                "32.0": [
+                    "/function banana/timer"
+                ],
+                "33.0": [
+                    "/function banana/timer"
+                ],
+                "34.0": [
+                    "/function banana/timer"
+                ],
+                "35.0": [
+                    "/function banana/timer"
+                ],
+                "36.0": [
+                    "/function banana/timer"
+                ],
+                "37.0": [
+                    "/function banana/timer"
+                ],
+                "38.0": [
+                    "/function banana/timer"
+                ],
+                "39.0": [
+                    "/function banana/timer"
+                ],
+                "40.0": [
+                    "/function banana/timer"
+                ],
+                "41.0": [
+                    "/function banana/timer"
+                ],
+                "42.0": [
+                    "/function banana/timer"
+                ],
+                "43.0": [
+                    "/function banana/timer"
+                ],
+                "44.0": [
+                    "/function banana/timer"
+                ],
+                "45.0": [
+                    "/function banana/timer"
+                ],
+                "46.0": [
+                    "/function banana/timer"
+                ],
+                "47.0": [
+                    "/function banana/timer"
+                ],
+                "48.0": [
+                    "/function banana/timer"
+                ],
+                "49.0": [
+                    "/function banana/timer"
+                ],
+                "50.0": [
+                    "/function banana/timer",
+                    "/function banana/victory"
+                ],
+                "51.0": [
+                    "/tag @s remove used"
+                ]
+            },
+            "animation_length": 60
+        },
+        "animation.aloha_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Aloha Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.beach_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Beach Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.builder_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Builder Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.dj_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Rollerskates Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.firefighter_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Firefighter Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.flashlight_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Flashlight Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.glowing_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Glowstick Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.golf_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Golf Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.knight_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Knight Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.kungfu_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Kungfu Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.magician_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Magician Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.maid_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Maid Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.minecraft_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Minecraft Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mutant_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Mutant Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.tourist_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Tourist Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.tuba_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Tuba Costume\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.dragon_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Dragon Medallion\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.vp_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"VNC Trophy\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.sights_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Sightseeing Trophy\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.moon_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Moonstone\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.mona_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Mona Lisa\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.collector_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Collector Trophy\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.banana_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Banana Trophy\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.chain_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Belle's Chain\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.cert_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Villain Certificate\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.belt_trophy_name": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/execute @s[tag=!label] ~ ~ ~ summon cyd:minion_name \"Black Belt\"",
+                    "/tag @s[tag=!label] add label"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.aloha": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_aloha 0 1",
+                    "/give @p cyd:costume_aloha 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.beach": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_beach 0 1",
+                    "/give @p cyd:costume_beach 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.builder": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_builder 0 1",
+                    "/give @p cyd:costume_builder 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.dj": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_dj 0 1",
+                    "/give @p cyd:costume_dj 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.firefighter": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_firefighter 0 1",
+                    "/give @p cyd:costume_firefighter 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.flashlight": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_flashlight 0 1",
+                    "/give @p cyd:costume_flashlight 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.glowing": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_glowing 0 1",
+                    "/give @p cyd:costume_glowing 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.golf": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_golf 0 1",
+                    "/give @p cyd:costume_golf 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.knight": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_knight 0 1",
+                    "/give @p cyd:costume_knight 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.kungfu": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_kungfu 0 1",
+                    "/give @p cyd:costume_kungfu 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.magician": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_magician 0 1",
+                    "/give @p cyd:costume_magician 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.maid": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_maid 0 1",
+                    "/give @p cyd:costume_maid 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.minecraft": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_minecraft 0 1",
+                    "/give @p cyd:costume_minecraft 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.mutant": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_mutant 0 1",
+                    "/give @p cyd:costume_mutant 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.tourist": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_tourist 0 1",
+                    "/give @p cyd:costume_tourist 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.give.tuba": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.take_costume_from_statue @a[r=8]",
+                    "/clear @p cyd:costume_tuba 0 1",
+                    "/give @p cyd:costume_tuba 1",
+                    "/event entity @s evt:reset_give"
+                ]
+            },
+            "animation_length": 0.2
+        }
+    }
+}

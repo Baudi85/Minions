@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"geometry.missile_projectile": {
+		"texturewidth": 80,
+		"textureheight": 80,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 8.75,
+		"visible_bounds_offset": [0, 1.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_front",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_middle",
+				"parent": "all_front",
+				"pivot": [0, 0, 14]
+			},
+			{
+				"name": "all_back",
+				"parent": "all_middle",
+				"pivot": [0, 0, 27]
+			},
+			{
+				"name": "missile_projectile",
+				"parent": "all_back",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-5, -5, 2], "size": [10, 10, 11], "uv": [0, 0]},
+					{"origin": [-3.5, -3.5, 1], "size": [7, 7, 13], "uv": [0, 21]},
+					{"origin": [0, -3.5, 0], "size": [0, 7, 1], "uv": [0, 0]},
+					{"origin": [-3.5, 0, 0], "size": [7, 0, 1], "uv": [26, 21]},
+					{"origin": [-1, -1, 14], "size": [2, 2, 13], "uv": [27, 28]}
+				]
+			},
+			{
+				"name": "missile_fins_a",
+				"parent": "missile_projectile",
+				"pivot": [0, 0, 24],
+				"rotation": [0, 0, 45],
+				"cubes": [
+					{"origin": [-5.5, 0, 23], "size": [11, 0, 8], "uv": [23, 0]},
+					{"origin": [-11.5, 0, 9], "size": [23, 0, 4], "uv": [23, 23]}
+				]
+			},
+			{
+				"name": "missile_fins_b",
+				"parent": "missile_projectile",
+				"pivot": [0, 0, 24],
+				"rotation": [0, 0, 135],
+				"cubes": [
+					{"origin": [-5.5, 0, 23], "size": [11, 0, 8], "uv": [23, 0]},
+					{"origin": [-11.5, 0, 9], "size": [23, 0, 4], "uv": [23, 23]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:sticky_box_large_8",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/sticky_box_large"
+      },
+      "geometry": {
+        "default": "geometry.sticky_box_large"
+      },
+      "particle_effects": {
+        "box_dust": "cyd:box_dust",
+        "box_break": "cyd:box_destroy"
+      },
+      "animations": {
+        "trigger": "animation.sticky_box_large.trigger_8blocks",
+        "idle_ground": "animation.sticky_box_large.trigger",
+        "spawn": "animation.sticky_box_large.spawn",
+        "ctrl":"controller.animation.rp.sticky_box_lg"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:airport_tp",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            },
+            "animations": {
+                "ctrl": "controller.animation.trigger.airport_tp",
+                "one":"animation.world.airport_tp_one",
+                "two":"animation.world.airport_tp_two"
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.0,
+                "height": 0.0
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "no_stick",
+                    "airport_tp"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {},
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 10
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "one"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 10
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "two"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 11
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_0"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"geometry.mission_progress": {
+		"texturewidth": 240,
+		"textureheight": 240,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 11.75,
+		"visible_bounds_offset": [0, 3.125, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 114, 0]
+			},
+			{
+				"name": "mission_progress",
+				"parent": "all",
+				"pivot": [0, 112, 0],
+				"cubes": [
+					{"origin": [-56, 104, -0.5], "size": [112, 16, 1], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "progress_bar",
+				"parent": "mission_progress",
+				"pivot": [-53, 112, 0],
+				"cubes": [
+					{"origin": [-56, 104, 0], "size": [112, 16, 0], "uv": [0, 17]}
+				]
+			},
+			{
+				"name": "mission_sign",
+				"parent": "mission_progress",
+				"pivot": [0, 126, 0],
+				"cubes": [
+					{"origin": [-36, 121, -0.5], "size": [72, 10, 1], "uv": [0, 33]}
+				]
+			},
+			{
+				"name": "mission_icon_1",
+				"parent": "mission_progress",
+				"pivot": [-42, 112, -1],
+				"cubes": [
+					{"origin": [-50, 104, -1], "size": [16, 16, 0], "uv": [64, 44]}
+				]
+			},
+			{
+				"name": "mission_icon_2",
+				"parent": "mission_progress",
+				"pivot": [-21, 112, -1],
+				"cubes": [
+					{"origin": [-29, 104, -1], "size": [16, 16, 0], "uv": [0, 60]}
+				]
+			},
+			{
+				"name": "mission_icon_3",
+				"parent": "mission_progress",
+				"pivot": [0, 112, -1],
+				"cubes": [
+					{"origin": [-8, 104, -1], "size": [16, 16, 0], "uv": [32, 60]}
+				]
+			},
+			{
+				"name": "mission_icon_4",
+				"parent": "mission_progress",
+				"pivot": [21, 112, -1],
+				"cubes": [
+					{"origin": [13, 104, -1], "size": [16, 16, 0], "uv": [32, 44]}
+				]
+			},
+			{
+				"name": "mission_icon_5",
+				"parent": "mission_progress",
+				"pivot": [42, 112, -1],
+				"cubes": [
+					{"origin": [34, 104, -1], "size": [16, 16, 0], "uv": [0, 44]}
+				]
+			}
+		]
+	}
+}

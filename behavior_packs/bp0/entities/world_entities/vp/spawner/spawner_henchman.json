@@ -1,0 +1,173 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:spawner_raid_henchman",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:bat",
+      "animations": {
+        "ctrl_spawner": "controller.animation.cyd.raids",
+        "raid1": "animation.cyd.raid1",
+        "raid2": "animation.cyd.raid2",
+        "raid3": "animation.cyd.raid3",
+        "raid4": "animation.cyd.raid4"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl_spawner"
+        ]
+      }
+    },
+    "component_groups": {
+      "cyd:despawn":{
+          "minecraft:instant_despawn":{}
+      },
+      "cyd:sid_0": {
+          "minecraft:skin_id": {
+              "value": 0
+          }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+            "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 21,
+          "time_down_event": {
+            "event": "evt:sid_0"
+          }
+        }
+    },
+      "cyd:sid_2": {
+          "minecraft:skin_id": {
+              "value": 2
+          },
+          "minecraft:timer": {
+              "looping": false,
+              "time": 500,
+              "time_down_event": {
+                "event": "evt:sid_0"
+              }
+            }
+        }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": [
+          "prop",
+          "system"
+        ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+            {
+                "filters": {
+                    "all_of": [
+                        {
+                            "test": "distance_to_nearest_player",
+                            "operator": "<=",
+                            "value": 15
+                        },
+                        {
+                            "test": "is_skin_id",
+                            "operator": "not",
+                            "value": 1
+                        },
+                        {
+                          "test": "is_skin_id",
+                          "operator": "not",
+                          "value": 2
+                      }
+                    ]
+                },
+                "event": "evt:sid_1"
+            }
+        ]
+    },
+      "minecraft:health": {
+        "value": 200,
+        "max": 200
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:timer": {
+        "time": 1,
+        "looping": true,
+        "time_down_event": {
+          "event": "cyd:spawner",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "evt:sid_0": {
+        "add": {
+            "component_groups": [
+                "cyd:sid_0"
+            ]
+        },
+        "remove": {
+            "component_groups": [
+                "cyd:sid_1",
+                "cyd:sid_2"
+            ]
+        }
+    },
+    "evt:sid_1": {
+        "add": {
+            "component_groups": [
+                "cyd:sid_1"
+            ]
+        },
+        "remove": {
+            "component_groups": [
+                "cyd:sid_0",
+                "cyd:sid_2"
+            ]
+        }
+      },
+      "evt:sid_2": {
+        "add": {
+            "component_groups": [
+                "cyd:sid_2"
+            ]
+        },
+        "remove": {
+            "component_groups": [
+                "cyd:sid_0",
+                "cyd:sid_1"
+            ]
+        }
+      }
+    }
+  }
+}

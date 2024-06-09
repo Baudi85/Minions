@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_belle_outro",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_belle_bottom"
+      },
+      "geometry": {
+        "default": "geometry.showdown_belle_bottom"
+      },
+      "particle_effects": {
+        "flame_chain": "cyd:fire_chain"
+      },
+      "sound_effects": {
+        "attack1": "cyd.mission.showdown.belle.attack",
+        "attack2": "cyd.mission.showdown.belle.flame",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "breath": "animation.showdown_belle_bottom.breath",
+        "idle": "animation.showdown_belle_bottom.idle",
+        "walk": "animation.showdown_belle_bottom.walk",
+        "attack1": "animation.showdown_belle_bottom.attack1",
+        "attack2": "animation.showdown_belle_bottom.attack2",
+        "flame": "animation.showdown_belle_bottom.flame_buff",
+        "flamepat": "animation.showdown_belle_bottom.flame_particles",
+        "stun": "animation.showdown_belle_bottom.stunned",
+        "bind": "animation.showdown_belle_bottom.bind",
+        "defeated": "animation.showdown_belle_bottom.defeated",
+        "intro": "animation.showdown_belle_bottom.intro",
+        "outro": "animation.showdown_belle_bottom.outro",
+        "mission_intro": "animation.showdown_belle_bottom.mission_intro",
+        "ctrl": "controller.animation.showdown.belle",
+        "walk_ctrl": "controller.animation.showdown.movement",
+        "flame_ctrl": "controller.animation.showdown.fire"
+      },
+      "scripts": {
+        "animate": [
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

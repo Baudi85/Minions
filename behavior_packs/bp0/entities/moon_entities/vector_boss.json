@@ -1,0 +1,250 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:vector_boss",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:cow",
+            "animations": {
+                "atk_ctrl": "controller.animation.trigger.vector.attacks",
+                "timer_1": "animation.vector.timer_1",
+                "timer_2": "animation.vector.timer_2",
+                "stuck": "animation.dragon.stuck",
+                "vector_end": "animation.dialogue.vector_end",
+                "minion_release": "controller.animation.trigger.vector.minion_release",
+                "text_ctrl":"controller.animation.trigger.bratt_vector.atk_text",
+                "text":"animation.vector.atk_text"
+            },
+            "scripts": {
+                "animate": [
+                    "atk_ctrl",
+                    "stuck",
+                    "minion_release",
+                    "text_ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:normal_atk": {
+                "minecraft:behavior.ranged_attack": {
+                    "attack_interval_min": 1,
+                    "attack_interval_max": 1,
+                    "charge_shoot_trigger": 1,
+                    "charge_charged_trigger": 0.1,
+                    "attack_radius": 25
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:burst_atk": {
+                "minecraft:behavior.ranged_attack": {
+                    "burst_shots": 3,
+                    "burst_interval": 0.3,
+                    "charge_charged_trigger": 0.0,
+                    "charge_shoot_trigger": 1.0,
+                    "attack_interval_min": 3.0,
+                    "attack_interval_max": 5.0,
+                    "attack_radius": 10.0
+                },
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:movement": {
+                    "value": 0
+                },
+                "minecraft:boss": {
+                  "hud_range": 0,
+                  "name": "Vector"
+                },
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 20.5,
+                    "time_down_event": {
+                        "event": "evt:despawn"
+                    }
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:bossbar": {
+              "minecraft:boss": {
+                "hud_range": 120,
+                "name": "Vector"
+              }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "human",
+                    "vector_boss",
+                    "reflect",
+                    "stick"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 2.5,
+                "height": 2.5
+            },
+            "minecraft:follow_range": {
+                "value": 90
+            },
+            "minecraft:behavior.move_towards_target": {
+                "within_radius": 0
+            },
+            "minecraft:movement": {
+              "value": 0.03
+            },
+            "minecraft:navigation.float": {
+              "can_path_over_water": true
+            },
+            "minecraft:behavior.float_wander": {
+              "priority": 2,
+              "xz_dist":5,
+              "y_dist":1,
+              "must_reach": true
+            },
+            "minecraft:can_fly": {
+            },
+            "minecraft:jump.static": {
+            },
+            "minecraft:behavior.float": {
+              "priority": 0
+            },
+            "minecraft:can_climb": {},
+            "minecraft:health": {
+                "value": 60,
+                "max": 60
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": true
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:shooter": {
+                "def": "cyd:vector_rocket"
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 8,
+                "look_distance": 35,
+                "probability": 0.02
+            },
+            "minecraft:damage_sensor": {
+              "triggers": [
+                {
+                  "on_damage": {
+                    "filters": {
+                      "test": "has_damage",
+                      "subject": "self",
+                      "value": "fatal"
+                    },
+                    "event": "evt:sid_1"
+                  },
+                  "deals_damage": false
+                }
+              ]
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 9
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": false,
+                "reselect_targets": true,
+                "within_radius": 50.0,
+                "must_see_forget_duration": 17.0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 15
+                    }
+                ]
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "cyd:normal_atk",
+                        "cyd:bossbar"
+                    ]
+                }
+            },
+            "evt:burst_atk": {
+                "add": {
+                    "component_groups": [
+                        "cyd:burst_atk"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:normal_atk"
+                    ]
+                }
+            },
+            "evt:normal_atk": {
+                "add": {
+                    "component_groups": [
+                        "cyd:normal_atk"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:burst_atk"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:burst_atk",
+                        "cyd:normal_atk",
+                        "cyd:bossbar"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

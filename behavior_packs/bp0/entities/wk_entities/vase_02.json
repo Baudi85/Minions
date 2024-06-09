@@ -1,0 +1,328 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:vase_02",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "ctrl": "controller.animation.item_givers2.start",
+                "give": "animation.trigger.give.keycard",
+                "give2": "animation.trigger.give.keycard2",
+                "prox_ctrl": "controller.animation.prop.prox_msg",
+                "prox_msg": "animation.bank.interact_prop"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl",
+                    "prox_ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                },
+                "minecraft:collision_box": {
+                    "width": 0.5,
+                    "height": 1
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:ignited":{
+                "minecraft:is_ignited":{}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger",
+                    "vase"
+                ]
+            },
+            "minecraft:physics":{},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "action.interact.inspect",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": "selected"
+                                    },
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": "selected2"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_1"
+                        }
+                    },
+                    {
+                        "interact_text": "action.interact.inspect",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": "selected"
+                                    },
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": "selected2"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 2
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_2"
+                        }
+                    },
+                    {
+                        "interact_text": "action.interact.inspect",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": "selected2"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 3
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_3"
+                        }
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 5
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 6
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_ignite"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:rm_ignite": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            }
+        }
+    }
+}

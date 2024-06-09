@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_cheer_prop",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/minion_cheering"
+      },
+      "geometry": {
+        "default": "geometry.minion_cheering"
+      },
+      "sound_effects": {
+        "cheer": "cyd.minion.cheer"
+      },
+      "animations": {
+        "breath": "animation.minion_cheering.breath",
+        "idle1": "animation.minion_cheering.idle1",
+        "idle2": "animation.minion_cheering.idle2",
+        "idle3": "animation.minion_cheering.idle3",
+        "idle4": "animation.minion_cheering.idle4",
+        "crl": "controller.animation.showdown.cheer"
+      },
+      "scripts": {
+        "animate": [
+          "breath",
+          "crl"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.random_eye"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.headlights.illuminate": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function vehicles/headlights"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.belle_bike.crash": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function vehicles/belle_bike_crash_v2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.cyd.gru_car.crash": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function vehicles/gru_car_crash"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.belle_car.crash": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function vehicles/belle_car_crash"
+      },
+      "animation_length": 0.2
+    },
+    "animation.cyd.belle_bike.step_up_speed": {
+      "loop": false,
+      "timeline": {
+        "2.5": "/event entity @s evt:speed_2",
+        "5.0": "/event entity @s evt:speed_3",
+        "7.5": "/event entity @s evt:speed_4"
+      },
+      "animation_length": 8
+    },
+    "animation.cyd.gru_seats": {
+      "loop": true,
+      "timeline": {
+        "0.1": "/execute @e[type=cyd:gru_bike] ~ ~3 ~ execute @a[r=2] ~ ~ ~ effect @s invisibility 2 255 true"
+      },
+      "animation_length": 1
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:mission_progress_bar",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/mission_progress"
+      },
+      "geometry": {
+        "default": "geometry.mission_progress"
+      },
+      "scripts": {
+          "animate": [
+              "static_ctrl"
+          ]
+      },
+      "animations": {
+          "static_ctrl": "controller.animation.rp.mission_progress",
+          "not_started":"animation.mission_progress.not_started",
+          "m1":"animation.mission_progress.m1",
+          "m2":"animation.mission_progress.m2",
+          "m3":"animation.mission_progress.m3",
+          "m4":"animation.mission_progress.m4",
+          "m5":"animation.mission_progress.m5",
+          "complete":"animation.mission_progress.completed"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

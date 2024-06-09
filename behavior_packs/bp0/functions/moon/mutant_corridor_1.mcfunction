@@ -1,0 +1,12 @@
+summon cyd:moon_mutant_minion 38 31 1982
+summon cyd:moon_mutant_minion 42 31 1975
+summon cyd:moon_mutant_minion 35 31 1977
+summon cyd:moon_mutant_minion 39 31 1970
+summon cyd:moon_mutant_minion 31 31 1972
+summon cyd:moon_mutant_minion 34 31 1963
+summon cyd:moon_mutant_minion 28 31 1969
+summon cyd:moon_mutant_minion 31 31 1963
+summon cyd:moon_mutant_minion 23 31 1966
+summon cyd:moon_mutant_minion 28 31 1958
+summon cyd:moon_mutant_minion 21 31 1963
+summon cyd:moon_mutant_minion 23 31 1958

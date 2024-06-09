@@ -1,0 +1,19 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:chi_nunchuk"
+    },
+    "components": {
+      "minecraft:use_duration": 0,
+      "minecraft:max_stack_size": 1,
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation_modifier": "low",
+        "cooldown_type": "chorusfruit",
+        "cooldown_time": 25,
+        "can_always_eat": true
+      }
+    }
+  }
+}

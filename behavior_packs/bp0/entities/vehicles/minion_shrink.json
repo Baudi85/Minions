@@ -1,0 +1,93 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:minion_shrink",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:jump.static": {},
+      "minecraft:type_family": {
+        "family": [
+          "vehicle"
+        ]
+      },
+      "minecraft:behavior.float": {},
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "on_damage": {}
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:can_climb": {},
+      "minecraft:rideable": {
+        "interact_text": "action.interact.ride.minecart",
+        "seat_count": 1,
+        "seats": [
+          {
+            "position": [
+              0,
+              -0.5,
+              0
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 1
+          }
+        ]
+      },
+      "minecraft:can_power_jump": {},
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.5,
+          "range_max": 0.5
+        }
+      }
+    },
+    "events": {
+      "evt:ignited": {
+        "add": {
+          "component_groups": [
+            "cyd:ignited"
+          ]
+        }
+      },
+      "evt:rm_ignited": {
+        "remove": {
+          "component_groups": [
+            "cyd:ignited"
+          ]
+        }
+      }
+    }
+  }
+}

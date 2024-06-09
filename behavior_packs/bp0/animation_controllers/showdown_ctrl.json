@@ -1,0 +1,120 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.showdown.start": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 1"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "start"
+        ],
+          "transitions": [
+            {
+              "default": "query.skin_id == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.charge": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "charge": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "charge": {
+          "animations": [
+            "charge",
+            "chargeface",
+            "hint"
+        ],
+        "on_exit": [
+          "/tag @s remove fallenover",
+          "/tag @a add chibuildup"
+        ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.slow": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "slow": "query.mark_variant == 1"
+            },
+            {
+              "slow": "query.mark_variant == 2"
+            }
+          ]
+        },
+        "slow": {
+          "animations": [
+            "slow"
+        ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.cheesed": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ]
+        },
+        "cheese": {
+          "animations": [
+            "cheesed",
+            "cheesedani"
+        ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.death.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sound": "!query.is_alive"
+            }
+          ]
+        },
+        "sound": {
+          "on_entry": [
+            "/playsound cyd.mission.sticky.mission_failed @s[tag=showdown]"
+          ],
+          "transitions": [
+            {
+              "default": "query.is_alive"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:cheese_impact",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gadgets/cheese_puddle_frame_01",
+        "texture_1": "textures/entity/gadgets/cheese_puddle_frame_02",
+        "texture_2": "textures/entity/gadgets/cheese_puddle_frame_03"
+      },
+      "geometry": {
+        "default": "geometry.cheese_puddle"
+      },
+      "particle_effects": {
+        "particle": "cyd:cheese_impact"
+      },
+      "scripts": {
+        "animate": [
+          "impact",
+          "particle_anim"
+        ]
+      },
+      "animations": {
+        "impact": "animation.cheese_puddle.impact",
+        "particle_anim": "animation.fart.particle"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.cheese_puddle"
+      ]
+    }
+  }
+}

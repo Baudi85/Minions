@@ -1,0 +1,786 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.coords.wk.prox": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/dialogue/wk/prompt.proximity"
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.intro": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_0_1",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/cutscene/wk/scene_m4_01",
+          "/title @a title §2"
+        ],
+        "6.0": [
+          "/function missions/dialogue/wk/wild_knuckles_0_2"
+        ],
+        "12.0": [
+          "/function missions/dialogue/wk/wild_knuckles_0_3"
+        ],
+        "18.0": [
+          "/function missions/dialogue/wk/wild_knuckles_0_4"
+        ],
+        "24.0": [
+          "/function missions/dialogue/wk/wild_knuckles_1"
+        ],
+        "30.0": [
+          "/function missions/dialogue/wk/wild_knuckles_2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/cutscene/wk/scene_m4_02"
+        ],
+        "36.0": [
+          "/function missions/dialogue/wk/wild_knuckles_3",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/cutscene/wk/scene_m4_03"
+        ],
+        "42.0": [
+          "/function missions/dialogue/wk/wild_knuckles_6_2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/cutscene/wk/scene_m4_06"
+        ],
+        "48.0": [
+          "/function playerbase/objectives/m4_2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function missions/cutscene/wk/scene_m4_complete_1",
+          "/title @a title §1"
+        ]
+      },
+      "animation_length": 48.1
+    },
+    "animation.wild_knuckles.distraction": {
+      "loop": false,
+      "timeline": {
+        "6.0": [
+          "/function missions/dialogue/wk/wild_knuckles_7"
+        ],
+        "10.0": [
+          "/function missions/dialogue/wk/wild_knuckles_8"
+        ],
+        "14.0": [
+          "/function missions/dialogue/wk/wild_knuckles_9"
+        ],
+        "18.0": [
+          "/function missions/dialogue/wk/wild_knuckles_10"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.1": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_11",
+          "/function playerbase/objectives/m4_3"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_12"
+        ],
+        "8.0": [
+          "/function missions/dialogue/wk/wild_knuckles_13"
+        ],
+        "12.0": [
+          "/function missions/dialogue/wk/wild_knuckles_14"
+        ],
+        "16.0": [
+          "/function missions/dialogue/wk/wild_knuckles_15"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.2": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_21",
+          "/function playerbase/objectives/m4_5"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.3": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_26",
+          "/function playerbase/objectives/m4_8",
+          "/fill -107 16 1689 -107 18 1686 air"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.cheesegun_hint": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/cheesegun_hint"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.continue.4": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_27",
+          "/function playerbase/objectives/m4_9"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_28"
+        ],
+        "8.0": [
+          "/function missions/dialogue/wk/wild_knuckles_29"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.5": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_37",
+          "/function playerbase/objectives/m4_11"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.6": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_38",
+          "/clear @a cyd:drill 0 1",
+          "/clear @a cyd:disguise 0 1"
+        ],
+        "2.8": [
+          "/effect @s invisibility 100 255 true",
+          "/tp @a -120 28 1640 facing -125 28.2 1635.95"
+        ],
+        "3.0": [
+          "/function missions/dialogue/wk/wild_knuckles_39",
+          "/playanimation @e[type=cyd:safe_door_2,c=1] cutscene",
+          "/function playerbase/objectives/m4_12"
+        ],
+        "5.0": [
+          "/execute @e[type=cyd:safe_door_2] ~ ~ ~ playsound cyd.mission.bank.wk_drill @a[r=20]",
+          "/execute @e[x=-124.5,y=31.50,z=1581.50,r=1,c=1] ~ ~ ~ kill @e[type=cyd:item_godrays,c=1]",
+          "/summon cyd:item_godrays -124.50 31.50 1581.50"
+        ],
+        "11.0": [
+          "/tp @s -127 28 1640",
+          "/effect @s clear",
+          "/function missions/dialogue/wk/wild_knuckles_40",
+          "/event entity @e[type=cyd:safe_door_2] evt:sid_1"
+        ],
+        "15.0": [
+          "/function missions/dialogue/wk/wild_knuckles_41"
+        ],
+        "18.0": [
+          "/function missions/dialogue/wk/wild_knuckles_42"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.7": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_43"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_44"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.continue.8": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tickingarea add circle -102 89 1659 1 tempwk",
+          "/event entity @e[type=cyd:mona_lisa] evt:sid_0",
+          "/stopsound @a cyd.mission.bank.alarm",
+          "/tp @s -40 129 2004 facing -37 129 2002",
+          "/tp @a -37 129 2002 facing @e[type=cyd:wild_knuckles]",
+          "/function missions/dialogue/wk/wild_knuckles_45"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_46"
+        ],
+        "8.0": [
+          "/function missions/dialogue/wk/wild_knuckles_47"
+        ],
+        "12.0": [
+          "/function missions/dialogue/wk/wild_knuckles_48"
+        ],
+        "16.0": [
+          "/function missions/dialogue/wk/wild_knuckles_49"
+        ],
+        "20.0": [
+          "/tag @e[type=cyd:trigger_wk_system] remove start_wk",
+          "/tag @e[type=cyd:trigger_wk_system] add end_wk"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.hint.1": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_16"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_17",
+          "/function missions/dialogue/wk/wild_knuckles_18",
+          "/function missions/dialogue/wk/wild_knuckles_19",
+          "/function playerbase/objectives/m4_4"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.hint.2": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_22"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_23",
+          "/function missions/dialogue/wk/wild_knuckles_24",
+          "/function missions/dialogue/wk/wild_knuckles_25",
+          "/function playerbase/objectives/m4_6"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.hint.3": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_30",
+          "/function playerbase/objectives/m4_10"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_31",
+          "/function missions/dialogue/wk/wild_knuckles_32"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.hint.4": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/wild_knuckles_33"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/wild_knuckles_34",
+          "/function missions/dialogue/wk/wild_knuckles_35",
+          "/function missions/dialogue/wk/wild_knuckles_36"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.wild_knuckles.hint_trigger.1": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-163,y=16,z=1701,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_4"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.finish": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-125,y=16,z=1718,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles,tag=mona] evt:sid_14"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.hint_trigger.2": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-163,y=16,z=1673,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_6"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.hint_trigger.3": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-82,y=9,z=1682,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles] evt:sid_9"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.wild_knuckles.hint_trigger.4": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ execute @p[x=-71,y=9,z=1670,r=5] ~ ~ ~ event entity @e[type=cyd:wild_knuckles,tag=disguise] evt:sid_10"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.bot.detect": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_bot_detection"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.detect": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.new.detect": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_V2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.detect_short": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_short"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.detect_left": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_left"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.detect_left_2": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_leftV2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.timer": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/event entity @s evt:var_1"
+        ],
+        "5.0": [
+          "/event entity @s evt:var_2"
+        ]
+      },
+      "animation_length": 10
+    },
+    "animation.trigger.guard.path.rotate.timer_2": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/event entity @s evt:var_1"
+        ],
+        "5.0": [
+          "/event entity @s evt:var_2"
+        ],
+        "10.0": [
+          "/event entity @s evt:var_3"
+        ]
+      },
+      "animation_length": 15
+    },
+    "animation.trigger.guard.path.rotate.detect_right": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_right"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.guard.path.rotate.detect_right_2": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function wk/security_guard_detection_rightV2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.drill": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @s[tag=!drill] ~ ~ ~ give @p cyd:drill",
+          "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
+          "/tag @e[type=cyd:wild_knuckles] add drill",
+          "/tag @s add drill"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.mona": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/give @p cyd:monalisa",
+          "/kill @e[type=cyd:employee_perkins]",
+          "/execute @e[type=cyd:wk_guard_1_short,x=-109,y=16,z=1687] ~ ~ ~ kill @s",
+          "/function playerbase/objectives/m4_13",
+          "/kill @e[type=cyd:wk_security_bot,c=2]",
+          "/event entity @e[family=laser] evt:mv_0",
+          "/tag @e[type=cyd:wild_knuckles] add mona",
+          "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
+          "/event entity @e[type=cyd:item_godrays,c=1] evt:despawn",
+          "/tp @e[type=cyd:wild_knuckles] -125 16 1738 facing -125 15 1736",
+          "/function wk/swarm_summon"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.key": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/give @p cyd:perkins_key"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.keycard": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/give @p cyd:key_card",
+          "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
+          "/tag @e[type=cyd:wild_knuckles] add key1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.keycard2": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/give @p cyd:key_card2",
+          "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
+          "/tag @e[type=cyd:wild_knuckles] add key2",
+          "/function playerbase/objectives/m4_7"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.give.disguise": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @s[tag=!disguise] ~ ~ ~ give @p cyd:disguise",
+          "/playsound cyd.mission.sticky.mission_item_received @a[r=8]",
+          "/tag @e[type=cyd:wild_knuckles] add disguise",
+          "/tag @s add disguise"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.perkins_key.item": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/perkins_key"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.alarm.loop": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.alarm @a"
+        ]
+      },
+      "animation_length": 4.0
+    },
+    "animation.bank.diagonal.laser_tmr": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/scoreboard players add @s laser_diag 1",
+          "/scoreboard players set @s[scores={laser_diag=21}] laser_diag 1"
+        ]
+      },
+      "animation_length": 1.0
+    },
+    "animation.bank.diagonal.laser_snd": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.laser_loop @a[r=9]"
+        ]
+      },
+      "animation_length": 1.24
+    },
+    "animation.bank.diagonal.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_diagonal"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.vert_r1.laser_tmr": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/scoreboard players add @s laser_horiz 1",
+          "/scoreboard players set @s[scores={laser_horiz=4}] laser_horiz 1"
+        ]
+      },
+      "animation_length": 1.0
+    },
+    "animation.bank.vert_r1.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_vert_r1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.vert_r2.laser_tmr": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/scoreboard players add @s laser_horiz 1",
+          "/scoreboard players set @s[scores={laser_horiz=4}] laser_horiz 1"
+        ]
+      },
+      "animation_length": 1.0
+    },
+    "animation.bank.vert_r2.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_vert_r2"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.horiz_r1.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_horiz_r1"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.bank.horiz_r2.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_horiz_r2"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.bank.horiz.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_horiz"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.bank.vert.detection": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function wk/laser_vert"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.perkins.timer": {
+      "loop": false,
+      "timeline": {
+        "10.0": [
+          "/event entity @s evt:sid_0"
+        ]
+      },
+      "animation_length": 10.1
+    },
+    "animation.bank.box.sound": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.deposit_box_open @a[r=8]"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.bank.safe.open": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.safe_laser @a[r=8]",
+          "/execute @e[type=cyd:trigger_wk_system] ~ ~ ~ event entity @e[family=laser] evt:mv_1"
+        ],
+        "4.16": [
+          "/execute @s ~ ~ ~ fill ^1 ^1 ^ ^-1 ^3 ^ air 0 replace barrier"
+        ]
+      },
+      "animation_length": 5
+    },
+    "animation.bank.safe_cheese.open": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.safe_laser @a[r=8]"
+        ],
+        "4.16": [
+          "/execute @s ~ ~ ~ fill -165 18 1625 -162 20 1625 air 0 replace barrier"
+        ]
+      },
+      "animation_length": 5
+    },
+    "animation.bank.door_1.open": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.door_open @a[r=8]"
+        ],
+        "0.3": [
+          "/execute @s ~ ~ ~ fill -142 16 1687 -142 18 1688 air 0 replace barrier"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.bank.door_1.close": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.door_open @a[r=8]"
+        ],
+        "0.3": [
+          "/execute @s ~ ~ ~ fill -142 16 1687 -142 18 1688 barrier 0 replace air"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.bank.door_2.open": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.door_open @a[r=8]"
+        ],
+        "0.3": [
+          "/execute @s ~ ~ ~ fill -163 16 1677 -164 18 1677 air 0 replace barrier"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.bank.door_2.close": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.mission.bank.door_open @a[r=8]"
+        ],
+        "0.3": [
+          "/execute @s ~ ~ ~ fill -163 16 1677 -164 18 1677 barrier 0 replace air"
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.bank.toilet_wall.open": {
+      "loop": false,
+      "timeline": {
+        "2.65": [
+          "/execute @s ~ ~ ~ fill -124 16 1733 -126 20 1733 air 0 replace barrier",
+          "/playsound cyd.mission.bank.bank_eye_scanner_door @a[r=8]",
+          "/fill -107 16 1689 -107 18 1686 barrier"
+        ]
+      },
+      "animation_length": 3.0
+    },
+    "animation.bank.guard_timer": {
+      "loop": false,
+      "animation_length": 2.0
+    },
+    "animation.bank.robot_cheese": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/no_cheese_msg",
+          "/tag @s remove cheese"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.interact_prop": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/interact_msg"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bank.interact_mona": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/wk/interact_mona"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.lair.intermission": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function playerbase/objectives/m4_p2",
+          "/function missions/dialogue/wk/intermission_1"
+        ],
+        "4.0": [
+          "/function missions/dialogue/wk/intermission_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/wk/intermission_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/wk/intermission_4"
+        ],
+        "16.0": [
+          "/function missions/dialogue/wk/intermission_5"
+        ],
+        "20.0": [
+          "/function missions/dialogue/wk/intermission_6"
+        ],
+        "24.0": [
+          "/function missions/dialogue/wk/intermission_7"
+        ],
+        "28.0": [
+          "/function missions/dialogue/wk/intermission_8"
+        ],
+        "32.0": [
+          "/function missions/dialogue/wk/intermission_9"
+        ],
+        "36.0": [
+          "/function missions/dialogue/wk/intermission_10"
+        ],
+        "40.0": [
+          "/function playerbase/objectives/m4_p3",
+          "/function missions/dialogue/wk/intermission_11"
+        ]
+      },
+      "animation_length": 41.2
+    }
+  }
+}

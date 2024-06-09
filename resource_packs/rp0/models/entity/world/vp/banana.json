@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"geometry.banana": {
+		"texturewidth": 8,
+		"textureheight": 8,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "banana",
+				"parent": "all",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-4, 0, 0], "size": [8, 8, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

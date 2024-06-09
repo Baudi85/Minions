@@ -1,0 +1,200 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:minion_lair_standing",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "interact_ctrl"
+        ]
+      },
+      "animations": {
+        "interact_ctrl": "controller.animation.minion_interact",
+        "interact_timer": "animation.interact.done"
+      }
+    },
+    "component_groups": {
+      "cyd:sid_0": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:sid_2": {
+        "minecraft:skin_id": {
+          "value": 2
+        }
+      },
+      "cyd:var_0": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "cyd:var_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cyd:ignite": {
+        "minecraft:is_ignited": {}
+      },
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "event": "evt:ignite"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "event": "evt:ignite"
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [
+          "system",
+          "no_stick",
+          "prop"
+        ]
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "cyd:sid_1"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "cyd:sid_2"
+              ]
+            }
+          }
+        ]
+      },
+      "evt:sid_0": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_1",
+            "cyd:sid_2"
+          ]
+        }
+      },
+      "evt:sid_1": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0",
+            "cyd:sid_2"
+          ]
+        }
+      },
+      "evt:sid_2": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0",
+            "cyd:sid_1"
+          ]
+        }
+      },
+      "evt:var_0": {
+        "add": {
+          "component_groups": [
+            "cyd:var_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:var_1"
+          ]
+        }
+      },
+      "evt:var_1": {
+        "add": {
+          "component_groups": [
+            "cyd:var_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:var_0"
+          ]
+        }
+      },
+      "evt:ignite": {
+        "add": {
+          "component_groups": [
+            "cyd:ignite"
+          ]
+        }
+      },
+      "evt:rm_ignite": {
+        "remove": {
+          "component_groups": [
+            "cyd:ignite"
+          ]
+        }
+      }
+    }
+  }
+}

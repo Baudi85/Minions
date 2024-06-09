@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:stuart_cheesetest",
+      "materials": {
+        "default": "cyd_alpha",
+        "cheesed": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/stuart",
+        "cheesed": "textures/particles/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.stuart",
+        "cheesed": "geometry.stuart_cheesed"
+      },
+      "animations": {
+        "idle": "animation.stuart.idle"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "idle": "!query.is_powered"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cyd.notcheesed",
+        "controller.render.cyd.cheesed"
+      ]
+    }
+  }
+}

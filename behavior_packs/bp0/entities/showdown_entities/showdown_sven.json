@@ -1,0 +1,415 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:showdown_svengeance",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "slow_ctrl": "controller.animation.showdown.slow",
+        "cheesed_ctrl": "controller.animation.showdown.cheesed",
+        "slow": "animation.showdown.slow",
+        "cheesed": "animation.showdown.cheesed",
+        "cheesedani": "animation.showdown.cheesedani"
+      },
+      "scripts": {
+        "animate": [
+          "slow_ctrl",
+          "cheesed_ctrl"
+        ]
+      }
+    },
+    "component_groups": {
+      "cyd:point": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "spawn_entity": "cyd:nun_point",
+              "single_use": true,
+              "num_to_spawn": 1,
+              "should_leash": false
+            }
+          ]
+        }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:nocheesed": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "cyd:cheesed": {
+        "minecraft:skin_id": {
+          "value": 1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 30,
+              "display_on_screen_animation": true,
+              "amplifier": "5"
+            }
+          ]
+        }
+      },
+      "cyd:death": {
+        "minecraft:transformation": {
+          "into": "cyd:showdown_sven_outro"
+        }
+      },
+      "cyd:special": {
+        "minecraft:type_family": {
+          "family": [
+            "boss",
+            "showdown",
+            "hostileminion"
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 12,
+          "time_down_event": {
+            "event": "evt:normal"
+          }
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 3,
+              "display_on_screen_animation": true,
+              "amplifier": "100",
+              "visible": false
+            }
+          ]
+        },
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "spawn_entity": "cyd:showdown_knockback",
+              "single_use": false,
+              "num_to_spawn": 1,
+              "should_leash": false
+            },
+            {
+              "min_wait_time": 0.1,
+              "max_wait_time": 0.1,
+              "spawn_entity": "cyd:showdown_text_fart",
+              "single_use": true,
+              "num_to_spawn": 1,
+              "should_leash": false
+            }
+          ]
+        }
+      },
+      "cyd:normal": {
+        "minecraft:type_family": {
+          "family": [
+            "boss",
+            "showdown",
+            "cheese",
+            "hostileminion"
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 10,
+          "time_down_event": {
+            "event": "evt:special"
+          }
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 4,
+              "display_on_screen_animation": true,
+              "amplifier": "50",
+              "visible": false
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  }
+                ]
+              },
+              "event": "evt:death"
+            }
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "value": "cyd:chi_nunchuk",
+                    "subject": "other"
+                  }
+                ]
+              },
+              "event": "cyd:point"
+            }
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "boss",
+          "showdown",
+          "hostileminion"
+        ]
+      },
+      "minecraft:equip_item": {},
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:health": {
+        "value": 320,
+        "max": 320
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:movement": {
+        "value": 0.34
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "cheese"
+                },
+                {
+                  "test": "is_skin_id",
+                  "operator": "not",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:cheese"
+          }
+        ]
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:follow_range": {
+        "value": 128
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 80,
+        "must_see_forget_duration": 17,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 90
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 120,
+        "name": "Svengeance"
+      },
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "slowness",
+            "duration": 4,
+            "display_on_screen_animation": true,
+            "amplifier": "50",
+            "visible": false
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true,
+        "require_complete_path": true,
+        "reach_multiplier": 1.5
+      }
+    },
+    "events": {
+      "cyd:point": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:point"
+              ]
+            }
+          }
+        ]
+      },
+      "evt:cheese": {
+        "add": {
+          "component_groups": [
+            "cyd:cheesed"
+          ]
+        }
+      },
+      "evt:nocheese": {
+        "add": {
+          "component_groups": [
+            "cyd:nocheesed"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:cheesed"
+          ]
+        }
+      },
+      "evt:death": {
+        "add": {
+          "component_groups": [
+            "cyd:death"
+          ]
+        }
+      },
+      "evt:special": {
+        "add": {
+          "component_groups": [
+            "cyd:special"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        }
+      },
+      "evt:normal": {
+        "add": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:special"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 95,
+                "add": {
+                  "component_groups": [
+                    "cyd:normal"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "evt:fart": {
+        "add": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:special"
+          ]
+        }
+      }
+    }
+  }
+}

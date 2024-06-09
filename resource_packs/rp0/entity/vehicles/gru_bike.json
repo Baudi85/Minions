@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:gru_bike",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/vehicles/gru_bike"
+      },
+      "geometry": {
+        "default": "geometry.gru_bike"
+      },
+      "animations": {
+        "exhaust_ctrl": "controller.animation.vehicle.exhaust.ctrl",
+        "wind_ctrl": "controller.animation.vehicle.wind.ctrl",
+        "exhaust_particle": "animation.vehicle.exhaust.particle",
+        "wind_particle": "animation.vehicle.wind.particle",
+        "crash_ctrl": "controller.animation.vehicle.crash",
+        "crash": "animation.vehicle.crash.particle",
+        "ride": "animation.gru_bike.ride",
+        "boost": "animation.gru_bike.jet_boost",
+        "minion": "animation.gru_bike.minions_idle"
+      },
+      "scripts": {
+        "animate": [
+          "exhaust_ctrl",
+          "wind_ctrl",
+          "crash_ctrl",
+          "ride",
+          "minion"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.gru_bike"
+      ],
+      "particle_effects": {
+        "exhaust_particle": "cyd:exhaust",
+        "wind_particle": "cyd:wind",
+        "crash_particle": "cyd:crash"
+      },
+      "spawn_egg": {
+        "texture":"CYD_ROGUE",
+        "texture_index": 1
+      }
+    }
+  }
+}

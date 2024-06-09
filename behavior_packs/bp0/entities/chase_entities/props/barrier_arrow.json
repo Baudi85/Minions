@@ -1,0 +1,82 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:barrier_arrow",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:despawn":{
+                "minecraft:instant_despawn":{}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:timer": {
+                "looping": false,
+                "time": 1,
+                "time_down_event": {
+                  "event": "cyd:sid_1"
+                }
+              },
+            "minecraft:skin_id": {
+                "value": 1
+            },
+            "minecraft:collision_box": {
+                "width": 0.01,
+                "height": 0.01
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger",
+                    "chasereset"
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn":{
+                "add":{
+                    "component_groups":[
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                }
+            }
+        }
+    }
+}

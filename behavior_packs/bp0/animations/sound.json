@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.tool.cheese.sound": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.gadget.cheese.impact @a",
+          "/event entity @e[family=cheese,family=secret,r=5] evt:cheese",
+          "/event entity @e[family=cheese,family=secret,r=5] evt:sid_1"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.tool.jam.sound": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.gadget.jelly.impact @a[r=20]"
+      },
+      "animation_length": 1
+    },
+    "animation.tool.fart.sound": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.gadget.fart.impact @a",
+          "/event entity @e[type=cyd:showdown_svengeance,r=5] evt:normal",
+          "/event entity @e[family=fartable,r=5] evt:sid_1",
+          "/event entity @e[family=fartable2,r=5] evt:sid_4"
+        ]
+      },
+      "animation_length": 1
+    }
+  }
+}

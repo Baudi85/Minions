@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:kun_wk_henchman_2",
+      "materials": {
+        "default": "zombie",
+        "cheesed": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/kun/wk_henchman_2",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.wk_henchman_2",
+        "cheesed": "geometry.wk_henchman_2_cheesed"
+      },
+      "sound_effects": {
+        "punch": "cyd.mission.kun.henchmen_punch",
+        "kick": "cyd.mission.kun.henchmen_kick"
+      },
+      "animations": {
+        "breath": "animation.wk_henchman_2.breath",
+        "idle": "animation.wk_henchman_2.idle1",
+        "walk1": "animation.wk_henchman_2.walk1",
+        "walk2": "animation.wk_henchman_2.walk2",
+        "attack1": "animation.wk_henchman_2.attack1",
+        "attack2": "animation.wk_henchman_2.attack2",
+        "attack3": "animation.wk_henchman_2.attack3",
+        "attack4": "animation.wk_henchman_2.attack4",
+        "attack5": "animation.wk_henchman_2.attack5",
+        "death1": "animation.wk_henchman_2.death1",
+        "death2": "animation.wk_henchman_2.death2",
+        "ceiling_breach1": "animation.wk_henchman_2.ceiling_breach1",
+        "ceiling_breach2": "animation.wk_henchman_2.ceiling_breach2",
+        "ctrl": "controller.animation.rp.henchman",
+        "ctrl_ceiling": "controller.animation.rp.ceiling"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "breath",
+          "ctrl_ceiling"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:office_door_2",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/iron_door"
+      },
+      "geometry": {
+        "default": "geometry.iron_door"
+      },
+      "particle_effects": {
+        "particle": "cyd:key_card_marker"
+      },
+      "sound_effects": {
+        "open_iron_door": "cyd.mission.bank.door_open"
+      },
+      "animations": {
+          "trigger": "animation.iron_door.trigger",
+          "ctrl": "controller.animation.rp.wk_door",
+          "particle":"animation.prop.particles"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

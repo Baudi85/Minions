@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.vp.encounter.ctrl": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "farted": "query.skin_id == 4"
+                        },
+                        {
+                            "cheese": "query.skin_id == 1"
+                        },
+                        {
+                            "shrink": "query.skin_id == 3"
+                        }
+                    ]
+                },
+                "farted": {
+                    "animations": [
+                        "farted"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_farted": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "idle_farted": {
+                    "animations": [
+                        "idle_farted"
+                    ]
+                },
+                "cheese": {
+                    "animations": [
+                        "cheese"
+                    ]
+                },
+                "shrink": {
+                    "animations": [
+                        "shrink"
+                    ]
+                }
+            }
+        }
+    }
+}

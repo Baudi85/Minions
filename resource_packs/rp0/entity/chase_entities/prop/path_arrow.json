@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:path_arrow",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/path_arrow",
+        "var1": "textures/entity/chase/path_arrow"
+      },
+      "geometry": {
+        "default": "geometry.path_arrow"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.cyd.skin_2"
+      ]
+    }
+  }
+}

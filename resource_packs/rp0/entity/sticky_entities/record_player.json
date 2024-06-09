@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:record_player",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/record_player"
+      },
+      "geometry": {
+        "default": "geometry.record_player"
+      },
+      "particle_effects": {
+        "question": "cyd:record_player"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "particle_ctrl"
+        ]
+      },
+      "animations": {
+        "particle_ctrl":"controller.animation.recordplayer.particle",
+        "particle": "animation.question.particle",
+        "ctrl":"controller.animation.rp.record_player",
+        "idle_inactive":"animation.record_player.idle_inactive",
+        "interact": "animation.record_player.interact",
+        "idle_active":"animation.record_player.idle_active"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

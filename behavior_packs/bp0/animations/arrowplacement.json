@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cyd.item.place": {
+      "loop": false,
+      "timeline": {
+        "0.1": "/function tools/arrowplace"
+      },
+      "animation_length": 0.2
+    },
+    "animation.cyd.item.place.world": {
+      "loop": false,
+      "timeline": {
+        "0.1": "/function tools/arrowplace_world"
+      },
+      "animation_length": 0.2
+    },
+    "animation.cyd.item.place2": {
+      "loop": false,
+      "timeline": {
+        "0.1": "/function tools/arrowplace_v2"
+      },
+      "animation_length": 0.2
+    },
+    "animation.cyd.item.place3": {
+      "loop": false,
+      "timeline": {
+        "0.1": "/function tools/arrowplace_v3"
+      },
+      "animation_length": 0.2
+    }
+  }
+}

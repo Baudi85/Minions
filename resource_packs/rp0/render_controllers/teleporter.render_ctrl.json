@@ -1,0 +1,151 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.lair_teleporter": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "location_icon_1": "query.variant == 1"
+                },
+                {
+                    "location_icon_2": "query.variant == 2"
+                },
+                {
+                    "location_icon_3": "query.variant == 3"
+                },
+                {
+                    "location_icon_4": "query.variant == 4"
+                },
+                {
+                    "location_icon_5": "query.variant == 5"
+                },
+                {
+                    "location_icon_6": "query.variant == 6"
+                },
+                {
+                    "location_icon_7": "query.variant == 7"
+                },
+                {
+                    "location_icon_8": "query.variant == 8"
+                },
+                {
+                    "location_icon_9": "query.variant == 9"
+                },
+                {
+                    "location_icon_10": "query.variant == 10"
+                },
+                {
+                    "location_icon_11": "query.variant == 11"
+                },
+                {
+                    "location_icon_1_locked": "query.variant == 12"
+                },
+                {
+                    "location_icon_2_locked": "query.variant == 13"
+                },
+                {
+                    "location_icon_3_locked": "query.variant == 14"
+                },
+                {
+                    "location_icon_4_locked": "query.variant == 15"
+                },
+                {
+                    "location_icon_5_locked": "query.variant == 16"
+                },
+                {
+                    "location_icon_6_locked": "query.variant == 17"
+                },
+                {
+                    "location_icon_7_locked": "query.variant == 18"
+                },
+                {
+                    "location_icon_8_locked": "query.variant == 19"
+                },
+                {
+                    "location_icon_9_locked": "query.variant == 20"
+                },
+                {
+                    "location_icon_10_locked": "query.variant == 21"
+                },
+                {
+                    "location_icon_11_locked": "query.variant == 22"
+                },
+                {
+                    "location_icon_12": "query.variant == 0"
+                },
+                {
+                    "location_icon_12_locked": "query.variant == 0"
+                },
+                {
+                    "location_name_1": "query.variant == 1"
+                },
+                {
+                    "location_name_2": "query.variant == 2"
+                },
+                {
+                    "location_name_3": "query.variant == 3"
+                },
+                {
+                    "location_name_4": "query.variant == 4"
+                },
+                {
+                    "location_name_5": "query.variant == 5"
+                },
+                {
+                    "location_name_6": "query.variant == 6"
+                },
+                {
+                    "location_name_7": "query.variant == 7"
+                },
+                {
+                    "location_name_8": "query.variant == 8"
+                },
+                {
+                    "location_name_9": "query.variant == 9"
+                },
+                {
+                    "location_name_10": "query.variant == 10"
+                },
+                {
+                    "location_name_11": "query.variant == 11"
+                },
+                {
+                    "location_name_12": "query.variant == 0 || query.variant == 12 || query.variant == 13 || query.variant == 14 || query.variant == 15 || query.variant == 16 || query.variant == 17 || query.variant == 18 || query.variant == 19 || query.variant == 20 || query.variant == 21 || query.variant == 22"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.non_emissive"
+                },
+                {
+                    "teleport_tube": "Material.default"
+                },
+                {
+                    "teleport_tube_door_*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.vnc_screen": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "arrays": {
+                "textures": {
+                    "array.skins": [
+                        "Texture.off",
+                        "Texture.default"
+                    ]
+                }
+            },
+            "textures": [
+                "Array.skins[query.variant]"
+            ]
+        }
+    }
+}

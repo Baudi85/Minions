@@ -1,0 +1,71 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.sticky_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "sticky"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        },
+        "animation.fart_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "fart"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        },
+        "animation.cheese_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "cheese"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        },
+        "animation.chi_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "chi"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        },
+        "animation.jelly_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "jelly"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        },
+        "animation.shrink_display.particle": {
+            "loop": true,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "shrink"
+                    }
+                ]
+            },
+            "animation_length": 1.1
+        }
+    }
+}

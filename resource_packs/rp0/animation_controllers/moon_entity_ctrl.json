@@ -1,0 +1,375 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.rp.rocket_turret": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "deactivate"
+                    ],
+                    "transitions": [
+                        {
+                            "activate": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "activate": {
+                    "animations": [
+                        "activate"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_activate": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "idle_activate": {
+                    "animations": [
+                        "idle_activate"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.boss_macho": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "intro"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.all_animations_finished"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "start": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "slam": "query.is_roaring && query.skin_id != 1 && query.is_on_ground"
+                        },
+                        {
+                            "melee": "query.is_delayed_attacking && query.skin_id != 1 && query.is_on_ground"
+                        },
+                        {
+                            "walk": "query.modified_move_speed >= 0.1 && query.skin_id != 1 && query.is_on_ground"
+                        },
+                        {
+                            "leap": "!query.is_on_ground"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "slam": {
+                    "animations": [
+                        "slam"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.all_animations_finished || query.skin_id == 1"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "leap": {
+                    "animations": [
+                        "leap"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.is_on_ground && query.all_animations_finished"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "melee": {
+                    "on_entry": [
+                        "temp.melee = math.round(math.random(1,2));"
+                    ],
+                    "transitions": [
+                        {
+                            "melee_1": "temp.melee == 1"
+                        },
+                        {
+                            "melee_2": "temp.melee == 2"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "melee_1": {
+                    "animations": [
+                        "melee_1"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.all_animations_finished || query.skin_id == 1"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "melee_2": {
+                    "animations": [
+                        "melee_2"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.all_animations_finished || query.skin_id == 1"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "walk": {
+                    "animations": [
+                        "walk",
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.modified_move_speed <= 0.1 || query.skin_id == 1 || !query.is_on_ground"
+                        },
+                        {
+                            "death":"query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "death": {
+                    "animations": [
+                        "death"
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.boss_vector": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "ranged": "query.is_charged"
+                        },
+                        {
+                            "burst": "query.is_charging"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "ranged": {
+                    "animations": [
+                        "ranged"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_charged"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "burst": {
+                    "animations": [
+                        "burst"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_charging"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.boss_bratt": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "ranged": "query.is_charged"
+                        },
+                        {
+                            "roar": "query.is_roaring"
+                        },
+                        {
+                            "death":"query.skin_id == 2"
+                        }
+                    ]
+                },
+                "ranged": {
+                    "animations": [
+                        "laser"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_charged && query.all_animations_finished"
+                        },
+                        {
+                            "death":"query.skin_id == 2"
+                        }
+                    ]
+                },
+                "roar": {
+                    "animations": [
+                        "solo"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_charged && query.all_animations_finished"
+                        },
+                        {
+                            "death":"query.skin_id == 2"
+                        }
+                    ]
+                },
+                "death": {
+                    "animations": [
+                        "death"
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.mutant_minion": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "temp.idle = math.round(math.random(1,2));"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_1": "temp.idle == 1"
+                        },
+                        {
+                            "idle_2": "temp.idle == 2"
+                        },
+                        {
+                            "death": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "idle_1": {
+                    "animations": [
+                        "idle_1"
+                    ],
+                    "transitions": [
+                        {
+                            "attack": "query.is_delayed_attacking"
+                        },
+                        {
+                            "death": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_2": {
+                    "animations": [
+                        "idle_2"
+                    ],
+                    "transitions": [
+                        {
+                            "attack": "query.is_delayed_attacking"
+                        },
+                        {
+                            "death": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "attack": {
+                    "on_entry": [
+                        "temp.atk = math.round(math.random(1,2));"
+                    ],
+                    "transitions": [
+                        {
+                            "atk_1": "temp.atk == 1"
+                        },
+                        {
+                            "atk_2": "temp.atk == 2"
+                        },
+                        {
+                            "death": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "atk_1":{
+                    "animations":[
+                        "attack_1"
+                    ],
+                    "transitions":[
+                        {
+                            "default":"query.all_animations_finished || query.skin_id == 1"
+                        }
+                    ]
+                },
+                "atk_2":{
+                    "animations":[
+                        "attack_2"
+                    ],
+                    "transitions":[
+                        {
+                            "default":"query.all_animations_finished || query.skin_id == 1"
+                        }
+                    ]
+                },
+                "death":{
+                    "animations":[
+                        "death"
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.moon_door": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "trigger": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default":"query.skin_id != 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.quest_marker.idle": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"scale": [1.5, "1+math.sin(query.life_time*180*0.5)*0.02", 1.5]
+				}
+			}
+		},
+		"animation.quest_marker.proximity": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"scale": [1.1, 1, 1.1]
+				}
+			}
+		},
+		"animation.quest_marker.countdown": {
+			"animation_length": 10,
+			"bones": {
+				"root": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"6.64": [0.93, 1.03, 0.93],
+						"8.84": [0.9, 1.1, 0.9],
+						"9.48": [0.9, 1.4, 0.9],
+						"9.6": [1.25, 1.9, 1.25],
+						"9.76": [0.9, 2.34, 0.9],
+						"9.88": [0.8, 3, 0.8],
+						"10.0": [0.8, 3.8, 0.8]
+					}
+				},
+				"all": {
+					"rotation": [0, "query.anim_time*10*query.anim_time*5", 0]
+				}
+			}
+		}
+	}
+}

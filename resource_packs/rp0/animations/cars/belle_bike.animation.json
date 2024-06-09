@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.belle_bike.ride": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"root": {
+					"rotation": ["math.sin(query.anim_time*1800)*0.04 + math.clamp(query.target_y_rotation,-2,2)", "math.clamp(query.target_y_rotation,-20,20)", "-math.clamp(query.target_y_rotation,-10,10)"]
+				},
+				"wheel_back": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"belle_rig_head": {
+					"rotation": [0, 0, 0]
+				},
+				"belle_bike": {
+					"rotation": ["((query.modified_move_speed>0.05) ?   math.sin(query.modified_distance_moved*90)*0.1 -math.clamp(query.vertical_speed*1.5,-10,10): 0 -math.clamp(query.vertical_speed*1.5,-10,10))", "(query.modified_move_speed>0.05) ?   math.clamp(query.yaw_speed*0.1,-7,7) : math.clamp(query.yaw_speed*0.06,-4,4)", "(query.modified_move_speed>0.05) ?   -math.clamp(query.yaw_speed*0.1,-10,10) : 0"],
+					"scale": ["1-(math.sin(query.life_time*1800-60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.002", "1+(math.sin(query.life_time*1800-60-40)*0.2-math.sin(query.life_time*1800*2-50-40)*0.1)*0.002", "1+(math.sin(query.life_time*1800+60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.001"]
+				},
+				"all": {
+					"rotation": ["(query.vertical_speed>0.1 && query.is_on_ground>0.8 )? -7  : 0", 0, 0]
+				},
+				"engine": {
+					"scale": ["1-(math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1)*0.02", "1+(math.sin(query.life_time*1800-60)*0.2-math.sin(query.life_time*1800*2-50)*0.1)*0.02", "1+(math.sin(query.life_time*1800+60)*0.2+math.sin(query.life_time*1800*2)*0.1)*0.006"]
+				},
+				"wheel_support_front": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.belle_bike.idle": {
+			"loop": true,
+			"animation_length": 10,
+			"bones": {
+				"root": {
+					"rotation": ["math.sin(query.anim_time*1800)*0.04 + math.clamp(query.target_y_rotation,-2,2)", "math.clamp(query.target_y_rotation,-20,20)", "-math.clamp(query.target_y_rotation,-10,10)"]
+				},
+				"wheel_back": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"belle_rig_head": {
+					"rotation": [0, 0, 0]
+				},
+				"belle_bike": {
+					"rotation": ["((query.modified_move_speed>0.05) ?   math.sin(query.modified_distance_moved*90)*0.1 -math.clamp(query.vertical_speed*1.5,-10,10): 0 -math.clamp(query.vertical_speed*1.5,-10,10))", "(query.modified_move_speed>0.05) ?   math.clamp(query.yaw_speed*0.1,-7,7) : math.clamp(query.yaw_speed*0.06,-4,4)", "(query.modified_move_speed>0.05) ?   -math.clamp(query.yaw_speed*0.1,-10,10) : 0"]
+				},
+				"wheel_support_front": {
+					"rotation": [0, 0, 0]
+				},
+				"all": {
+					"rotation": ["(query.vertical_speed>0.1 && query.is_on_ground>0.8 )? -7  : 0", 0, 0]
+				}
+			}
+		}
+	}
+}

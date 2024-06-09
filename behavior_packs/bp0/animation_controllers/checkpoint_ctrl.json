@@ -1,0 +1,320 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.checkpoint_system_11": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "check_0": "query.skin_id == 1"
+                        },
+                        {
+                            "check_1": "query.skin_id == 2"
+                        },
+                        {
+                            "check_2": "query.skin_id == 3"
+                        },
+                        {
+                            "check_3": "query.skin_id == 4"
+                        },
+                        {
+                            "check_4": "query.skin_id == 5"
+                        },
+                        {
+                            "check_5": "query.skin_id == 6"
+                        },
+                        {
+                            "check_6": "query.skin_id == 7"
+                        },
+                        {
+                            "check_7": "query.skin_id == 8"
+                        },
+                        {
+                            "check_8": "query.skin_id == 9"
+                        },
+                        {
+                            "check_9": "query.skin_id == 10"
+                        },
+                        {
+                            "check_10": "query.skin_id == 11"
+                        },
+                        {
+                            "check_11": "query.skin_id == 12"
+                        }
+                    ]
+                },
+                "check_0": {
+                    "animations": [
+                        "check_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "check_1": {
+                    "animations": [
+                        "check_1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "check_2": {
+                    "animations": [
+                        "check_2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "check_3": {
+                    "animations": [
+                        "check_3"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "check_4": {
+                    "animations": [
+                        "check_4"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "check_5": {
+                    "animations": [
+                        "check_5"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                },
+                "check_6": {
+                    "animations": [
+                        "check_6"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ]
+                },
+                "check_7": {
+                    "animations": [
+                        "check_7"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 8"
+                        }
+                    ]
+                },
+                "check_8": {
+                    "animations": [
+                        "check_8"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 9"
+                        }
+                    ]
+                },
+                "check_9": {
+                    "animations": [
+                        "check_9"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 10"
+                        }
+                    ]
+                },
+                "check_10": {
+                    "animations": [
+                        "check_10"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 11"
+                        }
+                    ]
+                },
+                "check_11": {
+                    "animations": [
+                        "check_11"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 12"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.checkpoint_system_10": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "check_0": "query.skin_id == 1"
+                        },
+                        {
+                            "check_1": "query.skin_id == 2"
+                        },
+                        {
+                            "check_2": "query.skin_id == 3"
+                        },
+                        {
+                            "check_3": "query.skin_id == 4"
+                        },
+                        {
+                            "check_4": "query.skin_id == 5"
+                        },
+                        {
+                            "check_5": "query.skin_id == 6"
+                        },
+                        {
+                            "check_6": "query.skin_id == 7"
+                        },
+                        {
+                            "check_7": "query.skin_id == 8"
+                        },
+                        {
+                            "check_8": "query.skin_id == 9"
+                        },
+                        {
+                            "check_9": "query.skin_id == 10"
+                        },
+                        {
+                            "check_10": "query.skin_id == 11"
+                        }
+                    ]
+                },
+                "check_0": {
+                    "animations": [
+                        "check_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "check_1": {
+                    "animations": [
+                        "check_1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "check_2": {
+                    "animations": [
+                        "check_2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "check_3": {
+                    "animations": [
+                        "check_3"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "check_4": {
+                    "animations": [
+                        "check_4"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "check_5": {
+                    "animations": [
+                        "check_5"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                },
+                "check_6": {
+                    "animations": [
+                        "check_6"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ]
+                },
+                "check_7": {
+                    "animations": [
+                        "check_7"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 8"
+                        }
+                    ]
+                },
+                "check_8": {
+                    "animations": [
+                        "check_8"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 9"
+                        }
+                    ]
+                },
+                "check_9": {
+                    "animations": [
+                        "check_9"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 10"
+                        }
+                    ]
+                },
+                "check_10": {
+                    "animations": [
+                        "check_10"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 11"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:dragon_medallion",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/none"
+      },
+      "particle_effects": {
+        "particle": "cyd:zodiac_stone",
+        "aura": "cyd:sticky_aura",
+        "sticky": "cyd:sticky_medalion"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "animations": {
+        "particle_anim": "animation.generic.particle",
+        "aura_particle": "animation.aura.particle",
+        "sticky_medalion":"animation.sticky.medalion.particle"
+      },
+      "scripts": {
+        "animate": [
+          "particle_anim",
+          "aura_particle",
+          "sticky_medalion"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

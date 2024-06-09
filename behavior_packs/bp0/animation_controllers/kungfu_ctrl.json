@@ -1,0 +1,276 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.kunfu.dummy.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sound": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "sound": {
+          "on_entry": [
+            "/playsound cyd.prop.dummy.trigger @a[r=20]",
+            "/summon cyd:prop_knockback ^1 ^ ^"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.dummytutorial.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sound": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "sound": {
+          "on_entry": [
+            "/playsound cyd.mission.kun.hit_impact_small @a[r=20]"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.spinner.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sound": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "sound": {
+          "on_entry": [
+            "/playsound cyd.prop.spinner_trigger_all @a[r=20]"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.fireworkcrate": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sound": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "sound": {
+          "on_entry": [
+            "/playsound cyd.prop.firework_trigger @a[r=20]"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.text": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "scene1": "query.mark_variant == 1"
+            },
+            {
+              "scene2": "query.mark_variant == 2"
+            },
+            {
+              "scene3": "query.mark_variant == 3"
+            },
+            {
+              "scene4": "query.mark_variant == 4"
+            },
+            {
+              "scene5": "query.mark_variant == 5"
+            }
+          ]
+        },
+        "scene1": {
+          "animations": [
+            "scene1"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 1 && query.all_animations_finished"
+            }
+          ]
+        },
+        "scene2": {
+          "animations": [
+            "scene2"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2 && query.all_animations_finished"
+            }
+          ]
+        },
+        "scene3": {
+          "animations": [
+            "scene3"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 3 && query.all_animations_finished"
+            }
+          ]
+        },
+        "scene4": {
+          "animations": [
+            "scene4"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 4 && query.all_animations_finished"
+            }
+          ]
+        },
+        "scene5": {
+          "animations": [
+            "scene5"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 5 && query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.waves": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "wave1": "query.skin_id == 1"
+            },
+            {
+              "wave2": "query.skin_id == 2"
+            },
+            {
+              "wave3": "query.skin_id == 3"
+            }
+          ]
+        },
+        "wave1": {
+          "animations": [
+            "wave1"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 1 && query.all_animations_finished"
+            }
+          ]
+        },
+        "wave2": {
+          "animations": [
+            "wave2"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 2 && query.all_animations_finished"
+            }
+          ]
+        },
+        "wave3": {
+          "animations": [
+            "wave3"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 3 && query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.chi": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "chi": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            }
+          ]
+        },
+        "chi": {
+          "animations": [
+            "chi_build"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.swing": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "swing": "query.get_equipped_item_name(0) == 'chi_nunchuk' && variable.attack_time > 0.0f"
+            }
+          ]
+        },
+        "swing": {
+          "on_entry": [
+            "/playsound cyd.gadget.chi.swing @a[r=5]"
+          ],
+          "transitions": [
+            {
+              "default": "!variable.attack_time > 0.0f"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kunfu.hold": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "swing": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            }
+          ]
+        },
+        "swing": {
+          "on_entry": [
+            "@s evt:chi_damage"
+          ],
+          "on_exit": [
+            "@s evt:no_chi_damage"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

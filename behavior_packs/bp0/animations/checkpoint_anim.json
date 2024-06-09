@@ -1,0 +1,110 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.checkpoint.check_0": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_0"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_1": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_1"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_2": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_2"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_3": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_3"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_4": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_4"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_5": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_5"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_6": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_6"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_7": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_7"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_8": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_8"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_9": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_9"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_10": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_10"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.check_11": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/checkpoint_11"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.player_checkpoint": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function sticky/player_checkpoint"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.player_checkpoint_wk": {
+            "loop": true,
+            "timeline": {
+                "0.0": "/function wk/player_checkpoint"
+            },
+            "animation_length": 0.2
+        },
+        "animation.checkpoint.player_checkpoint_moon": {
+            "loop": false,
+            "timeline": {
+                "0.0": "/function moon/player_checkpoint"
+            },
+            "animation_length": 0.2
+        }
+    }
+}

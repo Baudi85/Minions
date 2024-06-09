@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:collectable_container",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/collectables_container"
+      },
+      "particle_effects": {
+        "lock_particle": "cyd:locked_machine"
+      },
+      "animations": {
+        "particle_ctrl": "controller.animation.lair.locked_particle",
+        "lock_particle": "animation.lair.locked",
+        "breath": "animation.collectable_container.breath",
+        "idle": "animation.collectable_container.idle"
+      },
+      "scripts": {
+        "animate": [
+          "particle_ctrl",
+          "breath",
+          "idle"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.collectables_container"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.collectible_container"
+      ]
+    }
+  }
+}

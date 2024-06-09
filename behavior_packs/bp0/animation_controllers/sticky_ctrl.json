@@ -1,0 +1,976 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.trigger.record_player.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "record"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.fan_hit_sound": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.is_ignited"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "hit_sound"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.dialogue.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "dialogue"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.guard.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1 && query.is_ignited"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "detect"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1 || !query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.guard.peripheral": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1 && query.is_ignited"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "peripheral"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1 || !query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.guard_ko.peripheral": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1 && query.variant != 1 && query.is_ignited"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "peripheral"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1 || query.variant == 1 || !query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.guard.rm_honey": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "rm_hay"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.has_target"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "rm_honey"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.has_target"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.guard.ko_rm_honey": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "rm_hay"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "rm_honey"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.box.anim": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "on_entry": [
+                        "/playanimation @e[type=cyd:sticky_box_small,c=1] trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.player_detect_honey": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "detect_honey"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.player_detect_caught": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "checkpoint"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.vent.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^ ^ ^ ^1 ^ air 0 replace barrier",
+                        "/playsound cyd.mission.sticky.Sticky_Vent @a[r=10]"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^ ^ ^ ^1 ^ barrier",
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.fan.ctrl": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "sound"
+                    ],
+                    "transitions": [
+                        {
+                            "power_down": "query.skin_id == 1"
+                        },
+                        {
+                            "sticky": "query.skin_id == 2"
+                        },
+                        {
+                            "reset": "query.skin_id == 3"
+                        }
+                    ]
+                },
+                "power_down": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Fan_Power_Down @a[r=10]"
+                    ],
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 2"
+                        },
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^ ^ ^ ^1 ^ air 0 replace barrier",
+                        "/playsound cyd.mission.sticky.Sticky_Vent @a[r=10]"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^ ^ ^ ^1 ^ barrier",
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/event entity @e[type=cyd:sticky_fan,c=1] evt:sid_1",
+                        "/execute @e[type=cyd:sticky_fan,c=1] ~ ~ ~ tag @s remove open"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever_2.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/event entity @e[type=cyd:sticky_fan,c=2] evt:sid_1",
+                        "/execute @e[type=cyd:sticky_fan,c=1] ~ ~ ~ tag @s remove open",
+                        "/execute @e[type=cyd:sticky_fan_fall,c=1] ~ ~ ~ tag @s remove open"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever_single.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/event entity @e[type=cyd:sticky_fan_fall,c=1] evt:sid_1",
+                        "/execute @e[type=cyd:sticky_fan_fall,c=1] ~ ~ ~ tag @s remove open"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever.gate.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/setblock -59 32 2042 redstone_torch",
+                        "/setblock -60 32 2042 redstone_torch"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/setblock -59 32 2042 air 0 replace",
+                        "/setblock -60 32 2042 air 0 replace",
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever.exit.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/setblock -130 34 1962 redstone_torch",
+                        "/fill -105 39 1961 -105 36 1963 barrier 0 replace air",
+                        "/function playerbase/objectives/m1_7"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open",
+                        "/tag @s remove checkpoint"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/setblock -130 34 1962 air 0 replace",
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.large_box.ctrl": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^1 ^-1 ^1 ^1 ^1 barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "animations": [
+                        "summon"
+                    ],
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-1 ^1 ^-1 ^1 ^1 ^1 air 0 replace barrier",
+                        "/execute @e[type=cyd:slingshot,c=1] ~ ~ ~ event entity @s evt:despawn",
+                        "/execute @e[type=cyd:sticky_return,c=1] ~ ~ ~ event entity @s evt:despawn"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove fall",
+                        "/execute @e[type=cyd:target_box_large] ~ ~ ~ event entity @s evt:despawn"
+                    ]
+                }
+            }
+        },
+        "controller.animation.target_box.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ tp @s ^ ^2 ^-2",
+                        "/event entity @s evt:transform"
+                    ]
+                }
+            }
+        },
+        "controller.animation.small_box.sound": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "!query.is_on_ground"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.box_grab @a"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.is_on_ground"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.small_box.prox": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.is_ignited"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "animations": [
+                        "stuck"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.elevator.ctrl": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/fill -117 39 1950 -119 36 1950 barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.elevator @a"
+                    ],
+                    "animations": [
+                        "open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.large_box.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Box_Large_Pull @a[r=20]"
+                    ],
+                    "animations": [
+                        "sound"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.guard.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.has_target"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Henchman_Questioning_1 @a[r=15]"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Henchman_Notice_1 @a[r=15]",
+                        "/tag @a add caught_sticky",
+                        "/tag @s add detect"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.ko_guard.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.variant == 1"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 1 && query.variant != 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Henchman_Knockout_1 @a[r=15]"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Henchman_Notice_1 @a[r=15]",
+                        "/tag @a add caught_sticky",
+                        "/tag @s add detect"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.guard.knockout.dialogue.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "dialogue_1": "query.variant == 1"
+                        }
+                    ]
+                },
+                "dialogue_1": {
+                    "on_entry": [
+                        "/function missions/dialogue/sticky/guard/guard.knockout.1",
+                        "/tag @s add ko"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.guard.question.dialogue.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "dialogue_1": "query.has_target == 1"
+                        }
+                    ]
+                },
+                "dialogue_1": {
+                    "on_entry": [
+                        "/function missions/dialogue/sticky/guard/guard.question.1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.has_target"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.guard.caught.dialogue.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "dialogue_1": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "dialogue_1": {
+                    "on_entry": [
+                        "/function missions/dialogue/sticky/guard/guard.caught.1",
+                        "/tp @s ~ ~0.1 ~ facing @p",
+                        "/tag @p add caught_sticky",
+                        "/tag @s add detect"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.coord_messages": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "coord_1": "query.is_ignited"
+                        }
+                    ]
+                },
+                "coord_1": {
+                    "animations": [
+                        "coord1"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_2": "query.is_stunned"
+                        }
+                    ]
+                },
+                "coord_2": {
+                    "animations": [
+                        "coord2"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_3": "query.is_tamed"
+                        }
+                    ]
+                },
+                "coord_3": {
+                    "animations": [
+                        "coord3"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_4": "query.is_saddled"
+                        }
+                    ]
+                },
+                "coord_4": {
+                    "animations": [
+                        "coord4"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_5": "query.is_sheared"
+                        }
+                    ]
+                },
+                "coord_5": {
+                    "animations": [
+                        "coord5"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_6": "query.is_baby"
+                        }
+                    ]
+                },
+                "coord_6": {
+                    "animations": [
+                        "coord6"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_7": "query.can_climb"
+                        }
+                    ]
+                },
+                "coord_7": {
+                    "animations": [
+                        "coord7"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited && !query.is_stunned && !query.is_tamed && !query.is_saddled && !query.is_sheared && !query.is_baby && !query.can_climb"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.tut_messages": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "coord_1": "query.variant == 1"
+                        }
+                    ]
+                },
+                "coord_1": {
+                    "animations": [
+                        "tut1",
+                        "readynext"
+                    ],
+                    "transitions": [
+                        {
+                            "coord_2": "query.variant == 2"
+                        }
+                    ]
+                },
+                "coord_2": {
+                    "animations": [
+                        "tut2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant == 0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.prox_ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "prox": "query.out_of_control"
+                        }
+                    ]
+                },
+                "prox": {
+                    "animations": [
+                        "prox_msg"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.out_of_control"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

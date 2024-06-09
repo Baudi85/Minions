@@ -1,0 +1,96 @@
+{
+	"format_version": "1.10.0",
+	"geometry.vnc_screen": {
+		"texturewidth": 96,
+		"textureheight": 96,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 8.75,
+		"visible_bounds_offset": [0, 1.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "vnc_screen",
+				"parent": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "frame",
+				"parent": "vnc_screen",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-8, 6, -8], "size": [16, 10, 10], "uv": [0, 0]},
+					{"origin": [-7.5, 1.5, -6], "size": [12, 5, 8], "uv": [44, 12]},
+					{"origin": [-8, 0, 2], "size": [16, 16, 6], "uv": [0, 41]},
+					{"origin": [-7.75, -0.25, -6.25], "size": [1, 2, 1], "uv": [6, 0], "inflate": -0.25},
+					{"origin": [3.75, -0.25, -6.25], "size": [1, 2, 1], "uv": [6, 0], "inflate": -0.25},
+					{"origin": [7, -0.25, -8], "size": [1, 7, 1], "uv": [0, 0], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "frame_slope_1",
+				"parent": "frame",
+				"pivot": [1, 1.5, -6],
+				"rotation": [15, 0, 0],
+				"cubes": [
+					{"origin": [-7.5, 1.4995, -6.005], "size": [12, 5, 2], "uv": [42, 0], "inflate": -0.005}
+				]
+			},
+			{
+				"name": "screen",
+				"parent": "frame",
+				"pivot": [0, 16, 0],
+				"cubes": [
+					{"origin": [-8, 16, -3], "size": [16, 13, 8], "uv": [0, 20]},
+					{"origin": [-2, 29, -1], "size": [4, 2, 4], "uv": [56, 57]},
+					{"origin": [-9, 16, -5], "size": [18, 14, 2], "uv": [44, 41]},
+					{"origin": [-8.5, 16.5, -5.5], "size": [13, 13, 1], "uv": [48, 25]}
+				]
+			},
+			{
+				"name": "antenna_left",
+				"parent": "screen",
+				"pivot": [1, 31, 1],
+				"rotation": [0, 0, 30],
+				"cubes": [
+					{"origin": [1, 31, 1], "size": [1, 9, 0], "uv": [4, 0]}
+				]
+			},
+			{
+				"name": "antenna_right",
+				"parent": "screen",
+				"pivot": [-1, 31, 1],
+				"rotation": [0, 0, -30],
+				"cubes": [
+					{"origin": [-2, 31, 1], "size": [1, 9, 0], "uv": [4, 0], "mirror": true}
+				]
+			},
+			{
+				"name": "speaker_left",
+				"parent": "screen",
+				"pivot": [12, 7.5, 0.5],
+				"rotation": [0, -12.5, 0],
+				"cubes": [
+					{"origin": [10, 0, -2.5], "size": [4, 3, 6], "uv": [0, 63]},
+					{"origin": [9, 3, -3.5], "size": [6, 9, 8], "uv": [36, 57]}
+				]
+			},
+			{
+				"name": "speaker_right",
+				"parent": "screen",
+				"pivot": [-12, 4.5, 0.5],
+				"rotation": [0, 12.5, 0],
+				"cubes": [
+					{"origin": [-15, 0, -3.5], "size": [6, 9, 8], "uv": [36, 57], "mirror": true}
+				]
+			}
+		]
+	}
+}

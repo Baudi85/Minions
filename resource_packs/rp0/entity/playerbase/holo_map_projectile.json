@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:holo_map_projectile",
+      "materials": {
+        "default": "zombie",
+        "trans": "cyd_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/world/holo_map_projectile"
+      },
+      "geometry": {
+        "default": "geometry.holo_map_projectile"
+      },
+      "sound_effects": {
+        "open": "cyd.generic.holomap_open",
+        "close": "cyd.generic.holomap_close"
+      },
+      "animations": {
+        "idle": "animation.holo_map_projectile.idle_ground",
+        "impact": "animation.holo_map_projectile.impact",
+        "pick_up": "animation.holo_map_projectile.pick_up",
+        "ctrl": "controller.animation.rp.movement.holo_map_projectile",
+        "location_ctrl":"controller.animation.rp.location.holo_map_projectile",
+        "go_m1": "animation.holo_map_projectile.go_to_m1",
+        "go_m2": "animation.holo_map_projectile.go_to_m2",
+        "go_m3": "animation.holo_map_projectile.go_to_m3",
+        "go_m4": "animation.holo_map_projectile.go_to_m4",
+        "go_m5": "animation.holo_map_projectile.go_to_m5",
+        "go_none": "animation.holo_map_projectile.go_nowhere"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "location_ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.lair_map"
+      ]
+    }
+  }
+}

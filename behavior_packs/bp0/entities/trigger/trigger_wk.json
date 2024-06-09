@@ -1,0 +1,156 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:trigger_wk",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": ["start_ctrl"]
+            },
+            "animations": {
+                "start_ctrl": "controller.animation.trigger.basic_trigger.start",
+                "start": "animation.trigger.system.start_wk"
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": [
+                  {
+                    "deals_damage": false
+                  }
+                ]
+              },
+            "minecraft:scale": {
+              "value": 1
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:entity_sensor": {
+                "sensor_range": 2,
+                "require_all": true,
+                "event_filters": {
+                    "all_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "other",
+                            "operator": "not",
+                            "value": "dev"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "other",
+                            "operator": "equals",
+                            "value": "completedkun"
+                        }
+                    ]
+                },
+                "event": "evt:sid_1"
+            }
+        },
+        "events": {
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:fartgrenade",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/gadgets/fart_grenade_projectile"
+      },
+      "particle_effects": {
+        "particle": "cyd:fart_trail"
+      },
+      "geometry": {
+        "default": "geometry.fart_grenade_projectile"
+      },
+      "scripts": {
+        "animate": [
+          "throw",
+          "particle_anim"
+        ]
+      },
+      "animations": {
+        "throw": "animation.fart_grenade_projectile.throw",
+        "particle_anim": "animation.fart.particle"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

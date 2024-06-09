@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:young_nefario",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/young_nefario"
+      },
+      "geometry": {
+        "default": "geometry.young_nefario"
+      },
+      "particle_effects": {
+        "question": "cyd:chatbubble"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "breath",
+          "questionmark"
+        ]
+      },
+      "animations": {
+        "questionmark": "animation.question.particle",
+        "ctrl": "controller.animation.rp.young_nefario",
+        "idle_1": "animation.young_nefario.idle1",
+        "idle_2": "animation.young_nefario.idle2",
+        "idle_3": "animation.young_nefario.idle3",
+        "idle_4": "animation.young_nefario.idle4",
+        "breath": "animation.young_nefario.breath",
+        "give_record": "animation.young_nefario.give_record"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

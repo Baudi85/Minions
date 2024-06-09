@@ -1,0 +1,645 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:trigger_sticky_system",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "start_ctrl",
+                    "coord_tags",
+                    "coord_ctrl",
+                    "prox_ctrl",
+                    "tut_ctrl",
+                    "floor_tp"
+                ]
+            },
+            "animations": {
+                "start_ctrl": "controller.animation.trigger.sticky_system.start",
+                "coord_tags": "animation.coords.system",
+                "coord_ctrl": "controller.animation.coord_messages",
+                "coord1": "animation.coords.system.1",
+                "coord2": "animation.coords.system.2",
+                "coord3": "animation.coords.system.3",
+                "coord4": "animation.coords.system.4",
+                "coord5": "animation.coords.system.5",
+                "coord6": "animation.coords.system.6",
+                "coord7": "animation.coords.system.7",
+                "prox_ctrl":"controller.animation.prox_ctrl",
+                "prox_msg": "animation.coords.system.prox",
+                "tut1": "animation.system.tut1",
+                "tut2": "animation.system.tut2",
+                "tut3": "animation.system.tut3",
+                "readynext": "animation.system.readynext",
+                "tut_ctrl": "controller.animation.tut_messages",
+                "floor_tp": "animation.system.fall_tp_mainroom",
+                "end_reset": "animation.sticky.reset_end"
+            }
+        },
+        "component_groups": {
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:var_2": {
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "cyd:var_3": {
+                "minecraft:variant": {
+                    "value": 3
+                }
+            },
+            "cyd:var_4": {
+                "minecraft:variant": {
+                    "value": 4
+                }
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "cyd:ignite": {
+                "minecraft:is_ignited": {}
+            },
+            "cyd:stun": {
+                "minecraft:is_stunned": {}
+            },
+            "cyd:tame": {
+                "minecraft:is_tamed": {}
+            },
+            "cyd:saddle": {
+                "minecraft:is_saddled": {}
+            },
+            "cyd:shear": {
+                "minecraft:is_sheared": {}
+            },
+            "cyd:baby": {
+                "minecraft:is_baby": {}
+            },
+            "cyd:climb": {
+                "minecraft:can_climb": {}
+            },
+            "cyd:illager": {
+                "minecraft:is_illager_captain": {}
+            },
+            "cyd:out_of_control": {
+                "minecraft:out_of_control": {}
+            }
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:entity_sensor": {
+                "sensor_range": 25,
+                "require_all": false,
+                "event_filters": {
+                    "all_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        {
+                            "test": "has_component",
+                            "subject": "self",
+                            "operator": "not",
+                            "value": "minecraft:out_of_control"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "other",
+                            "operator": "not",
+                            "value": "dev"
+                        }
+                    ]
+                },
+                "event": "evt:out_of_control"
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "end_stk"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "end_stk"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_0"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord1"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord2"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_stunned"
+                                }
+                            ]
+                        },
+                        "event": "evt:stun"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord3"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_tamed"
+                                }
+                            ]
+                        },
+                        "event": "evt:tame"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord4"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_saddled"
+                                }
+                            ]
+                        },
+                        "event": "evt:saddle"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord5"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_sheared"
+                                }
+                            ]
+                        },
+                        "event": "evt:shear"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord6"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_baby"
+                                }
+                            ]
+                        },
+                        "event": "evt:baby"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "coord7"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:can_climb"
+                                }
+                            ]
+                        },
+                        "event": "evt:climb"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "starttut"
+                                },
+                                {
+                                    "test": "is_variant",
+                                    "operator": "not",
+                                    "value": 1
+                                },
+                                {
+                                    "test": "is_variant",
+                                    "operator": "not",
+                                    "value": 2
+                                },
+                                {
+                                    "test": "is_variant",
+                                    "operator": "not",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "event": "evt:var_1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "tut2"
+                                },
+                                {
+                                    "test": "is_variant",
+                                    "operator": "equals",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:var_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "tut3"
+                                },
+                                {
+                                    "test": "is_variant",
+                                    "operator": "equals",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        "event": "evt:var_3"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1",
+                        "cyd:var_2",
+                        "cyd:var_3",
+                        "cyd:var_4"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_2",
+                        "cyd:var_3",
+                        "cyd:var_4"
+                    ]
+                }
+            },
+            "evt:var_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_1",
+                        "cyd:var_3",
+                        "cyd:var_4"
+                    ]
+                }
+            },
+            "evt:var_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_1",
+                        "cyd:var_2",
+                        "cyd:var_4"
+                    ]
+                }
+            },
+            "evt:var_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_1",
+                        "cyd:var_2",
+                        "cyd:var_3"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignite"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:stun": {
+                "add": {
+                    "component_groups": [
+                        "cyd:stun"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:tame": {
+                "add": {
+                    "component_groups": [
+                        "cyd:tame"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:saddle": {
+                "add": {
+                    "component_groups": [
+                        "cyd:saddle"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:shear": {
+                "add": {
+                    "component_groups": [
+                        "cyd:shear"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:baby": {
+                "add": {
+                    "component_groups": [
+                        "cyd:baby"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:climb": {
+                "add": {
+                    "component_groups": [
+                        "cyd:climb"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                }
+            },
+            "evt:out_of_control": {
+                "add": {
+                    "component_groups": [
+                        "cyd:out_of_control"
+                    ]
+                }
+            },
+            "evt:rm_coords": {
+                "add": {
+                    "component_groups": [
+                        "cyd:illager"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignite",
+                        "cyd:stun",
+                        "cyd:tame",
+                        "cyd:saddle",
+                        "cyd:shear",
+                        "cyd:baby",
+                        "cyd:climb"
+                    ]
+                }
+            }
+        }
+    }
+}

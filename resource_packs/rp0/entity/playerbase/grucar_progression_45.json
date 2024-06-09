@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:grucar_progression_45",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/gru_car_build_stages_4_5"
+      },
+      "geometry": {
+        "default": "geometry.gru_car_build_45"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.grucar_progression_45"
+      ]
+    }
+  }
+}

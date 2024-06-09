@@ -1,0 +1,490 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.villainometer.0": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"position": [0, 0.01, 0],
+					"scale": [1, 0.01, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.100": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.1, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.200": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.2, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.300": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.3, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.400": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.4, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.500": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.5, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 1
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.600": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.6, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 1
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.700": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.7, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 1
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.800": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.8, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 1
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.900": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.9, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 1
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.villainometer.1000": {
+			"loop": true,
+			"bones": {
+				"points": {
+					"scale": [1, 0.99, 1]
+				},
+				"points_marker_1": {
+					"scale": 1
+				},
+				"points_marker_2": {
+					"scale": 1
+				},
+				"points_marker_3": {
+					"scale": 1
+				},
+				"points_marker_4": {
+					"scale": 1
+				},
+				"points_marker_5": {
+					"scale": 1
+				},
+				"points_marker_6": {
+					"scale": 0.8
+				},
+				"points_marker_7": {
+					"scale": 0.8
+				},
+				"points_marker_8": {
+					"scale": 0.8
+				},
+				"points_marker_9": {
+					"scale": 0.8
+				},
+				"points_marker_10": {
+					"scale": 0.8
+				},
+				"sign_left": {
+					"scale": 1
+				},
+				"sign_right": {
+					"scale": 1
+				}
+			}
+		}
+	}
+}

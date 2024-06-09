@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:player_vector_rocket",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/moon/missile_projectile"
+            },
+            "geometry": {
+                "default": "geometry.missile_projectile"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

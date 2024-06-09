@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.world.guard.delete_barrier": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/fill ~5 ~5 ~5 ~-5 ~-5 ~-5 air 0 replace barrier"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.world.airport_tp_one": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/tp @a[r=1] -4 80 2234",
+          "/function text/airportcity"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.world.airport_tp_two": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/tp @a[r=1] -390 80 1100",
+          "/function text/airporttown"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.world.bananabag.text": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function text/bananabag"
+        ]
+      },
+      "animation_length": 0.2
+    }
+  }
+}

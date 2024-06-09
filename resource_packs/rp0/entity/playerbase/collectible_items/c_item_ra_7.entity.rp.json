@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:c_item_ra_7",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/world/collectables/makeshift_unicorn_toy",
+        "texture_2":"textures/entity/world/collectables/u/makeshift_unicorn_toy_u"
+      },
+      "geometry": {
+        "default": "geometry.collectables_container_item"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.collectible_items"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:kun_master_chow",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/kun/master_chow"
+      },
+      "geometry": {
+        "default": "geometry.chow_master"
+      },
+      "animations": {
+        "breath": "animation.chow.breath",
+        "idle1": "animation.chow.idle1",
+        "idle2": "animation.chow.idle2",
+        "talk1": "animation.chow.talk1",
+        "talk2": "animation.chow.talk2",
+        "bow": "animation.chow.tutorial_bow",
+        "cheer1": "animation.chow.cheer1",
+        "cheer2": "animation.chow.cheer2",
+        "breach": "animation.chow.ceiling_breach",
+        "ctrl": "controller.animation.rp.chow"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "breath"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

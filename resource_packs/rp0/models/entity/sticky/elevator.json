@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"geometry.elevator": {
+		"texturewidth": 224,
+		"textureheight": 224,
+		"visible_bounds_width": 6,
+		"visible_bounds_height": 5.5,
+		"visible_bounds_offset": [0, 2.25, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "elevator",
+				"parent": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "frame",
+				"parent": "elevator",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-20, 0, -24], "size": [40, 1, 44], "uv": [56, 56]},
+					{"origin": [-20, 52, -24], "size": [40, 12, 44], "uv": [0, 0]},
+					{"origin": [-9, 53, -24.75], "size": [18, 10, 1], "uv": [0, 0], "inflate": -0.25},
+					{"origin": [-20, 0, 20], "size": [40, 64, 4], "uv": [104, 104]},
+					{"origin": [20, 0, -24], "size": [4, 64, 48], "uv": [0, 56]},
+					{"origin": [-24, 0, -24], "size": [4, 64, 48], "uv": [0, 56], "mirror": true}
+				]
+			},
+			{
+				"name": "arrow",
+				"parent": "frame",
+				"pivot": [0, 55.5, -24.6],
+				"cubes": [
+					{"origin": [-1, 55, -24.6], "size": [2, 6, 0], "uv": [0, 11]},
+					{"origin": [-0.5, 54.5, -25.1], "size": [1, 1, 1], "uv": [4, 11]}
+				]
+			},
+			{
+				"name": "door_left",
+				"parent": "frame",
+				"pivot": [20, 32, -21.5],
+				"cubes": [
+					{"origin": [0, 1, -22], "size": [20, 51, 2], "uv": [0, 168]}
+				]
+			},
+			{
+				"name": "door_right",
+				"parent": "frame",
+				"pivot": [-20, 32, -21.5],
+				"cubes": [
+					{"origin": [-20, 1, -22], "size": [20, 51, 2], "uv": [0, 168], "mirror": true}
+				]
+			}
+		]
+	}
+}

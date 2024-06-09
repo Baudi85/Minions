@@ -1,0 +1,316 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.quest_marker_part": {
+      "loop": true,
+      "animation_length": 0.95,
+      "particle_effects": {
+        "0.0": {
+          "effect": "part"
+        }
+      }
+    },
+    "animation.generic.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "particle"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.lair.locked": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "lock_particle",
+            "locator": "locator_lock"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.vector.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "particle",
+            "locator": "thruster_right"
+          },
+          {
+            "effect": "particle",
+            "locator": "thruster_left"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.aura.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "aura"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.prop.particles": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "particle",
+            "locator":"locator"
+          }
+        ]
+      },
+      "animation_length": 1.0
+    },
+    "animation.sticky.medalion.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "sticky"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.question.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "question",
+            "locator": "above"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.tutorial.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "sticky",
+            "locator": "tutorial"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.exclimation.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "exclimation",
+            "locator": "above"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.fov.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ],
+        "0.3": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ],
+        "0.5": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ],
+        "0.8": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.fov.guard.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ],
+        "1.5": [
+          {
+            "effect": "view",
+            "locator": "fov"
+          }
+        ]
+      },
+      "animation_length": 3
+    },
+    "animation.moltov.particle": {
+      "loop": false,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "particle"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.jam_overheat.particle": {
+      "loop": false,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "jam_overheat",
+            "locator":"locator_overheat"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.plasma_jam_overheat.particle": {
+      "loop": false,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "plasma_jam_overheat",
+            "locator":"locator_overheat"
+          }
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.vehicle.exhaust.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.dual_exhaust.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_l"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_r"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.knockback.particle": {
+      "loop": false,
+      "particle_effects": {
+        "0.5": [
+          {
+            "effect": "particle_1"
+          },
+          {
+            "effect": "particle_2"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.tri_exhaust.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_1"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_2"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_3"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.quad_exhaust.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_1"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_2"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_3"
+          },
+          {
+            "effect": "exhaust_particle",
+            "locator": "exhaust_4"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.wind.particle": {
+      "loop": true,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "wind_particle",
+            "locator": "wind"
+          }
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.vehicle.crash.particle": {
+      "loop": false,
+      "particle_effects": {
+        "0.0": [
+          {
+            "effect": "crash_particle",
+            "locator": "crash"
+          }
+        ]
+      },
+      "animation_length": 1
+    }
+  }
+}

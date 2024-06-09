@@ -1,0 +1,161 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:prop_mode_select",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:var_2": {
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "cyd:despawn": {
+              "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.0,
+                "height": 0.0
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "no_stick",
+                    "prop",
+                    "lair_unlocked"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {},
+                        "deals_damage": false
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn": {
+              "add": {
+                "component_groups": [
+                  "cyd:despawn"
+                ]
+              }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1",
+                        "cyd:var_2"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_2"
+                    ]
+                }
+            },
+            "evt:var_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_1"
+                    ]
+                }
+            }
+        }
+    }
+}

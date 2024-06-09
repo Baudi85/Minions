@@ -1,0 +1,36 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:item_shrink_prop",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/none",
+                "sticky": "textures/entity/moon/shrink_ray"
+            },
+            "geometry": {
+                "default": "geometry.none",
+                "sticky": "geometry.shrink_ray_prop"
+            },
+            "scripts": {
+                "animate": [
+                    {"static_ctrl":"query.skin_id != 1"}
+                ]
+            },
+            "animations": {
+                "static_ctrl": "animation.shrink_ray.prop_idle"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.gadget_sticky": "query.skin_id != 1"
+                }
+            ]
+        }
+    }
+}

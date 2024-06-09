@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:elevator",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/elevator"
+      },
+      "geometry": {
+        "default": "geometry.elevator"
+      },
+      "animations": {
+        "idle_closed": "animation.elevator.idle_closed",
+        "open": "animation.elevator.open",
+        "idle_open": "animation.elevator.idle_opened",
+        "close": "animation.elevator.close",
+        "ctrl": "controller.animation.rp.sticky_elevator"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

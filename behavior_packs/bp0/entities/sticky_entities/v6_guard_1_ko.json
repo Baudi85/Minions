@@ -1,0 +1,341 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:v6_guard_1_ko",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "honey_ctrl": "controller.animation.trigger.guard.ko_rm_honey",
+                "rm_honey": "animation.rm_honey",
+                "rm_hay": "animation.rm_hay",
+                "snd_ctrl": "controller.animation.sound.ko_guard.ctrl",
+                "peripheral_ctrl": "controller.animation.trigger.guard_ko.peripheral",
+                "peripheral": "animation.guard.peripheral",
+                "caught_dialogue": "controller.animation.sound.guard.caught.dialogue.ctrl",
+                "knockout_dialogue": "controller.animation.sound.guard.knockout.dialogue.ctrl"
+            },
+            "scripts": {
+                "animate": [
+                    "honey_ctrl",
+                    "snd_ctrl",
+                    "peripheral_ctrl",
+                    "caught_dialogue",
+                    "knockout_dialogue"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:despawn":{
+                "minecraft:instant_despawn":{}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:mv_0": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "cyd:mv_1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cyd:mv_2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:var_2": {
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "cyd:targeting": {
+                "minecraft:entity_sensor": {
+                    "sensor_range": 5,
+                    "require_all": false,
+                    "event_filters": {
+                        "all_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "target_box"
+                            },
+                            {
+                                "test": "is_variant",
+                                "subject": "self",
+                                "operator": "not",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    "event": "evt:var_1"
+                }
+            },
+            "cyd:ignited": {
+                "minecraft:is_ignited": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 2
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "human",
+                    "v6_guard",
+                    "no_stick"
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "==",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_variant",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_1"
+                        }
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 17
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 18
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_ignite"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "cyd:targeting"
+                    ]
+                }
+            },
+            "evt:rm_targeting": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:targeting"
+                    ]
+                }
+            },
+            "evt:mv_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_1",
+                        "cyd:mv_2"
+                    ]
+                }
+            },
+            "evt:mv_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_0",
+                        "cyd:mv_2"
+                    ]
+                }
+            },
+            "evt:mv_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_1",
+                        "cyd:mv_0"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1",
+                        "cyd:var_2"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0",
+                        "cyd:var_2"
+                    ]
+                }
+            },
+            "evt:var_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1",
+                        "cyd:var_0"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:rm_ignite": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:despawn":{
+                "add":{
+                    "component_groups":[
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

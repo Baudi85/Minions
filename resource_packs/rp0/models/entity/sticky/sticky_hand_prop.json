@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"geometry.sticky_hand_prop": {
+		"texturewidth": 48,
+		"textureheight": 48,
+		"visible_bounds_width": 7,
+		"visible_bounds_height": 5,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [-0.4, 0, 2]
+			},
+			{
+				"name": "puddle",
+				"parent": "root",
+				"pivot": [0.1, 2.6, 0.6],
+				"cubes": [
+					{"origin": [-6.8, 0.05, -7.4], "size": [15, 0, 15], "uv": [0, 33]}
+				]
+			},
+			{
+				"name": "sticky_finger",
+				"parent": "root",
+				"pivot": [0.1, 1, 0.6],
+				"rotation": [3, 22.5, 0]
+			},
+			{
+				"name": "base",
+				"parent": "sticky_finger",
+				"pivot": [0.1, 1, 2.6],
+				"rotation": [-10, 0, 0],
+				"cubes": [
+					{"origin": [-0.4, 0.5, -1.65], "size": [1, 1, 7], "uv": [0, 21], "inflate": 0.25},
+					{"origin": [-0.4, 0.5, 5.35], "size": [1, 1, 2], "uv": [12, 0], "inflate": -0.25},
+					{"origin": [-2.9, -0.5, -4.15], "size": [6, 3, 3], "uv": [16, 6]}
+				],
+				"locators": {
+					"locator_click": [0.1, 2, -0.4],
+					"lead": [0.1, 1.00039, -4.01118]
+				}
+			},
+			{
+				"name": "button",
+				"parent": "base",
+				"pivot": [0.1, 1.5, -0.4],
+				"cubes": [
+					{"origin": [-0.4, 1, -0.9], "size": [1, 1, 1], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "slime",
+				"parent": "base",
+				"pivot": [0.1, 1, -2.65],
+				"cubes": [
+					{"origin": [-2.9, -0.5, -4.15], "size": [6, 3, 3], "uv": [16, 0], "inflate": -0.25}
+				]
+			}
+		]
+	}
+}

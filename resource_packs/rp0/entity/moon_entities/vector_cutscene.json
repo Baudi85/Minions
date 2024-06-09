@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:vector_cutscene",
+            "materials": {
+                "default": "cyd_alpha",
+                "helmet":"cyd_transparent"
+            },
+            "textures": {
+                "default": "textures/entity/moon/vector_cutscene"
+            },
+            "geometry": {
+                "default": "geometry.vector_cutscene"
+            },
+            "particle_effects": {
+              "particle": "cyd:jetpack_smoke_outro"
+            },
+            "animations": {
+              "outro1": "animation.vector_cutscene.outro1",
+              "outro2": "animation.vector_cutscene.outro2"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.cyd.vector_cutscene"
+            ]
+        }
+    }
+}

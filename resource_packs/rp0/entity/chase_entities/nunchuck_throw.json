@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:nunchuck_throw",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/nunchuck_throw"
+      },
+      "geometry": {
+        "default": "geometry.nunchuck_throw"
+      },
+      "animations": {
+        "trigger": "animation.nunchuck_throw.trigger",
+        "idle": "animation.nunchuck_throw.idle"
+      },
+      "sound_effects": {
+        "cyd.mission.race.throw": "cyd.mission.race.throw"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      }
+    }
+  }
+}

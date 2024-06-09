@@ -1,0 +1,1007 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.player.tools": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jam_gun_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'jamgun'"
+            },
+            {
+              "jam_gun_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'jamgun'"
+            },
+            {
+              "jam_gun_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'jamgun'"
+            },
+
+
+            {
+              "kun_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            },
+            {
+              "kun_idle_tp": "variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            },
+
+
+            {
+              "sticky_finger_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'slingshot'"
+            },
+            {
+              "sticky_finger_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'slingshot'"
+            },
+            {
+              "sticky_finger_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'slingshot'"
+            },
+
+
+            {
+              "shrink_ray_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'shrinkray'"
+            },
+            {
+              "shrink_ray_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'shrinkray'"
+            },
+            {
+              "shrink_ray_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'shrinkray'"
+            },
+
+
+            {
+              "cheese_gun_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'cheesegun'"
+            },
+            {
+              "cheese_gun_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'cheesegun'"
+            },
+            {
+              "cheese_gun_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'cheesegun'"
+            },
+
+
+            {
+              "plasma_jam_gun_idle_fp": "variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            },
+            {
+              "plasma_gun_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            },
+            {
+              "plasma_jam_gun_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+
+
+        "shrink_ray_idle_fp": {
+          "animations": [
+            "shrink_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray' || variable.is_first_person == 0"
+            },
+            {
+              "shrink_ray_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "shrink_ray_trigger": {
+          "animations": [
+            "shrink_attack1_fp",
+            "shrink_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished && query.get_equipped_item_name(0) != 'shrinkray'"
+            },
+            {
+              "shrink_ray_idle_fp": "query.all_animations_finished && !query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "shrink_ray_idle_tp": {
+          "animations": [
+            "shrink_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "shrink_ray_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "shrink_ray_trigger_tp": {
+          "animations": [
+            "shrink_attack1_tp",
+            "shrink_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray'"
+            },
+            {
+              "shrink_ray_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "shrink_ray_idle_tp_minion": {
+          "animations": [
+            "shrink_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "shrink_ray_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "shrink_ray_trigger_tp_minion": {
+          "animations": [
+            "shrink_attack1_minion_tp",
+            "shrink_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray'"
+            },
+            {
+              "shrink_ray_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+
+
+        "jam_gun_idle_fp": {
+          "animations": [
+            "jam_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun' || variable.is_first_person == 0"
+            },
+            {
+              "jam_gun_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "jam_gun_trigger": {
+          "animations": [
+            "jam_attack1_fp",
+            "jam_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun'"
+            },
+            {
+              "jam_gun_idle_fp": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "jam_gun_idle_tp": {
+          "animations": [
+            "jam_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "jam_gun_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "jam_gun_trigger_tp": {
+          "animations": [
+            "jam_attack1_tp",
+            "jam_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun'"
+            },
+            {
+              "jam_gun_idle_tp": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "jam_gun_idle_tp_minion": {
+          "animations": [
+            "jam_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "jam_gun_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "jam_gun_trigger_tp_minion": {
+          "animations": [
+            "jam_attack1_minion_tp",
+            "jam_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun'"
+            },
+            {
+              "jam_gun_idle_tp_minion": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+
+
+        "plasma_jam_gun_idle_fp": {
+          "animations": [
+            "jam_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun' || variable.is_first_person == 0"
+            },
+            {
+              "plasma_jam_gun_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "plasma_jam_gun_trigger": {
+          "animations": [
+            "jam_attack1_fp",
+            "jam_idle_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun'"
+            },
+            {
+              "plasma_jam_gun_idle_fp": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "plasma_gun_idle_tp": {
+          "animations": [
+            "jam_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "plasma_jam_gun_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "plasma_jam_gun_trigger_tp": {
+          "animations": [
+            "jam_attack1_tp",
+            "jam_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun'"
+            },
+            {
+              "plasma_gun_idle_tp": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "plasma_jam_gun_idle_tp_minion": {
+          "animations": [
+            "jam_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "plasma_jam_gun_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "plasma_jam_gun_trigger_tp_minion": {
+          "animations": [
+            "jam_attack1_minion_tp",
+            "jam_idle_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun'"
+            },
+            {
+              "plasma_jam_gun_idle_tp_minion": "!query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+
+        "cheese_gun_idle_fp": {
+          "animations": [
+            "cheese_gun_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun' || variable.is_first_person == 0"
+            },
+            {
+              "cheese_gun_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_gun_trigger": {
+          "animations": [
+            "cheese_attack1_fp",
+            "cheese_gun_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun'"
+            },
+            {
+              "cheese_gun_idle_fp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        
+        "cheese_gun_idle_tp": {
+          "animations": [
+            "cheese_gun_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "cheese_gun_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_gun_trigger_tp": {
+          "animations": [
+            "cheese_attack1_tp",
+            "cheese_gun_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun'"
+            },
+            {
+              "cheese_gun_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "cheese_gun_idle_tp_minion": {
+          "animations": [
+            "tp_cheesegun_idle_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "cheese_gun_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_gun_trigger_tp_minion": {
+          "animations": [
+            "cheese_attack1_minion_tp",
+            "tp_cheesegun_idle_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun'"
+            },
+            {
+              "cheese_gun_idle_tp_minion": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+
+        "sticky_finger_idle_fp": {
+          "animations": [
+            "sticky_finger_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot' || variable.is_first_person == 0"
+            },
+            {
+              "sticky_finger_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "sticky_finger_trigger": {
+          "animations": [
+            "sticky_attack1_fp",
+            "sticky_finger_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot'"
+            },
+            {
+              "sticky_finger_idle_fp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "sticky_finger_idle_tp": {
+          "animations": [
+            "tp_idle_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "sticky_finger_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "sticky_finger_trigger_tp": {
+          "animations": [
+            "sticky_attack1_tp",
+            "tp_idle_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot'"
+            },
+            {
+              "sticky_finger_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "sticky_finger_idle_tp_minion": {
+          "animations": [
+            "tp_idle_sticky_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "sticky_finger_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "sticky_finger_trigger_tp_minion": {
+          "animations": [
+            "sticky_attack1_minion_tp",
+            "tp_idle_sticky_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot'"
+            },
+            {
+              "sticky_finger_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+
+        "kun_idle_tp": {
+          "animations": [
+            "chi_idle_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            },
+            {
+              "kun_idle_fp": "variable.is_first_person == 1"
+            },
+            {
+              "kun_idle_minion_tp": "variable.is_first_person == 0 &&  query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "kun_idle_fp": {
+          "animations": [
+            "fp_nunhold"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            },
+            {
+              "kun_idle_tp": "variable.is_first_person == 0 &&  query.skin_id != 1"
+            },
+            {
+              "kun_idle_minion_tp": "variable.is_first_person == 0 &&  query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "kun_idle_minion_tp": {
+          "animations": [
+            "tp_nunhold"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            },
+            {
+              "kun_idle_fp": "variable.is_first_person == 1"
+            },
+            {
+              "kun_idle_tp": "variable.is_first_person == 0 &&  query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.player.jam_overheat": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "normal": "query.is_ignited && query.get_equipped_item_name(0) == 'jamgun'"
+            },
+            {
+              "plasma": "query.is_ignited && query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ]
+        },       
+        "normal": {
+          "animations": [
+            "jam_overheat"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_ignited"
+            }
+          ]
+        },       
+        "plasma": {
+          "animations": [
+            "plasma_jam_overheat"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_ignited"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.item.fixed": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "holding": "query.skin_id == 1 && variable.is_first_person == 0"
+            }
+          ]
+        },       
+        "holding": {
+          "animations": [
+            "minion_item"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id == 0 || variable.is_first_person == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.chi_nun": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "chi_dash_fp": "query.is_using_item && variable.is_first_person == 1 && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            },
+            {
+              "chi_dash_tp": "query.is_using_item && !variable.is_first_person && query.get_equipped_item_name(0) == 'chi_nunchuk' && query.skin_id != 1 "
+            },
+            {
+              "chi_dash_minion_tp": "query.is_using_item && !variable.is_first_person && query.get_equipped_item_name(0) == 'chi_nunchuk' && query.skin_id == 1"
+            },
+            {
+             "chi_attack_fp_random": "variable.attack_time >= 0.001 && variable.is_first_person && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            },
+            {
+              "chi_attack1_tp": "variable.attack_time > 0.001 && !variable.is_first_person && math.random_integer(1, 2) == 1 && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            },
+            {
+              "chi_attack2_tp": "variable.attack_time > 0.001 && !variable.is_first_person && math.random_integer(1, 2) == 2 && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            },
+            {
+              "chi_attack1_minion_tp": "query.skin_id == 1 && variable.attack_time > 0.001 && !variable.is_first_person && math.random_integer(1, 2) == 1 && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            },
+            {
+              "chi_attack2_minion_tp": "query.skin_id == 1 && variable.attack_time > 0.001 && !variable.is_first_person && math.random_integer(1, 2) == 2 && query.get_equipped_item_name(0) == 'chi_nunchuk' "
+            }
+          ]
+        },       
+        "chi_dash_fp": {
+          "animations": [
+            "chi_dash_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished && !query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.1
+        },       
+        "chi_dash_tp": {
+          "animations": [
+            "chi_dash_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished && !query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.1
+        },       
+        "chi_dash_minion_tp": {
+          "animations": [
+            "chi_dash_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished && !query.is_using_item"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+
+        "chi_attack_fp_random": {
+          "on_entry": [
+            "temp.random_chi = math.round(math.random(1, 2));"
+          ],
+          "transitions": [
+            {
+              "chi_attack1_fp": "temp.random_chi == 1"
+            },
+            {
+              "chi_attack2_fp": "temp.random_chi == 2"
+            }
+          ]
+        },
+        "chi_attack1_fp": {
+          "animations": [
+            "chi_attack1_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "chi_attack2_fp": {
+          "animations": [
+            "chi_attack2_fp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "chi_attack1_tp": {
+          "animations": [
+            "chi_attack1_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        },
+        "chi_attack2_tp": {
+          "animations": [
+            "chi_attack2_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        },
+        "chi_attack1_minion_tp": {
+          "animations": [
+            "chi_attack1_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        },
+        "chi_attack2_minion_tp": {
+          "animations": [
+            "chi_attack2_minion_tp"
+          ],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.fart": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "fart_grenade_idle_fp": "variable.is_first_person && query.get_equipped_item_name(0) == 'fartgrenade'"
+            },
+            {
+              "fart_grenade_idle_tp": "query.skin_id != 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'fartgrenade'"
+            },
+            {
+              "fart_grenade_idle_tp_minion": "query.skin_id == 1 && variable.is_first_person == 0 && query.get_equipped_item_name(0) == 'fartgrenade'"
+            }
+          ]
+        },     
+        "fart_grenade_idle_fp": {
+          "animations": [
+            "fart_grenade_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || variable.is_first_person == 0"
+            },
+            {
+              "fart_grenade_trigger": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "fart_grenade_trigger": {
+          "animations": [
+            "fart_attack1_fp",
+            "fart_grenade_idle"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || variable.is_first_person == 0"
+            },
+            {
+              "fart_grenade_idle_fp": "!query.is_using_item && query.all_animations_finished && variable.is_first_person == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "fart_grenade_idle_tp": {
+          "animations": [
+            "tp_idle_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || query.skin_id == 1 || variable.is_first_person == 1"
+            },
+            {
+              "fart_grenade_trigger_tp": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "fart_grenade_trigger_tp": {
+          "animations": [
+            "fart_attack1_tp",
+            "tp_idle_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || variable.is_first_person"
+            },
+            {
+              "fart_grenade_idle_tp": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+
+        "fart_grenade_idle_tp_minion": {
+          "animations": [
+            "tp_idle_fart_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || query.skin_id != 1 || variable.is_first_person == 1"
+            },
+            {
+              "fart_grenade_trigger_tp_minion": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' "
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "fart_grenade_trigger_tp_minion": {
+          "animations": [
+            "fart_attack1_minion_tp",
+            "tp_idle_fart_minion"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade' || variable.is_first_person == 1 || query.skin_id != 1"
+            },
+            {
+              "fart_grenade_idle_tp_minion": "!query.is_using_item && query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+
+
+    "controller.animation.rp.sticky_fingers.direct": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "north": "query.variant == 2"
+            },
+            {
+              "south": "query.variant == 1"
+            },
+            {
+              "east": "query.variant == 3"
+            },
+            {
+              "west": "query.variant == 4"
+            },
+            {
+              "north_east": "query.variant == 5"
+            },
+            {
+              "north_west": "query.variant == 6"
+            },
+            {
+              "south_east": "query.variant == 7"
+            },
+            {
+              "south_west": "query.variant == 8"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "north": {
+          "animations": [
+            "north"
+          ]
+        },
+        "south": {
+          "animations": [
+            "south"
+          ]
+        },
+        "east": {
+          "animations": [
+            "east"
+          ]
+        },
+        "west": {
+          "animations": [
+            "west"
+          ]
+        },
+        "north_east": {
+          "animations": [
+            "north_east"
+          ]
+        },
+        "north_west": {
+          "animations": [
+            "north_west"
+          ]
+        },
+        "south_east": {
+          "animations": [
+            "south_east"
+          ]
+        },
+        "south_west": {
+          "animations": [
+            "south_west"
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.sticky_fingers.shoot_grab": {
+      "states": {
+        "default": {
+          "animations": [
+            "shoot"
+          ],
+          "transitions": [
+            {
+              "grab": "query.is_powered"
+            },
+            {
+              "despawn": "query.is_ignited"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "grab": {
+          "animations": [
+            "grab"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "despawn": "query.is_ignited"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "despawn": {
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

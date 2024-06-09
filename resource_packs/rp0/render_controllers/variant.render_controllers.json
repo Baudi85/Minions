@@ -1,0 +1,254 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cyd.variant_2": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.mark_variant_2": {
+		"geometry": "Geometry.default",
+		"materials": [ { "*": "Material.default" } ],
+		"arrays": {
+		  "textures": {
+			  "array.skins": [
+				  "Texture.default",
+				  "Texture.var1"
+			  ]
+		  }
+		},
+		"textures": [ "Array.skins[query.mark_variant]" ]
+	  },
+	"controller.render.cyd.skin_2": {
+		"geometry": "Geometry.default",
+		"materials": [ { "*": "Material.default" } ],
+		"arrays": {
+		  "textures": {
+			  "array.skins": [
+				  "Texture.default",
+				  "Texture.var1"
+			  ]
+		  }
+		},
+		"textures": [ "Array.skins[query.skin_id]" ]
+	  },
+    "controller.render.cyd.variant_3": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+    "controller.render.cyd.variant_4": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_5": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_6": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_7": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_8": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6",
+				"Texture.var7"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_9": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6",
+				"Texture.var7",
+				"Texture.var8"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_10": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6",
+				"Texture.var7",
+				"Texture.var8",
+				"Texture.var9"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_14": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6",
+				"Texture.var7",
+				"Texture.var8",
+				"Texture.var9",
+				"Texture.var10",
+				"Texture.var11",
+				"Texture.var12",
+				"Texture.var13"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    },
+	"controller.render.cyd.variant_34": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+	  "arrays": {
+		"textures": {
+			"array.skins": [
+				"Texture.default",
+				"Texture.var1",
+				"Texture.var2",
+				"Texture.var3",
+				"Texture.var4",
+				"Texture.var5",
+				"Texture.var6",
+				"Texture.var7",
+				"Texture.var8",
+				"Texture.var9",
+				"Texture.var10",
+				"Texture.var11",
+				"Texture.var12",
+				"Texture.var13",
+				"Texture.var14",
+				"Texture.var15",
+				"Texture.var16",
+				"Texture.var17",
+				"Texture.var18",
+				"Texture.var19",
+				"Texture.var20",
+				"Texture.var21",
+				"Texture.var22",
+				"Texture.var23",
+				"Texture.var24",
+				"Texture.var25",
+				"Texture.var26",
+				"Texture.var27",
+				"Texture.var28",
+				"Texture.var29",
+				"Texture.var30",
+				"Texture.var31",
+				"Texture.var32",
+				"Texture.var33"
+			]
+		}
+	  },
+	  "textures": [ "Array.skins[query.variant]" ]
+    }	
+  }
+}

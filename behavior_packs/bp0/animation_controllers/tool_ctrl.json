@@ -1,0 +1,786 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.tools_v1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'slingshot'"
+            },
+            {
+              "fartgrenade": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'fartgrenade'"
+            },
+            {
+              "cheesegun": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'cheesegun'"
+            },
+            {
+              "chi_nunchuk": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            },
+            {
+              "shrinkray": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'shrinkray'"
+            },
+            {
+              "clipboard_objective": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'clipboard_objective'"
+            },
+            {
+              "rader": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'rader'"
+            },
+            {
+              "holo_map": "query.is_using_item && query.is_powered != 1 && query.get_equipped_item_name(0) == 'holo_map'"
+            },
+            {
+              "bat": "query.get_equipped_item_name(0) == 'bat'"
+            }
+          ]
+        },
+        "sticky": {
+          "animations": [
+            "dummy_timer_sticky"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "bat": {
+          "on_entry": [
+            "@s evt:player_bat"
+          ],
+          "on_exit": [
+            "@s evt:no_chi_damage"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'bat'"
+            }
+          ]
+        },
+        "shrinkray": {
+          "animations": [
+            "dummy_timer_shrink"
+          ],
+          "on_exit": [
+            "@s evt:no_shrink"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "holo_map": {
+          "on_entry": [
+            "@s evt:holo_map",
+            "/playsound cyd.generic.holomap_throw @a[r=5]"
+          ],
+          "on_exit": [
+            "@s evt:no_holomap"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "chi_nunchuk": {
+          "animations": [
+            "player_boost_forward",
+            "dummy_timer_nun"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "fartgrenade": {
+          "animations": [
+            "dummy_timer_fart"
+          ],
+          "on_exit": [
+            "@s evt:no_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "cheesegun": {
+          "animations": [
+            "dummy_timer_cheese"
+          ],
+          "on_exit": [
+            "@s evt:no_cheese"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "clipboard_objective": {
+          "animations": [
+            "dummy_timer_clipboard"
+          ],
+          "on_exit": [
+            "/give @s[tag=!player1] cyd:clipboard_objective 1",
+            "/tag @s remove objective"
+          ],
+          "transitions": [
+            {
+              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+            },
+            {
+              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+            }
+          ]
+        },
+        "rader": {
+          "on_entry": [
+            "/function rader",
+            "/clear @s[tag=!player1] cyd:rader 0 1"
+          ],
+          "on_exit": [
+            "/give @s[tag=!player1] cyd:rader 1"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.tools": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && variable.is_first_person == 1"
+            },
+            {
+              "fartgrenade_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && variable.is_first_person == 1"
+            },
+            {
+              "cheesegun_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && variable.is_first_person == 1"
+            },
+            {
+              "chi_nunchuk": "query.is_using_item && query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            },
+            {
+              "shrinkray_fp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && variable.is_first_person == 1"
+            },
+            {
+              "sticky_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id != 1 && variable.is_first_person == 0"
+            },
+            {
+              "fartgrenade_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && query.skin_id != 1 && variable.is_first_person == 0"
+            },
+            {
+              "cheesegun_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id != 1 && variable.is_first_person == 0"
+            },
+            {
+              "shrinkray_tp_notmin": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id != 1 && variable.is_first_person == 0"
+            },
+            {
+              "sticky_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'slingshot' && query.skin_id == 1 && variable.is_first_person == 0"
+            },
+            {
+              "fartgrenade_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'fartgrenade' && query.skin_id == 1 && variable.is_first_person == 0"
+            },
+            {
+              "cheesegun_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'cheesegun' && query.skin_id == 1 && variable.is_first_person == 0"
+            },
+            {
+              "shrinkray_tp_min": "query.is_using_item && query.get_equipped_item_name(0) == 'shrinkray' && query.skin_id == 1 && variable.is_first_person == 0"
+            },
+            {
+              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+            },
+            {
+              "holo_map": "query.is_using_item && query.get_equipped_item_name(0) == 'holo_map'"
+            },
+            {
+              "bat": "query.get_equipped_item_name(0) == 'bat'"
+            }
+          ]
+        },
+        "bat": {
+          "on_entry": [
+            "@s evt:player_bat"
+          ],
+          "on_exit": [
+            "@s evt:no_chi_damage"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'bat'"
+            }
+          ]
+        },
+        "holo_map": {
+          "on_entry": [
+            "@s evt:holo_map",
+            "/playsound cyd.generic.holomap_throw @a[r=5]"
+          ],
+          "on_exit": [
+            "@s evt:no_holomap"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "clipboard_objective": {
+          "animations": [
+            "dummy_timer_clipboard"
+          ],
+          "on_exit": [
+            "/give @s[tag=!player1] cyd:clipboard_objective 1"
+          ],
+          "transitions": [
+            {
+              "clipboard_objective": "query.is_using_item && query.get_equipped_item_name(0) == 'clipboard_objective'"
+            },
+            {
+              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+            }
+          ]
+        },
+        "chi_nunchuk": {
+          "animations": [
+            "player_boost_forward",
+            "dummy_timer_nun"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "fartgrenade_fp_notmin": {
+          "animations": [
+            "dummy_timer_fart_fp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "cheesegun_fp_notmin": {
+          "animations": [
+            "dummy_timer_cheese_fp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_cheese"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "shrinkray_fp_notmin": {
+          "animations": [
+            "dummy_timer_shrink_fp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_shrink"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "sticky_fp_notmin": {
+          "animations": [
+            "dummy_timer_sticky_fp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "fartgrenade_tp_notmin": {
+          "animations": [
+            "dummy_timer_fart_tp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "cheesegun_tp_notmin": {
+          "animations": [
+            "dummy_timer_cheese_tp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_cheese"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "shrinkray_tp_notmin": {
+          "animations": [
+            "dummy_timer_shrink_tp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_shrink"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "sticky_tp_notmin": {
+          "animations": [
+            "dummy_timer_sticky_tp_notmin"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "fartgrenade_tp_min": {
+          "animations": [
+            "dummy_timer_fart_tp_min"
+          ],
+          "on_exit": [
+            "@s evt:no_fart"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "cheesegun_tp_min": {
+          "animations": [
+            "dummy_timer_cheese_tp_min"
+          ],
+          "on_exit": [
+            "@s evt:no_cheese"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "shrinkray_tp_min": {
+          "animations": [
+            "dummy_timer_shrink_tp_min"
+          ],
+          "on_exit": [
+            "@s evt:no_shrink"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        },
+        "sticky_tp_min": {
+          "animations": [
+            "dummy_timer_sticky_tp_min"
+          ],
+          "on_exit": [
+            "@s evt:no_sticky"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished && !query.is_using_item"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.holding_tools": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.get_equipped_item_name(0) == 'slingshot'"
+            },
+            {
+              "fartgrenade": "query.get_equipped_item_name(0) == 'fartgrenade'"
+            },
+            {
+              "cheesegun": "query.get_equipped_item_name(0) == 'cheesegun'"
+            },
+            {
+              "chi_nunchuk": "query.get_equipped_item_name(0) == 'chi_nunchuk'"
+            },
+            {
+              "holo_map": "query.get_equipped_item_name(0) == 'holo_map'"
+            },
+            {
+              "shrinkray": "query.get_equipped_item_name(0) == 'shrinkray'"
+            },
+            {
+              "bat": "query.get_equipped_item_name(0) == 'bat'"
+            },
+            {
+              "holding_clipboard_objective": "query.get_equipped_item_name(0) == 'clipboard_objective'"
+            },
+            {
+              "jelly": "query.get_equipped_item_name(0) == 'jamgun'"
+            },
+            {
+              "plasma_jelly": "query.get_equipped_item_name(0) == 'plasma_jamgun'"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/function playerbase/objectives/stickyhand_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'slingshot'"
+            }
+          ]
+        },
+        "jelly": {
+          "on_entry": [
+            "/function playerbase/objectives/jamgun_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'jamgun'"
+            }
+          ]
+        },
+        "plasma_jelly": {
+          "on_entry": [
+            "/function playerbase/objectives/plasmajamgun_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'plasma_jamgun'"
+            }
+          ]
+        },
+        "bat": {
+          "on_entry": [
+            "/function playerbase/objectives/bat_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'bat'"
+            }
+          ]
+        },
+        "shrinkray": {
+          "on_entry": [
+            "/function playerbase/objectives/shrinkray_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'shrinkray'"
+            }
+          ]
+        },
+        "holo_map": {
+          "on_entry": [
+            "/function playerbase/objectives/holomap_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'holo_map'"
+            }
+          ]
+        },
+        "chi_nunchuk": {
+          "on_entry": [
+            "/function playerbase/objectives/nunchuck_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'chi_nunchuk'"
+            }
+          ]
+        },
+        "fartgrenade": {
+          "on_entry": [
+            "/function playerbase/objectives/fartgrenade_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'fartgrenade'"
+            }
+          ]
+        },
+        "cheesegun": {
+          "on_entry": [
+            "/function playerbase/objectives/cheeseray_msg"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'cheesegun'"
+            }
+          ]
+        },
+        "holding_clipboard_objective": {
+          "animations": [
+            "holding_clipboard"
+          ],
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name(0) != 'clipboard_objective'"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.jam_ctrl": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+            },
+            {
+              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+            }
+          ]
+        },
+        "end_jamgun_cd": {
+          "animations": [
+            "end_jam_cooldown"
+          ],
+          "transitions": [
+            {
+              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+            },
+            {
+              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+            }
+          ]
+        },
+        "end_plasma_cd": {
+          "animations": [
+            "end_plasma_jam_cooldown"
+          ],
+          "transitions": [
+            {
+              "jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'jamgun' && !query.is_ignited"
+            },
+            {
+              "plasma_jamgun": "query.is_using_item && query.get_equipped_item_name(0) == 'plasma_jamgun' && !query.is_ignited"
+            }
+          ]
+        },
+        "jamgun": {
+          "animations": [
+            "jam_rapid",
+            "start_jam_cooldown"
+          ],
+          "on_exit": [
+            "@s evt:no_jam"
+          ],
+          "transitions": [
+            {
+              "end_jamgun_cd": "!query.is_using_item || query.is_ignited"
+            }
+          ]
+        },
+        "plasma_jamgun": {
+          "animations": [
+            "plasma_jam_rapid",
+            "start_plasma_jam_cooldown"
+          ],
+          "on_exit": [
+            "@s evt:no_plasma_jam"
+          ],
+          "transitions": [
+            {
+              "end_plasma_cd": "!query.is_using_item || query.is_ignited"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.sticky_gun": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.is_powered"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/function sticky/victimtagtransfer",
+            "/function sticky/stuck_vehicle"
+          ],
+          "animations": [
+            "face"
+          ],
+          "transitions": [
+            {
+              "return": "query.is_sheared"
+            }
+          ]
+        },
+        "return": {
+          "animations": [
+            "return"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.tag_transfer": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/function sticky/playertagtransfer"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.jelly_minion": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.variant == 1"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/tag @e[type=cyd:moon_mutant_minion,r=2,c=1,tag=!jelly] add jelly",
+            "/event entity @s evt:despawn"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.shrink.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.variant == 1"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/playsound cyd.gadget.shrink.impact @a[r=20]"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.shrink_missile": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.variant == 1"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/tag @e[type=cyd:rocket_entity,c=1] add shrink",
+            "/event entity @s evt:despawn"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.sticky_despawn": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "despawn": "query.is_ignited"
+            }
+          ]
+        },
+        "despawn": {
+          "animations": [
+            "despawn_timer"
+          ],
+          "transitions": [
+            {
+              "real_despawn": "query.all_animations_finished"
+            }
+          ]
+        },
+        "real_despawn": {
+          "on_entry": [
+            "@s evt:despawn"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.cheese_gun": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sticky": "query.variant == 1"
+            }
+          ]
+        },
+        "sticky": {
+          "on_entry": [
+            "/execute @e[family=cheese,c=1,r=5,tag=!cheese] ~ ~ ~ tag @s add cheese"
+          ]
+        }
+      }
+    },
+    "controller.animation.tool.cheese_impact": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute @e[family=cheese,c=1,r=3,tag=!cheese] ~ ~ ~ tag @s add cheese"
+          ]
+        }
+      }
+    }
+  }
+}

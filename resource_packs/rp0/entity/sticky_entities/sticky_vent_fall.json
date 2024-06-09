@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:sticky_vent_fall",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/sticky_vent"
+      },
+      "geometry": {
+        "default": "geometry.sticky_vent"
+      },
+      "particle_effects": {
+        "vent_break": "cyd:vent_break"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.sticky_vent",
+        "trigger": "animation.sticky_vent.trigger_fall",
+        "punch": "animation.sticky_vent.punch",
+        "open": "animation.sticky_vent.idle_open_fall"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

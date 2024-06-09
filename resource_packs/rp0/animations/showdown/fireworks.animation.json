@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fireworks.idle": {
+			"loop": true,
+			"animation_length": 7.43
+		},
+		"animation.fireworks.particle_blue": {
+			"loop": true,
+			"animation_length": 10,
+			"particle_effects": {
+				"0.0": {
+					"effect": "firework_blue"
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "firework"
+				}
+			}
+		},
+		"animation.fireworks.particle_orange": {
+			"loop": true,
+			"animation_length": 10,
+			"particle_effects": {
+				"0.0": {
+					"effect": "firework_orange"
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "firework"
+				}
+			}
+		},
+		"animation.fireworks.particle_red": {
+			"loop": true,
+			"animation_length": 10,
+			"particle_effects": {
+				"0.0": {
+					"effect": "firework_red"
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "firework"
+				}
+			}
+		},
+		"animation.fireworks.particle_yellow": {
+			"loop": true,
+			"animation_length": 10,
+			"particle_effects": {
+				"0.0": {
+					"effect": "firework_yellow"
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "firework"
+				}
+			}
+		}
+	}
+}

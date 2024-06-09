@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"geometry.path_arrow": {
+		"texturewidth": 256,
+		"textureheight": 256,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0.125, 0]
+			},
+			{
+				"name": "bone",
+				"parent": "root",
+				"pivot": [0, 0.125, -24],
+				"rotation": [-90, 0, 0]
+			},
+			{
+				"name": "1",
+				"parent": "bone",
+				"pivot": [0, 0.125, -24],
+				"cubes": [
+					{"origin": [-81.5, 0.125, -24], "size": [71, 48, 0], "uv": [0, 0]},
+					{"origin": [-35.5, 0.125, -24], "size": [71, 48, 0], "uv": [0, 0]},
+					{"origin": [10.5, 0.125, -24], "size": [71, 48, 0], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "2",
+				"parent": "bone",
+				"pivot": [-15.5, 0.125, -24],
+				"cubes": [
+					{"origin": [-97, 0.125, -24], "size": [71, 48, 0], "uv": [0, 48]},
+					{"origin": [-51, 0.125, -24], "size": [71, 48, 0], "uv": [0, 48]},
+					{"origin": [-5, 0.125, -24], "size": [71, 48, 0], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "3",
+				"parent": "bone",
+				"pivot": [-30.5, 0.125, -24],
+				"cubes": [
+					{"origin": [-112, 0.125, -24], "size": [71, 48, 0], "uv": [0, 96]},
+					{"origin": [-66, 0.125, -24], "size": [71, 48, 0], "uv": [0, 96]},
+					{"origin": [-20, 0.125, -24], "size": [71, 48, 0], "uv": [0, 96]}
+				]
+			}
+		]
+	}
+}

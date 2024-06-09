@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_firework_prop",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_belle_bottom"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "particle_effects": {
+        "firework_blue": "cyd:firework_blue",
+        "firework_red": "cyd:firework_red",
+        "firework_yellow": "cyd:firework_yellow",
+        "firework_orange": "cyd:firework_orange"
+      },
+      "sound_effects": {
+        "firework": "firework.blast"
+      },
+      "animations": {
+        "ctrl": "controller.animation.showdown.firework",
+        "firework1": "animation.fireworks.particle_yellow",
+        "firework2": "animation.fireworks.particle_red",
+        "firework3": "animation.fireworks.particle_orange",
+        "firework4": "animation.fireworks.particle_blue",
+        "nothing": "animation.fireworks.idle"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

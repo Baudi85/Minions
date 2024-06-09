@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:costume_beach",
+      "materials": {
+        "default": "cyd_transparent_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/item_lightrays_costume"
+      },
+      "particle_effects": {
+        "particle": "cyd:beach",
+        "particle2": "cyd:lightrays_outfit"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "animations": {
+        "idle": "animation.item_lightrays.idle",
+        "particle_anim": "animation.collectable.particle"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "particle_anim": "query.skin_id == 0"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

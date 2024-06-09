@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cyd.item.projectile": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function tools/arrow"
+      },
+      "animation_length": 0.001
+    },
+    "animation.cyd.item.projectile.world": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function tools/arrow_world"
+      },
+      "animation_length": 0.01
+    },
+    "animation.cyd.item.projectile2": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function tools/arrow_v2"
+      },
+      "animation_length": 0.01
+    }
+  }
+}

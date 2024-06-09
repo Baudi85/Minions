@@ -1,0 +1,503 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.player.minion": {
+      "geometry": "geometry.minion",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.minion"
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        }
+      ]
+    },
+    "controller.render.player.first_person.minion": {
+      "geometry": "geometry.minion_arm",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.minion"
+      ],
+      "part_visibility": [
+        {
+          "*": "query.get_equipped_item_name(0, 1) == ''"
+        }
+      ]
+    },
+    "controller.render.player.map": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "head": true
+        },
+        {
+          "hat": true
+        },
+        {
+          "helmet": true
+        }
+      ]
+    },
+    "controller.render.player.third_person": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": "query.skin_id != 1"
+        },
+        {
+          "helmet": "variable.helmet_layer_visible && query.skin_id != 1"
+        },
+        {
+          "leftLegging": "variable.leg_layer_visible && query.skin_id != 1"
+        },
+        {
+          "rightLegging": "variable.leg_layer_visible && query.skin_id != 1"
+        },
+        {
+          "leftBoot": "variable.boot_layer_visible && query.skin_id != 1"
+        },
+        {
+          "rightBoot": "variable.boot_layer_visible && query.skin_id != 1"
+        },
+        {
+          "leftSock": "variable.boot_layer_visible && variable.leg_layer_visible && query.skin_id != 1"
+        },
+        {
+          "rightSock": "variable.boot_layer_visible && variable.leg_layer_visible && query.skin_id != 1"
+        },
+        {
+          "bodyArmor": "variable.chest_layer_visible && !query.has_cape && query.skin_id != 1"
+        },
+        {
+          "leftArmArmor": "variable.chest_layer_visible && !query.has_cape && query.skin_id != 1"
+        },
+        {
+          "rightArmArmor": "variable.chest_layer_visible && !query.has_cape && query.skin_id != 1"
+        },
+        {
+          "belt": "variable.chest_layer_visible && variable.leg_layer_visible && query.skin_id != 1"
+        }
+      ]
+    },
+    "controller.render.player.first_person": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": "false"
+        },
+        {
+          "rightArm": "query.get_equipped_item_name(0, 1) == '' && query.skin_id != 1 || query.get_equipped_item_name(0, 1) == 'map'"
+        },
+        {
+          "rightSleeve": "query.get_equipped_item_name(0, 1) == '' && query.skin_id != 1 || query.get_equipped_item_name(0, 1) == 'map'"
+        },
+        {
+          "leftArm": "(query.get_equipped_item_name(0, 1) == 'map' && query.get_equipped_item_name('off_hand') != 'shield') || (query.get_equipped_item_name('off_hand') == 'map' && !query.item_is_charged) || (!query.item_is_charged && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0))"
+        },
+        {
+          "leftSleeve": "(query.get_equipped_item_name(0, 1) == 'map' && query.get_equipped_item_name('off_hand') != 'shield') || (query.get_equipped_item_name('off_hand') == 'map' && !query.item_is_charged) || (!query.item_is_charged && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0))"
+        }
+      ]
+    },
+    "controller.render.player.first_person.finger": {
+      "geometry": "Geometry.sticky_finger",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.sticky_finger"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person.finger.p": {
+      "geometry": "geometry.sticky_finger",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.sticky_finger"
+      ],
+      "part_visibility": [
+        {
+          "*": "query.skin_id == 0",
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person.finger.m": {
+      "geometry": "geometry.sticky_finger_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.sticky_finger"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.fart": {
+      "geometry": "Geometry.fart_grenade",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.fart_grenade"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person.fart": {
+      "geometry": "geometry.fart_grenade",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.fart_grenade"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.fart": {
+      "geometry": "geometry.fart_grenade_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.fart_grenade"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person.shrink": {
+      "geometry": "geometry.shrink_ray",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.shrink_ray"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.shrink": {
+      "geometry": "geometry.shrink_ray_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.shrink_ray"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.chi": {
+      "geometry": "Geometry.nunchuck",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.nunchuck"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person.chi": {
+      "geometry": "geometry.nunchuck",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.nunchuck"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.chi": {
+      "geometry": "geometry.nunchuck_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.nunchuck"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.cheese": {
+      "geometry": "Geometry.cheese_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheese_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person.cheese": {
+      "geometry": "geometry.cheese_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheese_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.cheese": {
+      "geometry": "geometry.cheese_gun_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheese_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.shrink": {
+      "geometry": "Geometry.shrink_ray",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.shrink_ray"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person.jam": {
+      "geometry": "geometry.jelly_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.jam": {
+      "geometry": "Geometry.jelly_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.jam": {
+      "geometry": "geometry.jam_gun_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.third_person.plasma_jam": {
+      "geometry": "geometry.jelly_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun_plasma"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    },
+    "controller.render.player.first_person.plasma_jam": {
+      "geometry": "Geometry.jelly_gun",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun_plasma"
+      ],
+      "part_visibility": [
+        {
+          "*": "true"
+        }
+      ]
+    },
+    "controller.render.player.third_person_minion.plasma_jam": {
+      "geometry": "geometry.jam_gun_minion_tp",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.jelly_gun_plasma"
+      ],
+      "part_visibility": [
+        {
+          "*": true,
+          "rightArm": false,
+          "leftArm": false
+        }
+      ]
+    }
+  }
+}

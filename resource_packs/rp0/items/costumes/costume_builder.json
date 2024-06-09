@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:costume_builder",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "costume_builder",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

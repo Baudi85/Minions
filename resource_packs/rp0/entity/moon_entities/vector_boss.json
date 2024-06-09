@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:vector_boss",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/moon/vector_jetpack"
+      },
+      "geometry": {
+        "default": "geometry.vector_jetpack"
+      },
+      "particle_effects": {
+        "particle": "cyd:jetpack_smoke_small"
+      },
+      "sound_effects": {
+        "turret_shoot": "cyd.mission.moon.squid_launcher",
+        "jetpack_loop": "cyd.mission.moon.vector_jetpack_loop"
+      },
+      "animations": {
+        "breath": "animation.vector_jetpack.breath",
+        "ranged": "animation.vector_jetpack.ranged",
+        "burst": "animation.vector_jetpack.ranged_burst",
+        "ctrl": "controller.animation.rp.boss_vector"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          {
+            "breath": "query.skin_id != 1"
+          }
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

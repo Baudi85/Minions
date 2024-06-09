@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:knockback_entity",
+      "materials": {
+        "default": "squid"
+      },
+      "textures": {
+        "default": "textures/entity/squid"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "particle_effects": {
+        "particle_1": "cyd:car_impact",
+        "particle_2": "cyd:car_impact_2"
+      },
+      "scripts": {
+        "animate": ["particle_anim"]
+      },
+      "animations": {
+        "particle_anim":"animation.vehicle.knockback.particle"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

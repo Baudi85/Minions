@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:rocket_turret",
+            "materials": {
+                "default": "cyd_alpha",
+                "emissive": "charged_creeper"
+            },
+            "textures": {
+                "default": "textures/entity/moon/squid_turret"
+            },
+            "geometry": {
+                "default": "geometry.squid_turret"
+            },
+            "sound_effects": {
+              "turret_shoot": "cyd.mission.moon.squid_launcher"
+            },
+            "animations": {
+                "shoot": "animation.squid_turret.shoot",
+                "idle_activate": "animation.squid_turret.idle_forward",
+                "activate": "animation.squid_turret.activate",
+                "deactivate":"animation.squid_turret.deactivate",
+                "ctrl": "controller.animation.rp.rocket_turret"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.turret"
+            ]
+        }
+    }
+}

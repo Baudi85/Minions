@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.collectable": {
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "collected": "query.skin_id == 1"
+              },
+              {
+                "reset": "query.skin_id == 0"
+              }
+            ]
+          },
+          "collected": {
+            "animations": [
+              "collected"
+            ],
+            "transitions": [
+              {
+                "default": "query.skin_id != 1"
+              }
+            ]
+          },
+          "reset": {
+            "on_entry": [
+              "/effect @s clear"
+            ],
+            "transitions": [
+              {
+                "default": "query.skin_id != 0"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

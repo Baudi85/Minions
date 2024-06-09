@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:promo_content_logo",
+	  "materials": {"default": "cyd_alpha"},
+	  "textures":  {"default": "textures/entity/cyd_promo/Rogue-Keyart-V2-WIP-A"},
+      "geometry":  {"default": "geometry.cyd.promo_content_logo"},
+      "render_controllers": [ "controller.render.cyd.promo" ],
+      "spawn_egg": {
+        "base_color": "#479eb6",
+        "overlay_color": "#97bfc5"
+      }
+    }
+  }
+}

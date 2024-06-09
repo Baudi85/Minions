@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:teleport_icon_03_wild_knuckles",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "teleport_3",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

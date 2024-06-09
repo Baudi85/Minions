@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"geometry.lair_path_arrow": {
+		"texturewidth": 256,
+		"textureheight": 256,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0.125, 0]
+			},
+			{
+				"name": "bone",
+				"parent": "root",
+				"pivot": [0, 0.125, -24],
+				"rotation": [-90, 0, 0]
+			},
+			{
+				"name": "1",
+				"parent": "bone",
+				"pivot": [0, 23.125, -24],
+				"rotation": [90, 0, 0],
+				"cubes": [
+					{"origin": [-35.5, 23.125, -24], "size": [71, 48, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

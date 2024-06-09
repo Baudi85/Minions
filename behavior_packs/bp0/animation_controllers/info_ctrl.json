@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.vp.info": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "info": "query.skin_id != 1 && query.skin_id != 2 && query.mark_variant != 1 && query.mark_variant != 2 && query.is_ignited"
+                        }
+                    ]
+                },
+                "info": {
+                    "animations": [
+                        "info"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 1 || query.skin_id == 2 || query.mark_variant == 1 || query.mark_variant == 2 || !query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.vp.cheese_sound": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "info": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "info": {
+                    "animations": [
+                        "cheese_sound"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

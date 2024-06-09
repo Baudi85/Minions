@@ -1,0 +1,369 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.collectable.1": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/1"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.2": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/2"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.3": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/3"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.4": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/4"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.5": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/5"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.6": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/6"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.7": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/7"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.8": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/8"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.9": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/9"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.10": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/10"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.11": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/11"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.12": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/12"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.13": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/13"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.14": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/14"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.15": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/15"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.16": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/16"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.17": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/17"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.18": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/18"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.19": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/19"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.20": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/20"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.21": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/21"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.22": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/22"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.23": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/23"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.24": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/24"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.25": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/25"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.26": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/26"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.27": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/27"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.28": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/28"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.29": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/29"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.30": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/30"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.31": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/31"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.32": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/32"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.33": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/33"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.34": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/34"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.35": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/35"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.36": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/36"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.37": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/37"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.38": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/38"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.39": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/39"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.40": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/40"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.41": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/41"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.42": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/42"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.43": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/43"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.44": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/44"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.45": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/45"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.46": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/46"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.47": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/47"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.48": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/48"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.49": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/49"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.50": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/50"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.51": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/51"
+      },
+      "animation_length": 1
+    },
+    "animation.collectable.52": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function collectables/52"
+      },
+      "animation_length": 1
+    }
+  }
+}

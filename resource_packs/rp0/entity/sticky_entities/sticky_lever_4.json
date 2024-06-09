@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:sticky_lever_4",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/sticky_lever"
+      },
+      "geometry": {
+        "default": "geometry.sticky_lever"
+      },
+      "animations": {
+        "trigger": "animation.sticky_lever.trigger",
+        "ctrl":"controller.animation.rp.sticky_lever"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+titleraw @a actionbar {"rawtext":[{"translate":"moon.hint.shrink_msg"}]}

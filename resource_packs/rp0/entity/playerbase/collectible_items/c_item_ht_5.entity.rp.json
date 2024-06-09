@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:c_item_ht_5",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/world/collectables/macaroni_rocket_prototype",
+        "texture_2":"textures/entity/world/collectables/u/macaroni_rocket_prototype_u"
+      },
+      "geometry": {
+        "default": "geometry.collectables_container_item"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.collectible_items"
+      ]
+    }
+  }
+}

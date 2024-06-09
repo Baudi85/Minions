@@ -1,0 +1,10 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:key_card2"
+    },
+    "components": {
+    }
+  }
+}

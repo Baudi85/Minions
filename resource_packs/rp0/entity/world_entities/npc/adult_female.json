@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:world_adult_female",
+      "materials": {
+        "default": "zombie",
+        "cheesed": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/world/npc/npc_adult_female_70s_01",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.npc_adult_female_70s",
+        "cheesed": "geometry.npc_adult_female_cheesed"
+      },
+      "animations": {
+        "idle_1": "animation.npc_adult_female.idle1",
+        "idle_2": "animation.npc_adult_female.idle2",
+        "idle_3": "animation.npc_adult_female.idle3",
+        "ctrl": "controller.animation.world.npc",
+        "breath": "animation.npc_adult_female.breath",
+        "walk": "animation.npc_adult_female.walk"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "breath"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank"
+      ]
+    }
+  }
+}

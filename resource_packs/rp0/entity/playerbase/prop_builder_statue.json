@@ -1,0 +1,54 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:prop_builder_statue",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/minion_costume"
+            },
+            "geometry": {
+                "default": "geometry.minion_costume"
+            },
+            "particle_effects": {
+                "particle": "cyd:outfit"
+              },
+            "scripts": {
+                "animate": [
+                    "static_ctrl",
+                    {"particle":"query.skin_id == 0"}
+                ]
+            },
+            "animations": {
+                "static_ctrl": "controller.animation.rp.minion_costume_statue2",
+                "static_aloha":"animation.minion_aloha.idle1",
+                "static_beach":"animation.minion_beach.idle1",
+                "static_builder":"animation.minion_builder.idle1",
+                "static_dj":"animation.minion_rollerskates.idle1",
+                "static_firefighter":"animation.minion_firefighter.idle1",
+                "static_flashlight":"animation.minion_flashlight.idle1",
+                "static_glowing":"animation.minion_friendly_mutant.idle1",
+                "static_golf":"animation.minion_golf.idle1",
+                "static_knight":"animation.minion_knight.idle1",
+                "static_kungfu":"animation.minion_kungfu.idle1",
+                "static_magician":"animation.minion_magician.idle1",
+                "static_maid":"animation.minion_maid.idle1",
+                "static_minecraft":"animation.minion_minecraft.idle1",
+                "static_mutant":"animation.minion_friendly_mutant.idle1",
+                "static_tourist":"animation.minion_tourist.idle1",
+                "static_tuba":"animation.minion_tuba.idle1",
+                "turn":"animation.minion_costume.turntable",
+                "particle": "animation.generic.particle"
+            },
+            "spawn_egg": {
+              "base_color": "#4287f5",
+              "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.minion_statue"
+            ]
+        }
+    }
+}

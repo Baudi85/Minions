@@ -1,0 +1,10 @@
+summon cyd:moon_mutant_minion -33 36 1990
+summon cyd:moon_mutant_minion -27 36 1991
+summon cyd:moon_mutant_minion -32 36 1999
+summon cyd:moon_mutant_minion -26 36 2007
+summon cyd:moon_mutant_minion -32 36 2008
+summon cyd:moon_mutant_minion -27 36 2015
+summon cyd:moon_mutant_minion -31 36 2017
+summon cyd:moon_mutant_minion -27 36 2022
+summon cyd:moon_mutant_minion -31 36 2024
+summon cyd:moon_mutant_minion -27 36 2026

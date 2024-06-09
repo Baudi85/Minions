@@ -1,0 +1,137 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:trigger_kun",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "intro"
+        ]
+      },
+      "animations": {
+        "intro": "animation.kunfu.text.startmission"
+      }
+    },
+    "component_groups": {
+      "cyd:sid_0": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:sid_2": {
+        "minecraft:skin_id": {
+          "value": 2
+        }
+      },
+      "cyd:sid_3": {
+        "minecraft:skin_id": {
+          "value": 3
+        }
+      },
+      "cyd:var_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:nameable": {
+        "always_show": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 1
+      },
+      "minecraft:health": {
+        "value": 5,
+        "max": 5
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:sid_0": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_1",
+            "cyd:sid_2"
+          ]
+        }
+      },
+      "evt:sid_1": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0",
+            "cyd:sid_2",
+            "cyd:sid_3"
+          ]
+        }
+      },
+      "evt:sid_2": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0",
+            "cyd:sid_1",
+            "cyd:sid_3"
+          ]
+        }
+      },
+      "evt:sid_3": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_3"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0",
+            "cyd:sid_1",
+            "cyd:sid_2"
+          ]
+        }
+      }
+    }
+  }
+}

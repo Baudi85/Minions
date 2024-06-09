@@ -1,0 +1,948 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.trigger.macho.transform": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "trans"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.bratt_vector.atk_text": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.is_charged"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "text"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_charged"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rocket_explode": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "on_entry": [
+                        "/playsound cyd.mission.moon.squid_impact @a[r=10]"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.saved.minion": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "saved_tick"
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever_tp.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/execute @e[type=cyd:tp_system,tag=two,c=1] ~ ~ ~ tag @s add two_active",
+                        "/summon cyd:teleport_escape -28.43 36.00 2027.33",
+                        "/function playerbase/objectives/m6_7",
+                        "/execute @e[type=cyd:door_5,c=1] ~ ~ ~ event entity @s evt:sid_1"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lever_prison.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/playsound cyd.mission.sticky.Sticky_Lever @a",
+                        "/event entity @e[type=cyd:sticky_fan,c=1] evt:sid_1",
+                        "/execute @e[type=cyd:sticky_fan,c=1] ~ ~ ~ tag @s remove open"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/tag @s remove reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.moon_door.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "reset": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-2 ^ ^ ^1 ^1 ^ air 0 replace barrier",
+                        "/playsound cyd.mission.moon.door_open @a[r=8]"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "reset": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ fill ^-2 ^ ^ ^1 ^1 ^ barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.macho.door": {
+            "states": {
+                "default": {
+                    "animations":["break_glass"],
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:moon_boss_system] evt:sid_3",
+                        "/tag @e[type=cyd:minion_spawner,tag=start,c=2] remove start",
+                        "/function moon/mutant_corridor_1"
+                    ],
+                    "animations":["macho_end"]
+                }
+            }
+        },
+        "controller.animation.trigger.minion_spawner": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "spawn"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.dance_floor": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        },
+                        {
+                            "end": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "dance",
+                        "detect",
+                        "floor_random"
+                    ],
+                    "transitions": [
+                        {
+                            "end": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "end": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:moon_boss_system] evt:sid_4",
+                        "/function moon/floor_reset",
+                        "/function moon/mutant_corridor_2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.start_fight": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "!query.is_sheared"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "fight_start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.is_sheared"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.dance_floor_dmg": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "dmg"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.spawn_points": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        },
+                        {
+                            "two": "query.skin_id == 2"
+                        },
+                        {
+                            "three": "query.skin_id == 3"
+                        },
+                        {
+                            "four": "query.skin_id == 4"
+                        },
+                        {
+                            "five": "query.skin_id == 5"
+                        },
+                        {
+                            "six": "query.skin_id == 6"
+                        }
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "two": {
+                    "animations": [
+                        "two"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "three": {
+                    "animations": [
+                        "three"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "four": {
+                    "animations": [
+                        "four"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "five": {
+                    "animations": [
+                        "five"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "six": {
+                    "animations": [
+                        "six"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.exit_door": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "one": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:door_4,c=1,r=10] evt:sid_1"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.tp_points": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        },
+                        {
+                            "two": "query.skin_id == 2"
+                        },
+                        {
+                            "three": "query.skin_id == 3"
+                        },
+                        {
+                            "end": "query.skin_id == 4"
+                        }
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "two": {
+                    "animations": [
+                        "two"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "three": {
+                    "animations": [
+                        "three"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "end": {
+                    "animations": [
+                        "end"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.vector.attacks": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "attack_1_timer": "query.variant == 1 && query.skin_id != 1"
+                        },
+                        {
+                            "attack_2_timer": "query.variant == 2 && query.skin_id != 1"
+                        },
+                        {
+                            "defeat": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "attack_2_timer": {
+                    "animations": [
+                        "timer_2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 2 || query.skin_id == 1"
+                        }
+                    ]
+                },
+                "attack_1_timer": {
+                    "animations": [
+                        "timer_1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1 || query.skin_id == 1"
+                        }
+                    ]
+                },
+                "defeat": {
+                    "on_entry": [
+                        "/tag @e[type=cyd:tp_system,tag=three] add vector_defeat",
+                        "/summon cyd:teleport_escape 25.86 70.00 1993.94",
+                        "/event entity @e[type=cyd:door_4] evt:sid_1",
+                        "/tag @e[type=cyd:minion_spawner,tag=start,c=2] remove start"
+                    ],
+                    "animations": [
+                        "vector_end"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.vector.minion_release": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "r1": "query.health <= 67"
+                        }
+                    ]
+                },
+                "r1": {
+                    "on_entry": [
+                        "/fill -20 69 2000 -20 72 2001 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r2": "query.health <= 64"
+                        }
+                    ]
+                },
+                "r2": {
+                    "on_entry": [
+                        "/fill -19 70 2003 -18 72 2005 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r3": "query.health <= 61"
+                        }
+                    ]
+                },
+                "r3": {
+                    "on_entry": [
+                        "/fill -16 70 2007 -14 71 2010 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r4": "query.health <= 58"
+                        }
+                    ]
+                },
+                "r4": {
+                    "on_entry": [
+                        "/fill -10 71 2013 -11 69 2012 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r5": "query.health <= 55"
+                        }
+                    ]
+                },
+                "r5": {
+                    "on_entry": [
+                        "/fill -7 69 2014 -6 72 2014 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r6": "query.health <= 52"
+                        }
+                    ]
+                },
+                "r6": {
+                    "on_entry": [
+                        "/fill 7 69 2014 8 72 2014 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r7": "query.health <= 49"
+                        }
+                    ]
+                },
+                "r7": {
+                    "on_entry": [
+                        "/fill 11 71 2013 12 69 2012 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r8": "query.health <= 46"
+                        }
+                    ]
+                },
+                "r8": {
+                    "on_entry": [
+                        "/fill 15 70 2010 17 71 2008 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r9": "query.health <= 43"
+                        }
+                    ]
+                },
+                "r9": {
+                    "on_entry": [
+                        "/fill 19 69 2005 20 71 2004 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r10": "query.health <= 40"
+                        }
+                    ]
+                },
+                "r10": {
+                    "on_entry": [
+                        "/fill 21 69 2001 21 72 2000 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r11": "query.health <= 37"
+                        }
+                    ]
+                },
+                "r11": {
+                    "on_entry": [
+                        "/fill 21 69 1987 21 72 1986 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r12": "query.health <= 35"
+                        }
+                    ]
+                },
+                "r12": {
+                    "on_entry": [
+                        "/fill 20 70 1983 19 72 1982 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r13": "query.health <= 32"
+                        }
+                    ]
+                },
+                "r13": {
+                    "on_entry": [
+                        "/fill 17 71 1979 15 70 1977 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r14": "query.health <= 29"
+                        }
+                    ]
+                },
+                "r14": {
+                    "on_entry": [
+                        "/fill 12 69 1975 11 71 1974 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r15": "query.health <= 26"
+                        }
+                    ]
+                },
+                "r15": {
+                    "on_entry": [
+                        "/fill 8 69 1973 7 72 1973 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r16": "query.health <= 23"
+                        }
+                    ]
+                },
+                "r16": {
+                    "on_entry": [
+                        "/fill -6 69 1973 -7 72 1973 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r17": "query.health <= 20"
+                        }
+                    ]
+                },
+                "r17": {
+                    "on_entry": [
+                        "/fill -10 70 1974 -11 72 1975 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r18": "query.health <= 17"
+                        }
+                    ]
+                },
+                "r18": {
+                    "on_entry": [
+                        "/fill -14 70 1977 -16 71 1979 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r19": "query.health <= 14"
+                        }
+                    ]
+                },
+                "r19": {
+                    "on_entry": [
+                        "/fill -18 69 1982 -19 71 1983 air 0 replace stained_glass_pane"
+                    ],
+                    "transitions": [
+                        {
+                            "r20": "query.health <= 11"
+                        }
+                    ]
+                },
+                "r20": {
+                    "on_entry": [
+                        "/fill -20 69 1986 -20 72 1987 air 0 replace stained_glass_pane"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.vector.hint": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "msg": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "msg": {
+                    "animations": [
+                        "msg"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.moon.boss_system": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "door_2_open"
+                    ],
+                    "transitions": [
+                        {
+                            "door_2_close": "query.skin_id == 1"
+                        },
+                        {
+                            "boss_macho": "query.skin_id == 2"
+                        },
+                        {
+                            "door_3_open": "query.skin_id == 3"
+                        },
+                        {
+                            "vector_wait": "query.skin_id == 4"
+                        },
+                        {
+                            "boss_vector": "query.skin_id == 5"
+                        }
+                    ]
+                },
+                "door_2_close": {
+                    "animations": [
+                        "door_2_close"
+                    ],
+                    "transitions": [
+                        {
+                            "boss_macho": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "boss_macho": {
+                    "on_entry": [
+                        "/summon cyd:macho_mutant_boss 0 19 1994",
+                        "/execute @e[type=cyd:macho_mutant_boss] ~ ~ ~ tp @s ^ ^0.1 ^ 90",
+                        "/effect @e[type=cyd:macho_mutant_boss] slowness 2 255 true",
+                        "/execute @e[type=cyd:macho_mutant_boss] ~ ~ ~ tag @e[type=cyd:minion_spawner,c=2] add start"
+                    ],
+                    "animations":["macho_start"],
+                    "transitions": [
+                        {
+                            "door_3_open": "query.skin_id == 3"
+                        }
+                    ]
+                },
+                "door_3_open": {
+                    "animations": [
+                        "bratt_trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "vector_wait": "query.skin_id == 4"
+                        }
+                    ]
+                },
+                "vector_wait": {
+                    "on_entry": [
+                        "/function moon/vector_minion_structure_load",
+                        "/function moon/minion_cage_summon"
+                    ],
+                    "animations": [
+                        "vector_trigger",
+                        "bratt_end"
+                    ],
+                    "transitions": [
+                        {
+                            "boss_vector": "query.skin_id == 5"
+                        }
+                    ]
+                },
+                "boss_vector": {
+                    "on_entry": [
+                        "/summon cyd:vector_boss 3 76 1994"
+                    ],
+                    "animations": [
+                        "vector_start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.intro.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.macho": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "atk": "query.is_delayed_attacking && query.skin_id != 1"
+                        },
+                        {
+                            "slam": "query.is_roaring && query.skin_id != 1"
+                        }
+                    ]
+                },
+                "atk": {
+                    "animations": [
+                        "atk"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_delayed_attacking || query.skin_id == 1"
+                        }
+                    ]
+                },
+                "slam": {
+                    "animations": [
+                        "slam"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_roaring || query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.player_detect_caught_mn": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 3"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "checkpoint_mn"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 3"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.sound.mutant_minion": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "atk": "query.is_delayed_attacking && query.skin_id != 1"
+                        }
+                    ]
+                },
+                "atk": {
+                    "animations": [
+                        "atk"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_delayed_attacking || query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.cage_blocking": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "block": "query.has_rider"
+                        }
+                    ]
+                },
+                "block": {
+                    "on_entry": [
+                        "/execute @e[type=cyd:moon_cheer_prop] ~ ~ ~ setblock ~ ~2 ~ barrier"
+                    ]
+                }
+            }
+        }
+    }
+}

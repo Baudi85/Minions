@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:employee_perkins",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/young_perkins"
+      },
+      "geometry": {
+        "default": "geometry.young_perkins"
+      },
+      "animations": {
+          "distract": "animation.young_perkins.distracting",
+          "idle_1":"animation.young_perkins.idle1",
+          "idle_2":"animation.young_perkins.idle2",
+          "idle_3":"animation.young_perkins.idle3",
+          "breath":"animation.young_perkins.breath",
+          "ctrl": "controller.animation.rp.perkins"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl",
+              "breath"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

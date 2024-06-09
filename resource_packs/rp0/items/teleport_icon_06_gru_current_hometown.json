@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:teleport_icon_06_gru_current_hometown",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "teleport_6",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

@@ -1,0 +1,1461 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.laser_diagonal": {
+      "states": {
+        "default": {
+          "animations": [
+            "top_off"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_1": {
+          "animations": [
+            "angle_1"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_2": {
+          "animations": [
+            "angle_2"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_3": {
+          "animations": [
+            "angle_3"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_4": {
+          "animations": [
+            "angle_4"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_5": {
+          "animations": [
+            "angle_5"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_6": {
+          "animations": [
+            "angle_6"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_7": {
+          "animations": [
+            "angle_7"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_8": {
+          "animations": [
+            "angle_8"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_9": {
+          "animations": [
+            "angle_9"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_10": {
+          "animations": [
+            "angle_10"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "angle_11": {
+          "animations": [
+            "angle_11"
+          ],
+          "transitions": [
+            {
+              "angle_1": "query.skin_id == 1 && query.mark_variant == 1"
+            },
+            {
+              "angle_2": "query.skin_id == 2 && query.mark_variant == 1"
+            },
+            {
+              "angle_3": "query.skin_id == 3 && query.mark_variant == 1"
+            },
+            {
+              "angle_4": "query.skin_id == 4 && query.mark_variant == 1"
+            },
+            {
+              "angle_5": "query.skin_id == 5 && query.mark_variant == 1"
+            },
+            {
+              "angle_6": "query.skin_id == 6 && query.mark_variant == 1"
+            },
+            {
+              "angle_7": "query.skin_id == 7 && query.mark_variant == 1"
+            },
+            {
+              "angle_8": "query.skin_id == 8 && query.mark_variant == 1"
+            },
+            {
+              "angle_9": "query.skin_id == 9 && query.mark_variant == 1"
+            },
+            {
+              "angle_10": "query.skin_id == 10 && query.mark_variant == 1"
+            },
+            {
+              "angle_11": "query.skin_id == 11 && query.mark_variant == 1"
+            },
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.horiz_r1_2": {
+      "states": {
+        "default": {
+          "animations": [
+            "ground_left_off"
+          ],
+          "transitions": [
+            {
+              "on": "query.skin_id == 1 && query.mark_variant == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "on": {
+          "animations": [
+            "ground_left_on"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 1 || query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.vert_r1_2": {
+      "states": {
+        "default": {
+          "animations": [
+            "top_off"
+          ],
+          "transitions": [
+            {
+              "on": "query.skin_id == 1 && query.mark_variant == 1"
+            }
+          ]
+        },
+        "on": {
+          "animations": [
+            "top_on"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 1 || query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.painting": {
+      "states": {
+        "default": {
+          "animations": [
+            "particle"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1 || query.skin_id == 2 || query.skin_id == 3"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1 && query.skin_id != 2 && query.skin_id != 3"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.bank_guard_1": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "temp.random = math.round(math.random(1,4));"
+          ],
+          "transitions": [
+            {
+              "idle_1": "temp.random == 1 && query.skin_id != 1"
+            },
+            {
+              "idle_2": "temp.random == 2 && query.skin_id != 1"
+            },
+            {
+              "idle_3": "temp.random == 3 && query.skin_id != 1"
+            },
+            {
+              "idle_4": "temp.random == 4 && query.skin_id != 1"
+            },
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "notice": "query.skin_id == 1"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_1": {
+          "animations": [
+            "idle_1"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_2": {
+          "animations": [
+            "idle_2"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_3": {
+          "animations": [
+            "idle_3"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_4": {
+          "animations": [
+            "idle_4"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "move": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese": {
+          "on_entry": [
+            "temp.randomchz = math.round(math.random(1,4));"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            },
+            {
+              "cheese_1": "query.mark_variant == 2 && temp.randomchz == 1"
+            },
+            {
+              "cheese_2": "query.mark_variant == 2 && temp.randomchz == 2"
+            },
+            {
+              "cheese_3": "query.mark_variant == 2 && temp.randomchz == 3"
+            },
+            {
+              "cheese_4": "query.mark_variant == 2 && temp.randomchz == 4"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_1": {
+          "animations": [
+            "cheese_1"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_2": {
+          "animations": [
+            "cheese_2"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_3": {
+          "animations": [
+            "cheese_3"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_4": {
+          "animations": [
+            "cheese_4"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "notice": {
+          "animations": [
+            "notice"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            },
+            {
+              "cheese": "query.mark_variant == 2"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.security_bot": {
+      "states": {
+        "default": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            },
+            {
+              "alarm": "query.skin_id == 1"
+            }
+          ]
+        },
+        "walk": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1"
+            },
+            {
+              "alarm": "query.skin_id == 1"
+            }
+          ]
+        },
+        "alarm": {
+          "animations": [
+            "alarm"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.lock_entities": {
+      "states": {
+        "default": {
+          "animations": [
+            "particle"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1 || query.skin_id == 2"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1 && query.skin_id != 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.world_lock_entities": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1 || query.skin_id == 2"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1 && query.skin_id != 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.toilet_wall": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.wk_door": {
+      "states": {
+        "default": {
+          "animations": [
+            "particle"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.wk_door_no_particle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.rotate_1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "left": "query.variant == 1 && query.modified_move_speed <= 0.1"
+            },
+            {
+              "right": "query.variant == 2 && query.modified_move_speed <= 0.1"
+            },
+            {
+              "forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "left": {
+          "animations": [
+            "look_left"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 1"
+            },
+            {
+              "forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "right": {
+          "animations": [
+            "look_right"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 2"
+            },
+            {
+              "forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "forward": {
+          "animations": [
+            "look_front"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed <= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.rotate_2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "left": "query.variant == 1 && query.modified_move_speed <= 0.1"
+            },
+            {
+              "right": "query.variant == 3 && query.modified_move_speed <= 0.1"
+            },
+            {
+              "forward": "query.variant == 2 || query.modified_move_speed <= 0.1"
+            },
+            {
+              "face_forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "left": {
+          "animations": [
+            "look_left"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 1"
+            },
+            {
+              "face_forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "right": {
+          "animations": [
+            "look_right"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 3"
+            },
+            {
+              "face_forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "forward": {
+          "animations": [
+            "look_front"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 2"
+            },
+            {
+              "face_forward": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "face_forward": {
+          "animations": [
+            "look_front"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed <= 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.perkins": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "temp.random = math.round(math.random(1,3));"
+          ],
+          "transitions": [
+            {
+              "idle_1": "temp.random == 1 && query.skin_id != 1"
+            },
+            {
+              "idle_2": "temp.random == 2 && query.skin_id != 1"
+            },
+            {
+              "idle_3": "temp.random == 3 && query.skin_id != 1"
+            },
+            {
+              "distract": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_1": {
+          "animations": [
+            "idle_1"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_2": {
+          "animations": [
+            "idle_2"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_3": {
+          "animations": [
+            "idle_3"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "distract": {
+          "animations": [
+            "distract"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.wild_knuckles": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "temp.random = math.round(math.random(1,4));"
+          ],
+          "transitions": [
+            {
+              "idle_1": "temp.random == 1 && query.skin_id != 2"
+            },
+            {
+              "idle_2": "temp.random == 2 && query.skin_id != 2"
+            },
+            {
+              "idle_3": "temp.random == 3 && query.skin_id != 2"
+            },
+            {
+              "idle_4": "temp.random == 4 && query.skin_id != 2"
+            },
+            {
+              "distract": "query.skin_id == 2"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_1": {
+          "animations": [
+            "idle_1"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_2": {
+          "animations": [
+            "idle_2"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_3": {
+          "animations": [
+            "idle_3"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_4": {
+          "animations": [
+            "idle_4"
+          ],
+          "transitions": [
+            {
+              "distract": "query.skin_id == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "distract": {
+          "animations": [
+            "distract"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 2"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "walk": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.rp.swarm_guard": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "query.is_delayed_attacking"
+            },
+            {
+              "die": "!query.is_alive"
+            },
+            {
+              "run": "query.modified_move_speed > 0.1"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "attack": {
+          "on_entry": [
+            "temp.swarm_atk = math.round(math.random(1,2));"
+          ],
+          "transitions": [
+            {
+              "attack_1": "temp.swarm_atk == 1"
+            },
+            {
+              "attack_2": "temp.swarm_atk == 2"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "die": {
+          "on_entry": [
+            "temp.swarm_die = math.round(math.random(1,2));"
+          ],
+          "transitions": [
+            {
+              "die_1": "temp.swarm_die == 1"
+            },
+            {
+              "die_2": "temp.swarm_die == 2"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "attack_1": {
+          "animations": [
+            "attack_1"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "attack_2": {
+          "animations": [
+            "attack_2"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "die_1": {
+          "animations": [
+            "die_1"
+          ]
+        },
+        "die_2": {
+          "animations": [
+            "die_2"
+          ]
+        },
+        "run": {
+          "animations": [
+            "run"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1"
+            },
+            {
+              "cheese": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese": {
+          "on_entry": [
+            "temp.randomchz = math.round(math.random(1,4));"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            },
+            {
+              "cheese_1": "query.skin_id == 1 && temp.randomchz == 1"
+            },
+            {
+              "cheese_2": "query.skin_id == 1 && temp.randomchz == 2"
+            },
+            {
+              "cheese_3": "query.skin_id == 1 && temp.randomchz == 3"
+            },
+            {
+              "cheese_4": "query.skin_id == 1 && temp.randomchz == 4"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_1": {
+          "animations": [
+            "cheese_1"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_2": {
+          "animations": [
+            "cheese_2"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_3": {
+          "animations": [
+            "cheese_3"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "cheese_4": {
+          "animations": [
+            "cheese_4"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

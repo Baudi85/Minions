@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:c_item_asub_1",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/collectables/avl_calling_card",
+        "texture_2":"textures/entity/world/collectables/u/avl_calling_card_u"
+      },
+      "geometry": {
+        "default": "geometry.collectables_container_item"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.collectible_items"
+      ]
+    }
+  }
+}

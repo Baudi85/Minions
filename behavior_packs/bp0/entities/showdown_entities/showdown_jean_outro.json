@@ -1,0 +1,61 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:showdown_jean_outro",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "scene"
+        ]
+      },
+      "animations": {
+        "scene": "animation.showdown.cutscene.scene2"
+      }
+    },
+    "components": {
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "system",
+          "trigger",
+          "showdown_cutscene"
+        ]
+      }
+    },
+    "component_groups":{
+      "cyd:despawn":{
+        "minecraft:instant_despawn":{
+        }
+      }
+    },
+    "events":{
+      "evt:despawn":{
+        "add":{
+          "component_groups":[
+            "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.spike_trap.movement": {
+      "initial_state": "idling",
+      "states": {
+        "idling": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [{
+            "activated": "query.variant == 1"
+          }],
+          "blend_transition": 0.1
+        },
+        "activated": {
+          "animations": [
+            "up"
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    }
+  }
+}

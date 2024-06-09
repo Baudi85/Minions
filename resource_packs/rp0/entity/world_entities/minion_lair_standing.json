@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:minion_lair_standing",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/minion_cheering"
+      },
+      "geometry": {
+        "default": "geometry.minion_cheering"
+      },
+      "sound_effects": {
+        "fire_ex": "cyd.world.fire_ex",
+        "Minion_Laugh":"cyd.minion.laugh",
+        "Minion_Laugh_5":"cyd.minion.laugh_5",
+        "Minion_Yell_Bahh":"cyd.minion.yell_bahh",
+        "Minion_Surprised":"cyd.minion.surprised",
+        "Minion_Speak_Oh_Hello":"cyd.minion.speak_oh_hello",
+        "Minion_Speak_Hey_Boss":"cyd.minion.speak_hey_boss",
+        "Minion_Cant_Breathe":"cyd.minion.cant_breathe",
+        "Minion_Surprised_2":"cyd.minion.surprised_2",
+        "Minion_Humming":"cyd.minion.humming",
+        "Minion_Speak_Oh_La_La":"cyd.minion.speak_oh_la_la",
+        "Minion_Singing_Lair":"cyd.minion.singing_lair",
+        "Minion_Excited":"cyd.minion.excited",
+        "Minion_Speak_Hmm_Gopa":"cyd.minion.speak_hmm_gopa",
+        "Minion_Speak_Ga_Ga_Papoi":"cyd.minion.speak_ga_ga_ga_papoi",
+        "Minion_Speak_Papadum_Eh_Giggle":"cyd.minion.speak_papadum_eh_giggle",
+        "Minion_Speak_Mocha":"cyd.minion.speak_mocha",
+        "Minion_Idle_Gibberish":"cyd.minion.idle_gibberish",
+        "Minion_Surprise_Notice":"cyd.minion.surprise_notice",
+        "Mutant_Minion_Scream_3":"cyd.minion.mutant.scream_3",
+        "Minion_Laugh_4":"cyd.minion.laugh_4",
+        "Mutant_Minion_Crazy":"cyd.minion.mutant.crazy",
+        "Minion_Talk_Motivational_Prepare_For_Battle":"cyd.minion.talk_motivational_prepare_for_battle",
+        "Minion_Battle_Cry_2":"cyd.minion.battle_cry_2",
+        "Minion_Cheer":"cyd:minion.cheer_2",
+        "Minion_Speak_Geko":"cyd.minion.speak_geko",
+        "Minion_Cant_Speak":"cyd.minion.cant_speak",
+        "Minion_Confused":"cyd.minion.confused",
+        "Minion_Cheers_Kanpai":"cyd.minion.cheers_kanpai"
+      },
+      "scripts": {
+        "animate": [
+            "breath",
+            {"interact":"query.is_ignited"},
+            "ctrl"
+        ]
+      },
+      "animations": {
+        "ctrl":"controller.animation.rp.minion_lair",
+        "breath": "animation.minion_lair.breath",
+        "interact":"animation.minion_lair.interact",
+        "idle_1": "animation.minion_lair.idle1",
+        "idle_2": "animation.minion_lair.idle2",
+        "idle_3": "animation.minion_lair.idle3"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.random_eye"
+      ]
+    }
+  }
+}

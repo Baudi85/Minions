@@ -1,0 +1,82 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.gadget_default": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.gadget_sticky": {
+            "geometry": "Geometry.sticky",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.sticky"
+            ]
+        },
+        "controller.render.gadget_cheese": {
+            "geometry": "Geometry.cheese",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.cheese"
+            ]
+        },
+        "controller.render.gadget_jelly": {
+            "geometry": "Geometry.jelly",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.jelly"
+            ]
+        },
+        "controller.render.gadget_shrink": {
+            "geometry": "Geometry.shrink",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.shrink"
+            ]
+        },
+        "controller.render.gadget_fart": {
+            "geometry": "Geometry.fart",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.fart"
+            ]
+        },
+        "controller.render.gadget_nunchuck": {
+            "geometry": "Geometry.nunchuck",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.nunchuck"
+            ]
+        }
+    }
+}

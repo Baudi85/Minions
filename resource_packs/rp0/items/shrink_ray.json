@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:shrinkray",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "shrink_ray",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

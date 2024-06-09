@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:costume_magician",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "costume_magician",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

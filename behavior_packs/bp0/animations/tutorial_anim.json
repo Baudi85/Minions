@@ -1,0 +1,145 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.trigger.tutorial.entity.start": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound cyd.world.vnc_jingle @a",
+                    "/function missions/dialogue/tutorial/robot_t_01",
+                    "/tag @e[type=cyd:trigger_tutorial] add tut_started",
+                    "/event entity @e[type=cyd:prop_vnc_screen] evt:var_1"
+                ],
+                "6.0": [
+                    "/function missions/dialogue/tutorial/robot_t_02"
+                ],
+                "12.0": [
+                    "/function missions/dialogue/tutorial/robot_t_03"
+                ],
+                "19.0": [
+                    "/function missions/dialogue/tutorial/robot_t_04"
+                ],
+                "25.0": [
+                    "/function missions/dialogue/tutorial/robot_t_05"
+                ],
+                "31.0": [
+                    "/function missions/dialogue/tutorial/robot_t_06"
+                ],
+                "37.0": [
+                    "/function missions/dialogue/tutorial/robot_t_07",
+                    "/give @a cyd:evil_o_matic",
+                    "/give @a stone_sword",
+                    "/give @a cyd:clipboard_objective",
+                    "/give @a cyd:rader"
+                ],
+                "42.0": [
+                    "/function missions/dialogue/tutorial/robot_t_08",
+                    "/function playerbase/objectives/t_01"
+                ]
+            },
+            "animation_length": 50.0
+        },
+        "animation.trigger.tutorial.minion_tamed": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute @e[family=pet_tame,c=1] ~ ~ ~ event entity @e[type=cyd:trigger_tutorial] evt:sid_7"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.trigger.tutorial.entity.got_costume": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function missions/dialogue/tutorial/robot_t_09",
+                    "/function playerbase/objectives/t_03"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.trigger.tutorial.entity.minion_ff": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function missions/dialogue/tutorial/robot_t_10"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.trigger.tutorial.entity.minion_extinguish": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function missions/dialogue/tutorial/robot_t_11",
+                    "/function playerbase/objectives/t_04"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.trigger.tutorial.entity.exit_tunnel": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function missions/dialogue/tutorial/robot_t_12",
+                    "/give @a cyd:holo_map",
+                    "/tag @a add mapping",
+                    "/event entity @e[type=cyd:wardrobe] evt:sid_1",
+                    "/execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:mission_progress_bar] evt:var_1"
+                ],
+                "4.0": [
+                    "/function missions/dialogue/tutorial/lair_unlock_msg",
+                    "/event entity @e[type=cyd:prop_vnc_screen] evt:var_0"
+                ]
+            },
+            "animation_length": 4.2
+        },
+        "animation.trigger.tutorial.entity.map_deployed": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/function missions/dialogue/tutorial/robot_t_13",
+                    "/event entity @e[type=cyd:prop_vnc_screen] evt:var_1"
+                ],
+                "4.0": [
+                    "/function missions/dialogue/tutorial/robot_t_14"
+                ],
+                "8.0": [
+                    "/function missions/dialogue/tutorial/robot_t_15",
+                    "/event entity @e[type=cyd:prop_vnc_screen] evt:var_0"
+                ]
+            },
+            "animation_length": 8.2
+        },
+        "animation.trigger.tutorial.entity.detect.exit_tunnel": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=!teleportfix] ~ ~ ~ function missions/teleportpetin",
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=!teleportfix] ~ ~ ~ summon cyd:sewer_tp_pet -128 81 1736",
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=!teleportfix] ~ ~ ~ tag @a add teleportfix"
+                ],
+                "0.15": [
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=teleportfix] ~ ~ ~ tag @a add triggertunneltext",
+                    "/execute @p[x=-231,y=57,z=1035,dx=0,dy=3,dz=0,tag=teleportfix] ~ ~ ~ tp @a -128 81 1736 facing -125 82 1736",
+                    "/execute @p[tag=triggertunneltext,tag=!triggertunneltextused,tag=teleportfix] ~ ~ ~ event entity @e[type=cyd:trigger_tutorial] evt:sid_5",
+                    "/execute @p[tag=triggertunneltext,tag=!triggertunneltextused,tag=teleportfix] ~ ~ ~ tag @s add triggertunneltextused"
+                ]
+            },
+            "animation_length": 0.2
+        },
+        "animation.trigger.tutorial.entity.detect.map": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/execute @p[tag=mapping] ~ ~ ~ execute @e[type=cyd:holo_map_projectile] ~ ~ ~ event entity @e[type=cyd:trigger_tutorial] evt:sid_6",
+                    "/execute @p[tag=mapping] ~ ~ ~ execute @e[type=cyd:holo_map_projectile] ~ ~ ~ function compass/1",
+                    "/execute @p[tag=mapping] ~ ~ ~ execute @e[type=cyd:holo_map_projectile] ~ ~ ~ tag @a remove mapping",
+                    "/execute @p[tag=!inmission] ~ ~ ~ execute @e[type=cyd:holo_map_projectile] ~ ~ ~ function missions/teleportpetout",
+                    "/execute @p[tag=!mapping] ~ ~ ~ function playerbase/objectives/m0_p"
+                ]
+            },
+            "animation_length": 0.2
+        }
+    }
+}

@@ -1,0 +1,1 @@
+titleraw @a[r=5] actionbar {"rawtext":[{"translate":"costume.interact"}]}

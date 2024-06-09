@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.minion_costume.turntable": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "query.life_time*15", 0],
+					"position": [0, "2.3+math.sin(query.life_time*90)*0.3", 0]
+				},
+				"body_bottom": {
+					"rotation": ["math.sin(query.life_time*20-50)*2", "math.sin(query.life_time*40)*4", 0]
+				},
+				"arm_left": {
+					"rotation": [0, 0, "math.sin(query.life_time*90-40)*2"]
+				},
+				"arm_right": {
+					"rotation": [0, 0, "-math.sin(query.life_time*90-40)*2"]
+				},
+				"foot_left": {
+					"rotation": ["10+math.sin(query.life_time*90*0.5-70)*4", 0, 0]
+				},
+				"foot_right": {
+					"rotation": ["10-math.sin(query.life_time*90*0.5-40)*4", 0, 0]
+				}
+			}
+		}
+	}
+}

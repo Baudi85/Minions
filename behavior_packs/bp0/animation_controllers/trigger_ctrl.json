@@ -1,0 +1,257 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.trigger.mission.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        },
+                        {
+                            "stop": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "stop": {
+                    "animations": [
+                        "stop"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.basic_trigger.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.stronghold_entity.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        },
+                        {
+                            "hit2": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 0"
+                        },
+                        {
+                            "hit2": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "hit2": {
+                    "animations": [
+                        "hit2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 0"
+                        },
+                        {
+                            "start": "query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.belle_entity.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.sven_entity.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        },
+                        {
+                            "start": "query.skin_id == 2"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start"
+                    ],
+                    "transitions": [
+                        {
+                            "teleport": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "teleport": {
+                    "animations": [
+                        "teleport"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 3"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.chase_system.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "countdown_chs": "query.skin_id == 1"
+                        },
+                        {
+                            "interrupt_chs": "query.skin_id == 2"
+                        },
+                        {
+                            "end_chs": "query.skin_id == 3"
+                        },
+                        {
+                            "fail_chs": "query.skin_id == 4"
+                        }
+                    ]
+                },
+                "countdown_chs": {
+                    "animations": [
+                        "countdown_chs"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "interrupt_chs": {
+                    "animations": [
+                        "interrupt_chs"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "end_chs": {
+                    "animations": [
+                        "end_chs"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "fail_chs": {
+                    "animations": [
+                        "fail_chs"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.sticky_system.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "end_stk": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "end_stk": {
+                    "animations": [
+                        "end_reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.wk_system.end": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "end_wk": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "end_wk": {
+                    "animations": [
+                        "end_wk"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

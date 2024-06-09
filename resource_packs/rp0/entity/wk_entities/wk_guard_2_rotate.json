@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:wk_guard_2_rotate",
+      "materials": {
+        "default": "zombie",
+        "cheesed": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/wk/bank_guard_2",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.bank_guard_2",
+        "cheesed": "geometry.bank_guard_2_cheesed"
+      },
+      "sound_effects": {
+        "trigger": "cyd.mission.bank.guard_cheesed"
+      },
+      "particle_effects": {
+        "question": "cyd:question",
+        "exclimation": "cyd:exclimation",
+        "view": "cyd:guard_fov"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "mv_ctrl",
+          "breath",
+          "rot_ctrl"
+        ]
+      },
+      "animations": {
+        "questionmark": "animation.question.particle",
+        "exclimationmark": "animation.exclimation.particle",
+        "fov": "animation.fov.guard.particle",
+        "ctrl": "controller.animation.target_wk.ctrl",
+        "mv_ctrl": "controller.animation.rp.bank_guard_1",
+        "walk": "animation.bank_guard_2.walk",
+        "notice": "animation.bank_guard_2.notice",
+        "idle_1": "animation.bank_guard_2.idle1",
+        "idle_2": "animation.bank_guard_2.idle2",
+        "idle_3": "animation.bank_guard_2.idle3",
+        "idle_4": "animation.bank_guard_2.idle4",
+        "cheese_1":"animation.bank_guard_2.cheesed1",
+        "cheese_2":"animation.bank_guard_2.cheesed2",
+        "cheese_3":"animation.bank_guard_2.cheesed3",
+        "cheese_4":"animation.bank_guard_2.cheesed4",
+        "breath": "animation.bank_guard_2.breath",
+        "look_left": "animation.bank_guard_2.look_left",
+        "look_right": "animation.bank_guard_2.look_right",
+        "look_front": "animation.bank_guard_2.look_front",
+        "look_back": "animation.bank_guard_2.look_back",
+        "rot_ctrl": "controller.animation.rp.rotate_1"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank"
+      ]
+    }
+  }
+}

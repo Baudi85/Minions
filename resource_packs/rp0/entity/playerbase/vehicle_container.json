@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:vehicle_container",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/vehicle_select"
+      },
+      "particle_effects": {
+        "lock_particle": "cyd:locked_machine"
+      },
+      "animations": {
+        "particle_ctrl": "controller.animation.lair.locked_particle",
+        "lock_particle": "animation.lair.locked",
+        "breath": "animation.vehicle_select.breath",
+        "idle": "animation.vehicle_select.idle"
+      },
+      "scripts": {
+        "animate": [
+          "particle_ctrl",
+          "idle",
+          "breath"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.vehicle_select"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.vehicle_container"
+      ]
+    }
+  }
+}

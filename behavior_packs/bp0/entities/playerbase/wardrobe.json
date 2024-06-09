@@ -1,0 +1,190 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:wardrobe",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "ctrl",
+                    "prox_ctrl"
+                ]
+            },
+            "animations": {
+                "ctrl": "controller.animation.trigger.wardrobe",
+                "prox_ctrl":"controller.animation.trigger.prox_costume",
+                "prox_msg":"animation.wardrobe.prox"
+            }
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:sheared":{
+                "minecraft:is_sheared":{}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 3
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "emitter"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:breathable":{
+                "breathes_solids":true
+            },
+            "minecraft:physics": {
+                "has_collision": false,
+                "has_gravity": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 3
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_sheared"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:shear"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 4
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_sheared"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_shear"
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "action.interact.open_wardrobe",
+                        "swing": true,
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_1"
+                        }
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:shear": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sheared"
+                    ]
+                }
+            },
+            "evt:rm_shear": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:sheared"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+	"format_version": "1.10.0",
+	"geometry.nunchuck_prop": {
+		"texturewidth": 48,
+		"textureheight": 48,
+		"visible_bounds_width": 7,
+		"visible_bounds_height": 5,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [-1, 2, 0]
+			},
+			{
+				"name": "nunchuck",
+				"parent": "root",
+				"pivot": [0.75, 0.75, -0.25],
+				"rotation": [-127.5, 0, -90]
+			},
+			{
+				"name": "chuck_1",
+				"parent": "nunchuck",
+				"pivot": [0.75, 0.75, -0.25],
+				"cubes": [
+					{"origin": [-0.25, -0.25, -4.25], "size": [2, 2, 8], "uv": [0, 20], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "chain_1",
+				"parent": "chuck_1",
+				"pivot": [0.75, 0.75, -4],
+				"rotation": [-2.5, 0, 0],
+				"cubes": [
+					{"origin": [-0.25, 0.75, -6], "size": [2, 0, 2], "uv": [14, 0]}
+				]
+			},
+			{
+				"name": "chain_2",
+				"parent": "chain_1",
+				"pivot": [0.75, 0.75, -6],
+				"rotation": [92.5, 0, 0],
+				"cubes": [
+					{"origin": [-0.25, 0.75, -8], "size": [2, 0, 2], "uv": [10, 2]}
+				]
+			},
+			{
+				"name": "chain_3",
+				"parent": "chain_2",
+				"pivot": [0.75, 0.75, -8],
+				"rotation": [97.5, 0, 0],
+				"cubes": [
+					{"origin": [-0.25, 0.75, -10], "size": [2, 0, 2], "uv": [10, 0]}
+				]
+			},
+			{
+				"name": "chuck_2",
+				"parent": "chain_3",
+				"pivot": [0.75, 0.75, -10],
+				"rotation": [-10, 0, 0],
+				"cubes": [
+					{"origin": [-0.25, -0.25, -17.75], "size": [2, 2, 8], "uv": [16, 0], "inflate": -0.25}
+				]
+			}
+		]
+	}
+}

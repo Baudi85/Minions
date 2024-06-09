@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:spinner",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/kun/spinner"
+      },
+      "geometry": {
+        "default": "geometry.spinner"
+      },
+      "particle_effects": {
+        "particle": "cyd:hint_kun",
+        "smack": "cyd:smack"
+      },
+      "animations": {
+        "trigger1": "animation.spinner.trigger1",
+        "trigger": "animation.spinner.trigger",
+        "idle": "animation.spinner.idle",
+        "spawn": "animation.spinner.spawn",
+        "ctrl": "controller.animation.rp.spinner",
+        "particle": "animation.generic.particle"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "spawn",
+          "idle",
+          "particle"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

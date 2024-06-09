@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:holo_map",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "holomap",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.world.npc": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "temp.random = math.round(math.random(1,4));"
+          ],
+          "transitions": [
+            {
+              "idle_1": "temp.random == 1 && query.modified_move_speed < 0.1"
+            },
+            {
+              "idle_2": "temp.random == 2 && query.modified_move_speed < 0.1"
+            },
+            {
+              "idle_3": "temp.random == 3 && query.modified_move_speed < 0.1"
+            },
+            {
+              "move": "query.modified_move_speed > 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_1": {
+          "animations": [
+            "idle_1"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_2": {
+          "animations": [
+            "idle_2"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "idle_3": {
+          "animations": [
+            "idle_3"
+          ],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0.1"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "move": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:holo_map_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "stuck"
+        ]
+      },
+      "animations": {
+        "ctrl": "animation.holo_map.done",
+        "stuck": "animation.holo_map.stuck"
+      }
+    },
+    "component_groups": {
+      "cyd:pv_0": {
+        "minecraft:is_stunned": {}
+      },
+      "cyd:pv_1": {
+        "minecraft:is_ignited": {}
+      },
+      "cyd:pv_2": {
+        "minecraft:is_charged": {}
+      },
+      "cyd:pv_3": {
+        "minecraft:is_sheared": {}
+      },
+      "cyd:pv_4": {
+        "minecraft:is_saddled": {}
+      },
+      "cyd:pv_5": {
+        "minecraft:is_baby": {}
+      },
+      "cyd:pv_6": {
+        "minecraft:can_climb": {}
+      },
+      "cyd:pv_7": {
+        "minecraft:can_fly": {}
+      },
+      "cyd:pv_8": {
+        "minecraft:is_tamed": {}
+      },
+      "cyd:pv_9": {
+        "minecraft:is_illager_captain": {}
+      },
+      "cyd:pv_10": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:pv_11": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cyd:pv_12": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:transform": {
+        "minecraft:transformation": {
+          "into": "cyd:despawn",
+          "delay": 1.28,
+          "drop_equipment": false
+        },
+        "minecraft:collision_box": {
+          "width": 0,
+          "height": 0
+        }
+      },
+      "cyd:ignited": {
+        "minecraft:is_ignited": {}
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/holo_map.json"
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">=",
+                  "value": 20
+                }
+              ]
+            },
+            "event": "evt:transform"
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:transform": {
+        "add": {
+          "component_groups": [
+            "cyd:transform"
+          ]
+        }
+      },
+      "evt:pv_0": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_1",
+            "cyd:pv_2",
+            "cyd:pv_3",
+            "cyd:pv_4",
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_1": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_0",
+            "cyd:pv_2",
+            "cyd:pv_3",
+            "cyd:pv_4",
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_2": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_0",
+            "cyd:pv_1",
+            "cyd:pv_3",
+            "cyd:pv_4",
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_3": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_3"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_0",
+            "cyd:pv_1",
+            "cyd:pv_2",
+            "cyd:pv_4",
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_4": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_4"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_0",
+            "cyd:pv_1",
+            "cyd:pv_2",
+            "cyd:pv_3",
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_5": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_5"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:pv_0",
+            "cyd:pv_1",
+            "cyd:pv_2",
+            "cyd:pv_3",
+            "cyd:pv_4"
+          ]
+        }
+      },
+      "evt:ignite": {
+        "add": {
+          "component_groups": [
+            "cyd:ignited"
+          ]
+        }
+      },
+      "evt:rm_ignite": {
+        "remove": {
+          "component_groups": [
+            "cyd:ignited"
+          ]
+        }
+      }
+    }
+  }
+}

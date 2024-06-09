@@ -1,0 +1,141 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:minion_spawner",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "ctrl": "controller.animation.trigger.minion_spawner",
+                "spawn": "animation.summon.mutant_minion"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:start": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:stop": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "spawner"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.9
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": true
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {},
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "start"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:start"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "start"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:stop"
+                    }
+                ]
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "evt:start": {
+                "add": {
+                    "component_groups": [
+                        "cyd:start"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:stop"
+                    ]
+                }
+            },
+            "evt:stop": {
+                "add": {
+                    "component_groups": [
+                        "cyd:stop"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:start"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

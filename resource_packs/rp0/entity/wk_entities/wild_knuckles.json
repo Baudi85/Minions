@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:wild_knuckles",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/wild_knuckles_disguise"
+      },
+      "geometry": {
+        "default": "geometry.wild_knuckles_disguise"
+      },
+      "particle_effects": {
+        "question": "cyd:chatbubble"
+      },
+      "animations": {
+        "questionmark": "animation.question.particle",
+        "distract": "animation.wild_knuckles_disguise.distracting",
+        "idle_1": "animation.wild_knuckles_disguise.idle1",
+        "idle_2": "animation.wild_knuckles_disguise.idle2",
+        "idle_3": "animation.wild_knuckles_disguise.idle3",
+        "idle_4": "animation.wild_knuckles_disguise.idle4",
+        "walk": "animation.wild_knuckles_disguise.walk",
+        "breath": "animation.wild_knuckles_disguise.breath",
+        "ctrl": "controller.animation.rp.wild_knuckles"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "breath",
+          {
+            "questionmark":"query.skin_id == 0 || query.skin_id == 2 || query.skin_id == 7 || query.skin_id == 11"
+          }
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

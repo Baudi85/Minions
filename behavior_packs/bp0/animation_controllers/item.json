@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.item.propdisplay": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/tag @s[name=\"§6Gadget: Nunchuck\"] add kun",
+            "/tag @s[name=\"§6Gadget: Cheese Ray\"] add cheese",
+            "/tag @s[name=\"§6Gadget: Sticky Hand\"] add sticky",
+            "/tag @s[name=\"§6Gadget: Fart Bomb\"] add fart",
+            "/tag @s[name=\"§6Gadget: Jelly Launcher\"] add jam",
+            "/tag @s[name=\"§5Gadget: Shrink Ray\"] add shrink",
+            "/tag @s[name=\"§6Gadget: Plasma Jelly Launcher\"] add plasma"
+          ]
+        }
+      }
+    }
+  }
+}

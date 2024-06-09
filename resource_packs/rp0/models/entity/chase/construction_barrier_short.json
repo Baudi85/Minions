@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"geometry.construction_barrier_short": {
+		"texturewidth": 80,
+		"textureheight": 80,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_back",
+				"parent": "root",
+				"pivot": [0, 0, 8]
+			},
+			{
+				"name": "all_front",
+				"parent": "all_back",
+				"pivot": [0, 0, -8]
+			},
+			{
+				"name": "construction_barrier_short",
+				"parent": "all_front",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "frame",
+				"parent": "construction_barrier_short",
+				"pivot": [0, 16, 0],
+				"cubes": [
+					{"origin": [13, 13.75, -1], "size": [2, 2, 2], "uv": [0, 13], "inflate": 0.25},
+					{"origin": [-15, 13.75, -1], "size": [2, 2, 2], "uv": [0, 13], "inflate": 0.25, "mirror": true},
+					{"origin": [12, 17, -1], "size": [4, 4, 2], "uv": [0, 7]},
+					{"origin": [-16, 17, -1], "size": [4, 4, 2], "uv": [0, 7], "mirror": true},
+					{"origin": [13.5, 15.5, -0.5], "size": [1, 2, 1], "uv": [11, 12], "inflate": -0.25},
+					{"origin": [-14.5, 15.5, -0.5], "size": [1, 2, 1], "uv": [11, 12], "inflate": -0.25, "mirror": true},
+					{"origin": [14.75, 2.5, -7.5], "size": [1, 3, 16], "uv": [0, 7], "inflate": -0.25},
+					{"origin": [-15.75, 2.5, -7.5], "size": [1, 3, 16], "uv": [0, 7], "inflate": -0.25, "mirror": true},
+					{"origin": [12.25, 2.5, -7.5], "size": [1, 3, 16], "uv": [0, 7], "inflate": -0.25},
+					{"origin": [-13.25, 2.5, -7.5], "size": [1, 3, 16], "uv": [0, 7], "inflate": -0.25, "mirror": true}
+				]
+			},
+			{
+				"name": "frame_front",
+				"parent": "frame",
+				"pivot": [0, 15, 0],
+				"rotation": [-25, 0, 0],
+				"cubes": [
+					{"origin": [13, -2, -1], "size": [2, 17, 1], "uv": [6, 26]},
+					{"origin": [-16, 7, -1.75], "size": [32, 6, 1], "uv": [0, 0], "inflate": -0.25},
+					{"origin": [-15, -2, -1], "size": [2, 17, 1], "uv": [0, 26]}
+				]
+			},
+			{
+				"name": "frame_back",
+				"parent": "frame",
+				"pivot": [0, 15, 0],
+				"rotation": [25, 0, 0],
+				"cubes": [
+					{"origin": [13, -2, 0], "size": [2, 17, 1], "uv": [6, 26]},
+					{"origin": [-16, 7, 0.75], "size": [32, 6, 1], "uv": [0, 0], "inflate": -0.25},
+					{"origin": [-15, -2, 0], "size": [2, 17, 1], "uv": [0, 26]}
+				]
+			}
+		]
+	}
+}

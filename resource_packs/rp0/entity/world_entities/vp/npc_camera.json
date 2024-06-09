@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:npc_camera",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/npc/npc_adult_male_70s_camera",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.npc_adult_male_70s_camera",
+        "cheesed": "geometry.npc_adult_male_70s_camera_cheesed"
+      },
+      "sound_effects": {
+        "idle_sound": "cyd.world.citizen_take_photo",
+        "fart_sound": "cyd.fart_bomb_cough"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank"
+      ],
+      "animations": {
+        "breath": "animation.npc_adult_male_70s_camera.breath",
+        "idle": "animation.npc_adult_male_70s_camera.idle",
+        "farted": "animation.npc_adult_male_70s_camera.farted",
+        "idle_farted": "animation.npc_adult_male_70s_camera.idle_farted",
+        "walk": "animation.npc_adult_male_70s_camera.walk",
+        "cheese": "animation.npc_adult_male_70s_camera.cheesed",
+        "shrink": "animation.npc_adult_male_70s_camera.shrinked",
+        "ctrl": "controller.animation.vp.encounter.ctrl"
+      },
+      "scripts": {
+        "animate": [
+          "breath",
+          "ctrl"
+        ]
+      }
+    }
+  }
+}

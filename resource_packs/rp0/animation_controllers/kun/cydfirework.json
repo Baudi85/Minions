@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cydfirework": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "idle_trigger": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle_trigger": {
+          "animations": [
+            "idle_trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

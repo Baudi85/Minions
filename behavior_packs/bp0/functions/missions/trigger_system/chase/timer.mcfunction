@@ -1,0 +1,11 @@
+execute @s[scores={chstrigtmr=10}] ~ ~ ~ title @a title §210
+execute @s[scores={chstrigtmr=9}] ~ ~ ~ title @a title §29
+execute @s[scores={chstrigtmr=8}] ~ ~ ~ title @a title §28
+execute @s[scores={chstrigtmr=7}] ~ ~ ~ title @a title §e7
+execute @s[scores={chstrigtmr=6}] ~ ~ ~ title @a title §e6
+execute @s[scores={chstrigtmr=5}] ~ ~ ~ title @a title §e5
+execute @s[scores={chstrigtmr=4}] ~ ~ ~ title @a title §e4
+execute @s[scores={chstrigtmr=3}] ~ ~ ~ title @a title §43
+execute @s[scores={chstrigtmr=2}] ~ ~ ~ title @a title §42
+execute @s[scores={chstrigtmr=1}] ~ ~ ~ title @a title §41
+execute @s[scores={chstrigtmr=0}] ~ ~ ~ title @a title §40

@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:chinun_emitter",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/none",
+                "sticky": "textures/entity/gadgets/nunchuck"
+            },
+            "geometry": {
+                "default": "geometry.none",
+                "sticky": "geometry.nunchuck_prop"
+            },
+            "scripts": {
+                "animate": [
+                    {"static_ctrl":"query.skin_id == 1"}
+                ]
+            },
+            "animations": {
+                "static_ctrl": "animation.nunchuck.prop_idle"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.gadget_default": "query.skin_id != 1"
+                },
+                {
+                    "controller.render.gadget_sticky": "query.skin_id == 1"
+                }
+            ]
+        }
+    }
+}

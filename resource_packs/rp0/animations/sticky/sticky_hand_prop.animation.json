@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sticky_hand_prop.idle_grabbed": {
+			"loop": true,
+			"bones": {
+				"base": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

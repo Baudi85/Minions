@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nunchuck_throw_projectile.idle": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"rotation": [0, 0, 90]
+				},
+				"chain_2": {
+					"rotation": ["-query.anim_time*1800", "math.sin(query.anim_time*180*5-40-90)*1+math.sin(query.anim_time*180*2-40-90)*1", 0]
+				},
+				"chain_1": {
+					"rotation": ["50+math.sin(query.anim_time*180*5-40)*10", 0, 0]
+				},
+				"nunchuck_1": {
+					"rotation": ["70+math.sin(query.anim_time*180*5-80)*10", 0, 0]
+				},
+				"chain_3": {
+					"rotation": ["50+math.sin(query.anim_time*180*5-40-90)*10", 0, 0]
+				},
+				"nunchuck_2": {
+					"rotation": ["70+math.sin(query.anim_time*180*5-80-90)*10", 0, 0]
+				},
+				"warning": {
+					"position": [0, 6, 0],
+					"scale": "math.clamp(math.pow(query.life_time*10,2),0,1)+math.clamp(math.pow(query.life_time*2,2),0,0.1)+math.clamp(query.life_time*0.1,0,0.6)"
+				}
+			}
+		}
+	}
+}

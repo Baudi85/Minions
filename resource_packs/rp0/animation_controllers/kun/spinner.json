@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.spinner": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger1"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:fart_emitter",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/none",
+                "sticky": "textures/entity/gadgets/fart_grenade_projectile"
+            },
+            "geometry": {
+                "default": "geometry.none",
+                "sticky": "geometry.fart_grenade_projectile"
+            },
+            "scripts": {
+                "animate": [
+                    {"static_ctrl":"query.skin_id == 1"}
+                ]
+            },
+            "animations": {
+                "static_ctrl": "animation.fart_grenade.prop_idle"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.gadget_default": "query.skin_id != 1"
+                },
+                {
+                    "controller.render.gadget_sticky": "query.skin_id == 1"
+                }
+            ]
+        }
+    }
+}

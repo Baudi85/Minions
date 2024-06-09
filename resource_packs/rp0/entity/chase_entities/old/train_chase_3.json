@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:train_chase_3",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/vehicle_tram"
+      },
+      "geometry": {
+        "default": "geometry.vehicle_tram"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_tramup",
+        "angled_downwards": "animation.vehicle_tram.angled_downwards",
+        "angled_upwards": "animation.vehicle_tram.angled_upwards",
+        "move_downwards": "animation.vehicle_tram.move_downwards",
+        "move_upwards": "animation.vehicle_tram.move_upwards",
+        "crash": "animation.vehicle_tram.crash"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

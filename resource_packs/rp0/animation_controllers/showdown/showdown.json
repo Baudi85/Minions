@@ -1,0 +1,567 @@
+{
+  "format_version": "1.16.0",
+  "animation_controllers": {
+    "controller.animation.showdown.cheer": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "idle1": "math.random_integer(1, 4) == 1"
+            },
+            {
+              "idle2": "math.random_integer(1, 4) == 2"
+            },
+            {
+              "idle3": "math.random_integer(1, 4) == 3"
+            },
+            {
+              "idle4": "math.random_integer(1, 4) == 4"
+            }
+          ]
+        },
+        "idle1": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle2": {
+          "animations": [
+            "idle2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle3": {
+          "animations": [
+            "idle3"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle4": {
+          "animations": [
+            "idle4"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.firework": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "firework1": "math.random_integer(1, 5) == 1"
+            },
+            {
+              "firework2": "math.random_integer(1, 5) == 2"
+            },
+            {
+              "firework3": "math.random_integer(1, 5) == 3"
+            },
+            {
+              "firework4": "math.random_integer(1, 5) == 4"
+            },
+            {
+              "nothing": "math.random_integer(1, 5) == 5"
+            }
+          ]
+        },
+        "firework1": {
+          "animations": [
+            "firework1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "firework2": {
+          "animations": [
+            "firework2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "firework3": {
+          "animations": [
+            "firework3"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "firework4": {
+          "animations": [
+            "firework4"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        },
+        "nothing": {
+          "animations": [
+            "nothing"
+          ],
+          "transitions": [
+            {
+              "moving": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.jean": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 1 && query.is_on_ground == 1"
+            },
+            {
+              "attacking2": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 2 && query.is_on_ground == 1"
+            },
+            {
+              "leap": "query.is_on_ground == 0"
+            }
+          ]
+        },
+        "standing": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "moving": "query.modified_move_speed > 0.1"
+            }
+          ]
+        },
+        "leap": {
+          "animations": [
+            "leap"
+          ],
+          "transitions": [
+            {
+              "moving": "query.is_on_ground == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.nun": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "attacking": "query.is_delayed_attacking == 1 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "attacking2": "query.is_delayed_attacking == 1 && math.random_integer(1, 2) == 2"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "special"
+          ],
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.sven": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "attacking2": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 2"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "special"
+          ],
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.stronghold": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "attacking2": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 2"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "special"
+          ],
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            },
+            {
+              "special_2": "query.mark_variant != 0 && query.modified_move_speed > 0.9"
+            }
+          ]
+        },
+        "special_2": {
+          "animations": [
+            "special_charge"
+          ],
+          "transitions": [
+            {
+              "donothing": "query.mark_variant != 0 && query.modified_move_speed < 0.1"
+            },
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        },
+        "donothing": {
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.belle": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 1 && query.is_delayed_attacking == 0"
+            },
+            {
+              "attacking2": "variable.attack_time > 0.0 && math.random_integer(1, 2) == 2 && query.is_delayed_attacking == 0"
+            },
+            {
+              "attacking": "query.is_delayed_attacking == 1 && math.random_integer(1, 2) == 1"
+            },
+            {
+              "attacking2": "query.is_delayed_attacking == 1 && math.random_integer(1, 2) == 2"
+            },
+            {
+              "special": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "special": {
+          "animations": [
+            "spin"
+          ],
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack1"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attacking2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "moving": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.fire": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "transitions": [
+            {
+              "firestart": "query.variant == 1"
+            }
+          ]
+        },
+        "firestart": {
+          "animations": [
+            "flame"
+          ],
+          "transitions": [
+            {
+              "fire": "query.all_animations_finished"
+            }
+          ]
+        },
+        "fire": {
+          "animations": [
+            "flamepat"
+          ],
+          "transitions": [
+            {
+              "moving": "query.variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.movement": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "animations": [
+            {
+              "walk": "query.modified_move_speed *1.5"
+            }
+          ],
+          "transitions": [
+            {
+              "standing": "query.modified_move_speed < 0.1 && query.is_on_ground == 1"
+            },
+            {
+              "standing": "query.is_on_ground == 0"
+            }
+          ]
+        },
+        "standing": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "moving": "query.modified_move_speed > 0.1 && query.is_on_ground == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.bellemovement": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "animations": [
+            {
+              "walk": "query.modified_move_speed >= 0.2 && query.mark_variant == 0"
+            }
+          ],
+          "transitions": [
+            {
+              "standing": "query.modified_move_speed < 0.1 && query.is_on_ground == 1"
+            },
+            {
+              "nothing": "query.mark_variant != 0"
+            }
+          ]
+        },
+        "standing": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "moving": "query.modified_move_speed > 0.1 && query.is_on_ground == 1"
+            },
+            {
+              "nothing": "query.mark_variant != 0"
+            }
+          ]
+        },
+        "nothing": {
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.showdown.strongmovement": {
+      "initial_state": "moving",
+      "states": {
+        "moving": {
+          "animations": [
+            {
+              "walk": "query.modified_move_speed *1.5"
+            }
+          ],
+          "transitions": [
+            {
+              "standing": "query.modified_move_speed < 0.1 && query.is_on_ground == 1 && query.mark_variant == 0"
+            },
+            {
+              "standing": "query.is_on_ground == 0 && query.mark_variant == 0"
+            },
+            {
+              "donothing": "query.mark_variant != 0"
+            }
+          ]
+        },
+        "standing": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "moving": "query.modified_move_speed > 0.1 && query.is_on_ground == 1"
+            }
+          ]
+        },
+        "donothing": {
+          "transitions": [
+            {
+              "moving": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

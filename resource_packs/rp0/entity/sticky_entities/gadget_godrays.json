@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:gadget_godrays",
+      "materials": {
+        "default": "cyd_transparent_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/item_lightrays_gadget"
+      },
+      "geometry": {
+        "default": "geometry.item_lightrays_02"
+      },
+      "animations": {
+        "idle": "animation.item_lightrays.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

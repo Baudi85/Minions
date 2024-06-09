@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.lair_map": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                },
+                {
+                    "map": "Material.trans"
+                },
+                {
+                    "location_icon_*": "Material.trans"
+                },
+                {
+                    "glow_top": "Material.trans"
+                },
+                {
+                    "glow_bottom": "Material.trans"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.lair_map_v1": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

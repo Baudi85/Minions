@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:world_henchman_2_death",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/kun/wk_henchman_2"
+      },
+      "geometry": {
+        "default": "geometry.wk_henchman_2"
+      },
+      "animations": {
+        "death1": "animation.wk_henchman_3.death1",
+        "death2": "animation.wk_henchman_3.death2",
+        "ctrl": "controller.animation.rp.henchman.death"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

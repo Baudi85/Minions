@@ -1,0 +1,1196 @@
+﻿pack.name=ミニオンズ リソース パック	###
+pack.description=作者: Cyclone	###
+
+book.tele.p1=§l§6テレポーター%1%1§r§8自作のテレポーテーション デバイス。%1%1迅速な移動に役立ちます。	### 
+book.tele.p2=%1§1§l手順: %1%1§r§11. 矢印ボタンで場所を選択します。%1%12. 赤いボタンでテレポーターをアクティブ化します。%1%13. テレポーターの中に入ります。	##
+book.map.p1=§l§6マップ%1%1§r§8周辺地域を表した地図。%1%1お気に入りの場所にマーカーをつけてみましょう。	###
+book.map.p2=%1§1§1凡例、§r§8§o ページ 1: %1%1%1§r§8§oダウンタウン%1%1%1§r §8§oアップタウン%1%1%1§r §8§oチャイナタウン	###
+book.map.p3=%1§1§1凡例、§r§8§o ページ 2: %1%1%1§r§8§o住居エリア%1%1%1§r §8§oフリードニア%1%1%1§r §8§oAVL 潜水艦	###
+book.map.p4=%1§1§1凡例、§r§8§o ページ 3: %1%1%1§r §8§oベクターの要塞%1%1%1§r §8§oエル・マッチョのマンション%1%1%1§r §8§oブラットの隠れ家	###
+book.container.p1=§l§6収集アイテムのコンテナ: %1%1§r§8お持ちのアイテムや貴重品などを格納する便利なコンテナです。%1%1見つけた場所でソートできます。	###
+book.container.p2=%1§l§1手順: %1%1§r§1矢印ボタンで表示するエリアの収集アイテムを選択します。	###
+book.meter.p1=§1§6ヴィラン度測定メーター%1%1§r§8あなたの悪役度を測定するメーターです。%1%1悪質な行動を起こすとメーターが上がります。	###
+book.meter.p2=%1§l§1報酬: %1%1§r§1§650 ポイントごとに§1、新しいミニオンが仲間として加わります。%1%1表示されたマーカーでは、追加§6報酬§1が与えられます。	###
+book.cars.p1=§l§6車両のインタフェース%1%1§r§8利用可能な車両にアクセスするときに使われるインターフェイスです。%1%1ゲームが先に進めば進むほど、より一層多くの車両のロックを解除できます。	###
+book.cars.p2=%1§l§1手順: %1%1§r§11. 矢印ボタンでスポーンさせる車両を選びます。%1%12. 赤いボタンを押して、家の外にスポーンさせます。	###
+book.grucar.p1=§l§6ヴィラン ホイール%1%1§r§8あなただけのヴィラン モービル。%1%1現在組み立て中です。	###
+book.grucar.p2=%1§l§1手順: %1%1§r§1冒険を続けると、ミニオンたちが車両の組み立てを進めます。%1%1ときどき訪れて進捗を確認しましょう。	###
+book.minions.p1=§l§6ミニオンのコスチューム%1%1§r§8ミニオンのあらゆるコスチュームが格納されている場所です。%1%1全部集めてみましょう!	###
+book.minions.p2=%1§l§1手順: %1%1§r§1コスチュームを選んでアクティブ化したら、持ち物にコピーします。	###
+book.tools.p1=§l§6ガジェット%1%1§r§8これまで見つけた悪のガジェットや発明品が表示されます。%1%1悪役にとっては欠かせない便利なものです。	###
+book.tools.p2=%1§l§1手順: %1%1§r§1ガジェットをなくした場合は、ここで新しいコピーを手に入れることができます。	###
+sign.set=%1§l 推奨%1§l設定:	###
+sign.settings=雲: §lオフ§r%1パーティクル: §lオン§r%1音楽: §lオン§r%1効果音: §lオン§r	###
+sign.adv1=このマップはアドベンチャーモードでのプレイに向けて設計されています。	###
+sign.adv2=最高の体験を得るためには、まずアドベンチャーモードをお楽しみください	###
+sign.adv3=サンドボックスモードは後でプレイできます。	###
+
+teleport.failed.inmission=ミッション中はテレポートできません!	###
+
+item.cyd:banana.name=バナナ	### Banana
+
+item.lodestonecompass.name=§5ミッション トラッカー	###
+
+item.cyd:chi_nunchuk.name=§6ガジェット: ヌンチャク	###Nunchuck Weapon
+item.cyd:cheesegun.name=§6ガジェット: チーズ銃	###Cheeze Ray Weapon
+item.cyd:slingshot.name=§6ガジェット: ベタベタの手	###Sticky Hand Weapon
+item.cyd:fartgrenade.name=§6ガジェット: オナラ爆弾	###Fart Bomb Weapon
+item.cyd:shrinkray.name=§5ガジェット: 縮ませ光線銃	###
+item.cyd:jamgun.name=§6ガジェット: ゼリー ランチャー	###
+item.cyd:plasma_jamgun.name=§6ガジェット: プラズマ ゼリー ランチャー	###
+item.cyd:evil_o_matic.name=§5ガジェット: トランスポートマチック	###Transport O Matic
+
+item.cyd:record_key.name=§4レコード キー	###Record Key
+item.cyd:dragon_medalion.name=§4ドラゴン メダリオン	###Dragon Medalion
+
+
+
+item.cyd:monalisa.name=§4モナ・リザ	###Mona Lisa
+
+item.cyd:perkins_key.name=§4パーキンス氏の鍵	###EPerkins' Key
+item.cyd:key_card.name=§4キー カード	###Key Card
+item.cyd:key_card2.name=§4セーフ キー	###Safe Key
+item.cyd:disguise.name=§4ワイルド・ナックルズの変装	###
+item.cyd:drill.name=§4ドリル	###
+item.cyd:holo_map.name=§5ホロマップ	###
+item.cyd:clipboard_objective.name=§d標的クリップボード	###
+
+item.cyd:teleport_icon_01_gru_70s_home.name=テレポート: グルーの 70 年代の家	###
+item.cyd:teleport_icon_02_airport.name=テレポート: 空港	###
+item.cyd:teleport_icon_03_wild_knuckles.name=テレポート: ワイルド・ナックルズ	###
+item.cyd:teleport_icon_04_chinatown.name=テレポート: チャイナタウン	###
+item.cyd:teleport_icon_05_elmacho_fortress.name=テレポート: エル・マッチョの要塞	###
+item.cyd:teleport_icon_06_gru_current_hometown.name=テレポート: グルーの現在の町	###
+item.cyd:teleport_icon_07_bratt.name=テレポート: ブラット	###
+item.cyd:teleport_icon_08_gru_mansion.name=テレポート: グルーのマンション	###
+item.cyd:teleport_icon_09_vector.name=テレポート: ベクター	###
+item.cyd:teleport_icon_10_recordshop.name=テレポート: レコード ショップ	###
+item.cyd:teleport_icon_11_chowsacupuncture.name=テレポート: チャウの鍼治療	###
+item.cyd:teleport_icon_12_bankofevil.name=テレポート: 悪党銀行	###
+item.cyd:teleport_icon_13_playerlab.name=テレポート: グルーのラボ	###
+item.cyd:teleport_icon_14_dru.name=テレポート: ドルーのマンション	###
+
+item.cyd:costume_aloha.name=§eアロハのコスチューム	###'Aloha' costume
+item.cyd:costume_builder.name=§eビルダーのコスチューム	###'Builder' costume
+item.cyd:costume_dj.name=§eDJ のコスチューム	###'DJ' costume
+item.cyd:costume_firefighter.name=§e消防士のコスチューム	###'Fire Fighter' costume
+item.cyd:costume_flashlight.name=§eフラッシュライトのコスチューム	###'Flashlight' costume
+item.cyd:costume_glowing.name=§e輝くコスチューム	###'Glowing' costume
+item.cyd:costume_golf.name=§eゴルフのコスチューム	###'Golfing' costume
+item.cyd:costume_knight.name=§e騎士のコスチューム	###'Knight' costume
+item.cyd:costume_magician.name=§e魔法使いのコスチューム	###'Magician' costume
+item.cyd:costume_beach.name=§eビーチのコスチューム	###'Beach' costume
+item.cyd:costume_default.name=§eデフォルトのコスチューム	###'Default' costume
+item.cyd:costume_kungfu.name=§eカンフーのコスチューム	###'Kung-Fu' costume
+item.cyd:costume_maid.name=§eメイドのコスチューム	###'Maid' costume
+item.cyd:costume_minecraft.name=§eMinecraft のコスチューム	###'Minecraft' costume
+item.cyd:costume_mutant.name=§eミュータントのコスチューム	###'Mutant' costume
+item.cyd:costume_tourist.name=§e観光客のコスチューム	###'Tourist' costume
+item.cyd:costume_tuba.name=§eチューバのコスチューム	###'Tuba' costume
+
+
+entity.cyd:minion_costume.name=ミニオン	###
+item.spawn_egg.entity.cyd:minion_costume.name=§6ミニオンをスポーンさせる	###
+entity.cyd:minion_costume_statue.name=ミニオン像	###
+item.spawn_egg.entity.cyd:minion_costume_statue.name=ミニオン像をスポーンさせる	###
+entity.cyd:sticky_vent.name=ベタベタの通気口	###
+item.spawn_egg.entity.cyd:sticky_vent.name=ベタベタの通気口をスポーンさせる	###
+entity.cyd:record_player.name=レコード プレーヤー	###
+item.spawn_egg.entity.cyd:record_player.name=レコード プレーヤーをスポーンさせる	###
+entity.cyd:young_nefario.name=若いネファリオ	###
+item.spawn_egg.entity.cyd:young_nefario.name=若いネファリオをスポーンさせる	###
+entity.cyd:stronghold_chase_entity.name=ストロングホールドのチェイス エンティティ	###
+item.spawn_egg.entity.cyd:stronghold_chase_entity.name=ストロングホールドのチェイス エンティティをスポーンさせる	###
+entity.cyd:stronghold_chase_entity_2.name=ストロングホールドのチェイス エンティティ 2	###
+item.spawn_egg.entity.cyd:stronghold_chase_entity_2.name=ストロングホールドのチェイス エンティティ 2 をスポーンさせる	###
+entity.cyd:v6_guard_1.name=ヘンチマン 1	###
+item.spawn_egg.entity.cyd:v6_guard_1.name=ヘンチマン 1 をスポーンさせる	###
+entity.cyd:v6_guard_2.name=ヘンチマン 2	###
+item.spawn_egg.entity.cyd:v6_guard_2.name=ヘンチマン 2 をスポーンさせる	###
+entity.cyd:v6_guard_3.name=ヘンチマン 3	###
+item.spawn_egg.entity.cyd:v6_guard_3.name=ヘンチマン 3 をスポーンさせる	###
+entity.cyd:train_chase_2.name=トレインチェイス 2	###
+item.spawn_egg.entity.cyd:train_chase_2.name=トレインチェイス 2 をスポーンさせる	###
+entity.cyd:secretary.name=秘書	###
+item.spawn_egg.entity.cyd:secretary.name=秘書をスポーンさせる	###
+entity.cyd:sticky_lever.name=ベタベタのレバー	###
+item.spawn_egg.entity.cyd:sticky_lever.name=ベタベタのレバーをスポーンさせる	###
+entity.cyd:sticky_fan.name=ベタベタの扇風機	###
+item.spawn_egg.entity.cyd:sticky_fan.name=ベタベタの扇風機をスポーンさせる	###
+entity.cyd:sticky_box_small.name=ベタベタのボックス (小)	###
+item.spawn_egg.entity.cyd:sticky_box_small.name=ベタベタのボックス (小) をスポーンさせる	###
+entity.cyd:sticky_box_large.name=ベタベタのボックス (大)	###
+item.spawn_egg.entity.cyd:sticky_box_large.name=ベタベタのボックス (大) をスポーンさせる	###
+entity.cyd:elevator.name=エレベーター	###
+item.spawn_egg.entity.cyd:elevator.name=エレベーターをスポーンさせる	###
+entity.cyd:train_chase_3.name=トレインチェイス 3	###
+item.spawn_egg.entity.cyd:train_chase_3.name=トレインチェイス 3 をスポーンさせる	###
+entity.cyd:chase_entity.name=チェイス エンティティ ベル	###
+item.spawn_egg.entity.cyd:chase_entity.name=チェイス エンティティ ベルをスポーンさせる	###
+entity.cyd:tree_chase.name=ツリーチェイス	###
+item.spawn_egg.entity.cyd:tree_chase.name=ツリーチェイスをスポーンさせる	###
+entity.cyd:train_chase_1.name=トレインチェイス 1	###
+item.spawn_egg.entity.cyd:train_chase_1.name=トレインチェイス 1 をスポーンさせる	###
+entity.cyd:sven_car_chase.name=スヴェンのカーチェイス	###
+item.spawn_egg.entity.cyd:sven_car_chase.name=スヴェンのカーチェイスをスポーンさせる	###
+entity.cyd:nunchuck_throw.name=ナンチャック スローを練習させる	###
+item.spawn_egg.entity.cyd:nunchuck_throw.name=ナンチャック スローをスポーンさせる	###
+entity.cyd:market_stall.name=屋台	###
+item.spawn_egg.entity.cyd:market_stall.name=屋台をスポーンさせる	###
+entity.cyd:jeanclawed_car_chase.name=ジャン・クロードのカーチェイス	###
+item.spawn_egg.entity.cyd:jeanclawed_car_chase.name=ジャン・クロードのカーチェイスをスポーンさせる	###
+entity.cyd:crane_load.name=クレーン荷重	###
+item.spawn_egg.entity.cyd:crane_load.name=クレーン荷重をスポーンさせる	###
+entity.cyd:construction_barrier_long.name=長い工事用バリケード	###
+item.spawn_egg.entity.cyd:construction_barrier_long.name=長い工事用バリケードをスポーンさせる	###
+entity.cyd:construction_barrier_short.name=短い工事用バリケード	###
+item.spawn_egg.entity.cyd:construction_barrier_short.name=短い工事用バリケードをスポーンさせる	###
+
+entity.cyd:dru_car.name=ドルーの車	###Dru's Car
+item.spawn_egg.entity.cyd:dru_car.name=§6車両: ドルーの車をスポーンさせる	###Dru's Car
+entity.cyd:belle_bike.name=ベルのバイク	###Belle's Motorcycle
+item.spawn_egg.entity.cyd:belle_bike.name=§6車両: ベルのバイクをスポーンさせる	###Belle's Motorcycle
+entity.cyd:belle_car.name=ビシャス 6 の車	###Vicious Six Automobile
+item.spawn_egg.entity.cyd:belle_car.name=§6車両: ビシャス 6 の車をスポーンさせる	###Vicious Six Automobile
+entity.cyd:gru_bike.name=グルーのロケットバイク	###Gru's Rocket Bicycle
+item.spawn_egg.entity.cyd:gru_bike.name=§6車両: グルーのロケットバイクをスポーンさせる	###Gru's Rocket Bicycle
+entity.cyd:gru_car.name=グルーモービル	###Gru's Automobile 'Grumobile'
+item.spawn_egg.entity.cyd:gru_car.name=§6車両: グルーモービルをスポーンさせる	###Gru's Automobile 'Grumobile'
+entity.cyd:jeanclawed_car.name=ジャン・クロードのカニの手	###Jeanclawed's Crab Vehicle
+item.spawn_egg.entity.cyd:jeanclawed_car.name=§6車両: ジャン・クロードのカニの手をスポーンさせる	###Jeanclawed's Crab Vehicle
+entity.cyd:nunchuck_car.name=ナンチャックの車	###Nunchuck's Automobile
+item.spawn_egg.entity.cyd:nunchuck_car.name=§6車両: ナンチャックの車をスポーンさせる	###Nunchuck's Automobile
+entity.cyd:stronghold_tank.name=ストロングホールドのタンク	###Stronghold's Tank Vehicle
+item.spawn_egg.entity.cyd:stronghold_tank.name=§6車両: ストロングホールドのタンクをスポーンさせる	###Stronghold's Tank Vehicle
+entity.cyd:sven_car.name=スヴェンのバイク	###Sven's Motorcycle
+item.spawn_egg.entity.cyd:sven_car.name=§6車両: スヴェンのバイクをスポーンさせる	###Sven's Motorcycle
+entity.cyd:vehicle_truck.name=普通のトラック	###Generic Truck
+item.spawn_egg.entity.cyd:vehicle_truck.name=§6車両: 普通のトラックをスポーンさせる	###
+entity.cyd:vehicle_car.name=普通の車	###
+item.spawn_egg.entity.cyd:vehicle_car.name=§6車両: 普通の車をスポーンさせる	###
+entity.cyd:flying_car.name=グルーの飛行船	###
+item.spawn_egg.entity.cyd:flying_car.name=§6車両: グルーの飛行船をスポーンさせる	###
+
+entity.cyd:world_adult_female.name=大人の女性	###
+item.spawn_egg.entity.cyd:world_adult_female.name=大人の女性をスポーンさせる	###
+entity.cyd:world_adult_male.name=大人の男性	###
+item.spawn_egg.entity.cyd:world_adult_male.name=大人の男性をスポーンさせる	###
+entity.cyd:world_kid_female.name=女の子	###
+item.spawn_egg.entity.cyd:world_kid_female.name=女の子をスポーンさせる	###
+entity.cyd:world_kid_male.name=男の子	###
+item.spawn_egg.entity.cyd:world_kid_male.name=男の子をスポーンさせる	###
+
+entity.cyd:sticky_box_small_world.name=ベタベタのボックス (小)	###
+item.spawn_egg.entity.cyd:sticky_box_small_world.name=ベタベタのボックス (小) をスポーンさせる	###
+
+entity.cyd:world_henchman_1.name=ヘンチマン	###
+item.spawn_egg.entity.cyd:world_henchman_1.name=ヘンチマンをスポーンさせる	###
+entity.cyd:world_henchman_2.name=ヘンチマン	###
+item.spawn_egg.entity.cyd:world_henchman_2.name=ヘンチマンをスポーンさせる	###
+entity.cyd:world_henchman_3.name=ヘンチマン	###
+item.spawn_egg.entity.cyd:world_henchman_3.name=ビッグ ヘンチマンをスポーンさせる	###
+
+entity.cyd:world_mutant_minion.name=ミュータント ミニオン	###
+item.spawn_egg.entity.cyd:world_mutant_minion.name=ミュータント ミニオンをスポーンさせる	###
+
+item.cyd:bat.name=バット	###Bat
+item.stone_sword.name=バット	###Bat
+item.cyd:rader.name=§d収集可能なレーダー	### Rader to find outfits and collectibles.
+
+
+tile.cyd:nether_brick_vertical.name=垂直のネザーレンガ	###
+tile.cyd:planks_spruce_2.name=トウヒの木の板 2	###
+tile.cyd:stone_tile_2.name=石のタイル 2	###
+tile.cyd:stone_tile.name=石のタイル	###
+tile.cyd:cactus_block.name=サボテン ブロック	###
+tile.cyd:hardened_clay_stained_red_smooth.name=赤いシミのなめらかな堅焼き粘土	###
+tile.cyd:end_bricks_chiseled.name=模様入りエンドレンガ	###
+tile.cyd:hardened_clay_stained_red_painted.name=赤いシミの塗装済み堅焼き粘土	###
+tile.cyd:sand_gravel.name=砂の砂利	###
+tile.cyd:sandstone_tile.name=砂岩タイル	###
+tile.cyd:concrete_green_smooth.name=なめらかな緑のコンクリート	###
+tile.cyd:concrete_white_smooth.name=なめらかな白のコンクリート	###
+tile.cyd:concrete_cyan_smooth.name=なめらかな水色のコンクリート	###
+tile.cyd:concrete_purple_smooth.name=なめらかな紫のコンクリート	###
+tile.cyd:nether_brick_stripped.name=はがれたネザーレンガ	###
+tile.cyd:nether_brick_tile.name=ネザーレンガのタイル	###
+tile.cyd:nether_brick_pillar.name=ネザーレンガの柱	###
+tile.cyd:hardened_clay_stained_cyan_smooth.name=水色のシミのなめらかな堅焼き粘土	###
+tile.cyd:quartz_smooth_vertical.name=垂直でなめらかなクォーツ	###
+tile.cyd:quartz_smooth_cutline.name=カットライン入りでなめらかなクォーツ	###
+tile.cyd:end_bricks_carved.name=彫刻入りエンドレンガ	###
+tile.cyd:stone_granite_painted_white.name=白の花崗岩石	###
+tile.cyd:hardened_clay_painted.name=塗装済み堅焼き粘土	###
+tile.cyd:stone_diorite_tile.name=閃緑岩石のタイル	###
+tile.cyd:stone_granite_tile.name=花崗岩石のタイル	###
+
+action.interact.costume_swap=コスチュームを変える	###Costume Swap
+action.interact.dispense_gadget=ガジェットを発射する	###Dispense Gadget
+action.interact.dispense_costume=コスチュームを発射する	###Dispense Costume
+action.interact.next=次へ	###Next
+action.interact.open_wardrobe=ワードローブを開く	###Open Wardrobe
+action.interact.place_record=レコードを置く	###Place Record
+action.interact.inspect=調べる	###Inspect
+action.interact.take=取る	###Take
+action.interact.unlock=ロックを解除する	###Unlock
+action.interact.follow=追いかける	###Follow
+action.interact.sit=座る	###Sit
+action.interact.activate=起動する	###Activate
+
+
+
+action.hint.exit.cyd:gru_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:belle_bike=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:belle_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:gru_bike=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:jeanclawed_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:nunchuck_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:stronghold_tank=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:sven_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:dru_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:vehicle_truck=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:vehicle_car=スニークで出る	###Sneak to exit
+action.hint.exit.cyd:flying_car=スニークで出て飛び上がる	###Sneak to exit and jump to fly
+
+action.hint.exit.console.cyd:gru_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:belle_bike=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:belle_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:gru_bike=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:jeanclawed_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:nunchuck_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:stronghold_tank=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:sven_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:dru_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:vehicle_truck=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:vehicle_car=スニークで出る	###Sneak to exit
+action.hint.exit.console.cyd:flying_car=スニークで出て飛び上がる	###Sneak to exit and jump to fly
+
+lair.buttons= 操作して起動する	###
+holomap.interact= 操作して拾う	###
+costume.interact= 操作してコスチュームを集める	###
+gadget.interact= 操作してガジェットを集める	###
+wardrobe.interact= ワードローブを操作して開く	###
+
+
+
+sign.aloha_costume=アロハのコスチューム	###'Aloha' costume
+sign.builder_costume=ビルダーのコスチューム	###'Builder' costume
+sign.dj_costume=DJ のコスチューム	###'DJ' costume
+sign.firefighter_costume=消防士のコスチューム	###'Fire Fighter' costume
+sign.flashlight_costume=フラッシュライトのコスチューム	###'Flashlight' costume
+sign.glow_costume=輝くコスチューム	###'Glowing' costume
+sign.golfing_costume=ゴルフのコスチューム	###'Golfing' costume
+sign.knight_costume=騎士のコスチューム	###'Knight' costume
+sign.magician_costume=魔法使いのコスチューム	###'Magician' costume
+sign.beach_costume=ビーチのコスチューム	###'Beach' costume
+sign.default_costume=デフォルトのコスチューム	###'Default' costume
+sign.kungfu_costume=カンフーのコスチューム	###'Kung-Fu' costume
+sign.maid_costume=メイドのコスチューム	###'Maid' costume
+sign.minecraft_costume=Minecraft のコスチューム	###'Minecraft' costume
+sign.mutant_costume=ミュータントのコスチューム	###'Mutant' costume
+sign.tourist_costume=観光客のコスチューム	###'Tourist' costume
+sign.tuba_costume=チューバのコスチューム	###'Tuba' costume
+
+robot_t_01=<§bVNC スポークスマン§r> §3あなたは§6大悪党§3になりたい? なら、このチャンネルがぴったりです!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_02=<§bVNC スポークスマン§r> こちらは§3§6悪役ネットワークチャンネル§3。いつも見てくれていたようですが、こっちもそっちを見ていました。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_03=<§bVNC スポークスマン§r> §3私の正体などどうでもいいんです。あなたが何者で、何をするのかに興味があります。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_04=<§bVNC スポークスマン§r> §3§6ミニオン§3の事も見ていましたよ。いつも最高で最悪な悪役について回っている。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_05=<§bVNC スポークスマン§r> §3今はあなたを追いかけている。つまり、我々 VNC はあなたに興味を持った。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_06=<§bVNC スポークスマン§r> §3どうやら、§6強力なお宝§3がこの近くの§6レコード店§3に隠されているようです。あそこは、§6ビシャス 6§3 と呼ばれる組織の店です。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_07=<§bVNC スポークスマン§r> §3もちろん、この情報は好きに使って構いません。ただし... 我々は常に見ているということをお忘れなく。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_08=<§bVNC スポークスマン§r> §3それは§5トランスポートマチック§3。仮の名前ですが、隠れ家にテレポートできる素晴らしい装置です。あまり使いすぎないように。まだ試験段階で、それを使った最後の悪者が誰かわかっていません。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_09=<§bVNC スポークスマン§r> §3ところで、出るときは§6秘密のトンネル§3を使ったほうがいいですよ。レコード店への一番の近道です。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_10=<§bVNC スポークスマン§r> §3ミニオンは実に単純な生き物でしょう。コスチュームを着せてやれば、すぐにその役を演じ始めます!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_11=<§bVNC スポークスマン§r> §3間違いなく§6消防士のコスチューム§3を着たミニオンは、火を消す衝動に駆られるんでしょう。ですが、ミニオンの強みは考えることじゃない。そこで悪のボスが大切になってくる。ガイドしてやるというか... 服を着せてやるんです。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_12=<§bVNC スポークスマン§r> §3よし、大きな街ですね! ここの連中はあなたの起こす騒動に喜んで巻き込まれてくれるはず!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_13=<§bVNC スポークスマン§r> §3ここから寄り道なしでも構いません。言っていた§6レコード店§3は道を進んだ先にあります。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_14=<§bVNC スポークスマン§r> §3けれど、我々は§6ミニオン§3が街でどういった行動をするのかにとても興味がある。	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_15=<§bVNC スポークスマン§r> §3騒ぎを起こせるネタは盛りだくさん。だから、好きなだけ探検してくださいよ!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+
+
+mode.msg.sandbox= §3サンドボックスモード	###
+mode.msg.story= §3アドベンチャーモード	###
+
+sticky.msg= §3 使うとエンティティを近づける	###
+cheese.msg= §3 使うとチーズを放つ	###
+shrink.msg= §3 使うと縮ませ光線銃を撃つ	###
+nunchuck.msg= §3 使うと攻撃する	###
+plasma_jamgun.msg= §3 使うとプラズマジャムを放つ	###
+jamgun.msg= §3 使うとジャムを放つ	###
+fart.msg= §3 使うとオナラ爆弾を投げる	###
+bat.msg= §3 使うと攻撃する	###
+holo.msg= §3 使うとホロマップを展開する	###
+
+teleport_unlock.msg= §3 すべてのテレポーターの場所のロックが解除されました!	###
+
+objective.msg= §3使うと目標を表示する	###
+objective.none= §6§l§n目標:§r §3探検して収集品を集める	###
+
+objective.t_01= §6§l§n目標:§r §3ミニオンにバナナを与えてついてこさせる	###
+objective.t_02= §6§l§n目標:§r §3秘密の地下トンネルに入る	###
+objective.t_03= §6§l§n目標:§r §3ミニオンに消防士のコスチュームを着せる	###
+objective.t_04= §6§l§n目標:§r §3トンネルを進む	###
+
+objective.m0_p= §6§l§n目標:§r §3レコード店に行ってお宝を盗む	###
+objective.m1_p= §6§l§n目標:§r §3レコード店の近くで騒ぎを探す	###
+objective.m2_p= §6§l§n目標:§r §3チャイナタウンのマスター・チョウを訪ねてミニオンを鍛える	###
+objective.m3_p= §6§l§n目標:§r §3悪党銀行にある謎の内通者を見つける	###
+objective.m4_p1= §6§l§n目標:§r §3隠れ家に戻ってミニオンの様子を見に行く	###
+objective.m4_p2= §6§l§n目標:§r §3通信を聞く	###
+objective.m4_p3= §6§l§n目標:§r §3チャイナタウンに行って、泥棒と対峙する	###
+objective.m5_p= §6§l§n目標:§r §3隠れ家にある謎のテレポーターを調べる	###
+
+
+
+objective.m1_01= §6§l§n目標:§r §3ネファリオに話しかける	###
+objective.m1_02= §6§l§n目標:§r §3リスニングルームのエレベーターに乗る	###
+objective.m1_03= §6§l§n目標:§r §3横に隠れる	###
+objective.m1_04= §6§l§n目標:§r §3ベタベタの手を使って進む	###
+objective.m1_05= §6§l§n目標:§r §3ゾディアック ストーンを見つける	###
+objective.m1_06= §6§l§n目標:§r §3他の出口を見つける	###
+objective.m1_07= §6§l§n目標:§r §3エレベーターで上に逃げる	###
+
+objective.m2_01= §6§l§n目標:§r §3ベル・ボトムから逃げる	###
+
+objective.m3_01= §6§l§n目標:§r §3マスター・チョウの話を聞く	###
+objective.m3_02= §6§l§n目標:§r §3ナンチャックを使ってダッシュする	###
+objective.m3_03= §6§l§n目標:§r §3人形を攻撃してナンチャックをチャージする	###
+objective.m3_04= §6§l§n目標:§r §3チャージしたナンチャックを使って叫ぶ	###
+objective.m3_05= §6§l§n目標:§r §3ヘンチマンを倒す。§lウェーブ§r 1/3	###
+objective.m3_06= §6§l§n目標:§r §3ヘンチマンを倒す。§lウェーブ§r 2/3	###
+objective.m3_07= §6§l§n目標:§r §3ヘンチマンを倒す。§lウェーブ§r 3/3	###
+
+objective.m4_01= §6§l§n目標:§r §3内通者と話す	###
+objective.m4_02= §6§l§n目標:§r §3鍵を盗む	###
+objective.m4_03= §6§l§n目標:§r §3左の展示室に行く	###
+objective.m4_04_painting= §6§l§n目標:§r §3絵画の後ろにあるキーカードを見つける	###
+objective.m4_04_carpet= §6§l§n目標:§r §3カーペットの下にあるキーカードを見つける	###
+objective.m4_04_vase= §6§l§n目標:§r §3花瓶の中にあるキーカードを見つける	###
+objective.m4_05= §6§l§n目標:§r §3右の展示室に行く	###
+objective.m4_06_painting= §6§l§n目標:§r §3絵画の後ろにある次のキーカードを見つける	###
+objective.m4_06_carpet= §6§l§n目標:§r §3カーペットの下にある次のキーカードを見つける	###
+objective.m4_06_vase= §6§l§n目標:§r §3花瓶の中にある次のキーカードを見つける	###
+objective.m4_07= §6§l§n目標:§r §3金庫に入ってチーズ銃を盗む	###
+objective.m4_08= §6§l§n目標:§r §3ワイルド・ナックルズのところに戻る	###
+objective.m4_09= §6§l§n目標:§r §3銀行の下の階の部屋に行く	###
+objective.m4_10= §6§l§n目標:§r §§ドリルと変装を見つける	###
+objective.m4_11= §6§l§n目標:§r §3ワイルド・ナックルズのところに戻る	###
+objective.m4_12= §6§l§n目標:§r §3レーザーをやり過ごす	###
+objective.m4_13= §6§l§n目標:§r §3銀行から逃げる	###
+
+objective.m5_01= §6§l§n目標:§r §3ジャン・クロードを倒す	###
+objective.m5_02= §6§l§n目標:§r §3近づく方法を見つける	###
+objective.m5_03= §6§l§n目標:§r §3ナンチャックを倒す	###
+objective.m5_04= §6§l§n目標:§r §3足を遅くする方法を見つける	###
+objective.m5_05= §6§l§n目標:§r §3スヴェンジャンスを倒す	###
+objective.m5_06= §6§l§n目標:§r §3ツイスターを止める方法を見つける	###
+objective.m5_07= §6§l§n目標:§r §3ストロングホールドを倒す	###
+objective.m5_08= §6§l§n目標:§r §3突進攻撃を避ける方法を見つける	###
+objective.m5_09= §6§l§n目標:§r §3ベル・ボトムを倒す	###
+objective.m5_10= §6§l§n目標:§r §3鎖から逃れる方法を見つける	###
+
+objective.m6_01= §6§l§n目標:§r §3監獄から脱走する	###
+objective.m6_02= §6§l§n目標:§r §3仲間のミニオンを見つける	###
+objective.m6_03= §6§l§n目標:§r §3ジェリー ランチャーを使ってエル・マッチョを倒す	###
+objective.m6_04= §6§l§n目標:§r §3仲間のミニオンを見つける	###
+objective.m6_05= §6§l§n目標:§r §3バルタザール・ブラットを倒す	###
+objective.m6_06= §6§l§n目標:§r §3ベクターへの道を開く	###
+objective.m6_07= §6§l§n目標:§r §3ベクターに向かう	###
+objective.m6_08= §6§l§n目標:§r §3ベクターを倒す	###
+objective.m6_09= §6§l§n目標:§r §3指定の場所に集まる	###
+
+lair.machines.unlock= §3隠れ家の機械のロックが解除されました	###
+
+
+chase.1.cutscene.intro=<§bVNC スポークスマン§r> §3もう知っていると思いますが、ビシャス 6 は今とても不機嫌です。どうやらあなたの行動が引き金になったようです。橋から落としたいほど憎んでいるらしいですよ...	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.2.cutscene.intro=<§bVNC スポークスマン§r> §3なんてラッキーでしょう! あなたのために§6逃走用車両§3を用意しました。使い方はもう分かってますよね?	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.3.cutscene.intro=<§bVNC スポークスマン§r> §3彼らの今のリーダーは、§6ベル・ボトム§3です。やっぱり機嫌が悪そうですね。さあ、急ぎましょう!	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.4.cutscene.intro=<§bVNC スポークスマン§r> §3でも... あっ! 気をつけてください。他のビシャス 6 があなたを止めるために街中を捜しまわっているようです。	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.5.cutscene.intro=<§bVNC スポークスマン§r> §3そういえば、彼らのものにはなるべく手を出さないようにと注意しましたよね? あれ... もしかして真逆のことを言ったかもしれません。まあ、仕方ないですね。	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.6.cutscene.intro=<§bVNC スポークスマン§r> §3とにかく、私があなただったら、とりあえず§3橋まで駆け付ける§6と思います。ロケットバイクでそこまで走っていけば、彼女から逃げ切れるはずです。	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+
+chase.1.cutscene.outro=§cゲームオーバー	###Game Over
+chase.1.cutscene.win=§bミッション完了	###Mission Complete
+chase.2.cutscene.outro=§c	###Do not translate
+
+chase.text.scene1= §6どうやら車のトラブルみたいだね!	###Take this, weakling!
+chase.text.scene1b= §6これも食らえ!	###
+
+chase.text.scene2= §dさあ、いくぞ!	### This is a pun
+chase.text.scene2b= §dベル、あの悪ガキをやっつけろ!	###
+
+chase.text.scene3= §2ぶっ潰してやる!	###
+chase.text.scene3b= §2もう逃げられないよ!	###
+
+chase.text.scene4= §3真っ二つにしてやる!	###
+chase.text.scene4b= §3覚悟はいいな!?	###
+chase.text.scene4c= §3これでお前も終わりだ! アハハハ!!	###
+
+chase.text.scene5a= §3これで終わったと思うなよ。勝負はこれからだ!!	###
+chase.text.scene5b= §3この青二才が、早くそのメダリオンをよこせ!	###
+
+chase.text.finishline=<§bVNC スポークスマン§r> §3よくできました! これから隠れ家へ戻りますが、手をつけなきゃいけないことがいくつかあるんです。§6シーッ、極秘ですよ§3。	###
+chase.text.failed=§6 §3彼らに捕まったんですか? 残念ですが、失敗もすべて経験です。	###
+
+chase.text.boost=§6ブースト発動!	###
+
+chase.text.farted1= なんか臭い!	###
+chase.text.farted2= 戻って来い!	###
+chase.text.farted3= どこにいるの!?	###
+
+chase.race.countdown3=§c3	###
+chase.race.countdown2=§62	###
+chase.race.countdown1=§e1	###
+chase.race.countdowngo=§aゴー!	###
+
+
+m2.post.1=<§bVNC スポークスマン§r> §3無事に戻れたようですね。お疲れ様でした。あ、実は、あなたがいない間にこっそりと調べものをしていました。	### So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.2=<§bVNC スポークスマン§r> §3あなたの隠れ家で§6デバイス§3を調べました。彼らにできることと、私たちの考えが同じなのか確認したいと思います。どうか協力していただけると助かります...	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.3=<§bVNC スポークスマン§r> §3一人ひとりに声をかけて、どんなアイデアがあるのか聞いてみてください。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.4=<§bVNC スポークスマン§r> §3これは、この周辺を表す§6デジタル マップ§3です。興味深い§6場所§3には印がついているので、試しに行ってみるといいと思います。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.5=<§bVNC スポークスマン§r> §3これはあなたが行った§6すべての場所§3のリストらしい。まあ、懐かしむのもいいんじゃないですか。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.6=<§bVNC スポークスマン§r> §3あなたのアイテムの§6保管箱§3です。大悪党だからといって、散らかし放題はダメですよ。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.7=<§bVNC スポークスマン§r> §3§6ミニオン§3専用の部屋! ミニオンもリラックスするスペースがいるんでしょう。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.8=<§bVNC スポークスマン§r> §3§6トロフィー§3を飾る場所! 盗んだのか? それとも獲得したのか? 悪役だからどっちでもいいですが。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.9=<§bVNC スポークスマン§r> §3これは旧式の§6テレポート装置§3? トランスポートマチックほど高機能じゃないですが、動くことは動くはず。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.10=<§bVNC スポークスマン§r> §3§6悪のガジェット§3に使える工具棚です。工具棚って、見てるとなぜかワクワクしますね。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.11=<§bVNC スポークスマン§r> §3あ、まだ完成してないんですか? ヴィランには、専用の§6ヴィラン ホイール§3が必要なんですよ。もうすでに良い出来だと思いますが。完成を楽しみに待ってますね。	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+
+
+m2.post2.1=<§bVNC スポークスマン§r> §3聞いてください。我々 §6VNC§3 は... 感服しました。けれど、まだ十分じゃない。§6メダリオン§3は手に入れましたが、まだつたないところがあった。	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.2=<§bVNC スポークスマン§r> §3もちろん、あなたのせいというわけじゃない。けれど、§6ミニオン§3は我々が思ったよりも信頼がおけないようです。	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.3=<§bVNC スポークスマン§r> §3あなたを大悪党として更にレベルアップするために、ミニオンたちを訓練して、自分で§6身を守る§3ことを覚えてもらいましょう。	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.4=<§bVNC スポークスマン§r> §3どこか、§6武術§3を教えてもらえるところを探すんです。ミニオンに学習できる能力があればいいですが、正直期待はできません。	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.5=<§bVNC スポークスマン§r> §3§6チャイナタウンにカンフー§3の元師範がいると情報を得ました。けれど、訓練を受けるには説得して現場に復活してもらう必要があります。	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+
+
+sticky.prompt.reminder=<§2若いネファリオ§r> §eいいか、§6ベタベタの手§eで§6箱を引っ張って§e足場にして登るんだ。	###
+sticky.fail=<§bVNC スポークスマン§r> §3ひどい出来だぞ、ミニオン! ブー! やり直しだ!	###
+sticky.success=<§bVNC スポークスマン§r> §ハハハハハ! でかした、ミニオン! よくやりました。	###
+
+
+sticky.tutorial.1.1=<§2若いネファリオ§r> §eおい! 君なのか? 通信デバイスをハッキングしたんだ。君は§6ベタベタの手§eを見つけたようだな! 私の最新の発明品だ。	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.1.2=<§2若いネファリオ§r> §e代わりにテストしてくれる人を探していたんだ! 君なら完璧だな! 使い捨てても大丈夫だし。	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.1.3=<§2若いネファリオ§r> §eあそこの段差に箱が積み上がってるだろう? §6ベタベタの手§eを使えば、引っ張ってこれるはずだ。試してみてくれ!	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.2.1=<§2若いネファリオ§r> §eじゃあ、それを使って§6段差を登ってくれ§e! ひとつ上に行ったら、また掴んでもうひとつ上の段に登っていくんだ!	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.3.1=<§2若いネファリオ§r> §eその調子だ。じゃあ、もう少しテストを続けてくれるか? もっと引っ張って落としておくものがあるはずだ。さあ、さあ、もっとテストの結果が必要なんだ。	###unused line
+
+sticky.proximity=<§bVNC スポークスマン§r> §3もう少しでレコード店です。そうそう... ちゃんと見てますからね。のぞき見趣味はないですが。	###
+
+scene_m1_01=<§bVNC スポークスマン§r> §3すごいでしょう? §6ビシャス 6§3の隠れ家です。まだ私の声が聞こえることに驚いた? 我々にはいろいろな手があるんですよ...	### Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_02=<§bVNC スポークスマン§r> §3とにかく、大胆な提案ですが、こういった任務はミニオンに向いているでしょう。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_03=<§bVNC スポークスマン§r> §3あの小さい体ならどこでも入れる上に、§6隠密に向いています§3... ちゃんとすればですが。今回はちゃんとしてもらう必要があります。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_04=<§bVNC スポークスマン§r> §3ここは、§6ヘンチマン§3だらけです。ミニオンには慎重になってもらいましょう。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_05=<§bVNC スポークスマン§r> §3奥深くにあのお宝、§6ドラゴン メダリオン§3があります。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_06=<§bVNC スポークスマン§r> §3もしかしたら「待てよ。仲間の悪役から、盗んじゃっていいのか?」なんて思ってるかもしれない。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_07=<§bVNC スポークスマン§r> §3これだけは言っておきましょう。盗むかどうか聞かれたら、答えは§6常にイエス§3のみ。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_08=<§bVNC スポークスマン§r> §3ふーむ、そうですね。我々はこの人物についてよく知っている。店の§6店員§3のことです。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_09=<§bVNC スポークスマン§r> §3あれが将来有望なマッド サイエンティスト、§6ネファリオ博士§3です。彼に話しかけてみてください。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_10=<§bVNC スポークスマン§r> §3§6"悪いあなた"§3というレコードについて聞いてみてください。それが合言葉です。	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+
+sticky.prompt.coordinate.0.0=<§bVNC スポークスマン§r> §3やあ、ミニオン。話ができて光栄だ... とでも言おうか。	###
+
+sticky.prompt.coordinate.1.1=<§bVNC スポークスマン§r> §3§6警備兵§3が見えるでしょう。§6視界§3を避けて。でないと捕まります。	### See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.1.1.2=<§bVNC スポークスマン§r> §3あなたなら大丈夫。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.1.2=<§bVNC スポークスマン§r> §3あなたなら大丈夫。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.2.1=<§2若いネファリオ§r> §eあの§6通気口§eももうダメだな。§6ベタベタの手§eで引っ張ってみてくれ。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.1=<§2若いネファリオ§r> §eこの§6箱の束§eは、引っ張るには重すぎるだろう。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.2=<§2若いネファリオ§r> §eだが、§6ベタベタの手§eですこし動かしてやれば、段差から引っ張れるはずだ。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.3=<§2若いネファリオ§r> §e向こうにいる§6警備兵§eが物音を聞いて様子を見に来るだろうな。それを使って、§6見つからずに進める§eだろう。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.4.1=<§bVNC スポークスマン§r> §3この§6レバー§3はおかしなところにありますね。けれど問題ない。§6ベタベタの手§3なら届くはず。	###unused line
+sticky.prompt.coordinate.4.2=<§bVNC スポークスマン§r> §3計算によると、この隠れ家にいる警備兵がレバーを引っ張るために似たような装置を持っている確率が 96%、竹馬を使ってレバーを引っ張っている確率 3%、かなり背の高い奴がいる確率が 1% です。	###unused line
+sticky.prompt.coordinate.5.1=<§bVNC スポークスマン§r> §3なかなか堂々とした廊下だ... ミニオン諸君、奥に注目! あれです。あれが§6ドラゴン メダリオン§3です。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.6.1=<§bVNC スポークスマン§r> §3残念ですが、あの通路は無理そうです!	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.7.1=<§bVNC スポークスマン§r> §3他の出口を探す必要があります。	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.zodiac_aquired=<§bVNC スポークスマン§r> §3信じられない! 本当にやるなんて! ああ、そうそう、急いで§6逃げて§3!	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.aquire_zodiac=§6§l§nヒント:§r §3§6ドラゴン メダリオン§3を§6ベタベタの手§3で掴みましょう	###
+sticky.prompt.1=若いネファリオと話す	###
+sticky.1.caught=§4捕まった!	###
+nefario.1.text=<§2若いネファリオ§r> §eお客様! すいません、レコードと新しい悪の発明品を片付けておりまして。ウィンクウィンク。	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+nefario.2.text=<§2若いネファリオ§r> §e何をお探しでしょうか? なにか... 特別... なものをお探しですか?	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+nefario.3.text=<§2若いネファリオ§r> 「§6悪いあなた§e」ですか? もちろんございます。§6リスニング ブース 2§e でご試聴しますか?	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+sticky.guard.question.1=<§4警備兵§r> §cん? 誰かいるのか?	###
+sticky.guard.question.2=<§4警備兵§r> §cなんかバナナの匂いがしないか?	###
+sticky.guard.question.3=<§4警備兵§r> §cなにか聞こえたぞ。	###
+sticky.guard.question.4=<§4警備兵§r> §c... うーん?	###
+sticky.guard.question.5=<§4警備兵§r> §cなんだ... ?	###
+sticky.guard.question.6=<§4警備兵§r> §c誰かいるのか?	###
+sticky.guard.knockout.1=<§4警備兵§r> §cうわあああ!	###
+sticky.guard.knockout.2=<§4警備兵§r> §cバ... ナ... ナ。	###
+sticky.guard.caught.1=<§4警備兵§r> §cほら! 捕まえたぞ!	###
+sticky.guard.caught.2=<§4警備兵§r> §c捕まえた!	###
+assistant.1.text=<§cアシスタント§r> §3こんにちは! 参加をご希望ですか? ビシャス 6 はまだです。しばらくしてから戻ってきてください。	###Are you applying? The Vicious 6 aren't in right now, come back later. No offense, but this isn't a job for kids. Why don't you apply to our Internship program: Li'l Villains.
+assistant.2.text=<§cアシスタント§r> §3悪気はありませんが、こちらは子供向けではありません。インターンシップ プログラム「小さなヴィラン」に応募してみてはいかがですか?	###Are you applying? The Vicious 6 aren't in right now, come back later. No offense, but this isn't a job for kids. Why don't you apply to our Internship program: Li'l Villains.
+
+sticky.post.1=<§bVNC スポークスマン§r> §3いいですか? いいニュースと悪いニュースがあります。	###
+sticky.post.2=<§bVNC スポークスマン§r> §3いいニュースは、§6ミニオン§3がドラゴン メダリオンをほんとに手に入れたってこと。	###
+sticky.post.3=<§bVNC スポークスマン§r> §3悪いニュースは、彼らが§6捕まって§3、助けを必要としてることです。	###
+sticky.post.4=<§bVNC スポークスマン§r> §3彼らのために命をかけろとは言いませんが、メダリオンは彼らが持っています。	###
+
+
+
+wk.no_cheese= §3面白いデザイン。どうやらセキュリティロボは§6チーズに耐性§3があるようだ。	###
+wk.interact= §6操作して調べる	###
+wk.mona.interact= §6操作して取る	###
+wk.cheesegun_hint= §6チーズ銃を警備兵に使う	###
+wk.proximity=<§bVNC スポークスマン§r> §3ここです。中に入ってみるまでは、よくある銀行と変わらない。	###talking about the Bank of Evil
+
+wk.1.cutscene.intro=<§bVNC スポークスマン§r> §3あいつです。正体を隠そうとしてますが、こっちにはわかってる。	###That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.2.cutscene.intro=<§bVNC スポークスマン§r> §3けど教えませんよ。あなたもわかるかも。	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.3.cutscene.intro=<§bVNC スポークスマン§r> §3のぞき見してたら、§6巨大金庫の扉§3の奥にあるものを盗もうとしているとわかった... なんてことはありませんから。	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.4.cutscene.intro=<§bVNC スポークスマン§r> §3ただの勘です。§6話しかけてみて§3、確かめてみるといいでしょう。	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+
+wk.mission.text.1.1=<§7ワイルド・ナックルズ§r> §4誰だお前? あぁ。中学校は卒業したような奴が来ると思ってたんだがな。まあ、§6ビシャス シックス§4から盗むってんなら、強い奴なんだろうな。	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.2=<§7ワイルド・ナックルズ§r> §4あの§6巨大な金庫§4に隠されたものを盗むために素晴らしい計画を思いついたんだが、お前の助けが必要だ。§6一緒に働く§4か? いくつかものは教えてやるぞ。	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.3=<§7ワイルド・ナックルズ§r> §4報酬の山分けは 80 対 20 だ。何? 俺が見つけて、俺が計画したんだぞ。わかった。79 対 21 だな。値切らせやがるな!	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.4=<§7ワイルド・ナックルズ§r> §4さあ、楽しむとするか! 捕まるのは駄目だがな...	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.5=<§7ワイルド・ナックルズ§r> §4俺が大騒ぎして、あいつらの気を引いておく。お前は§6従業員から鍵を盗め§4。	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.6=<§7ワイルド・ナックルズ§r> §4失礼な奴らだ。少し教育が必要みたいだな。	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.6.2=<§7ワイルド・ナックルズ§r> §4なにかモノを取ってくる装置があるなら、俺が気を引いている間に、それを使って鍵を取ってくるんだ。	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+
+wk.mission.text.2.1=<§7ワイルド・ナックルズ§r> §4おい! あのクレイジーな老人を見てみろ! 俺が何をするかわかるか!?	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.2=<§7ワイルド・ナックルズ§r> §4アハハハハ!	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.3=<§7ワイルド・ナックルズ§r> §4ホホオオ!	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.4=<§7ワイルド・ナックルズ§r> §4拍手にはまだ早いぞ。仕事はまだ終わってない。	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+
+wk.mission.text.3.1=<§7ワイルド・ナックルズ§r> §4よくやったな、小僧。	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.2=<§7ワイルド・ナックルズ§r> §4だが、他にも欲しい物があるんだ。§6鍵を使って§4、§6オフィスに入って§4それを取ってきてくれ。	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.3=<§7ワイルド・ナックルズ§r> §4どれどれ、俺が探りを入れていたときの§6ノート§4があったぞ。	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.4=<§7ワイルド・ナックルズ§r> §4メインホールから左の廊下に入って、§6鍵を手に入れて§4、他の部屋に行って欲しいものを取ってくるんだ。	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.5=<§7ワイルド・ナックルズ§r> §4さあ、行け。すぐについていく。	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+
+wk.mission.hint.1.setup=<§7ワイルド・ナックルズ§r> §4さあ、見てみるとするか... よし、いいか。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM #Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.carpet=<§7ワイルド・ナックルズ§r> §4§6キーカード§4は§6カーペット§4の下に隠されているようだ。誰がここのセキュリティを設計したんだろうな。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.vase=<§7ワイルド・ナックルズ§r> §4§6キーカード§4は§6花瓶§4の中に隠されているようだ。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.painting=<§7ワイルド・ナックルズ§r> §4§6キーカード§4は§6絵画§4の後ろに隠されているようだ。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.complete=<§7ワイルド・ナックルズ§r> §4いいぞ、カードを手に入れたんだな。§6次の部屋§4に向かってくれ。来た道を戻って今度は§6右に行くんだ§4。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.setup=<§7ワイルド・ナックルズ§r> §4よし、いいか。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.carpet=<§7ワイルド・ナックルズ§r> §4§6次の鍵§4は§6カーペット§4の下にある。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.vase=<§7ワイルド・ナックルズ§r> §4§6次の鍵§4は§6花瓶§4の中にあるぞ。すごい数の鍵だな。車屋でもやってるのかよ?	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.painting=<§7ワイルド・ナックルズ§r> §4§6次の鍵§4は§6絵画§4の後ろだ。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.complete=<§7ワイルド・ナックルズ§r> §4手に入ったな! さあ、戻ってくるんだ。急げば、三文の得だぞ。	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+
+wk.mission.text.4.0=<§7ワイルド・ナックルズ§r> §4§6チーズ銃§4か。俺向けの武器だな。危険だが美味しいんだ。	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.1=<§7ワイルド・ナックルズ§r> §4いいか、小僧。これが必要になった理由は、向こうにいる§6警備兵§4をやり過ごすためだ。	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.2=<§7ワイルド・ナックルズ§r> §4そいつらに近づいて、この武器を使ってやるんだ! 動けなくなるだろう。§6はい、チーズ§4!	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.3=<§7ワイルド・ナックルズ§r> §4あぁ、あとそれが終わったら向こうから§6持ってきてほしいものがもっとある§4んだ。また、連絡するぞ。	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+
+wk.mission.hint.3.setup=<§7ワイルド・ナックルズ§r> §4ロッカーを確認するとしよう。工作員の一人が§6変装§4を隠しておいてあるんだ。	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+wk.mission.hint.3.mens=<§7ワイルド・ナックルズ§r> §4§6右§4のロッカールームにあるぞ。	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+wk.mission.hint.3.womens=<§7ワイルド・ナックルズ§r> §4§6左§4のロッカールームにあるぞ。	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+
+wk.mission.hint.4.setup=<§7ワイルド・ナックルズ§r> §4あぁ、これが§6金庫§4だ。ここに取り返さないといけないものが入ってる。	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.left=<§7ワイルド・ナックルズ§r> §4§6左の壁§4にある§6金庫§4のどれかに入ってるはずだ。	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.right=<§7ワイルド・ナックルズ§r> §4§6右の壁§4にある§6金庫§4のどれかに入ってるはずだ。	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.center=<§7ワイルド・ナックルズ§r> §4§6真ん中の壁§4にある§6金庫§4のどれかに入ってるはずだ。	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.complete=<§7ワイルド・ナックルズ§r> §4全部手に入ったら、§6戻ってくるんだ§4! 盗みに入るぞ。	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+
+wk.mission.text.5.1=<§7ワイルド・ナックルズ§r> §4揃ったものを見てみるぞ。§6チーズ銃§4、§6変装§4、§6巨大なドリル§4... よし、準備万端だな。	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.2=<§7ワイルド・ナックルズ§r> §4気持ちいいな!	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.3=<§7ワイルド・ナックルズ§r> §4あぁ、これか。§6レーザーの壁§4だよ。俺が一番嫌いな壁だ。	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.4=<§7ワイルド・ナックルズ§r> §4それはまあいい。廊下の向こうにある§6絵画§4が見えるか?	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.5=<§7ワイルド・ナックルズ§r> §4あれが俺たちの獲物だ。いただきに行くぞ。だが、§6警報を鳴らさないよう§4気をつけろ。	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+
+wk.mission.text.6.1=<§7ワイルド・ナックルズ§r> §4奴ら、§6モナ・リザ§4に罠を仕掛けやがった! 見ろよあの笑顔... 信じるんじゃなかったな!	###They booby trapped The Mona Lisa! Look at that smile... I should have never trusted her! Well, kid, here goes nothing. Let's scram! Get to the bank's exit! Quick
+wk.mission.text.6.2=<§7ワイルド・ナックルズ§r> §4こうなりゃもうやけだ。とっととおさらばするぞ! §6銀行の出口§4に行け! §6急ぐんだ§4!	###They booby trapped The Mona Lisa! Look at that smile... I should have never trusted her! Well, kid, here goes nothing. Let's scram! Get to the bank's exit! Quick
+
+wk.mission.text.7.1=<§7ワイルド・ナックルズ§r> §4やった! やったぞ!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.2=<§7ワイルド・ナックルズ§r> §4認めてやるよ。その大きさの小僧にしてはなかなかやるじゃねえか。	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.3=<§7ワイルド・ナックルズ§r> §4生きてる心地がするぜ! だが、ちょっと昼寝をしないとな!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.4=<§7ワイルド・ナックルズ§r> §4ありがとうな。また全盛期のような気分になれたぜ!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.5=<§7ワイルド・ナックルズ§r> §4お前はいつか§6大悪党§4になれるぞ。この若さであの大泥棒はなかなかのもんだ。	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+
+wk.guard.question.1=<§4警備兵§r> §cなにか聞こえた気がする。	###
+wk.guard.question.2=<§4警備兵§r> §c誰だ? 姿を見せろ。	###
+wk.guard.cheesed.1=<§4警備兵§r> §cあああ! 動けない...	###
+wk.guard.cheesed.2=<§4警備兵§r> §c臭いチーズじゃないか!	###
+wk.guard.cheesed.3=<§4警備兵§r> §cなんだこれ? チーズか???	###
+wk.guard.cheesed.4=<§4警備兵§r> §cうわ! すごく臭いぞ!	###
+wk.guard.caught.1=<§4警備兵§r> §cおい、お前! ここで何してるんだ?	###
+wk.guard.caught.2=<§4警備兵§r> §c動くな! お前を逮捕する。	###
+
+wk.bot.question.1=<§2セキュリティロボ§r> §c潜在的な驚異を検知! 捜索中!	###
+wk.bot.question.2=<§2セキュリティロボ§r> §c検知中...	###
+wk.bot.caught.1=<§2セキュリティロボ§r> §c侵入者を検知! トマレ!	###
+wk.bot.caught.2=<§2セキュリティロボ!§r> §c警告! 警告! 侵入者!	###
+
+wk.fail=<§bVNC スポークスマン§r> §3あああ! 残念。	###
+wk.success=<§bVNC スポークスマン§r> §3§6モナ・リザ§3を盗んだとは! ミニオンの目は正しかったようです。	###
+
+wk.post.1=<§bVNC スポークスマン§r> §3ああ、残念ですが悪い知らせがあります。この§6メッセージ§3が隠れ家で記録されていました:	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+wk.post.2=<§eミニオン§r> §eアアアアアアアアアアアア!	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+wk.post.3=<§bVNC スポークスマン§r> §3よくありませんね。様子を見てきたらどうでしょう?	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+
+wk.intermission.1=<§bVNC スポークスマン§r> §3まずいですね... 誰かが§6隠れ家に入り込んで§3§6ドラゴン メダリオン§3を盗んだみたいです。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.2=<§bVNC スポークスマン§r> §3一体誰が隠れ家を見つけ出して、ドラゴン メダリオンを盗み返したのか。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.3=<§bVNC スポークスマン§r> §3まあ、あなたほどの悪党なら、その謎を解けるはず。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.4=<§bVNC スポークスマン§r> §3とまあ、冗談はこれぐらいにして、間違いなく§6ビシャス 6§3 でしょう。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.5=<§bVNC スポークスマン§r> §3ラッキーなことに、奴らの現在の居場所について情報があるようだ。なにか§6チャイナタウンで計画しているらしい§3。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.6=<§bVNC スポークスマン§r> §3お前が奴らから盗んで、奴らがお前から盗んだっていうんなら...	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.7=<§bVNC スポークスマン§r> §3また向こうに出向いて、もう一回§6盗み返してやれば§3いいって話ですね。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.8=<§bVNC スポークスマン§r> §3また盗まれるなんてことを避けたいなら、秘密も教えてあげましょう...	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.9=<§bVNC スポークスマン§r> §3...やつらの「面倒を見る」方法を見つけ出すんです。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.10=<§bVNC スポークスマン§r> §3§6反悪党同盟§3もいるとの噂があります。悪党同士で争うと、§6誰かが捕まる§3ことになりかねません。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.11=<§bVNC スポークスマン§r> §3それと、話を聞かれたら... 我々の事は秘密ですよ。	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.door.lever=§3ドアを開く§r	###
+
+
+m5.post.1=<§bVNC スポークスマン§r> §3それでは... これでおそらく§6あなたの出番も終わりでしょう§3。	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.2=<§bVNC スポークスマン§r> §3§6ミニオンへの感謝§3を忘れずに! 彼らがいなければどうなっていたのやら。	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.3=<§bVNC スポークスマン§r> §3もっといたずらをしたいと言うなら... また我々からの連絡があるかもしれませんよ。	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.4=<§bVNC スポークスマン§r> §3それまでは、一旦お別れです。	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.5=<§bVNC スポークスマン§r> §3それとお忘れなく。§6誰かに話したら... 我々は必ず突き止めます§3。	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+
+
+
+
+showdown.scene1.1=<§bVNC スポークスマン§r> §3さて。紳士淑女の皆さん。始まりますよ。§6ここですべてが決まります§3。	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.2=<§bVNC スポークスマン§r> §3§6これぞクライマックス§3! 対するは§6ビシャス 6§3 とその新リーダー§6ベル・ボトム§3!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.3=<§cベル・ボトム§r> §5久しぶりだね、若造!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.4=<§cベル・ボトム§r> §5いいかい、私は普段きついやり方を好まないんだ。だから普通なら、逃げるチャンスを与えるところなんだ。	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.5=<§cベル・ボトム§r> §5だけど... あんたは私達から§6盗んだ§5。	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.6=<§cベル・ボトム§r> §5そのツケを§6払ってもらうよ§5!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.7=<§bVNC スポークスマン§r> §3なんと素晴らしい登場! 犯罪的に素晴らしい!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.8=<§bVNC スポークスマン§r> §3どの選択肢を選ぶんです?	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.9=<§bVNC スポークスマン§r> §3ここは言葉より行動というところでしょう。向こうはもう§6装置の準備万端§3で引き金に指がかかってますからね。	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.10=<§bVNC スポークスマン§r> §3これを見逃す手はありません! 一世一代の大勝負です。	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+
+showdown.scene2.1= §3今回は、必ず真っ二つにしてやる!	###
+showdown.scene2.defeated= §3ま... まさかそんな。	###
+
+showdown.scene3.1= §dよくやるな、§6悪魔の子§dよ! 成仏する準備をしろ!	###
+showdown.scene3.defeated= §d見捨てられた... のか?	###
+
+showdown.scene4.1= §2§6スヴェンジャンス§2の時間だ!	###Svengeance is his name
+showdown.scene4.defeated= §2うわああ... 子供に... 負けるなんて。	###
+
+showdown.scene5.1= §6おぉ、血がたぎるのがわかるねえ。エネルギーに満ちてるよ! とくと味わうんだな!	###
+showdown.scene5.defeated= §6お母さん... 遊び場に... 迎えに来てよ。	###
+
+showdown.scene6.1= §5ああああ! もういい! ガキのお前と更に小さいガキはもうこれで§6おしまいだ§5!	###
+showdown.scene6.2= §5この§6鎖§5に耐えられるかな!	###
+showdown.scene6.defeated= §5うう... こっちが活躍する... はずだったのに!	###
+
+showdown.scene7.1=<§bVNC スポークスマン§r> §3今のパフォーマンスには賞賛の拍手を贈りましょう。	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.2=<§bVNC スポークスマン§r> §3思った以上にうまくいきましたね!	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.3=<§bVNC スポークスマン§r> §3それに、§6ミニオン§3は VNC にとって謎ではなくなりました。	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.4=<§bVNC スポークスマン§r> §3また、一緒に仕事をしましょう。	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+
+
+showdown.fart= §3§6オナラ爆弾§3を使って邪魔をしよう!	###
+showdown.hand= §3§6ベタベタの手§3を使って引っ張ろう!	###
+showdown.dash= §3§6ナンチャック§3を使って避けよう!	###
+showdown.cheese= §3§6チーズ銃§3を使って足を遅くさせよう!	###
+showdown.roar= §3§6ナンチャックの叫び§3で相手を圧倒しよう!	###
+
+
+
+moon.hint.shrink_msg=§6§l§nヒント:§r §3縮ませ光線銃でイカ ロケットを撃ちましょう	###unused line
+moon.vector.1.cutscene.intro=§2 アハハハハ、バカめ! お前は§6ベクター§2の獲物になったんだ! イエーイ!	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.2.cutscene.intro=<§6ベクター§r> §2ようこそ! 俺の§6完璧な月トラップ§2だ。そのバカな黄色の豆粒みたいな奴らがこの誘惑に勝てないのはわかっていたからな。これで勝負はこっちのもんだ。	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.3.cutscene.intro=<§6ベクター§r> §2よし! お話はこれぐらいにしておこう! もっと大きなことをするつもりなんだ。	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.4.cutscene.intro=<§6エル・マッチョ§r> §2§5エル・マッチョ§2! §dブラット§2! さあ... いや、ちょっと待て。そっちを先に切るんだ!	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+
+moon.1.cutscene.intro=<§bVNC スポークスマン§r> §3おおっと、どうやら§6このストーリーもやるみたいですね§3。	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.2.cutscene.intro=<§bVNC スポークスマン§r> §3我らの§6ミニオン ヒーロー§3についに危機が訪れる... なんと§6月§3に捕らえられてしまいました!	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.3.cutscene.intro=<§bVNC スポークスマン§r> §3実行犯は§6ベクター§3という名の若い悪役のようです。	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.4.cutscene.intro=<§bVNC スポークスマン§r> §3なぜ我々がそれに気づいたのか驚いてるようでは... 一生理由はわからないでしょう。	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.5.cutscene.intro=<§bVNC スポークスマン§r> §3とにかく、この状況をより... フェアにできるか試してみましょう。	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+
+moon.corridor.text=<§bVNC スポークスマン§r> §3興味深い! ミュータント ミニオンですね。どうしてこうなったのかは謎ですが。	###
+moon.jelly.tip=<§bVNC スポークスマン§r> §3この§6壁に吊ってある装置§3はどうやら何かしらの防衛装置のようです。	###
+moon.jelly.overheat=オーバーヒート!	###
+moon.plasmajelly.overheat=オーバーヒート!	###
+moon.macho.fight.start.1=<§5エル・マッチョ§r> §4何だ? 逃げたのか?	###What? You escaped?  Let's get you back into your cell. Wahahaha!
+moon.macho.fight.start.2=<§5エル・マッチョ§r> §4また牢獄に連れ戻してやろう。ワハハハハ!	###What? You escaped?  Let's get you back into your cell. Wahahaha!
+
+moon.1.macho.tip=<§bVNC スポークスマン§r> §3どうやら、ベクターは一人ではないようですよ? 間違いなく奴は大した障害にならないでしょう。	###
+moon.2.macho.tip=<§bVNC スポークスマン§r> §3先程見つけたゼリーの変異した状態に化学的な弱点を見つけました。これでこの装置の使いみちがわかるはず。	###unused
+moon.3.macho.tip=<§bVNC スポークスマン§r> §3発射!	###unused
+
+moon.macho.fight.end.1=<§5エル・マッチョ§r> §4うわああ! あああ、うう! ああ... ん? そんな! 俺の力が!	###unused
+moon.macho.fight.end.2=<§5エル・マッチョ§r> §4ふん! まだ終わっていないぞ!	###
+
+moon.post.macho.fight.1=<§6ベクター§r> §2勝ったと思ってるかもしれんが、これも計画の通りだ。	### You might think you've won now, but this is all still part of my plan. I'm ... making it up as I go, but it's a great plan, that's for sure 
+moon.post.macho.fight.2=<§6ベクター§r> §2まあ進みながら考えてるけど...§6最高の計画§2なんだ。それは間違いない。	### You might think you've won now, but this is all still part of my plan. I'm ... making it up as I go, but it's a great plan, that's for sure
+
+moon.macho.atk.1=<§5エル・マッチョ§r> §4うううう、ああああ!	###
+moon.macho.atk.2=<§5エル・マッチョ§r> §4これをくらええええ!	###
+moon.bratt.atk.1=<§dバルタザール・ブラット§r> §bおっと! 違うところだぞ!	###
+moon.bratt.atk.2=<§dバルタザール・ブラット§r> §bおいおい! リズムにのるんだよ! アハハ!	###
+moon.vector.atk.1=<§6ベクター§r> §2行け、ロケット!	###
+moon.vector.atk.2=<§6ベクター§r> §2くらえ、このちんちくりん!	###
+moon.mutant.atk.1=<§5ミュータント ミニオン§r> §eブロパ!	###
+moon.mutant.atk.2=<§5ミュータント ミニオン§r> §eエパトオ!	###
+moon.mutant.atk.3=<§5ミュータント ミニオン§r> §eバディ!	###
+moon.mutant.atk.4=<§5ミュータント ミニオン§r> §eガアア!	###
+moon.mutant.defeat.1=<§5ミュータント ミニオン§r> §eアヤヤ!	###
+moon.mutant.defeat.2=<§5ミュータント ミニオン§r> §eブラアア!	###
+
+moon.bratt.fight.start.1=<§dバルタザール・ブラット§r> §bえっと、アイ・オブ・ザ・タイガーだ。あと - 何? どうやって逃げ出した?	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.2=<§dバルタザール・ブラット§r> §bやっぱりあの§6エル・マッチョ§bとか言う奴に捕獲を任すんじゃなかったな。	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.3=<§dバルタザール・ブラット§r> §bとにかく、ここまで来たなら...	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.4=<§dバルタザール・ブラット§r> §bお楽しみと行こうじゃないか!	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.5=<§dバルタザール・ブラット§r> §6ダンス対決だ§b! 行くぞ!	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+
+
+moon.floor.sec2=を踏まないようにする	###
+moon.floor.sec4=を踏まないようにする	###
+moon.floor.sec1=を踏まないようにする	###
+moon.floor.sec3=を踏まないようにする	###
+
+moon.1.bratt.tip=<§bVNC スポークスマン§r> §3§5エル・マッチョ§3だけじゃなくて、§dバルタザール・ブラット§3もですって?	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+moon.2.bratt.tip=<§bVNC スポークスマン§r> §3あの§6ベクター§3がどうやってこの二人を連れて来られたんでしょう?	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+moon.3.bratt.tip=<§bVNC スポークスマン§r> §3どうやら、相手は戦うより踊る気満々のようですが...	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+
+moon.bratt.fight.end.1=<§dバルタザール・ブラット§r> §b何? それを触るな!	###unused
+moon.bratt.fight.end.2=<§dバルタザール・ブラット§r> §bアアアアアアアアア!	###
+moon.bratt.fight.end.3=<§dバルタザール・ブラット§r> §bあぁ、まあいい。すぐに... 戻る。	###
+
+moon.post.bratt.fight.1=<§6ベクター§r> §2まだ... 計画通りだ。さっきのことなどどうでもいい。	###Still... according to plan. It doesn't even matter. You can't get past §6the next door, I've made extra sure of that. Ooooooh yeaaah!
+moon.post.bratt.fight.2=<§6ベクター§r> §2絶対に§6次の扉§2を越えられるわけがない! 絶対そうだ。間違いないね!	###Still... according to plan. It doesn't even matter. You can't get past §6the next door, I've made extra sure of that. Ooooooh yeaaah!
+
+
+moon.vector.fight.start.1=<§6ベクター§r> §2何!? 何だこれは?	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.2=<§6ベクター§r> §ううう、なんで他の奴は§6あんなに使えない§2んだ? あいつら両方ともミニオンを止められなかったのか!?	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.3=<§6ベクター§r> §2とにかく、ここでお前は間違いなくおしまいだ。§6ロケットイカ§2をくらえ!	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.4=<§6ベクター§r> §2これを避けきれるかな。オー、イエーイ!	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+
+moon.vector.fight.end.1=<§6ベクター§r> §2この俺が... こいつに負けただと!?	###
+moon.vector.fight.end.2=<§6ベクター§r> §2... あいつらはほんとに... §6使えない§2奴らだ! アアアアア!	###
+
+moon.fail=<§bVNC スポークスマン§r> §3もう一回やってみてもいいかも。	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success=<§bVNC スポークスマン§r> §3いいですよ、§6ミニオン§3! またいい仕事をしてくれました。	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.2=<§bVNC スポークスマン§r> §3研究材料の提供に対するお礼として、帰り道を用意しておきました。	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.3=<§bVNC スポークスマン§r> §3この場所が吹き飛ぶ前に、§6仲間を全員集め§3、集合させるんです。急いで。	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.4=<§bVNC スポークスマン§r> §3準備できましたか? よし、§6隠れ家§3まで戻るとしましょう。	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+
+
+moon.outro.1=<§6ベクター§r> §2うう... 頭が! な、なんだ?	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.outro.2=<§6ベクター§r> §2嫌だ。また俺をおいていくんじゃない!	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.outro.3=<§6ベクター§r> §2あぁ、なんてこった。	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.title.screen=§6ベクターの月面基地§r	###
+
+entity.cyd:kun_wk_henchman_1.name=ヘンチマン	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_1.name=ヘンチマンをスポーンさせる	###
+entity.cyd:kun_wk_henchman_2.name=ヘンチマン	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_2.name=ヘンチマンをスポーンさせる	###
+entity.cyd:kun_wk_henchman_3.name=スーパー ヘンチマン	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_3.name=スーパー ヘンチマンをスポーンさせる	###
+
+
+dojo.intro=<§6マスター・チョウ§r> §d申し訳ない。訓練はもうやってないんだ。今は§6a鍼灸師§dとして働いている。	### 
+dojo.intro2=<§6マスター・チョウ§r> §d待って、君じゃなくて... そこのミニオンたちのためか?	### 
+dojo.intro3=<§6マスター・チョウ§r> §dハハ! 彼らに§6カンフー§dなんてできると思うのか? まあ、やってみようじゃないか。不可能なことに挑戦するのはむしろ好きな方だ。§6奥の部屋で会おう§d。	### 
+
+
+gadget.pickup.chi=§6ヌンチャクを手に入れました!	###
+gadget.pickup.cheese=§6チーズ銃を手に入れた!	###
+gadget.pickup.jelly=§6ジェリー ランチャーを手に入れた!	###
+gadget.pickup.jellyplasma=§6プラズマ ジェリー ランチャーを手に入れた!	###
+gadget.pickup.shrink=§6縮ませ光線銃を手に入れた!	###
+gadget.pickup.sticky=§6ベタベタの手を手に入れた!	###
+
+dojo.notstarted=§6マスター・チョウと話す	###
+
+gadget.chi0= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi1= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack 
+gadget.chi2= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi3= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi4= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi5= §6押してチャージ!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi6= §6叫び発動!	###a popup telling the user to activate the tool to perform a special "roar" attack
+
+dojo.cutscene1.1=<§bVNC スポークスマン§r> §3バナナを食べたり、素手で叩き合ったりすることが大好きなミニオンたち。さて、そのほかには何ができるのでしょう? 確かめてみてください!	###Now let's see what your Minions can do. Besides eat bananas and slapping each other.  Good luck! You'll need it!
+dojo.cutscene1.2=<§bVNC スポークスマン§r> §3幸運を祈ります! きっと役に立つはず!	###Now let's see what your Minions can do. Besides eat bananas and slapping each other.  Good luck! You'll need it!
+
+dojo.cutscene2.1=<§6マスター・チョウ§r> §dやあ。私は、§6カンフー§dの§6マスター・チョウ§d。古代の少林拳を教えているんだ。	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.2=<§6マスター・チョウ§r> §d哀れなり弱き者よ。だが、§6世界最高のマスター§dと一緒なら心配はない。一緒に精進しよう。	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.3=<§6マスター・チョウ§r> §dこの§6ヌンチャク§dを受け取ってくれ。くれぐれも、自分を傷つけないように。	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.4=<§6マスター・チョウ§r> §dエネルギーを集めて、信じられないほどのスピードで§6前方に向かってダッシュ§dし、その力を解き放ってみよう。	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.5=§6そのエネルギーを手に集中させたまま、前方に向かってダッシュすると、 をアクティブ化できるんだ。	###
+
+dojo.cutscene3.1=<§6マスター・チョウ§r> §dまあ、悪くない。もう少し高度な技術の訓練に進んでもよかろう。	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.2=<§6マスター・チョウ§r> §dこれは§6ダミー§dだ。スチュアートではない。	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.3=<§6マスター・チョウ§r> §dダミーに目を向けろ! まだそれを倒せるほど強くはないかもしれないが、疑いは心の弱さに過ぎない。君に心があればの話だが...	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.4=<§6マスター・チョウ§r> §d疑いに支配されてはいけない。強い意志を持って、§6ダミー§dを倒してみろ。全身に怒りを満たすのだ! 奥深くからその力が感じられたら、§6君の内なる獣を解き放て§d!	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+
+dojo.cutscene4.1=<§6マスター・チョウ§r> §d素晴らしい! 十分悟ってきたようだな。では、次に進み... なんだ?	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.2=<§4ヘンチマン§r> §cアイツらを捕まえろ! ボスの命令だ! あのチビ モンスターめを一人残らずぶっ潰せ!	###Wonderful! Now, enough philosophy, let us... Oh?  Get ‘em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.3=<§4ヘンチマン§r> §c行くぞーおおぉぉぉ!	### Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.4=<§6マスター・チョウ§r> §dそんな... この子たちをいじめる気か?	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.5=<§6マスター・チョウ§r> §dよーく聞け、ミニオンたちよ! 今からは実戦だ。これも訓練の一部だと考えてくれ。§6この道場を邪悪な侵入者から守るのだ§d。	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+
+dojo.cutscene5.1=<§6マスター・チョウ§r> §d見事だ! まさに敵をなぎ倒すような動きだった。	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+dojo.cutscene5.2=<§6マスター・チョウ§r> §dミニオンたちよ、よくできた。私の訓練がまだ世界レベルであることを再び証明できた気がする。	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+dojo.cutscene5.3=<§6マスター・チョウ§r> §dこれで§6訓練はもう終わりだ§d。もう帰っていいぞ。くれぐれも気をつけてくれ。あと、マスター・チョウの名に恥をかかせることはしないように。	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+
+dojo.success=<§bVNC スポークスマン§r> §3彼らは成長しています... これは、非常に興味深い!	### Played when mission is complete.
+dojo.failed=<§bVNC スポークスマン§r> §3うーん、残念です。	###Played when mission failed.
+
+
+
+m3.post.1=<§bVNC スポークスマン§r> §3おぉ! ミニオンがカンフーを覚えられるなんて驚きです。	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.2=<§bVNC スポークスマン§r> §3あぁ、ちょっと待て。忘れる前に伝えておきます。あなたあての§6メッセージを受信§3しました。	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.3=<§bVNC スポークスマン§r> §6他の悪役§3があなたと会いたがってるようです!	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.4=<§bVNC スポークスマン§r> §3なんであなたのことを知ってるのかわからない? 我々のせいじゃありません! 悪役メディアは悪くない!	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.5=<§bVNC スポークスマン§r> §3§悪党銀行§3で会いたいようです。協力してほしいらしい。協力というのは要するに§6銀行強盗§3ですね。	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.6=<§bVNC スポークスマン§r> §3罠ではないのは確かです。悪役は信用できる。	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+
+dojo.henchman.random1=<§4ヘンチマン§r> §cさっさと捕まえろ!	###
+dojo.henchman.random2=<§4ヘンチマン§r> §cアハハハ!	###
+dojo.henchman.death1=<§4ヘンチマン§r> §cうあっ!	###
+dojo.henchman.death2=<§4ヘンチマン§r> §cなんて... こった。	###
+dojo.henchman.death3=<§6マスター・チョウ§r> §dよくできた!	###
+dojo.henchman.death4=<§6マスター・チョウ§r> §d素晴らしい!	###
+
+
+dojo.superhenchman.random1=<§cスーパー ヘンチマン§r> §4ハッハッハッ!	###
+dojo.superhenchman.random2=<§cスーパー ヘンチマン§r> §4もうこれでおしまいだ。	###
+dojo.superhenchman.death1=<§cスーパー ヘンチマン§r> §4そ... そんな!	###
+dojo.superhenchman.death2=<§cスーパー ヘンチマン§r> §4母ちゃん...	###
+dojo.superhenchman.death3=<§6マスター・チョウ§r> §dもう十分学んだようだね!	###
+dojo.superhenchman.death4=<§6マスター・チョウ§r> §dお世辞はいらない。よくついてきてくれた。	###
+
+dojo.wave1=§6ウェーブ 1/3	###
+dojo.wave2=§6ウェーブ 2/3	###
+dojo.wave3=§6ウェーブ 3/3	###
+
+collect.collect1=§6§4AVL 通話カードを見つけました!	###
+collect.collect2=§6§4リップスティック光線を見つけました!	###
+collect.collect3=§6§4VNC マガジンを見つけました!	###
+collect.collect4=§6§4悪党ブラットのアクション フィギュアを見つけました!	###
+collect.collect5=§6§4悪党ブラットの VHS テープを見つけました!	###
+collect.collect6=§6§4自ら膨らむ超ベタベタのバブルガムを見つけました!	###
+collect.collect7=§6§4ビッグベンのスノードームを見つけました!	###
+collect.collect8=§6§4イーグル・ヘア・クラブのウィッグを見つけました!	###
+collect.collect9=§6§4ミニオン カップケーキを見つけました!	###
+collect.collect10=§6§4スチュアートのウクレレを見つけました!	###
+collect.collect11=§6§4スーパー メガ ウクレレを見つけました!	###
+collect.collect12=§6§4テディベアの「ティム」を見つけました!	###
+collect.collect13=§6§4エル・マッチョのネックレスを見つけました!	###
+collect.collect14=§6§4フラッフィ ユニコーンを見つけました!	###
+collect.collect15=§6§4アイ ハート グルーの帽子を見つけました!	###
+collect.collect16=§6§4秘伝のサルサ レシピを見つけました!	###
+collect.collect17=§6§4ワカモレハットを見つけました!	###
+collect.collect18=§6§4357 歳の誕生日ケーキを見つけました!	###
+collect.collect19=§6§4「ラッキー ユニコーン」のぬいぐるみを見つけました!	###
+collect.collect20=§6§4「恐怖のツルぴか」の肖像画を見つけました!	###
+collect.collect21=§6§4「ユニコーン ベイト」キャンディーの山を見つけました!	###
+collect.collect22=§6§4フリードニアンのチーズを見つけました!	###
+collect.collect23=§6§4ダンボール製のスペース ヘルメットを見つけました!	###
+collect.collect24=§6§4英語 - ミニオン語の翻訳者を見つけました!	###
+collect.collect25=§6§4グルーの家族アルバムを見つけました!	###
+collect.collect26=§6§4グルーとドルーの赤ちゃんの時の写真を見つけました!	###
+collect.collect27=§6§4マカロニロケットのプロトタイプを見つけました!	###
+collect.collect28=§6§4アトタカのチラシを見つけました!	###
+collect.collect29=§6§4ペットロックを見つけました!	###
+collect.collect30=§6§4催眠帽子を見つけました!	###
+collect.collect31=§6§4溶岩飛ばし銃を見つけました!	###
+collect.collect32=§6§4ロボットの手足を見つけました!	###
+collect.collect33=§6§4スカーレット オオカミの人形を見つけました!	###
+collect.collect34=§6§4「ごめん、スカーレット」の花輪を見つけました!	###
+collect.collect35=§6§4オール ベリー ゼリーを見つけました!	###
+collect.collect36=§6§4「ワン・ビッグ・ユニコーン」の本を見つけました!	###
+collect.collect37=§6§4イディスのピンク色ビーニーを見つけました!	###
+collect.collect38=§6§4オナラ銃を見つけました!	###
+collect.collect39=§6§4グルーレイ プレーヤーを見つけました!	###
+collect.collect40=§6§4インフレータブル ユニコーン キャノンを見つけました!	###
+collect.collect41=§6§4手作りのユニコーンおもちゃを見つけました!	###
+collect.collect42=§6§4月を盗む計画を見つけました!	###
+collect.collect43=§6§4「おねむなコネコ」の本を見つけました!	###
+collect.collect44=§6§4イギリス王室の王冠を見つけました!	###
+collect.collect45=§6§4デュモン・ダイヤを見つけました!	###
+collect.collect46=§6§4「タマネギ」の映画ポスターを見つけました!	###
+collect.collect47=§6§4アイ ハート イーブルのマグカップを見つけました!	###
+collect.collect48=§6§4「ベクター」製のトイレットペーパーを見つけました!	###
+collect.collect49=§6§4ブギー ロボットを見つけました!	###
+collect.collect50=§6§4クッキーロボットを見つけました!	###
+collect.collect51=§6§4縮んだ小さなトイレを見つけました!	###
+collect.collect52=§6§4ビタミン ゼロ ミルクを見つけました!	###
+
+
+
+collect.num1=§6 1/52	###
+collect.num2=§6 2/52	###
+collect.num3=§6 3/52	###
+collect.num4=§6 4/52	###
+collect.num5=§6 5/52	###
+collect.num6=§6 6/52	###
+collect.num7=§6 7/52	###
+collect.num8=§6 8/52	###
+collect.num9=§6 9/52	###
+collect.num10=§6 10/52	###
+collect.num11=§6 11/52	###
+collect.num12=§6 12/52	###
+collect.num13=§6 13/52	###
+collect.num14=§6 14/52	###
+collect.num15=§6 15/52	###
+collect.num16=§6 16/52	###
+collect.num17=§6 17/52	###
+collect.num18=§6 18/52	###
+collect.num19=§6 19/52	###
+collect.num20=§6 20/52	###
+collect.num21=§6 21/52	###
+collect.num22=§6 22/52	###
+collect.num23=§6 23/52	###
+collect.num24=§6 24/52	###
+collect.num25=§6 25/52	###
+collect.num26=§6 26/52	###
+collect.num27=§6 27/52	###
+collect.num28=§6 28/52	###
+collect.num29=§6 29/52	###
+collect.num30=§6 30/52	###
+collect.num31=§6 31/52	###
+collect.num32=§6 32/52	###
+collect.num33=§6 33/52	###
+collect.num34=§6 34/52	###
+collect.num35=§6 35/52	###
+collect.num36=§6 36/52	###
+collect.num37=§6 37/52	###
+collect.num38=§6 38/52	###
+collect.num39=§6 39/52	###
+collect.num40=§6 40/52	###
+collect.num41=§6 41/52	###
+collect.num42=§6 42/52	###
+collect.num43=§6 43/52	###
+collect.num44=§6 44/52	###
+collect.num45=§6 45/52	###
+collect.num46=§6 46/52	###
+collect.num47=§6 47/52	###
+collect.num48=§6 48/52	###
+collect.num49=§6 49/52	###
+collect.num50=§6 50/52	###
+collect.num51=§6 51/52	###
+collect.num52=§6 52/52	###
+collect.num53=§6 53/52	###
+
+
+minion.saved=§eミニオン保存済み§r 	###
+
+minion.num1=§6 1/100	###
+minion.num2=§6 2/100	###
+minion.num3=§6 3/100	###
+minion.num4=§6 4/100	###
+minion.num5=§6 5/100	###
+minion.num6=§6 6/100	###
+minion.num7=§6 7/100	###
+minion.num8=§6 8/100	###
+minion.num9=§6 9/100	###
+minion.num10=§6 10/100	###
+minion.num11=§6 11/100	###
+minion.num12=§6 12/100	###
+minion.num13=§6 13/100	###
+minion.num14=§6 14/100	###
+minion.num15=§6 15/100	###
+minion.num16=§6 16/100	###
+minion.num17=§6 17/100	###
+minion.num18=§6 18/100	###
+minion.num19=§6 19/100	###
+minion.num20=§6 20/100	###
+minion.num21=§6 21/100	###
+minion.num22=§6 22/100	###
+minion.num23=§6 23/100	###
+minion.num24=§6 24/100	###
+minion.num25=§6 25/100	###
+minion.num26=§6 26/100	###
+minion.num27=§6 27/100	###
+minion.num28=§6 28/100	###
+minion.num29=§6 29/100	###
+minion.num30=§6 30/100	###
+minion.num31=§6 31/100	###
+minion.num32=§6 32/100	###
+minion.num33=§6 33/100	###
+minion.num34=§6 34/100	###
+minion.num35=§6 35/100	###
+minion.num36=§6 36/100	###
+minion.num37=§6 37/100	###
+minion.num38=§6 38/100	###
+minion.num39=§6 39/100	###
+minion.num40=§6 40/100	###
+minion.num41=§6 41/100	###
+minion.num42=§6 42/100	###
+minion.num43=§6 43/100	###
+minion.num44=§6 44/100	###
+minion.num45=§6 45/100	###
+minion.num46=§6 46/100	###
+minion.num47=§6 47/100	###
+minion.num48=§6 48/100	###
+minion.num49=§6 49/100	###
+minion.num50=§6 50/100	###
+minion.num51=§6 51/100	###
+minion.num52=§6 52/100	###
+minion.num53=§6 53/100	###
+minion.num54=§6 54/100	###
+minion.num55=§6 55/100	###
+minion.num56=§6 56/100	###
+minion.num57=§6 57/100	###
+minion.num58=§6 58/100	###
+minion.num59=§6 59/100	###
+minion.num60=§6 60/100	###
+minion.num61=§6 61/100	###
+minion.num62=§6 62/100	###
+minion.num63=§6 63/100	###
+minion.num64=§6 64/100	###
+minion.num65=§6 65/100	###
+minion.num66=§6 66/100	###
+minion.num67=§6 67/100	###
+minion.num68=§6 68/100	###
+minion.num69=§6 69/100	###
+minion.num70=§6 70/100	###
+minion.num71=§6 71/100	###
+minion.num72=§6 72/100	###
+minion.num73=§6 73/100	###
+minion.num74=§6 74/100	###
+minion.num75=§6 75/100	###
+minion.num76=§6 76/100	###
+minion.num77=§6 77/100	###
+minion.num78=§6 78/100	###
+minion.num79=§6 79/100	###
+minion.num80=§6 80/100	###
+minion.num81=§6 81/100	###
+minion.num82=§6 82/100	###
+minion.num83=§6 83/100	###
+minion.num84=§6 84/100	###
+minion.num85=§6 85/100	###
+minion.num86=§6 86/100	###
+minion.num87=§6 87/100	###
+minion.num88=§6 88/100	###
+minion.num89=§6 89/100	###
+minion.num90=§6 90/100	###
+minion.num91=§6 91/100	###
+minion.num92=§6 92/100	###
+minion.num93=§6 93/100	###
+minion.num94=§6 94/100	###
+minion.num95=§6 95/100	###
+minion.num96=§6 96/100	###
+minion.num97=§6 97/100	###
+minion.num98=§6 98/100	###
+minion.num99=§6 99/100	###
+minion.num100=§6 100/100	###
+
+
+collect.banana.num1=§6 1/50	###
+collect.banana.num2=§6 2/50	###
+collect.banana.num3=§6 3/50	###
+collect.banana.num4=§6 4/50	###
+collect.banana.num5=§6 5/50	###
+collect.banana.num6=§6 6/50	###
+collect.banana.num7=§6 7/50	###
+collect.banana.num8=§6 8/50	###
+collect.banana.num9=§6 9/50	###
+collect.banana.num10=§6 10/50	###
+collect.banana.num11=§6 11/50	###
+collect.banana.num12=§6 12/50	###
+collect.banana.num13=§6 13/50	###
+collect.banana.num14=§6 14/50	###
+collect.banana.num15=§6 15/50	###
+collect.banana.num16=§6 16/50	###
+collect.banana.num17=§6 17/50	###
+collect.banana.num18=§6 18/50	###
+collect.banana.num19=§6 19/50	###
+collect.banana.num20=§6 20/50	###
+collect.banana.num21=§6 21/50	###
+collect.banana.num22=§6 22/50	###
+collect.banana.num23=§6 23/50	###
+collect.banana.num24=§6 24/50	###
+collect.banana.num25=§6 25/50	###
+collect.banana.num26=§6 26/50	###
+collect.banana.num27=§6 27/50	###
+collect.banana.num28=§6 28/50	###
+collect.banana.num29=§6 29/50	###
+collect.banana.num30=§6 30/50	###
+collect.banana.num31=§6 31/50	###
+collect.banana.num32=§6 32/50	###
+collect.banana.num33=§6 33/50	###
+collect.banana.num34=§6 34/50	###
+collect.banana.num35=§6 35/50	###
+collect.banana.num36=§6 36/50	###
+collect.banana.num37=§6 37/50	###
+collect.banana.num38=§6 38/50	###
+collect.banana.num39=§6 39/50	###
+collect.banana.num40=§6 40/50	###
+collect.banana.num41=§6 41/50	###
+collect.banana.num42=§6 42/50	###
+collect.banana.num43=§6 43/50	###
+collect.banana.num44=§6 44/50	###
+collect.banana.num45=§6 45/50	###
+collect.banana.num46=§6 46/50	###
+collect.banana.num47=§6 47/50	###
+collect.banana.num48=§6 48/50	###
+collect.banana.num49=§6 49/50	###
+collect.banana.num50=§6 50/50	###
+
+
+bananatimer.num=§e残り時間: §6%1	###
+
+collect.banana.info=§6できるだけたくさん集めよう!	###
+
+collect.banana.victory=§6%1 §e %2 で勝利	###
+
+collect.vp.notif=§6%1 	###
+collect.vp.bar0=	###
+collect.vp.bar1=	###
+collect.vp.bar2=	###
+collect.vp.bar3=	###
+collect.vp.bar4=	###
+collect.vp.bar5=	###
+collect.vp.bar6=	###
+collect.vp.bar7=	###
+collect.vp.bar8=	###
+collect.vp.bar9=	###
+collect.vp.bar10=	###
+collect.vp.reward=§a新しい§6ミニオン§aが隠れ家にやってきました!	###
+collect.vp.reward.car= §a新しい§6車両§aのロックが解除されました!	###
+
+teleport.pet.in=§b§eミニオン§bは基地に戻りました。	### Your Minions have returned back to base.
+teleport.pet.out=§b§eミニオン§bはあなたに戻ってきました。	### Your Minions have returned to you.
+
+teleport.airport.town=§b§e地元の空港に移動する	### Travel to your local airport
+teleport.airport.city=§b§e街の空港に移動する	### Travel to the city airport
+
+world.interrupt= §3 §6オナラ爆弾§3、 §6チーズ銃§3あるいは §6縮ませ光線銃§3を使って一日を台無しにしてやりましょう!	###
+world.hand= §3 §6ベタベタの手§3を使って箱を引っ張ろう!	###
+world.cheese= §3 §6チーズ銃§3を警備兵に使って動きを止めよう!	###
+world.vandalise= §3パンチして§6破壊§3しよう!	###
+world.lockbox= §3操作して§6盗もう§3!	###
+world.bananabag=§3操作して§6 バナナバッグを開けよう!	###
+world.raid=§3待ち伏せされていた! 襲撃を撃退して、悪役ポイントを稼ごう!	###
+
+mission.transform.player= §3§6人間§3としてプレイしています	###
+mission.transform.minion= §3§6ミニオン§3としてプレイしています	###
+
+collect.outfit1=§6§4ローラースケート ミニオンのコスチュームを見つけました!	###
+collect.outfit2=§6§4アロハ ミニオンのコスチュームを見つけました!	###
+collect.outfit3=§6§4消防士ミニオンのコスチュームを見つけました!	###
+collect.outfit4=§6§4ビーチ ミニオンのコスチュームを見つけました!	###
+collect.outfit5=§6§4チューバ ミニオンのコスチュームを見つけました!	###
+collect.outfit6=§6§4ゴルフ ミニオンのコスチュームを見つけました!	###
+collect.outfit7=§6§4カンフー ミニオンのコスチュームを見つけました!	###
+collect.outfit8=§6§4騎士ミニオンのコスチュームを見つけました!	###
+collect.outfit9=§6§4メイド ミニオンのコスチュームを見つけました!	###
+collect.outfit10=§6§4Minecraft ミニオンのコスチュームを見つけました!	###
+collect.outfit11=§6§4ビルダー ミニオンのコスチュームを見つけました!	###
+collect.outfit12=§6§4魔法使いミニオンのコスチュームを見つけました!	###
+collect.outfit13=§6§4フラッシュライト ミニオンのコスチュームを見つけました!	###
+collect.outfit14=§6§4観光客ミニオンのコスチュームを見つけました!	###
+collect.outfit15=§6§4フレンドリー ミュータント ミニオンのコスチュームを見つけました!	###
+
+collect.outfits.number= §6%1/15	###Number of outfits unlocked
+
+vp.prox.msg=§6 §eどれだけ悪役っぽいかひと目で分かります! 現在の悪役ポイント: %1	###
+
+rader.distance50plus=§6近くに収集品はありません!	###
+rader.distance50=§6収集品があります! §450 ブロック以内です!	###
+rader.distance40=§6収集品があります! §440 ブロック以内です!	###
+rader.distance30=§6収集品があります! §430 ブロック以内です!	###
+rader.distance20=§6収集品があります! §420 ブロック以内です!	###
+rader.distance10=§6収集品があります! §410 ブロック以内です!	###
+rader.distance5=§6収集品があります! §45 ブロック以内です!	###
+
+
+secret.crate.info=  	###
+secret.fire.info=  	###
+secret.target.info= 	###
+secret.build.info=  	###
+secret.light.info= 	###

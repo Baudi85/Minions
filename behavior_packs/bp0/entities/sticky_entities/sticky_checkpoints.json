@@ -1,0 +1,639 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:sticky_checkpoints",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "ctrl": "controller.animation.checkpoint_system_11",
+                "check_0": "animation.checkpoint.check_0",
+                "check_1": "animation.checkpoint.check_1",
+                "check_2": "animation.checkpoint.check_2",
+                "check_3": "animation.checkpoint.check_3",
+                "check_4": "animation.checkpoint.check_4",
+                "check_5": "animation.checkpoint.check_5",
+                "check_6": "animation.checkpoint.check_6",
+                "check_7": "animation.checkpoint.check_7",
+                "check_8": "animation.checkpoint.check_8",
+                "check_9": "animation.checkpoint.check_9",
+                "check_10": "animation.checkpoint.check_10",
+                "check_11": "animation.checkpoint.check_11"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "cyd:sid_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "cyd:sid_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "cyd:sid_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "cyd:sid_8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "cyd:sid_9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                }
+            },
+            "cyd:sid_10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                }
+            },
+            "cyd:sid_11": {
+                "minecraft:skin_id": {
+                    "value": 11
+                }
+            },
+            "cyd:sid_12": {
+                "minecraft:skin_id": {
+                    "value": 12
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "checkpoints"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 2
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_0"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_1"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_2"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_3"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_3"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_4"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_4"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_5"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_5"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 6
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_6"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_6"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_7"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_7"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 8
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_8"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_8"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 9
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_9"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_9"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 10
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_10"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_10"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 11
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_11"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "check_11"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 12
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_12"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_0",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_0",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_5": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_5"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_0",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_6": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_6"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_0",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_7": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_7"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_0",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_8": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_8"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_0",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_9": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_9"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_0",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_10": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_0",
+                        "cyd:sid_11",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_11": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_11"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_0",
+                        "cyd:sid_12"
+                    ]
+                }
+            },
+            "evt:sid_12": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_12"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_0",
+                        "cyd:sid_11"
+                    ]
+                }
+            }
+        }
+    }
+}

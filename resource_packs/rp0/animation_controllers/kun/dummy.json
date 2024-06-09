@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.dummy": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.mark_variant == 1"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.trigger.guard.world.cheese": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "delete_barrier"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.airport_tp": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        },
+                        {
+                            "two": "query.skin_id == 2"
+                        }
+                    ],
+                    "on_exit":[
+                        "/execute @a[r=1] ~ ~ ~ playsound cyd.generic.airplane_takeoff @s"
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "two": {
+                    "animations": [
+                        "two"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

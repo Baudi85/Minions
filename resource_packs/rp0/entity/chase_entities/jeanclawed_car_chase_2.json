@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:jeanclawed_car_chase2",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/jeanclawed_car_chase"
+      },
+      "geometry": {
+        "default": "geometry.jeanclawed_car_chase"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_jean",
+        "idle1": "animation.jeanclawed_car_chase.idle1",
+        "intro": "animation.jeanclawed_car_chase.intro",
+        "idle2": "animation.jeanclawed_car_chase.idle2",
+        "trigger": "animation.jeanclawed_car_chase.trigger",
+        "jump1": "animation.jeanclawed_car_chase.jump1",
+        "jump2": "animation.jeanclawed_car_chase.jump2",
+        "jump3": "animation.jeanclawed_car_chase.jump3",
+        "walk": "animation.jeanclawed_car_chase.walk"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

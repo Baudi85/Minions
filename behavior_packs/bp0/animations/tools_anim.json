@@ -1,0 +1,133 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.dummy.timer_sticky": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "@s evt:sticky",
+                    "@s evt:cooldown",
+                    "/playsound cyd.gadget.sticky.throw @a[r=5]"
+                ],
+                "2.0": [
+                    "/clear @s[tag=!player1] cyd:slingshot 0 1"
+                ],
+                "2.09": [
+                    "/give @s[tag=!player1] cyd:slingshot 1"
+                ]
+            },
+            "animation_length": 2.25
+        },
+        "animation.dummy.timer_shrink": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "@s evt:shrink",
+                    "@s evt:cooldown",
+                    "/playsound cyd.gadget.shrink.shoot @a[r=5]"
+                ],
+                "2.0": [
+                    "/clear @s[tag=!player1] cyd:shrinkray 0 1"
+                ],
+                "2.09": [
+                    "/give @s[tag=!player1] cyd:shrinkray 1"
+                ]
+            },
+            "animation_length": 2.25
+        },
+        "animation.dummy.timer_fart": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "@s evt:timer",
+                    "@s evt:cooldown",
+                    "/playsound cyd.gadget.fart.throw @a[r=5]"
+                ],
+                "2.0": [
+                    "/clear @s[tag=!player1] cyd:fartgrenade 0 1"
+                ],
+                "2.09": [
+                    "/give @s[tag=!player1] cyd:fartgrenade 1"
+                ]
+            },
+            "animation_length": 2.25
+        },
+        "animation.dummy.timer_cheese": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "@s evt:cheese",
+                    "@s evt:cooldown",
+                    "/playsound cyd.gadget.cheese.shoot @a[r=5]"
+                ],
+                "1.0": [
+                    "/clear @s[tag=!player1] cyd:cheesegun 0 1"
+                ],
+                "1.09": [
+                    "/give @s[tag=!player1] cyd:cheesegun 1"
+                ]
+            },
+            "animation_length": 1.25
+        },
+        "animation.dummy.timer_clipboard": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tag @s add objective",
+                    "/playsound cyd.mission.objective @s",
+                    "/function playerbase/objectives/objective_system",
+                    "/clear @s[tag=!player1] cyd:clipboard_objective 0 1"
+                ],
+                "0.1": [
+                    "/give @s[tag=!player1] cyd:clipboard_objective 1"
+                ],
+                "1.0": [
+                    "/function playerbase/objectives/objective_system"
+                ],
+                "2.0": [
+                    "/function playerbase/objectives/objective_system"
+                ],
+                "3.0": [
+                    "/function playerbase/objectives/objective_system"
+                ],
+                "3.9": [
+                    "/function playerbase/objectives/objective_system"
+                ],
+                "4.0": [
+                    "/tag @s remove objective"
+                ]
+            },
+            "animation_length": 4.1
+        },
+        "animation.holding.clipboard": {
+            "loop": false,
+            "timeline": {
+                "2.5": [
+                    "/function playerbase/objectives/objective_msg"
+                ]
+            },
+            "animation_length": 3
+        },
+        "animation.dummy.timer_nunchuck": {
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/clear @s[tag=!player1] cyd:chi_nunchuck 0 1"
+                ],
+                "0.1": [
+                    "/give @s[tag=!player1] cyd:chi_nunchuck 1"
+                ]
+            },
+            "animation_length": 0.25
+        },
+        "animation.shrink_ray.shrink": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/event entity @e[r=4] evt:shrink_entity"
+                ]
+            },
+            "animation_length": 0.01
+        }
+    }
+}

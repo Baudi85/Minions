@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"geometry.banana_indicator": {
+		"texturewidth": 320,
+		"textureheight": 320,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 21.5,
+		"visible_bounds_offset": [0, 8.25, 0],
+		"bones": [
+			{
+				"name": "root_impact",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_impact",
+				"parent": "root_impact",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "impact_soundwave",
+				"parent": "all_impact",
+				"pivot": [0, 0.4, 0],
+				"cubes": [
+					{"origin": [-40, 0.4, -40], "size": [80, 0, 80], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

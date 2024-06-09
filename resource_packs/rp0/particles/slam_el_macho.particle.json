@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "cyd:slam_el_macho",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/slam_el_macho"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [0, 0.2, 0],
+				"direction": [0, -1, 0]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 1
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["0.01+variable.particle_age*3.6", "0.01+variable.particle_age*3.6"],
+				"facing_camera_mode": "direction_z",
+				"uv": {
+					"texture_width": 256,
+					"texture_height": 768,
+					"flipbook": {
+						"base_UV": [0, 0],
+						"size_UV": [256, 256],
+						"step_UV": [0, 256],
+						"frames_per_second": 5,
+						"max_frame": 10
+					}
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "0.01+variable.particle_age",
+					"gradient": {
+						"0.0": "#00FFFFFF",
+						"0.04": "#CCFFFFFF",
+						"0.1": "#FFFFFFFF",
+						"0.24": "#B3FFFFFF",
+						"0.5": "#00FFFFFF"
+					}
+				}
+			}
+		}
+	}
+}

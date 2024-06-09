@@ -1,0 +1,1424 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.minion_interact": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.is_ignited"
+                        }
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "interact_timer"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.minion_dress": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.skin_id != 0"
+                        }
+                    ]
+                },
+                "increment": {
+                    "on_entry": [
+                        "/playsound cyd.generic.minion_change_costume @a"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lair_machine_names": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "label": "query.is_saddled"
+                        }
+                    ]
+                },
+                "label": {
+                    "animations": [
+                        "name_tag"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_saddled"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lair.grucar_blocking": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "stage1": "query.is_ignited"
+                        }
+                    ]
+                },
+                "stage1": {
+                    "on_entry": [
+                        "/fill -154 52 1053 -154 55 1045 barrier 0 replace air",
+                        "/fill -154 52 1053 -151 55 1053 barrier 0 replace air",
+                        "/fill -151 52 1053 -151 55 1045 barrier 0 replace air",
+                        "/fill -154 52 1045 -151 55 1045 barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "stage2": "query.is_powered"
+                        }
+                    ]
+                },
+                "stage2": {
+                    "on_entry": [
+                        "/fill -154 52 1053 -154 55 1044 barrier 0 replace air",
+                        "/fill -154 52 1053 -151 55 1053 barrier 0 replace air",
+                        "/fill -151 52 1053 -151 55 1044 barrier 0 replace air",
+                        "/fill -154 52 1044 -151 55 1044 barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "stage3": "query.is_sheared"
+                        }
+                    ]
+                },
+                "stage3": {
+                    "on_entry": [
+                        "/fill -154 52 1053 -154 55 1044 barrier 0 replace air",
+                        "/fill -154 52 1053 -151 55 1053 barrier 0 replace air",
+                        "/fill -151 52 1053 -151 55 1044 barrier 0 replace air",
+                        "/fill -154 52 1044 -151 55 1044 barrier 0 replace air"
+                    ]
+                }
+            }
+        },
+        "controller.animation.playercount": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "!query.is_ignited"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove done"
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "playercount"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.playerbase.sewer_tp": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "one": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.villain_points": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.skin_id == 1 || query.skin_id == 3 || query.skin_id == 4"
+                        }
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "points"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.banana": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "points"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.wardrobe": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/fill -147 58 1032 -147 60 1031 barrier 0 replace air",
+                        "/fill -134 59 1029 -134 59 1030 barrier 0 replace air"
+                    ],
+                    "transitions": [
+                        {
+                            "trigger": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "trigger": {
+                    "on_entry": [
+                        "/playsound cyd.world.player_spawn_closet_door @a[r=20]",
+                        "/fill -147 58 1031 -147 60 1032 air 0 replace barrier",
+                        "/fill -134 59 1029 -134 59 1030 air 0 replace barrier"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.villain_points_safe": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.skin_id == 1 && query.variant != 1"
+                        }
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "points"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.vehicle_activate": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "summon": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "summon": {
+                    "animations": [
+                        "vehicle_activate"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.teleporter": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "increment": "query.mark_variant == 1"
+                        },
+                        {
+                            "decrement": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "increment": {
+                    "animations": [
+                        "increment"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 0"
+                        }
+                    ]
+                },
+                "decrement": {
+                    "animations": [
+                        "decrement"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.give_gadget": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.mark_variant == 1"
+                        },
+                        {
+                            "fart": "query.mark_variant == 2"
+                        },
+                        {
+                            "cheese": "query.mark_variant == 3"
+                        },
+                        {
+                            "nunchuck": "query.mark_variant == 4"
+                        },
+                        {
+                            "jelly": "query.mark_variant == 5"
+                        },
+                        {
+                            "shrink": "query.mark_variant == 6"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "animations": [
+                        "sticky"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "fart": {
+                    "animations": [
+                        "fart"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 2"
+                        }
+                    ]
+                },
+                "cheese": {
+                    "animations": [
+                        "cheese"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 3"
+                        }
+                    ]
+                },
+                "nunchuck": {
+                    "animations": [
+                        "nunchuck"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 4"
+                        }
+                    ]
+                },
+                "jelly": {
+                    "animations": [
+                        "jelly"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 5"
+                        }
+                    ]
+                },
+                "shrink": {
+                    "animations": [
+                        "shrink"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.give_gadget2": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "give": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "give": {
+                    "animations": [
+                        "give"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.prox_costume": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "give": "query.is_sheared"
+                        }
+                    ]
+                },
+                "give": {
+                    "animations": [
+                        "prox_msg"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_sheared"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.costume_name": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "name": "query.is_ignited"
+                        }
+                    ]
+                },
+                "name": {
+                    "animations": [
+                        "name"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.name.lair_trophy": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "display": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "display": {
+                    "animations": [
+                        "name"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.name_gadget": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        },
+                        {
+                            "fart": "query.skin_id == 2"
+                        },
+                        {
+                            "cheese": "query.skin_id == 3"
+                        },
+                        {
+                            "nunchuck": "query.skin_id == 4"
+                        },
+                        {
+                            "jelly": "query.skin_id == 5"
+                        },
+                        {
+                            "shrink": "query.skin_id == 6"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "on_entry": [
+                        "/execute @s[tag=one] ~ ~ ~ summon cyd:quest_marker \"Sticky Hand\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "fart": {
+                    "on_entry": [
+                        "/execute @s[tag=two] ~ ~ ~ summon cyd:quest_marker \"Fart Grenade\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "cheese": {
+                    "on_entry": [
+                        "/execute @s[tag=three] ~ ~ ~ summon cyd:quest_marker \"Cheeze Ray\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "nunchuck": {
+                    "on_entry": [
+                        "/execute @s[tag=four] ~ ~ ~ summon cyd:quest_marker \"Chi Nunchuck\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "jelly": {
+                    "on_entry": [
+                        "/execute @s[tag=five] ~ ~ ~ summon cyd:quest_marker \"Jelly Launcher\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "shrink": {
+                    "on_entry": [
+                        "/execute @s[tag=six] ~ ~ ~ summon cyd:quest_marker \"Shrink Ray\""
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.name_gadget2": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "sticky": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "sticky": {
+                    "animations": [
+                        "name"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.holo_map": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/function playerbase/holomap"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.teleporter.button": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activate": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "activate": {
+                    "animations": [
+                        "activate"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.collectible_system.switch": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activate": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "activate": {
+                    "animations": [
+                        "collectible_switch"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.collectible_item.switch": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/function playerbase/collectible_switch_v2"
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.trophy_system.switch": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activate": "query.variant == 1"
+                        }
+                    ]
+                },
+                "activate": {
+                    "animations": [
+                        "trophy_switch"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.teleport.ctrl": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/fill -154 51 1024 -155 54 1024 barrier 0 replace air"
+                    ],
+                    "on_exit": [
+                        "/fill -154 51 1024 -155 54 1024 air 0 replace barrier"
+                    ],
+                    "transitions": [
+                        {
+                            "activate": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "activate": {
+                    "on_exit": [
+                        "/playsound cyd.generic.teleporter_use @a[r=8]"
+                    ],
+                    "transitions": [
+                        {
+                            "home": "query.variant == 1"
+                        },
+                        {
+                            "machos": "query.variant == 2"
+                        },
+                        {
+                            "chinatown": "query.variant == 3"
+                        },
+                        {
+                            "bratts": "query.variant == 4"
+                        },
+                        {
+                            "sub": "query.variant == 5"
+                        },
+                        {
+                            "upper_sf": "query.variant == 6"
+                        },
+                        {
+                            "residential": "query.variant == 7"
+                        },
+                        {
+                            "lower_sf": "query.variant == 8"
+                        },
+                        {
+                            "vectors": "query.variant == 9"
+                        },
+                        {
+                            "freedonia": "query.variant == 10"
+                        },
+                        {
+                            "moon": "query.variant == 11"
+                        }
+                    ]
+                },
+                "home": {
+                    "animations": [
+                        "home"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 1"
+                        }
+                    ]
+                },
+                "machos": {
+                    "animations": [
+                        "machos"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 2"
+                        }
+                    ]
+                },
+                "chinatown": {
+                    "animations": [
+                        "chinatown"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 3"
+                        }
+                    ]
+                },
+                "bratts": {
+                    "animations": [
+                        "bratts"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 4"
+                        }
+                    ]
+                },
+                "sub": {
+                    "animations": [
+                        "sub"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 5"
+                        }
+                    ]
+                },
+                "upper_sf": {
+                    "animations": [
+                        "upper_sf"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 6"
+                        }
+                    ]
+                },
+                "lower_sf": {
+                    "animations": [
+                        "lower_sf"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 8"
+                        }
+                    ]
+                },
+                "vectors": {
+                    "animations": [
+                        "vectors"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 9"
+                        }
+                    ]
+                },
+                "freedonia": {
+                    "animations": [
+                        "freedonia"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 10"
+                        }
+                    ]
+                },
+                "residential": {
+                    "animations": [
+                        "residintial"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 7"
+                        }
+                    ]
+                },
+                "moon": {
+                    "animations": [
+                        "moon"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.variant != 11"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trap.teleport.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "activate": "query.is_sheared"
+                        }
+                    ]
+                },
+                "activate": {
+                    "animations": [
+                        "trap_moon"
+                    ],
+                    "on_exit": [
+                        "/event entity @e[type=cyd:lair_teleporter] evt:sid_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_sheared"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.minion_statue.ctrl": {
+            "states": {
+                "default": {
+                    "on_exit": [
+                        "/fill -173 54 1043 -171 56 1043 air 0 replace stained_glass"
+                    ],
+                    "transitions": [
+                        {
+                            "aloha": "query.skin_id == 1"
+                        },
+                        {
+                            "beach": "query.skin_id == 2"
+                        },
+                        {
+                            "builder": "query.skin_id == 3"
+                        },
+                        {
+                            "flashlight": "query.skin_id == 4"
+                        },
+                        {
+                            "glowing": "query.skin_id == 5"
+                        },
+                        {
+                            "golf": "query.skin_id == 6"
+                        },
+                        {
+                            "knight": "query.skin_id == 7"
+                        },
+                        {
+                            "kungfu": "query.skin_id == 8"
+                        },
+                        {
+                            "magician": "query.skin_id == 9"
+                        },
+                        {
+                            "maid": "query.skin_id == 10"
+                        },
+                        {
+                            "minecraft": "query.skin_id == 11"
+                        },
+                        {
+                            "mutant": "query.skin_id == 12"
+                        },
+                        {
+                            "tourist": "query.skin_id == 13"
+                        },
+                        {
+                            "tuba": "query.skin_id == 14"
+                        },
+                        {
+                            "dj": "query.skin_id == 15"
+                        },
+                        {
+                            "firefighter": "query.skin_id == 16"
+                        }
+                    ]
+                },
+                "aloha": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_aloha_statue] evt:sid_1",
+                        "/tag @s remove aloha"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "beach": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_beach_statue] evt:sid_2",
+                        "/tag @s remove beach"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "builder": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_builder_statue] evt:sid_3",
+                        "/tag @s remove builder"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "flashlight": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_flashlight_statue] evt:sid_4",
+                        "/tag @s remove flashlight"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "glowing": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_glowing_statue] evt:sid_5",
+                        "/tag @s remove glowing"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "golf": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_golf_statue] evt:sid_6",
+                        "/tag @s remove golf"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                },
+                "knight": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_knight_statue] evt:sid_7",
+                        "/tag @s remove knight"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ]
+                },
+                "kungfu": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_kungfu_statue] evt:sid_8",
+                        "/tag @s remove kungfu"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 8"
+                        }
+                    ]
+                },
+                "magician": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_magician_statue] evt:sid_9",
+                        "/tag @s remove magician"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 9"
+                        }
+                    ]
+                },
+                "maid": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_maid_statue] evt:sid_10",
+                        "/tag @s remove maid"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 10"
+                        }
+                    ]
+                },
+                "minecraft": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_minecraft_statue] evt:sid_11",
+                        "/tag @s remove minecraft"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 11"
+                        }
+                    ]
+                },
+                "mutant": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_mutant_statue] evt:sid_12",
+                        "/tag @s remove mutant"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 12"
+                        }
+                    ]
+                },
+                "tourist": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_tourist_statue] evt:sid_13",
+                        "/tag @s remove tourist"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 13"
+                        }
+                    ]
+                },
+                "tuba": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_tuba_statue] evt:sid_14",
+                        "/tag @s remove tuba"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 14"
+                        }
+                    ]
+                },
+                "dj": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_dj_statue] evt:sid_15",
+                        "/tag @s remove dj"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 15"
+                        }
+                    ]
+                },
+                "firefighter": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:prop_firefighter_statue] evt:sid_16",
+                        "/tag @s remove firefighter"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 16"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.gadget.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "aloha": "query.variant == 1"
+                        },
+                        {
+                            "beach": "query.variant == 2"
+                        },
+                        {
+                            "builder": "query.variant == 3"
+                        },
+                        {
+                            "flashlight": "query.variant == 4"
+                        },
+                        {
+                            "glowing": "query.variant == 5"
+                        },
+                        {
+                            "golf": "query.variant == 6"
+                        }
+                    ]
+                },
+                "aloha": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:sticky_emitter] evt:sid_1",
+                        "/tag @s remove sticky"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                },
+                "beach": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:fart_emitter] evt:sid_1",
+                        "/tag @s remove fart"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 2"
+                        }
+                    ]
+                },
+                "builder": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:cheese_emitter] evt:sid_1",
+                        "/tag @s remove cheese"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 3"
+                        }
+                    ]
+                },
+                "flashlight": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:chinun_emitter] evt:sid_1",
+                        "/tag @s remove chi"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 4"
+                        }
+                    ]
+                },
+                "glowing": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:jelly_emitter] evt:sid_1",
+                        "/tag @s remove jelly"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 5"
+                        }
+                    ]
+                },
+                "golf": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:shrink_emitter] evt:sid_1",
+                        "/tag @s remove shrink"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.lair_map.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "aloha": "query.mark_variant == 1"
+                        },
+                        {
+                            "beach": "query.mark_variant == 2"
+                        },
+                        {
+                            "builder": "query.mark_variant == 3"
+                        },
+                        {
+                            "flashlight": "query.mark_variant == 4"
+                        },
+                        {
+                            "glowing": "query.mark_variant == 5"
+                        },
+                        {
+                            "golf": "query.mark_variant == 6"
+                        },
+                        {
+                            "knight": "query.mark_variant == 7"
+                        },
+                        {
+                            "kungfu": "query.mark_variant == 8"
+                        },
+                        {
+                            "magician": "query.mark_variant == 9"
+                        },
+                        {
+                            "maid": "query.mark_variant == 10"
+                        },
+                        {
+                            "minecraft": "query.mark_variant == 11"
+                        },
+                        {
+                            "mutant": "query.mark_variant == 12"
+                        }
+                    ]
+                },
+                "aloha": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_0",
+                        "/tag @s remove area1",
+                        "/tag @e[type=cyd:lair_map] add area1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "beach": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_1",
+                        "/tag @s remove area2",
+                        "/tag @e[type=cyd:lair_map] add area2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 2"
+                        }
+                    ]
+                },
+                "builder": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_2",
+                        "/tag @s remove area3",
+                        "/tag @e[type=cyd:lair_map] add area3"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 3"
+                        }
+                    ]
+                },
+                "flashlight": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_3",
+                        "/tag @s remove area4",
+                        "/tag @e[type=cyd:lair_map] add area4"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 4"
+                        }
+                    ]
+                },
+                "glowing": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_4",
+                        "/tag @s remove area5",
+                        "/tag @e[type=cyd:lair_map] add area5"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 5"
+                        }
+                    ]
+                },
+                "golf": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_5",
+                        "/tag @s remove area6",
+                        "/tag @e[type=cyd:lair_map] add area6"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 6"
+                        }
+                    ]
+                },
+                "knight": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_6",
+                        "/tag @s remove area7",
+                        "/tag @e[type=cyd:lair_map] add area7"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 7"
+                        }
+                    ]
+                },
+                "kungfu": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_7",
+                        "/tag @s remove area8",
+                        "/tag @e[type=cyd:lair_map] add area8"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 8"
+                        }
+                    ]
+                },
+                "magician": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_8",
+                        "/tag @s remove area9",
+                        "/tag @e[type=cyd:lair_map] add area9"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 9"
+                        }
+                    ]
+                },
+                "maid": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_9",
+                        "/tag @s remove area10",
+                        "/tag @e[type=cyd:lair_map] add area10"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 10"
+                        }
+                    ]
+                },
+                "minecraft": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_10",
+                        "/tag @s remove area11",
+                        "/tag @e[type=cyd:lair_map] add area11"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 11"
+                        }
+                    ]
+                },
+                "mutant": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_map] evt:pv_11",
+                        "/tag @s remove area12",
+                        "/tag @e[type=cyd:lair_map] add area12"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 12"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.mode_select": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "story": "query.mark_variant == 1 && query.variant == 1"
+                        },
+                        {
+                            "sandbox": "query.mark_variant == 1 && query.variant == 2"
+                        }
+                    ]
+                },
+                "story": {
+                    "animations": [
+                        "story"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1 || query.variant != 1"
+                        }
+                    ]
+                },
+                "sandbox": {
+                    "animations": [
+                        "sandbox"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1 || query.variant != 2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

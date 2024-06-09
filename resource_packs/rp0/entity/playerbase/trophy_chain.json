@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:trophy_chain",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/none"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "particle_effects": {
+        "particle": "cyd:trophy_chain_part"
+      },
+      "animations": {
+        "particle_anim": "animation.generic.particle",
+        "ctrl":"controller.animation.rp.movement.lair_trophy"
+      },
+      "scripts": {
+        "animate": ["ctrl"]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.trophy"
+      ]
+    }
+  }
+}

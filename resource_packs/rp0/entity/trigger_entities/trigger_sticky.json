@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:trigger_sticky",
+      "materials": {
+        "default": "cyd_transparent_emissive"
+      },
+      "particle_effects": {
+        "particle": "cyd:mission_trigger"
+      },
+      "textures": {
+        "default": "textures/entity/quest_marker_m1"
+      },
+      "geometry": {
+        "default": "geometry.quest_marker"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "countdown": "query.skin_id == 1"
+          },
+          {
+            "prox": "query.skin_id == 2"
+          },
+          {
+            "prox": "query.skin_id == 1"
+          },
+          "idle"
+        ]
+      },
+      "animations": {
+        "particle_anim": "animation.generic.particle",
+        "idle": "animation.quest_marker.idle",
+        "prox": "animation.quest_marker.proximity",
+        "countdown": "animation.quest_marker.countdown"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.chase_entity.ctrl_2": {
+      "states": {
+        "default": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "start": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "start": {
+          "animations": [
+            "animation_1"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.chase.belldrive": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.is_sheared"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "start": {
+          "animations": [
+            "drive"
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "start": {
+          "animations": [
+            "animation_1"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_crane": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "idle_triggered": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_triggered": {
+          "animations": [
+            "idle_triggered"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_jean": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "intro": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "intro": {
+          "animations": [
+            "intro"
+          ],
+          "transitions": [
+            {
+              "idle2": "query.all_animations_finished"
+            },
+            {
+              "trigger": "query.skin_id == 2"
+            },
+            {
+              "jump1": "query.skin_id == 3"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle2": {
+          "animations": [
+            "idle2"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 2"
+            },
+            {
+              "jump1": "query.skin_id == 3"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "jump1": "query.skin_id == 3"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "jump1": {
+          "animations": [
+            "jump1"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 3"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_tree": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "idle_triggered": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_triggered": {
+          "animations": [
+            "idle2"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_market": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "idle_triggered": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_triggered": {
+          "animations": [
+            "idle_triggered"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.world.ctrl_market": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            },
+            {
+              "idle_triggered": "query.skin_id == 1"
+            }
+          ]
+        },
+        "start": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "idle_triggered": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "idle_triggered": {
+          "animations": [
+            "idle_triggered"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_strong2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "throw1_stronghold": "query.skin_id == 1"
+            }
+          ]
+        },
+        "throw1_stronghold": {
+          "animations": [
+            "throw1_stronghold"
+          ],
+          "transitions": [
+            {
+              "throw2": "query.skin_id == 2"
+            }
+          ]
+        },
+        "throw2": {
+          "animations": [
+            "throw2"
+          ],
+          "transitions": [
+            {
+              "idle2": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle2": {
+          "animations": [
+            "idle2"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_strong2p2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 0"
+            }
+          ]
+        },
+        "start": {
+          "transitions": [
+            {
+              "throw1_car": "query.skin_id == 1"
+            }
+          ]
+        },
+        "throw1_car": {
+          "animations": [
+            "throw1_car"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_sven": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "intro1": "query.skin_id == 1"
+            },
+            {
+              "intro2": "query.skin_id == 2"
+            }
+          ]
+        },
+        "intro1": {
+          "animations": [
+            "intro1"
+          ],
+          "transitions": [
+            {
+              "drive": "query.all_animations_finished"
+            }
+          ]
+        },
+        "intro2": {
+          "animations": [
+            "intro2"
+          ],
+          "transitions": [
+            {
+              "drive": "query.all_animations_finished"
+            }
+          ]
+        },
+        "drive": {
+          "animations": [
+            "drive"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id == 3"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.chase_entity.ctrl_tram": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "start": "query.skin_id == 1"
+            }
+          ]
+        },
+        "start": {
+          "animations": [
+            "move_downwards",
+            "move_upwards"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

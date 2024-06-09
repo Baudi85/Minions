@@ -1,0 +1,250 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:trigger_chase_system",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "start_ctrl"
+                ]
+            },
+            "animations": {
+                "start_ctrl": "controller.animation.trigger.chase_system.start",
+                "countdown_chs": "animation.trigger.system.start_chase",
+                "interrupt_chs": "animation.trigger.system.interrupt_chase",
+                "end_chs": "animation.trigger.system.end_chase",
+                "fail_chs": "animation.trigger.system.fail_chase"
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            }
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": [
+                  {
+                    "deals_damage": false
+                  }
+                ]
+              },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "start_chs"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "interruptchs"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "end_chs"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_3"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "fail_chs"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_4"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "fail_chs"
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "start_chs"
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "end_chs"
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "interruptchs"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_0"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_4"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            }
+        }
+    }
+}

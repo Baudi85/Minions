@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"geometry.sticky_vent": {
+		"texturewidth": 80,
+		"textureheight": 80,
+		"visible_bounds_width": 9,
+		"visible_bounds_height": 7,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"locators": {
+					"tutorial": [0, 35, -17]
+				}
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "sticky_vent",
+				"parent": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "base",
+				"parent": "sticky_vent",
+				"pivot": [0, 16, 0]
+			},
+			{
+				"name": "vent_door",
+				"parent": "base",
+				"pivot": [0, 16, -6],
+				"cubes": [
+					{"origin": [-16, 0, -7], "size": [32, 32, 2], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "handle",
+				"parent": "vent_door",
+				"pivot": [0, 16, -7],
+				"cubes": [
+					{"origin": [-5, 15, -11.25], "size": [10, 2, 3], "uv": [0, 34], "inflate": -0.25},
+					{"origin": [-3.5, 15, -14.25], "size": [7, 2, 1], "uv": [26, 37]},
+					{"origin": [-5, 15, -14.25], "size": [10, 2, 1], "uv": [23, 34], "inflate": -0.25},
+					{"origin": [4, 15, -13.75], "size": [1, 2, 3], "uv": [0, 39], "inflate": -0.25},
+					{"origin": [-5, 15, -13.75], "size": [1, 2, 3], "uv": [0, 39], "inflate": -0.25, "mirror": true},
+					{"origin": [0.5, 15, -10], "size": [1, 2, 4], "uv": [38, 38]},
+					{"origin": [-1.5, 15, -10], "size": [1, 2, 4], "uv": [38, 38], "mirror": true}
+				]
+			}
+		]
+	}
+}

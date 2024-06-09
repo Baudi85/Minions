@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:vehicle_button_open",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/teleporter_button_open"
+      },
+      "geometry": {
+        "default": "geometry.teleporter_button_open"
+      },
+      "particle_effects": {
+        "click_particle": "cyd:click_particle"
+      },
+      "animations": {
+        "trigger": "animation.button.trigger",
+        "rotate": "animation.button.rotate",
+        "ctrl": "controller.animation.rp.lair.button"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "rotate"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

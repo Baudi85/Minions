@@ -1,0 +1,98 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:fire",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+},
+    "component_groups": {},
+    "components": {
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": "questnpc"
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:damage_sensor": [
+        {
+          "on_damage": {},
+          "deals_damage": false
+        }
+      ],
+      "minecraft:movement": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.knockback_roar": {
+        "attack_time": 0.5,
+        "cooldown_time": 30,
+        "duration": 2,
+        "knockback_range": 1,
+        "knockback_damage": 2,
+        "knockback_strength": 0,
+        "on_roar_end": {
+          "event": "evt:despawn"
+        },
+        "knockback_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "system"
+            }
+          ]
+        },
+        "damage_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "system"
+            }
+          ]
+        }
+      },
+      "minecraft:explode": {
+        "fuseLength": 5,
+        "fuseLit": true,
+        "power": 0,
+        "maxResistance": 0,
+        "breaks_blocks": false,
+        "causesFire": false,
+        "destroyAffectedByGriefing": false
+      }
+    },
+    "events": {}
+  }
+}

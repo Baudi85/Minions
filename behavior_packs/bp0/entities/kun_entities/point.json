@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:nun_point",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "score": "animation.kun.point"
+      },
+      "scripts": {
+        "animate": [
+          "score"
+        ]
+      }
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": "questnpc"
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:damage_sensor": [
+        {
+          "on_damage": {},
+          "deals_damage": false
+        }
+      ],
+      "minecraft:movement": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:explode": {
+        "fuseLength": 2,
+        "fuseLit": true,
+        "power": 0,
+        "maxResistance": 0,
+        "breaks_blocks": false,
+        "causesFire": false,
+        "destroyAffectedByGriefing": false
+      }
+    },
+    "events": {}
+  }
+}

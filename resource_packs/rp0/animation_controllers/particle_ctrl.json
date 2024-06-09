@@ -1,0 +1,451 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.vehicle.exhaust.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.has_rider"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "exhaust_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.lair.locked_particle": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "!query.is_saddled"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "lock_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.is_saddled"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.gadget_display.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.skin_id == 1"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 2"
+                        },
+                        {
+                            "animation_3": "query.skin_id == 3"
+                        },
+                        {
+                            "animation_4": "query.skin_id == 4"
+                        },
+                        {
+                            "animation_5": "query.skin_id == 5"
+                        },
+                        {
+                            "animation_6": "query.skin_id == 6"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "sticky_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "animations": [
+                        "fart_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "animation_3": {
+                    "animations": [
+                        "cheese_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "animation_4": {
+                    "animations": [
+                        "chi_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "animation_5": {
+                    "animations": [
+                        "jelly_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "animation_6": {
+                    "animations": [
+                        "shrink_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.tutorial.sticky.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.is_ignited && query.skin_id != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "tutorial_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited || query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.fan.sticky.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "tutorial_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.recordplayer.particle": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id == 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.vehicle.wind.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.skin_id == 3 || query.skin_id == 4"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "wind_particle"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider || query.skin_id == 1 || query.skin_id == 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.target.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_1": "query.has_target"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "questionmark",
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "animations": [
+                        "exclimationmark",
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.target_strolling.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.has_target"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "questionmark"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "animations": [
+                        "exclimationmark"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.target_wk.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_1": "query.has_target"
+                        },
+                        {
+                            "animation_2": "query.skin_id == 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "questionmark"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_3": "40"
+                        }
+                    ]
+                },
+                "animation_3": {
+                    "animations": [
+                        "questionmark",
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "animations": [
+                        "exclimationmark",
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.ko_target.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "animation_2": "query.skin_id == 1 && query.variant != 1"
+                        },
+                        {
+                            "default": "query.mark_variant != 1"
+                        },
+                        {
+                            "ko": "query.variant == 1"
+                        }
+                    ]
+                },
+                "animation_2": {
+                    "animations": [
+                        "exclimationmark",
+                        "fov"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1 || query.mark_variant != 1"
+                        }
+                    ]
+                },
+                "ko": {
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.detect_player.ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "animation_1": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "animation_1": {
+                    "animations": [
+                        "exclimationmark"
+                    ]
+                }
+            }
+        },
+        "controller.animation.vehicle.crash": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "crash": "query.has_rider && query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "crash": {
+                    "animations": [
+                        "crash"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,239 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:sticky_fan_fall",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "fan_ctrl": "controller.animation.fan.ctrl",
+                "sound": "animation.fan_sound_loop",
+                "hit_sound":"animation.fan.hit_sound",
+                "hit_snd_ctrl":"controller.animation.trigger.fan_hit_sound"
+            },
+            "scripts": {
+                "animate": [
+                    "fan_ctrl",
+                    "hit_snd_ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                },
+                "minecraft:collision_box": {
+                    "width": 0.5,
+                    "height": 0.5
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:ignite": {
+                "minecraft:is_ignited": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.5
+            },
+            "minecraft:custom_hit_test":{
+                "hitboxes": [
+                    {
+                      "width": 2,
+                      "height": 2,
+                      "pivot": [
+                        0,
+                        1,
+                        0
+                      ]
+                    }
+                  ]
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "no_stick",
+                    "vent"
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "open"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "open"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 1
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "reset"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_3"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "reset"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_0"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignite"
+                    ]
+                }
+            },
+            "evt:rm_ignite": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignite"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,750 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:prop_mutant_statue",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "naming_ctrl",
+                    "give_ctrl",
+                    "prox_ctrl"
+                ]
+            },
+            "animations": {
+                "naming_ctrl": "controller.animation.trigger.costume_name",
+                "name":"animation.mutant_name",
+                "give_ctrl": "controller.animation.trigger.give_gadget2",
+                "give": "animation.give.mutant",
+                "prox_ctrl":"controller.animation.trigger.prox_costume",
+                "prox_msg":"animation.costume.prox"
+            }
+        },
+        "component_groups": {
+            "cyd:powered": {
+                "minecraft:is_charged": {}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "cyd:sid_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "cyd:sid_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "cyd:sid_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "cyd:sid_8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "cyd:sid_9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                }
+            },
+            "cyd:sid_10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                }
+            },
+            "cyd:sid_11": {
+                "minecraft:skin_id": {
+                    "value": 11
+                }
+            },
+            "cyd:sid_12": {
+                "minecraft:skin_id": {
+                    "value": 12
+                }
+            },
+            "cyd:sid_13": {
+                "minecraft:skin_id": {
+                    "value": 13
+                }
+            },
+            "cyd:sid_14": {
+                "minecraft:skin_id": {
+                    "value": 14
+                }
+            },
+            "cyd:sid_15": {
+                "minecraft:skin_id": {
+                    "value": 15
+                }
+            },
+            "cyd:sid_16": {
+                "minecraft:skin_id": {
+                    "value": 16
+                }
+            },
+            "cyd:ignited":{
+                "minecraft:is_ignited":{}
+            },
+            "cyd:mv_0": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "cyd:mv_1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cyd:sheared":{
+                "minecraft:is_sheared":{}
+            }
+        },
+        "components": {
+            "minecraft:physics": {},
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 1.0
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "pet"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:is_stackable": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 3
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_sheared"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:shear"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 4
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_sheared"
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_shear"
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "action.interact.dispense_costume",
+                        "swing": true,
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_component",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": "minecraft:is_ignited"
+                                    }
+                                ]
+                            },
+                            "event": "evt:give_costume"
+                        }
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:shear": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sheared"
+                    ]
+                }
+            },
+            "evt:rm_shear": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:sheared"
+                    ]
+                }
+            },
+            "evt:give_costume": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                }
+            },
+            "evt:reset_give": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_1"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_0",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_0",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_0",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_5": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_5",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_0",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_6": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_6",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_0",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_7": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_7",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_0",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_8": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_8",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_0",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_9": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_9",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_0",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_10": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_10",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_0",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_11": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_11",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_0",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_12": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_12",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_0",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_13": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_13",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_0",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_14": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_14",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_0",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_15": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_15",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_0",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_16": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_16",
+                        "cyd:ignited"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_0"
+                    ]
+                }
+            }
+        }
+    }
+}

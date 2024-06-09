@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:wk_security_bot_pathing",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/security_robot"
+      },
+      "geometry": {
+        "default": "geometry.security_robot"
+      },
+      "particle_effects": {
+        "view": "cyd:bot_fov"
+      },
+      "animations": {
+        "idle":"animation.security_robot.idle",
+        "eye":"animation.security_robot.eye",
+        "alarm":"animation.security_robot.alarm",
+        "walk": "animation.security_robot.walk",
+        "ctrl": "controller.animation.rp.security_bot",
+        "fov": "animation.fov.particle"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "eye",
+          "fov"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_stronghold",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_stronghold",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.showdown_stronghold",
+        "cheesed": "geometry.showdown_stronghold_cheesed"
+      },
+      "sound_effects": {
+        "attack1": "cyd.mission.showdown.stronghold.attack1",
+        "attack2": "cyd.mission.showdown.stronghold.attack2",
+        "charge": "cyd.mission.showdown.stronghold.charge",
+        "stumble": "cyd.mission.showdown.stronghold.stumble",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "breath": "animation.showdown_stronghold.breath",
+        "idle": "animation.showdown_stronghold.idle",
+        "walk": "animation.showdown_stronghold.walk",
+        "attack1": "animation.showdown_stronghold.attack1",
+        "attack2": "animation.showdown_stronghold.attack2",
+        "special": "animation.showdown_stronghold.charge_aim",
+        "special_charge": "animation.showdown_stronghold.charge_run",
+        "stumble": "animation.showdown_stronghold.charge_stumble",
+        "defeated": "animation.showdown_stronghold.defeated",
+        "intro": "animation.showdown_stronghold.intro",
+        "outro": "animation.showdown_stronghold.outro",
+        "mission_intro": "animation.showdown_stronghold.mission_intro",
+        "ctrl": "controller.animation.showdown.stronghold",
+        "walk_ctrl": "controller.animation.showdown.strongmovement"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "walk_ctrl",
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}

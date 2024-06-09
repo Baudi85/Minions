@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:teleport_icon_10_recordshop",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "teleport_10",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

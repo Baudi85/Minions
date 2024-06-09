@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_jean_cutscene",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_jean_clawed"
+      },
+      "geometry": {
+        "default": "geometry.showdown_jean_clawed"
+      },
+      "sound_effects": {
+        "idle": "cyd.mission.showdown.jean.intro",
+        "attack1": "cyd.mission.showdown.jean.attack1",
+        "attack2": "cyd.mission.showdown.jean.attack2",
+        "intro": "cyd.mission.showdown.jean.intro",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "breath": "animation.showdown_jean_clawed.breath",
+        "idle": "animation.showdown_jean_clawed.idle",
+        "walk": "animation.showdown_jean_clawed.walk",
+        "attack1": "animation.showdown_jean_clawed.attack1",
+        "attack2": "animation.showdown_jean_clawed.attack2",
+        "leap": "animation.showdown_jean_clawed.leap",
+        "pulled": "animation.showdown_jean_clawed.pulled",
+        "defeated": "animation.showdown_jean_clawed.defeated",
+        "intro": "animation.showdown_jean_clawed.intro",
+        "outro": "animation.showdown_jean_clawed.outro",
+        "mission_intro": "animation.showdown_jean_clawed.mission_intro",
+        "ctrl": "controller.animation.showdown.jean",
+        "walk_ctrl": "controller.animation.showdown.movement",
+        "stop": "animation.cutscene.stop"
+      },
+      "scripts": {
+        "animate": [
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

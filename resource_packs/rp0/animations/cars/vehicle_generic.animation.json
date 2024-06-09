@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vehicle_generic.ride": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"root": {
+					"rotation": ["-math.clamp(query.vertical_speed*0.4,-10,10)", "math.clamp(query.yaw_speed*0.01,-10,10)", 0],
+					"scale": ["1-(math.sin(query.life_time*1800-60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.002", "1+(math.sin(query.life_time*1800-60-40)*0.2-math.sin(query.life_time*1800*2-50-40)*0.1)*0.0025", "1+(math.sin(query.life_time*1800+60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.002"]
+				},
+				"all_back": {
+					"rotation": ["(query.vertical_speed>0.1 && query.is_on_ground>0.8 )? -10  : 0", 0, "-math.clamp(query.yaw_speed*0.003,-1,1)"]
+				},
+				"all_front": {
+					"rotation": ["(query.vertical_speed<-0.1) ? 5.5  : 0", 0, 0]
+				},
+				"wheel_left_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"wheel_right_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"wheel_left_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_right_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				}
+			}
+		},
+		"animation.vehicle_generic.idle": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"wheel_left_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"wheel_right_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"wheel_left_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_right_front": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				}
+			}
+		}
+	}
+}

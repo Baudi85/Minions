@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_ember_prop",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_belle_bottom"
+      },
+      "geometry": {
+        "default": "geometry.none"
+      },
+      "particle_effects": {
+        "particle": "cyd:embers"
+      },
+      "animations": {
+        "particle_anim": "animation.cheese.particle"
+      },
+      "scripts": {
+        "animate": [
+          "particle_anim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

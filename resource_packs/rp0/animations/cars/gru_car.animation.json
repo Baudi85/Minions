@@ -1,0 +1,150 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gru_car.ride": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"wheel_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"gru_car": {
+					"rotation": ["((query.modified_move_speed>0.05) ?   math.sin(query.modified_distance_moved*90)*0.1 -math.clamp(query.vertical_speed*0.4,-3,1.5): 0 -math.clamp(query.vertical_speed*0.4,-3,1.5))", 0, 0],
+					"scale": ["1-(math.sin(query.life_time*1800-60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.001", "1+(math.sin(query.life_time*1800-60-40)*0.2-math.sin(query.life_time*1800*2-50-40)*0.1)*0.001", "1+(math.sin(query.life_time*1800+60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.001"]
+				},
+				"all": {
+					"rotation": [0, 0, "math.clamp(query.yaw_speed*0.01,-0.7,0.7)"]
+				},
+				"jet": {
+					"rotation": ["math.sin(query.life_time*1800)*0.2+math.sin(query.life_time*1800*2)*0.04", 0, 0]
+				},
+				"exhaust_1": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"exhaust_2": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_3": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"exhaust_4": {
+					"rotation": ["math.sin(query.life_time*1800-100)*0.2+math.sin(query.life_time*1800*2-100)*0.1", 0, 0]
+				},
+				"exhaust_5": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_6": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_7": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_8": {
+					"rotation": ["math.sin(query.life_time*1800-30)*0.2+math.sin(query.life_time*1800*2-30)*0.1", 0, 0]
+				},
+				"exhaust_9": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"exhaust_10": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_11": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"exhaust_12": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_13": {
+					"rotation": ["math.sin(query.life_time*1800)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_14": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_15": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"exhaust_16": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_17": {
+					"rotation": ["math.sin(query.life_time*1800-30)*0.2+math.sin(query.life_time*1800*2-30)*0.1", 0, 0]
+				},
+				"exhaust_18": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_19": {
+					"rotation": ["math.sin(query.life_time*1800-30)*0.2+math.sin(query.life_time*1800*2-30)*0.1", 0, 0]
+				},
+				"exhaust_20": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_21": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_22": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_23": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_24": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_25": {
+					"rotation": ["math.sin(query.life_time*1800-150)*0.2+math.sin(query.life_time*1800*2-150)*0.1", 0, 0]
+				},
+				"wheel_left_1": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_1": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_left_2": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_2": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_left_3": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_3": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"door_roof_left": {
+					"rotation": [0, 0, "math.sin(query.life_time*1800-40)*0.2+math.sin(query.life_time*1800*2-40)*0.04"]
+				},
+				"door_foot_left": {
+					"rotation": [0, 0, "math.sin(query.life_time*1800)*0.2+math.sin(query.life_time*1800*2)*0.04"]
+				}
+			}
+		},
+		"animation.gru_car.idle": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"wheel_back": {
+					"rotation": ["query.modified_distance_moved*40", 0, 0]
+				},
+				"wheel_left_1": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_1": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_left_2": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_2": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_left_3": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				},
+				"wheel_right_3": {
+					"rotation": ["query.modified_distance_moved*36", 0, 0]
+				}
+			}
+		}
+	}
+}

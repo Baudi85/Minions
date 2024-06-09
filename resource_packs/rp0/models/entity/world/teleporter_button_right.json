@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"geometry.teleporter_button_right": {
+		"texturewidth": 16,
+		"textureheight": 16,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 8.75,
+		"visible_bounds_offset": [0, 1.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"locators": {
+					"locator_click": [0, 11, -3]
+				}
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 11, 0]
+			},
+			{
+				"name": "teleporter_button_right",
+				"parent": "all",
+				"pivot": [0, 11, 0],
+				"cubes": [
+					{"origin": [-3, 9, -2], "size": [6, 4, 2], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

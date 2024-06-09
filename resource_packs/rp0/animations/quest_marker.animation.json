@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.quest_marker.idle": {
+			"loop": true,
+			"animation_length": 0.019,
+			"bones": {
+				"all": {
+					"scale": [1.5, "1+math.sin(query.life_time*180*0.5)*0.003", 1.5]
+				},
+				"mission_icon": {
+					"rotation": [0, "query.rotation_to_camera(1)-query.body_y_rotation", 0],
+					"position": [0, "-math.sin(query.life_time*180*0.5)*1+1", 0]
+				}
+			}
+		},
+		"animation.quest_marker.proximity": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"scale": [1.1, 1, 1.1]
+				},
+				"mission_icon": {
+					"position": [0, 3, 0]
+				}
+			}
+		},
+		"animation.quest_marker.countdown": {
+			"animation_length": 10,
+			"bones": {
+				"root": {
+					"scale": 1
+				},
+				"all": {
+					"rotation": [0, "query.anim_time*20", 0]
+				},
+				"mission_icon": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 5, 0],
+						"0.2": [0, 3.6, 0],
+						"0.28": [0, 5, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 0.8],
+						"0.12": [0.8, 0.8, 0.8],
+						"0.2": [0.8, 0.8, 0.8],
+						"0.28": [0.8, 0.8, 0.8]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:npc_picnic",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/npc/npc_picnic",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.npc_picnic",
+        "cheesed": "geometry.npc_picnic_cheesed"
+      },
+      "sound_effects": {
+        "idle_sound": "cyd.world.citizen_picnic",
+        "fart_sound": "cyd.world.picnic_group_cough"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "animations": {
+        "breath":"animation.npc_picnic.breath",
+        "idle":"animation.npc_picnic.idle",
+        "farted":"animation.npc_picnic.farted",
+        "idle_farted":"animation.npc_picnic.idle_farted",
+        "cheese": "animation.npc_picnic.cheesed",
+        "shrink": "animation.npc_picnic.shrinked",
+        "ctrl":"controller.animation.vp.encounter.ctrl"
+      },
+      "scripts": {
+        "animate": [
+          "breath",
+          "ctrl"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank"
+      ]
+    }
+  }
+}

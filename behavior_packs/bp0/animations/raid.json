@@ -1,0 +1,128 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.cyd.raid1": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function raid/raid1"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.raid2": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function raid/raid2"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.raid3": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function raid/raid3"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.raid4": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function raid/raid4"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.info.interrupt": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function text/interrupt"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.info.cheese": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function text/cheese"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.info.hand": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function text/hand"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.info.vandalise": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function text/vandalise"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.info.lockbox": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function text/lockbox"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.raid.point_2": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function playerbase/villain_points_2"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.raid.point_4": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function playerbase/villain_points_4"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.picnic.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound cyd.world.woman_cheesed @a[r=20]",
+          "/playsound cyd.world.man_cheesed @a[r=20]",
+          "/playsound cyd.world.girl_cheesed @a[r=20]"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.camera.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.world.man_cheesed @a[r=20]"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.boy.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.world.boy_cheesed @a[r=20]"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.girl.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.world.girl_cheesed @a[r=20]"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.woman.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.world.woman_cheesed @a[r=20]"
+      },
+      "animation_length": 0.1
+    },
+    "animation.cyd.vp.man.cheesed": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/playsound cyd.world.man_cheesed @a[r=20]"
+      },
+      "animation_length": 0.1
+    }
+  }
+}

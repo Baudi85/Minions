@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:stronghold_chase_entity",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/stronghold_throw"
+      },
+      "geometry": {
+        "default": "geometry.stronghold_throw"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_strong2",
+        "ctrl2": "controller.animation.rp.chase_entity.ctrl_strong2p2",
+        "throw1_stronghold": "animation.stronghold_throw.throw1_stronghold",
+        "throw1_car": "animation.stronghold_throw.throw1_car",
+        "throw2": "animation.stronghold_throw.throw2",
+        "idle1": "animation.stronghold_throw.idle1",
+        "idle2": "animation.stronghold_throw.idle2"
+      },
+      "sound_effects": {
+        "Stronhold_Throw_1": "cyd.mission.race.stronghold.throw1",
+        "Stronhold_Throw_Impact_1": "cyd.mission.race.stronghold.impact1",
+        "Stronhold_Throw_2": "cyd.mission.race.stronghold.throw2",
+        "Stronhold_Throw_Impact_2": "cyd.mission.race.stronghold.impact2"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "ctrl2"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      }
+    }
+  }
+}

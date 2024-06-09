@@ -1,0 +1,1 @@
+tellraw @a {"rawtext":[{"translate":"dojo.cutscene1.3"}]}

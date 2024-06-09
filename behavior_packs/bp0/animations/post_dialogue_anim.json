@@ -1,0 +1,195 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.post_m5.dialogue": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/spawnpoint @a -159 51 1029",
+          "/playsound cyd.generic.scene_transition @a",
+          "/function missions/dialogue/post/post.m5_1",
+          "/function playerbase/objectives/m5_p",
+          "/function playerbase/villain_points_m5",
+          "/tag @e[type=cyd:collectible_storage] add trophy_cert"
+        ],
+        "4.0": [
+          "/function missions/dialogue/post/post.m5_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/post/post.m5_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/post/post.m5_4"
+        ],
+        "16.0": [
+          "/function missions/dialogue/post/post.m5_5"
+        ],
+        "17.0": [
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 18.1
+    },
+    "animation.post_m4.dialogue": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/spawnpoint @a -159 51 1029",
+          "/playsound cyd.generic.scene_transition @a",
+          "/function missions/dialogue/post/post.m4_1",
+          "/scoreboard players set @e[type=cyd:system_storage] m4 0",
+          "/function playerbase/objectives/m4_p1",
+          "/function playerbase/villain_points_m4",
+          "/tag @e[type=cyd:collectible_storage] add trophy_mona"
+        ],
+        "4.0": [
+          "/function missions/dialogue/post/post.m4_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/post/post.m4_3",
+          "/tag @e[type=cyd:system_storage] add cheese",
+          "/tickingarea remove tempwk"
+        ],
+        "12.0": [
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 18.1
+    },
+    "animation.post_m3.dialogue": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/spawnpoint @a -159 51 1029",
+          "/playsound cyd.generic.scene_transition @a",
+          "/function missions/dialogue/post/post.m3_1",
+          "/function playerbase/villain_points_m3",
+          "/tag @e[type=cyd:collectible_storage] add trophy_belt",
+          "/tag @e[type=cyd:system_storage] add chinatown"
+        ],
+        "4.0": [
+          "/function missions/dialogue/post/post.m3_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/post/post.m3_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/post/post.m3_4"
+        ],
+        "16.0": [
+          "/function missions/dialogue/post/post.m3_5"
+        ],
+        "20.0": [
+          "/function missions/dialogue/post/post.m3_6"
+        ],
+        "24.0": [
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 25.1
+    },
+    "animation.post_m2.dialogue": {
+      "loop": false,
+      "timeline": {
+        "1.9": [
+          "/execute @p[tag=!dev] ~ ~ ~ event entity @e[type=cyd:gru_bike] evt:despawn"
+        ],
+        "2.0": [
+          "/spawnpoint @a -159 51 1029",
+          "/playsound cyd.generic.scene_transition @a",
+          "/effect @a invisibility 99999 255 true",
+          "/effect @a slowness 99999 5 true",
+          "/function missions/dialogue/post/post.m2_1",
+          "/tp @a -160 52 1041 facing -160 52 1040"
+        ],
+        "8.0": [
+          "/function missions/dialogue/post/post.m2_2"
+        ],
+        "14.0": [
+          "/function missions/dialogue/post/post.m2_3"
+        ],
+        "20.0": [
+          "/function missions/dialogue/post/post.m2_4",
+          "/tp @a -160 51 1030 facing -160.18 51.85 1024.00"
+        ],
+        "26.0": [
+          "/function missions/dialogue/post/post.m2_6",
+          "/tp @a -162 52 1037 facing -158 52.4 1037"
+        ],
+        "32.0": [
+          "/function missions/dialogue/post/post.m2_7",
+          "/tp @a -177 54 1048 facing -177 55 1055"
+        ],
+        "38.0": [
+          "/function missions/dialogue/post/post.m2_8",
+          "/tp @a -157 52 1042 facing -165.00 53.23 1052.15"
+        ],
+        "44.0": [
+          "/function missions/dialogue/post/post.m2_9",
+          "/tp @a -155 51 1031 facing -155 51 1026"
+        ],
+        "50.0": [
+          "/function missions/dialogue/post/post.m2_10",
+          "/tp @a -168 54 1041 facing -181.32 53.49 1035.00"
+        ],
+        "56.0": [
+          "/function missions/dialogue/post/post.m2_11",
+          "/tp @a -158 52 1040 facing -149 54 1051"
+        ],
+        "62.0": [
+          "/scoreboard players set @e[type=cyd:system_storage] m2 0",
+          "/function playerbase/objectives/m2_p",
+          "/function compass/3"
+        ],
+        "68.0": [
+          "/function missions/dialogue/post/post.m2_12",
+          "/effect @a clear"
+        ],
+        "74.0": [
+          "/function missions/dialogue/post/post.m2_13"
+        ],
+        "78.0": [
+          "/function missions/dialogue/post/post.m2_14"
+        ],
+        "82.0": [
+          "/function missions/dialogue/post/post.m2_15"
+        ],
+        "86.0": [
+          "/function missions/dialogue/post/post.m2_16"
+        ],
+        "90.0": [
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 91.1
+    },
+    "animation.post_m1.dialogue": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/spawnpoint @a -159 51 1029",
+          "/function missions/dialogue/post/post.m1_1",
+          "/function playerbase/objectives/m1_p",
+          "/function playerbase/villain_points_m1",
+          "/tag @e[type=cyd:collectible_storage] add trophy_dragon"
+        ],
+        "4.0": [
+          "/function missions/dialogue/post/post.m1_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/post/post.m1_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/post/post.m1_4"
+        ],
+        "14.0": [
+          "/tag @e[type=cyd:young_nefario] remove talk",
+          "/tag @e[type=cyd:young_nefario] remove keyed",
+          "/summon cyd:trigger_sticky -19 80 1736",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 18.1
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:minions_race",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/chase/minions_race"
+      },
+      "geometry": {
+        "default": "geometry.minions_race"
+      },
+      "animations": {
+        "drive": "animation.minions_race.breath",
+        "idle": "animation.minions_race.idle"
+      },
+      "sound_effects": {
+        "idle": "cyd.minion.cheer"
+      },
+      "scripts": {
+        "animate": [
+          "drive",
+          "idle"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

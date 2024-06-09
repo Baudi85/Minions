@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:sven_car_chase",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/sven_car_chase"
+      },
+      "geometry": {
+        "default": "geometry.sven_car_chase"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_sven",
+        "intro1": "animation.sven_car_chase.intro1",
+        "intro2": "animation.sven_car_chase.intro2",
+        "intro3": "animation.sven_car_chase.intro3",
+        "drive": "animation.sven_car_chase.drive"
+      },
+      "sound_effects": {
+        "Sven_Bike_Intro_1": "cyd.mission.race.sven.intro1",
+        "Sven_Bike_Intro_2": "cyd.mission.race.sven.intro2",
+        "drive": "cyd.mission.race.sven.drive"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

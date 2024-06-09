@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"geometry.cyd.promo_logo": {
+		"texturewidth": 600,
+		"textureheight": 400,
+		"visible_bounds_width": 39,
+		"visible_bounds_height": 12,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "base",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-288, -32, 0], "size": [603, 189, 1], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,216 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:minion_cage",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:shulker",
+            "animations": {
+                "ctrl": "controller.animation.cage_blocking"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:collision_box": {
+                    "width": 0,
+                    "height": 0
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                },
+                "minecraft:collision_box": {
+                    "width": 2,
+                    "height": 2
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:minion_seat": {
+                "minecraft:rideable": {
+                    "interact_text": "action.interact.ride.minecart",
+                    "family_types": [
+                        "showdown_cutscene"
+                    ],
+                    "seat_count": 1,
+                    "seats": [
+                        {
+                            "position": [
+                                0.0,
+                                0.4,
+                                0.0
+                            ],
+                            "min_rider_count": 0,
+                            "max_rider_count": 1
+                        }
+                    ]
+                },
+                "minecraft:addrider": {
+                    "entity_type": "cyd:moon_cheer_prop"
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 1.5,
+                "height": 1
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:scale": {
+                "value": 0.8
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger",
+                    "no_stick",
+                    "cage"
+                ]
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "deals_damage": false
+                    },
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "==",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_damage",
+                                        "subject": "self",
+                                        "operator": "==",
+                                        "value": "fatal"
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_1"
+                        },
+                        "deals_damage": false
+                    }
+                ]
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "cyd:minion_seat"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:minion_seat"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                }
+            }
+        }
+    }
+}

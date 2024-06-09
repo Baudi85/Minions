@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"geometry.moon_door": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 15,
+		"visible_bounds_height": 10.75,
+		"visible_bounds_offset": [0, 2.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "moon_door",
+				"parent": "all",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "door_left",
+				"parent": "moon_door",
+				"pivot": [32, 80, 0],
+				"cubes": [
+					{"origin": [0, 0, -6], "size": [32, 80, 12], "uv": [0, 0]},
+					{"origin": [0, 25, -6.75], "size": [1, 1, 1], "uv": [0, 0], "inflate": -0.1}
+				]
+			},
+			{
+				"name": "vector_left",
+				"parent": "door_left",
+				"pivot": [0, 24, -7.5],
+				"rotation": [0, 0, -45],
+				"cubes": [
+					{"origin": [0, 23.75, -7.5], "size": [12, 2.5, 1], "uv": [76, 0]}
+				]
+			},
+			{
+				"name": "door_right",
+				"parent": "moon_door",
+				"pivot": [-32, 80, 0],
+				"cubes": [
+					{"origin": [-32, 0, -6], "size": [32, 80, 12], "uv": [0, 0], "mirror": true},
+					{"origin": [-1, 25, -6.75], "size": [1, 1, 1], "uv": [0, 0], "inflate": -0.1, "mirror": true}
+				]
+			},
+			{
+				"name": "vector_right",
+				"parent": "door_right",
+				"pivot": [0, 24, -7.5],
+				"rotation": [0, 0, 45],
+				"cubes": [
+					{"origin": [-12, 23.75, -7.5], "size": [12, 2.5, 1], "uv": [76, 0], "mirror": true}
+				]
+			}
+		]
+	}
+}

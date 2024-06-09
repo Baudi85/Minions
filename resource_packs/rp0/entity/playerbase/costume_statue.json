@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:costume_statue",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/minion_costume"
+            },
+            "geometry": {
+                "default": "geometry.minion_costume"
+            },
+            "scripts": {
+                "animate": [
+                    "static_ctrl"
+                ]
+            },
+            "animations": {
+                "static_ctrl": "controller.animation.rp.minion_costume_statue",
+                "static_knight": "animation.minion_costume.static_knight",
+                "static_kungfu": "animation.minion_costume.static_kungfu",
+                "static_golf": "animation.minion_costume.static_golf",
+                "static_firefighter": "animation.minion_costume.static_firefighter",
+                "static_maid": "animation.minion_costume.static_maid",
+                "static_beach": "animation.minion_costume.static_beach",
+                "static_overlay": "animation.minion_costume.static_overlay"
+            },
+            "spawn_egg": {
+              "base_color": "#4287f5",
+              "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.minion_statue"
+            ]
+        }
+    }
+}

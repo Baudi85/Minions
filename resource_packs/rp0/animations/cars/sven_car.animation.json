@@ -1,0 +1,114 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sven_car.ride": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.92": [0, 0, "math.sin(query.life_time*180)*1"],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"frame": {
+					"rotation": ["math.sin(query.life_time*1800)*0.05+math.sin(query.life_time*1800*2)*0.02", 0, "math.sin(query.life_time*1800*0.5)*0.06+math.sin(query.life_time*1800*2*0.5)*0.02"]
+				},
+				"sven_rig_head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.12": [10, 0, 0],
+						"2.44": [-7.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"exhaust_top_1": {
+					"rotation": ["math.sin(query.life_time*1800-120)*0.2+math.sin(query.life_time*1800*2-120)*0.1", 0, 0]
+				},
+				"exhaust_right_top_1": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2-60)*0.1", 0, 0]
+				},
+				"exhaust_right_top_2": {
+					"rotation": ["math.sin(query.life_time*1800-30)*0.2+math.sin(query.life_time*1800*2-30)*0.1", 0, 0]
+				},
+				"exhaust_right_top_3": {
+					"rotation": ["math.sin(query.life_time*1800)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_left_top_1": {
+					"rotation": ["math.sin(query.life_time*1800-60)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"exhaust_left_top_2": {
+					"rotation": ["math.sin(query.life_time*1800-30)*0.2+math.sin(query.life_time*1800*2-30)*0.1", 0, 0]
+				},
+				"exhaust_left_top_3": {
+					"rotation": ["math.sin(query.life_time*1800)*0.2+math.sin(query.life_time*1800*2)*0.1", 0, 0]
+				},
+				"wheel_1": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_2": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_3": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_4": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"sven_car": {
+					"rotation": ["((query.modified_move_speed>0.05) ?   math.sin(query.modified_distance_moved*90)*0.1 -math.clamp(query.vertical_speed*1.5,-10,10): 0 -math.clamp(query.vertical_speed*1.5,-10,10))", "(query.modified_move_speed>0.05) ?   math.clamp(query.yaw_speed*0.1,-7,7) : math.clamp(query.yaw_speed*0.06,-4,4)", "(query.modified_move_speed>0.05) ?   -math.clamp(query.yaw_speed*0.1,-10,10) : 0"],
+					"scale": ["1-(math.sin(query.life_time*1800-60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.002", "1+(math.sin(query.life_time*1800-60-40)*0.2-math.sin(query.life_time*1800*2-50-40)*0.1)*0.002", "1+(math.sin(query.life_time*1800+60-40)*0.2+math.sin(query.life_time*1800*2-40)*0.1)*0.001"]
+				},
+				"all": {
+					"rotation": ["(query.vertical_speed>0.1 && query.is_on_ground>0.8 )? -7  : 0", 0, 0]
+				},
+				"handlebar": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.sven_car.idle": {
+			"loop": true,
+			"animation_length": 50,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.92": [0, 0, "math.sin(query.life_time*180)*1"],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"sven_rig_head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.12": [10, 0, 0],
+						"2.44": [-7.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"wheel_1": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_2": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_3": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"wheel_4": {
+					"rotation": ["query.modified_distance_moved*30", 0, 0]
+				},
+				"sven_car": {
+					"rotation": ["((query.modified_move_speed>0.05) ?   math.sin(query.modified_distance_moved*90)*0.1 -math.clamp(query.vertical_speed*1.5,-10,10): 0 -math.clamp(query.vertical_speed*1.5,-10,10))", "(query.modified_move_speed>0.05) ?   math.clamp(query.yaw_speed*0.1,-7,7) : math.clamp(query.yaw_speed*0.06,-4,4)", "(query.modified_move_speed>0.05) ?   -math.clamp(query.yaw_speed*0.1,-10,10) : 0"]
+				},
+				"all": {
+					"rotation": ["(query.vertical_speed>0.1 && query.is_on_ground>0.8 )? -7  : 0", 0, 0]
+				},
+				"handlebar": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

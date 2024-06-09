@@ -1,0 +1,331 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:flying_car",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "speed_step",
+                    "fly"
+                ]
+            },
+            "animations": {
+                "speed_step": "controller.animation.speed_ctrl",
+                "step_up_1": "animation.cyd.belle_bike.step_up_speed",
+                "fly": "animation.fly_hotairballoon"
+            }
+        },
+        "component_groups": {
+            "cyd:shrunk": {
+                "minecraft:timer": {
+                    "time": 60,
+                    "looping": true,
+                    "time_down_event": {
+                      "event": "evt:normal",
+                      "target": "self"
+                    }
+                  },
+                "minecraft:scale": {
+                    "value": 0.5
+                }
+            },
+            "cyd:normal": {
+                "minecraft:scale": {
+                    "value": 1.0
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:ignited": {
+                "minecraft:is_ignited": {}
+            },
+            "cyd:crash": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cyd:mv_0": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "cyd:speed_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                },
+                "minecraft:movement": {
+                    "value": 0.3
+                }
+            },
+            "cyd:speed_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                },
+                "minecraft:movement": {
+                    "value": 0.35
+                }
+            },
+            "cyd:speed_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                },
+                "minecraft:movement": {
+                    "value": 0.4
+                }
+            },
+            "cyd:speed_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                },
+                "minecraft:movement": {
+                    "value": 0.45
+                }
+            }
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 20,
+                "max": 20
+            },
+            "minecraft:collision_box": {
+                "width": 3,
+                "height": 3
+            },
+            "minecraft:physics": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_power_jump": {},
+            "minecraft:horse.jump_strength": {
+                "value": {
+                  "range_min": 1,
+                  "range_max": 2
+                }
+              },
+            "minecraft:type_family": {
+                "family": [
+                    "vehicle"
+                ]
+            },
+            "minecraft:behavior.float": {},
+            "minecraft:scale": {
+                "value": 1.0
+            },
+            "minecraft:input_ground_controlled": {},
+            "minecraft:movement": {
+                "value": 0.1
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:knockback_resistance": {
+                "value": 100,
+                "max": 100
+            },
+            "minecraft:can_climb": {},
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_daytime",
+                                    "operator": "equals",
+                                    "value": false
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "subject": "self",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignited"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_daytime",
+                                    "operator": "equals",
+                                    "value": true
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "subject": "self",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_ignited"
+                    }
+                ]
+            },
+            "minecraft:rideable": {
+                "interact_text": "action.interact.ride.minecart",
+                "seat_count": 1,
+                "seats": [
+                    {
+                        "position": [
+                            0.0,
+                            3.6,
+                            1.8
+                        ],
+                        "min_rider_count": 0,
+                        "max_rider_count": 1
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:shrink_entity": {
+                "add": {
+                    "component_groups": [
+                        "cyd:shrunk"
+                    ]
+                }
+            },
+            "evt:normal": {
+                "add": {
+                    "component_groups": [
+                        "cyd:normal"
+                    ]
+            },
+            "remove": {
+                "component_groups": [
+                    "cyd:shrunk"
+                ]
+            } 
+        },
+            "evt:ignited": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:rm_ignited": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:crash": {
+                "add": {
+                    "component_groups": [
+                        "cyd:crash"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                }
+            },
+            "evt:mv_0": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_mark_variant",
+                                    "operator": "not",
+                                    "subject": "self",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "cyd:mv_0"
+                            ]
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "cyd:crash"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "evt:speed_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:speed_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:speed_2",
+                        "cyd:speed_3",
+                        "cyd:speed_4"
+                    ]
+                }
+            },
+            "evt:speed_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:speed_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:speed_1",
+                        "cyd:speed_3",
+                        "cyd:speed_4"
+                    ]
+                }
+            },
+            "evt:speed_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:speed_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:speed_2",
+                        "cyd:speed_1",
+                        "cyd:speed_4"
+                    ]
+                }
+            },
+            "evt:speed_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:speed_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:speed_2",
+                        "cyd:speed_3",
+                        "cyd:speed_1"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

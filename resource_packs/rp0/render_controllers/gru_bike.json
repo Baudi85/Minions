@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.gru_bike": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "*_minion_1": "query.variant == 8"
+                },
+                {
+                    "*_minion_2": "query.variant == 2 || query.variant == 3 || query.variant == 4 || query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8"
+                },
+                {
+                    "*_minion_3": "query.variant == 3 || query.variant == 4 || query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8"
+                },
+                {
+                    "*_minion_4": "query.variant == 4 || query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8"
+                },
+                {
+                    "*_minion_5": "query.variant == 5 || query.variant == 6 || query.variant == 7 || query.variant == 8"
+                },
+                {
+                    "*_minion_6": "query.variant == 6 || query.variant == 7 || query.variant == 8"
+                },
+                {
+                    "*_minion_7": "query.variant == 7 || query.variant == 8"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

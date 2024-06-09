@@ -1,0 +1,86 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:sticky_box_small",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:shulker"
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "cyd:ignite": {
+        "minecraft:is_ignited": {}
+      }
+    },
+    "components": {
+      "minecraft:fire_immune": true,
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "on_damage": {},
+          "deals_damage": false
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 0.98,
+        "height": 0.98
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "inanimate",
+          "prop",
+          "small_box",
+          "no_stick"
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "tutorial"
+                },
+                {
+                  "test": "has_component",
+                  "operator": "not",
+                  "value": "minecraft:is_ignited"
+                }
+              ]
+            },
+            "event": "evt:ignite"
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      },
+      "evt:ignite": {
+        "add": {
+          "component_groups": [
+            "cyd:ignite"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+	"format_version": "1.10.0",
+	"geometry.nunchuck_throw_projectile": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 4.75,
+		"visible_bounds_offset": [0, 0.625, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 1]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "chain_2",
+				"parent": "all",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-0.5, 0, -1], "size": [1, 0, 2], "uv": [0, 2]}
+				]
+			},
+			{
+				"name": "chain_1",
+				"parent": "chain_2",
+				"pivot": [0, 0, 0.98125],
+				"cubes": [
+					{"origin": [-0.5, 0, 0.98289], "size": [1, 0, 2], "uv": [2, 2]}
+				]
+			},
+			{
+				"name": "nunchuck_1",
+				"parent": "chain_1",
+				"pivot": [0, 0, 3],
+				"cubes": [
+					{"origin": [-0.5, -0.5, 3.23289], "size": [1, 1, 7], "uv": [0, 0], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "chain_3",
+				"parent": "chain_2",
+				"pivot": [0, 0, -0.98125],
+				"cubes": [
+					{"origin": [-0.5, 0, -2.98289], "size": [1, 0, 2], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "nunchuck_2",
+				"parent": "chain_3",
+				"pivot": [0, 0, -2.98289],
+				"cubes": [
+					{"origin": [-0.5, -0.5, -10.23289], "size": [1, 1, 7], "uv": [0, 0], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "warning",
+				"pivot": [0.5, 12, 1],
+				"cubes": [
+					{"origin": [-5, 3, 1], "size": [11, 18, 0], "uv": [12, 27]}
+				]
+			}
+		]
+	}
+}

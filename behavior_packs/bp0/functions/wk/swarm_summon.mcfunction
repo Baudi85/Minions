@@ -1,0 +1,22 @@
+summon cyd:wk_swarm_guard_1 -125 16 1699
+summon cyd:wk_swarm_guard_2 -136 16 1702
+summon cyd:wk_swarm_guard_3 -136 16 1706
+summon cyd:wk_swarm_guard_1 -136 16 1710
+summon cyd:wk_swarm_guard_2 -117 16 1695
+summon cyd:wk_swarm_guard_3 -115 16 1693
+summon cyd:wk_swarm_guard_1 -125 16 1686
+summon cyd:wk_swarm_guard_2 -129 16 1671
+summon cyd:wk_swarm_guard_3 -121 16 1671
+summon cyd:wk_swarm_guard_1 -139 27 1646
+summon cyd:wk_swarm_guard_2 -130 28 1640
+summon cyd:wk_swarm_guard_3 -121 28 1640
+summon cyd:wk_swarm_guard_1 -111 27 1647
+summon cyd:wk_swarm_guard_2 -128 28 1628
+summon cyd:wk_swarm_guard_3 -122 28 1628
+#new guards
+summon cyd:wk_swarm_guard_1 -114 16 1677
+summon cyd:wk_swarm_guard_2 -115 16 1683
+summon cyd:wk_swarm_guard_3 -138 16 1677
+summon cyd:wk_swarm_guard_1 -136 16 1682
+summon cyd:wk_swarm_guard_2 -120 16 1700
+summon cyd:wk_swarm_guard_3 -120 16 1707

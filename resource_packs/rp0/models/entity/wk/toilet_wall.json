@@ -1,0 +1,183 @@
+{
+	"format_version": "1.10.0",
+	"geometry.toilet_wall": {
+		"texturewidth": 176,
+		"textureheight": 176,
+		"visible_bounds_width": 12,
+		"visible_bounds_height": 8.5,
+		"visible_bounds_offset": [0, 1.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_back",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_front",
+				"parent": "all_back",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "toilet_wall",
+				"parent": "all_front",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "door_left",
+				"parent": "toilet_wall",
+				"pivot": [56, 44, -8],
+				"cubes": [
+					{"origin": [0, 0, -16], "size": [56, 88, 16], "uv": [0, 0]},
+					{"origin": [-8, 68, -10], "size": [8, 4, 4], "uv": [138, 120]},
+					{"origin": [-8, 8, -10], "size": [8, 4, 4], "uv": [138, 120]},
+					{"origin": [-8, 28, -10], "size": [8, 4, 4], "uv": [138, 120]},
+					{"origin": [-8, 48, -10], "size": [8, 4, 4], "uv": [138, 120]}
+				]
+			},
+			{
+				"name": "urinal_left",
+				"parent": "door_left",
+				"pivot": [32, 0, -16],
+				"cubes": [
+					{"origin": [27, 16, -24], "size": [10, 8, 8], "uv": [112, 104]},
+					{"origin": [37, 8, -32], "size": [3, 16, 16], "uv": [90, 104]},
+					{"origin": [24, 8, -32], "size": [3, 16, 16], "uv": [90, 104], "mirror": true},
+					{"origin": [27, 8, -32], "size": [10, 8, 16], "uv": [38, 104]},
+					{"origin": [28, 0, -24], "size": [8, 8, 8], "uv": [38, 128]}
+				]
+			},
+			{
+				"name": "urinal_left_flush",
+				"parent": "urinal_left",
+				"pivot": [32, 28, -17],
+				"cubes": [
+					{"origin": [29, 26, -18], "size": [6, 4, 2], "uv": [0, 8]}
+				]
+			},
+			{
+				"name": "urinal_half_left",
+				"parent": "door_left",
+				"pivot": [0, 0, -16],
+				"cubes": [
+					{"origin": [5, 8, -32], "size": [3, 16, 16], "uv": [90, 104]},
+					{"origin": [0, 16, -24], "size": [5, 8, 8], "uv": [70, 128]},
+					{"origin": [0, 8, -32], "size": [5, 8, 16], "uv": [112, 120]},
+					{"origin": [0, 0, -24], "size": [4, 8, 8], "uv": [128, 0]}
+				]
+			},
+			{
+				"name": "urinal_half_left_block",
+				"parent": "urinal_half_left",
+				"pivot": [16, 18, -16],
+				"cubes": [
+					{"origin": [14.5, 4, -32], "size": [3, 28, 16], "uv": [0, 104]}
+				]
+			},
+			{
+				"name": "urinal_half_left_flush",
+				"parent": "urinal_half_left",
+				"pivot": [1.5, 28, -17],
+				"cubes": [
+					{"origin": [0, 26, -18], "size": [3, 4, 2], "uv": [0, 104]}
+				]
+			},
+			{
+				"name": "scanner",
+				"parent": "urinal_half_left",
+				"pivot": [0, 28, -18],
+				"cubes": [
+					{"origin": [-2, 26, -20], "size": [4, 4, 4], "uv": [0, 0], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "scanner_eye",
+				"parent": "scanner",
+				"pivot": [0, 28, -19.25],
+				"cubes": [
+					{"origin": [-1, 27, -20.25], "size": [2, 2, 2], "uv": [46, 104], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "scanner_rays_top",
+				"parent": "scanner_eye",
+				"pivot": [0, 28, -20],
+				"rotation": [-15, 0, 0],
+				"cubes": [
+					{"origin": [-5, 27.95, -31], "size": [10, 0.025, 11], "uv": [64, 160]}
+				]
+			},
+			{
+				"name": "scanner_rays_bottom",
+				"parent": "scanner_eye",
+				"pivot": [0, 28, -20],
+				"rotation": [15, 0, 0],
+				"cubes": [
+					{"origin": [-5, 28, -31], "size": [10, 0.025, 11], "uv": [12, 160]}
+				]
+			},
+			{
+				"name": "door_right",
+				"parent": "toilet_wall",
+				"pivot": [-56, 44, -8],
+				"cubes": [
+					{"origin": [-56, 0, -16], "size": [56, 88, 16], "uv": [0, 0], "mirror": true},
+					{"origin": [0, 76, -10], "size": [8, 4, 4], "uv": [138, 120], "mirror": true},
+					{"origin": [0, 16, -10], "size": [8, 4, 4], "uv": [138, 120], "mirror": true},
+					{"origin": [0, 36, -10], "size": [8, 4, 4], "uv": [138, 120], "mirror": true},
+					{"origin": [0, 56, -10], "size": [8, 4, 4], "uv": [138, 120], "mirror": true}
+				]
+			},
+			{
+				"name": "urinal_right",
+				"parent": "door_right",
+				"pivot": [-32, 0, -16],
+				"cubes": [
+					{"origin": [-37, 16, -24], "size": [10, 8, 8], "uv": [112, 104], "mirror": true},
+					{"origin": [-40, 8, -32], "size": [3, 16, 16], "uv": [90, 104], "mirror": true},
+					{"origin": [-27, 8, -32], "size": [3, 16, 16], "uv": [90, 104]},
+					{"origin": [-37, 8, -32], "size": [10, 8, 16], "uv": [38, 104], "mirror": true},
+					{"origin": [-36, 0, -24], "size": [8, 8, 8], "uv": [38, 128], "mirror": true}
+				]
+			},
+			{
+				"name": "urinal_right_flush",
+				"parent": "urinal_right",
+				"pivot": [-32, 28, -17],
+				"cubes": [
+					{"origin": [-35, 26, -18], "size": [6, 4, 2], "uv": [0, 8], "mirror": true}
+				]
+			},
+			{
+				"name": "urinal_half_right",
+				"parent": "door_right",
+				"pivot": [0, 0, -16],
+				"cubes": [
+					{"origin": [-8, 8, -32], "size": [3, 16, 16], "uv": [90, 104], "mirror": true},
+					{"origin": [-5, 16, -24], "size": [5, 8, 8], "uv": [70, 128], "mirror": true},
+					{"origin": [-5, 8, -32], "size": [5, 8, 16], "uv": [112, 120], "mirror": true},
+					{"origin": [-4, 0, -24], "size": [4, 8, 8], "uv": [128, 0], "mirror": true}
+				]
+			},
+			{
+				"name": "urinal_half_right_block",
+				"parent": "urinal_half_right",
+				"pivot": [-16, 18, -16],
+				"cubes": [
+					{"origin": [-17.5, 4, -32], "size": [3, 28, 16], "uv": [0, 104], "mirror": true}
+				]
+			},
+			{
+				"name": "urinal_half_right_flush",
+				"parent": "urinal_half_right",
+				"pivot": [-1.5, 28, -17],
+				"cubes": [
+					{"origin": [-3, 26, -18], "size": [3, 4, 2], "uv": [0, 104], "mirror": true}
+				]
+			}
+		]
+	}
+}

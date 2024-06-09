@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:door_3",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/moon/moon_door"
+      },
+      "geometry": {
+        "default": "geometry.moon_door"
+      },
+      "sound_effects": {
+        "open": "cyd.mission.moon.door_open"
+      },
+      "animations": {
+        "trigger": "animation.moon_door.trigger",
+        "ctrl": "controller.animation.rp.moon_door"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

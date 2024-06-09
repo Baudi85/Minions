@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:vehicle_truck",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/vehicles/vehicle_pickup_01",
+        "texture_02": "textures/entity/vehicles/vehicle_pickup_02",
+        "texture_03": "textures/entity/vehicles/vehicle_pickup_03"
+      },
+      "geometry": {
+        "default": "geometry.vehicle_pickup"
+      },
+      "particle_effects": {
+        "exhaust_particle": "cyd:exhaust",
+        "wind_particle": "cyd:wind",
+        "crash_particle": "cyd:crash"
+      },
+      "animations": {
+        "exhaust_ctrl":"controller.animation.vehicle.exhaust.ctrl",
+        "wind_ctrl":"controller.animation.vehicle.wind.ctrl",
+        "exhaust_particle":"animation.vehicle.exhaust.particle",
+        "wind_particle":"animation.vehicle.wind.particle",
+        "crash_ctrl":"controller.animation.vehicle.crash",
+        "crash":"animation.vehicle.crash.particle",
+        "ride": "animation.vehicle_generic.ride",
+        "idle": "animation.vehicle_generic.idle",
+        "ride_ctrl": "controller.animation.driving"
+      },
+      "scripts": {
+        "animate": [
+          "exhaust_ctrl",
+          "wind_ctrl",
+          "crash_ctrl",
+          "ride_ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "texture":"CYD_ROGUE",
+        "texture_index": 10
+      },
+      "render_controllers": [
+        "controller.render.generic_vehicles"
+      ]
+    }
+  }
+}

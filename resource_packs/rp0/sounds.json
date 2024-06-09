@@ -1,0 +1,430 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "cyd:belle_bike": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.belle.bike",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:belle_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.belle.car",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:gru_bike": {
+        "events": {
+          "step": {
+            "sound": "cyd.mission.race.grubike",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:gru_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.gru.car",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:jeanclawed_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.jean",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:nunchuck_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.nun",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:stronghold_tank": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.stronghold.car",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:sven_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.sven",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:dru_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.vehicle.dru.car",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:vehicle_car": {
+        "events": {
+          "step": {
+            "sound": "cyd.generic.generic_car_loop",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:vehicle_truck": {
+        "events": {
+          "step": {
+            "sound": "cyd.generic.generic_car_loop",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:wk_security_bot": {
+        "events": {
+          "sleep": {
+            "sound": "cyd.mission.bank.bot_idle",
+            "volume": 1,
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "step": {
+            "sound": "cyd.mission.bank.bot_move",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:minion_costume": {
+        "events": {
+          "sleep": {
+            "sound": "cyd.generic.minion_change_costume",
+            "volume": 1,
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          }
+        }
+      },
+      "cyd:wk_security_bot_pacing": {
+        "events": {
+          "sleep": {
+            "sound": "cyd.mission.bank.bot_idle",
+            "volume": 1,
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "step": {
+            "sound": "cyd.mission.bank.bot_move",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:wk_security_bot_pathing": {
+        "events": {
+          "sleep": {
+            "sound": "cyd.mission.bank.bot_idle",
+            "volume": 1,
+            "pitch": [
+              0.8,
+              1.2
+            ]
+          },
+          "step": {
+            "sound": "cyd.mission.bank.bot_move",
+            "pitch": [
+              0.9,
+              1.1
+            ],
+            "volume": 1
+          }
+        }
+      },
+      "cyd:sticky_box_small": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:bratt_boss": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:vector_boss": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:holo_map_projectile": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:fartgrenade_impact": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:prop_block_yellow_mover": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:fire": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:nun_point": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:kun_roar": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:showdown_knockback": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:showdown_knockback_2": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:plasma_jam_impact": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:jam_impact": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:cheese_impact": {
+        "volume": 0,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "",
+          "hurt": ""
+        }
+      },
+      "cyd:kun_wk_henchman_1": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "cyd.mission.kun.hurt",
+          "hurt": "cyd.mission.kun.hurt"
+        }
+      },
+      "cyd:kun_wk_henchman_2": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "cyd.mission.kun.hurt",
+          "hurt": "cyd.mission.kun.hurt"
+        }
+      },
+      "cyd:kun_wk_henchman_3": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.7
+        ],
+        "events": {
+          "death": "cyd.mission.kun.bighurt",
+          "hurt": "cyd.mission.kun.bighurt"
+        }
+      },
+      "cyd:world_henchman_1": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "cyd.mission.kun.hurt",
+          "hurt": "cyd.mission.kun.hurt"
+        }
+      },
+      "cyd:world_henchman_2": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.9
+        ],
+        "events": {
+          "death": "cyd.mission.kun.hurt",
+          "hurt": "cyd.mission.kun.hurt"
+        }
+      },
+      "cyd:world_henchman_3": {
+        "volume": 1,
+        "pitch": [
+          0.6,
+          0.7
+        ],
+        "events": {
+          "death": "cyd.mission.kun.bighurt",
+          "hurt": "cyd.mission.kun.bighurt"
+        }
+      }
+    }
+  }
+}

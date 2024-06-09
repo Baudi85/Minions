@@ -1,0 +1,197 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:lair_map",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": []
+      },
+      "animations": {}
+    },
+    "component_groups": {
+      "cyd:pv_0": {
+        "minecraft:is_stunned": {}
+      },
+      "cyd:pv_1": {
+        "minecraft:is_ignited": {}
+      },
+      "cyd:pv_2": {
+        "minecraft:is_charged": {}
+      },
+      "cyd:pv_3": {
+        "minecraft:is_sheared": {}
+      },
+      "cyd:pv_4": {
+        "minecraft:is_saddled": {}
+      },
+      "cyd:pv_5": {
+        "minecraft:is_baby": {}
+      },
+      "cyd:pv_6": {
+        "minecraft:can_climb": {}
+      },
+      "cyd:pv_7": {
+        "minecraft:can_fly": {}
+      },
+      "cyd:pv_8": {
+        "minecraft:is_tamed": {}
+      },
+      "cyd:pv_9": {
+        "minecraft:is_illager_captain": {}
+      },
+      "cyd:pv_10": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:pv_11": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cyd:pv_12": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 1
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:pv_0": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_0"
+          ]
+        }
+      },
+      "evt:pv_1": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_1"
+          ]
+        }
+      },
+      "evt:pv_2": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_2"
+          ]
+        }
+      },
+      "evt:pv_3": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_3"
+          ]
+        }
+      },
+      "evt:pv_4": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_4"
+          ]
+        }
+      },
+      "evt:pv_5": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_5"
+          ]
+        }
+      },
+      "evt:pv_6": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_6"
+          ]
+        }
+      },
+      "evt:pv_7": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_7"
+          ]
+        }
+      },
+      "evt:pv_8": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_8"
+          ]
+        }
+      },
+      "evt:pv_9": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_9"
+          ]
+        }
+      },
+      "evt:pv_10": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_10"
+          ]
+        }
+      },
+      "evt:pv_11": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_11"
+          ]
+        }
+      },
+      "evt:pv_12": {
+        "add": {
+          "component_groups": [
+            "cyd:pv_12"
+          ]
+        }
+      },
+      "evt:rm_all":{
+        "remove": {
+          "component_groups":[
+            "cyd:pv_0",
+            "cyd:pv_1",
+            "cyd:pv_2",
+            "cyd:pv_3",
+            "cyd:pv_4",
+            "cyd:pv_5",
+            "cyd:pv_6",
+            "cyd:pv_7",
+            "cyd:pv_8",
+            "cyd:pv_9",
+            "cyd:pv_10",
+            "cyd:pv_11",
+            "cyd:pv_12"
+          ]
+        }
+      }
+    }
+  }
+}

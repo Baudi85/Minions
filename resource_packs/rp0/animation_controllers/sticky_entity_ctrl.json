@@ -1,0 +1,553 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.rp.sticky_vent": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "open": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_open": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_open": {
+                    "animations": [
+                        "open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                }
+            }
+        },
+        "controller.animation.rp.sticky_lever": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "open": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.sticky_fan": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle_active"
+                    ],
+                    "transitions": [
+                        {
+                            "deactivate": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "deactivate": {
+                    "animations": [
+                        "deactivate"
+                    ],
+                    "transitions": [
+                        {
+                            "trigger": "query.skin_id == 2"
+                        },
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.sticky_fan_fall": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle_active"
+                    ],
+                    "transitions": [
+                        {
+                            "deactivate": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "deactivate": {
+                    "animations": [
+                        "deactivate"
+                    ],
+                    "transitions": [
+                        {
+                            "trigger": "query.skin_id == 2"
+                        },
+                        {
+                            "default": "query.skin_id == 0"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger_fall"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.sticky_box_lg": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "fall": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "fall": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "spawn": "query.skin_id != 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "spawn": {
+                    "animations": [
+                        "spawn"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.sticky_elevator": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "open": {
+                    "animations": [
+                        "open"
+                    ],
+                    "transitions": [
+                        {
+                            "closed": "query.skin_id == 2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "closed": {
+                    "animations": [
+                        "close"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.record_player": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle_inactive"
+                    ],
+                    "transitions": [
+                        {
+                            "interact": "query.skin_id == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "interact": {
+                    "animations": [
+                        "interact"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_active": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_active": {
+                    "animations": [
+                        "idle_active"
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.young_nefario": {
+            "states": {
+                "default": {
+                    "on_entry": ["temp.random = math.round(math.random(1,4));"],
+                    "transitions": [
+                        {
+                            "idle_1": "temp.random == 1 && query.variant != 1"
+                        },
+                        {
+                            "idle_2": "temp.random == 2 && query.variant != 1"
+                        },
+                        {
+                            "idle_3": "temp.random == 3 && query.variant != 1"
+                        },
+                        {
+                            "idle_4": "temp.random == 4 && query.variant != 1"
+                        },
+                        {
+                            "give_record": "query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "idle_1": {
+                    "animations": [
+                        "idle_1"
+                    ],
+                    "transitions": [
+                        {
+                            "give_record": "query.variant == 1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_2": {
+                    "animations": [
+                        "idle_2"
+                    ],
+                    "transitions": [
+                        {
+                            "give_record": "query.variant == 1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_3": {
+                    "animations": [
+                        "idle_3"
+                    ],
+                    "transitions": [
+                        {
+                            "give_record": "query.variant == 1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_4": {
+                    "animations": [
+                        "idle_4"
+                    ],
+                    "transitions": [
+                        {
+                            "give_record": "query.variant == 1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "give_record": {
+                    "animations": [
+                        "give_record"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.guard_1": {
+            "states": {
+                "default": {
+                    "on_entry": ["temp.random = math.round(math.random(1,4));"],
+                    "transitions": [
+                        {
+                            "idle_1": "temp.random == 1 && !query.has_target"
+                        },
+                        {
+                            "idle_2": "temp.random == 2 && !query.has_target"
+                        },
+                        {
+                            "idle_3": "temp.random == 3 && !query.has_target"
+                        },
+                        {
+                            "idle_4": "temp.random == 4 && !query.has_target"
+                        },
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "sus_idle": "query.modified_move_speed < 0.1 && query.has_target"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "idle_1": {
+                    "animations": [
+                        "idle_1"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_2": {
+                    "animations": [
+                        "idle_2"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_3": {
+                    "animations": [
+                        "idle_3"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_4": {
+                    "animations": [
+                        "idle_4"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "move": {
+                    "animations": [
+                        "move"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.modified_move_speed < 0.1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "sus_idle": {
+                    "animations": [
+                        "sus_idle"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.guard_1_ko": {
+            "states": {
+                "default": {
+                    "on_entry": ["temp.random = math.round(math.random(1,4));"],
+                    "transitions": [
+                        {
+                            "idle_1": "temp.random == 1 && query.variant != 1"
+                        },
+                        {
+                            "idle_2": "temp.random == 2 && query.variant != 1"
+                        },
+                        {
+                            "idle_3": "temp.random == 3 && query.variant != 1"
+                        },
+                        {
+                            "idle_4": "temp.random == 4 && query.variant != 1"
+                        },
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "ko": "query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.1
+                },
+                "idle_1": {
+                    "animations": [
+                        "idle_1"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished || query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_2": {
+                    "animations": [
+                        "idle_2"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished || query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_3": {
+                    "animations": [
+                        "idle_3"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished || query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_4": {
+                    "animations": [
+                        "idle_4"
+                    ],
+                    "transitions": [
+                        {
+                            "move": "query.modified_move_speed > 0.1"
+                        },
+                        {
+                            "default": "query.all_animations_finished || query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "move": {
+                    "animations": [
+                        "move"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.modified_move_speed < 0.1 || query.variant == 1"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "ko": {
+                    "animations": [
+                        "ko"
+                    ],
+                    "transitions": [
+                        {
+                            "ko_idle": "query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "ko_idle": {
+                    "animations": [
+                        "ko_idle"
+                    ]
+                }
+            }
+        }
+    }
+}

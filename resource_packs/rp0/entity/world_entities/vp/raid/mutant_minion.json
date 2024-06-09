@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:world_mutant_minion",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/moon/minion_mutant"
+            },
+            "geometry": {
+                "default": "geometry.minion_mutant"
+            },
+            "scripts": {
+                "animate": [
+                    "breath",
+                    "ctrl",
+                    {
+                        "walk":"query.modified_move_speed > 0.1"
+                    }
+                ]
+            },
+            "animations": {
+                "breath": "animation.minion_mutant.breath",
+                "idle_1": "animation.minion_mutant.idle1",
+                "idle_2": "animation.minion_mutant.idle2",
+                "attack_1": "animation.minion_mutant.attack1",
+                "attack_2": "animation.minion_mutant.attack2",
+                "death": "animation.minion_mutant.death",
+                "ctrl": "controller.animation.rp.mutant_minion",
+                "walk": "animation.minion_mutant.walk"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

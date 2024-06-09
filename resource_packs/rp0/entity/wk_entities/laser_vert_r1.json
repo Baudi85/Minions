@@ -1,0 +1,53 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:laser_vert_r1",
+            "materials": {
+                "default": "spider",
+                "shell": "charged_creeper"
+            },
+            "textures": {
+                "default": "textures/entity/wk/laser",
+                "shell": "textures/entity/wk/laser_shell"
+            },
+            "geometry": {
+                "default": "geometry.laser",
+                "shell": "geometry.laser_shell"
+            },
+            "animations": {
+                "ground_left_on": "animation.laser.ground_left_on",
+                "ground_left_off": "animation.laser.ground_left_off",
+                "ground_right_on": "animation.laser.ground_right_on",
+                "ground_right_off": "animation.laser.ground_right_off",
+                "top_on": "animation.laser.top_on",
+                "top_off": "animation.laser.top_off",
+                "angle_1": "animation.laser.top_angled_1",
+                "angle_2": "animation.laser.top_angled_2",
+                "angle_3": "animation.laser.top_angled_3",
+                "angle_4": "animation.laser.top_angled_4",
+                "angle_5": "animation.laser.top_angled_5",
+                "angle_6": "animation.laser.top_angled_6",
+                "angle_7": "animation.laser.top_angled_7",
+                "angle_8": "animation.laser.top_angled_8",
+                "angle_9": "animation.laser.top_angled_9",
+                "angle_10": "animation.laser.top_angled_10",
+                "angle_11": "animation.laser.top_angled_11",
+                "ctrl": "controller.animation.rp.vert_r1_2"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.default_laser",
+                "controller.render.cyd.laser"
+            ]
+        }
+    }
+}

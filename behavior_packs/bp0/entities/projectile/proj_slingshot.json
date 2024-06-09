@@ -1,0 +1,400 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:slingshot",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "runtime_identifier": "minecraft:snowball",
+      "is_experimental": false,
+      "animations": {
+        "tools_ctrl": "controller.animation.tool.sticky_gun",
+        "tag_trans": "controller.animation.tool.tag_transfer",
+        "face": "animation.sticky.face",
+        "return": "animation.sticky.return",
+        "init_direct": "animation.sticky.init_direct"
+      },
+      "scripts": {
+        "animate": [
+          "tools_ctrl",
+          "tag_trans",
+          "init_direct"
+        ]
+      }
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "cyd:sticky_hit": {
+        "minecraft:is_charged": {
+        }
+      },
+      "cyd:sticky_return": {
+        "minecraft:is_sheared": {
+        }
+      },
+      "cyd:start_despawn": {
+        "minecraft:is_ignited": {
+        }
+      },
+      "cyd:shot": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:var_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cyd:var_2": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "cyd:var_3": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "cyd:var_4": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "cyd:var_5": {
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "cyd:var_6": {
+        "minecraft:variant": {
+          "value": 6
+        }
+      },
+      "cyd:var_7": {
+        "minecraft:variant": {
+          "value": 7
+        }
+      },
+      "cyd:var_8": {
+        "minecraft:variant": {
+          "value": 8
+        }
+      },
+      "cyd:timer": {
+        "minecraft:timer": {
+          "time": 0.7,
+          "time_down_event": {
+            "event": "evt:despawn"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "filter": "blaze",
+            "damage": 3,
+            "knockback": true
+          },
+          "particle_on_hit": {
+            "num_particles": 6,
+            "on_entity_hit": true,
+            "on_other_hit": true
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_leashed_to",
+                    "subject": "self",
+                    "value": false
+                  }
+                ]
+              },
+              "event": "evt:sticky_hit"
+            }
+          }
+        },
+        "anchor": 1,
+        "power": 1.5,
+        "gravity": 0,
+        "intertia": 1,
+        "angle_offset": 0,
+        "offset": [
+          0,
+          -0.1,
+          0
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:leashable": {
+        "max_distance": 100,
+        "soft_distance": 100,
+        "hard_distance": 100
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "south"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:var_1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "north"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "evt:var_2"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "east"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 3
+                }
+              ]
+            },
+            "event": "evt:var_3"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "west"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 4
+                }
+              ]
+            },
+            "event": "evt:var_4"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "north_east"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 5
+                }
+              ]
+            },
+            "event": "evt:var_5"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "north_west"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 6
+                }
+              ]
+            },
+            "event": "evt:var_6"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "south_east"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 7
+                }
+              ]
+            },
+            "event": "evt:var_7"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "south_west"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 8
+                }
+              ]
+            },
+            "event": "evt:var_8"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "cyd:timer",
+            "cyd:shot"
+          ]
+        }
+      },
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      },
+      "evt:start_despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:start_despawn"
+          ]
+        }
+      },
+      "evt:sticky_hit": {
+        "add": {
+          "component_groups": [
+            "cyd:sticky_hit"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:timer"
+          ]
+        }
+      },
+      "evt:sticky_return": {
+        "add": {
+          "component_groups": [
+            "cyd:sticky_return"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sticky_hit"
+          ]
+        }
+      },
+      "evt:var_1": {
+        "add": {
+          "component_groups": [
+            "cyd:var_1"
+          ]
+        }
+      },
+      "evt:var_2": {
+        "add": {
+          "component_groups": [
+            "cyd:var_2"
+          ]
+        }
+      },
+      "evt:var_3": {
+        "add": {
+          "component_groups": [
+            "cyd:var_3"
+          ]
+        }
+      },
+      "evt:var_4": {
+        "add": {
+          "component_groups": [
+            "cyd:var_4"
+          ]
+        }
+      },
+      "evt:var_5": {
+        "add": {
+          "component_groups": [
+            "cyd:var_5"
+          ]
+        }
+      },
+      "evt:var_6": {
+        "add": {
+          "component_groups": [
+            "cyd:var_6"
+          ]
+        }
+      },
+      "evt:var_7": {
+        "add": {
+          "component_groups": [
+            "cyd:var_7"
+          ]
+        }
+      },
+      "evt:var_8": {
+        "add": {
+          "component_groups": [
+            "cyd:var_8"
+          ]
+        }
+      }
+    }
+  }
+}

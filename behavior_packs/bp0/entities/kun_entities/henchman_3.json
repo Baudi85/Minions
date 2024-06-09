@@ -1,0 +1,214 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:kun_wk_henchman_3",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cyd:death": {
+        "minecraft:transformation": {
+          "into": "cyd:kun_wk_henchman_3_death"
+        }
+      },
+      "cyd:point": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "spawn_entity": "cyd:nun_point",
+            "single_use": true,
+            "num_to_spawn": 1,
+            "should_leash": false
+          }
+        ]
+      }
+    },
+    "components": {
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:behavior.delayed_attack": {
+        "priority": 1,
+        "attack_duration": 0.75,
+        "reach_multiplier": 1.5,
+        "hit_delay_pct": 0.5,
+        "track_target": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": [
+          "monster",
+          "henchman",
+          "hostileminion"
+        ]
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:scale": {
+        "value": 1.5
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:nameable": {},
+      "minecraft:damage_sensor": [
+        {
+          "deals_damage": false,
+          "on_damage": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_damage",
+                  "value": "fatal"
+                }
+              ]
+            },
+            "event": "cyd:death"
+          }
+        },
+        {
+          "on_damage": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "value": "cyd:chi_nunchuk",
+                  "subject": "other"
+                }
+              ]
+            },
+            "event": "cyd:point"
+          }
+        }
+      ],
+      "minecraft:movement": {
+        "value": 0.26
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/cyd/goblin.json"
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:can_climb": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "is_amphibious": false,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ],
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 60,
+        "must_see_forget_duration": 17
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:behavior.knockback_roar": {
+        "attack_time": 2.72,
+        "cooldown_time": 30,
+        "duration": 4,
+        "knockback_range": 3,
+        "knockback_damage": 5,
+        "knockback_strength": 3,
+        "knockback_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "prop"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "henchman"
+            }
+          ]
+        },
+        "damage_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "prop"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "henchman"
+            }
+          ]
+        }
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 5,
+        "speed_multiplier": 1
+      }
+    },
+    "events": {
+      "cyd:death": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:death"
+              ]
+            }
+          }
+        ]
+      },
+      "cyd:point": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:point"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

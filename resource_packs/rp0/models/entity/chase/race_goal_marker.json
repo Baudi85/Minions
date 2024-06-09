@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"geometry.race_goal_marker": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 13,
+		"visible_bounds_height": 6,
+		"visible_bounds_offset": [0, 2, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 4, 0]
+			},
+			{
+				"name": "5",
+				"parent": "all",
+				"pivot": [0, 0, 0],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [-32, 0, 0], "size": [64, 32, 0], "uv": [0, 0]},
+					{"origin": [-64, 35.5, 0], "size": [128, 25, 0], "uv": [0, 103]}
+				]
+			},
+			{
+				"name": "2",
+				"parent": "all",
+				"pivot": [-64, 0, 0],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [-96, 0, 0], "size": [64, 32, 0], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "3",
+				"parent": "all",
+				"pivot": [64, 0, 0],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [32, 0, 0], "size": [64, 32, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

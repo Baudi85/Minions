@@ -1,0 +1,175 @@
+{
+  "resource_pack_name": "Rogue_RP",
+  "texture_data": {
+    "banana": {
+      "textures": "textures/items/banana"
+    },
+    "teleport_1": {
+      "textures": "textures/items/teleport_icon_01_gru_70s_home"
+    },
+    "teleport_2": {
+      "textures": "textures/items/teleport_icon_02_airport"
+    },
+    "teleport_3": {
+      "textures": "textures/items/teleport_icon_03_wild_knuckles"
+    },
+    "teleport_4": {
+      "textures": "textures/items/teleport_icon_04_chinatown"
+    },
+    "teleport_5": {
+      "textures": "textures/items/teleport_icon_05_elmacho_fortress"
+    },
+    "teleport_6": {
+      "textures": "textures/items/teleport_icon_06_gru_current_hometown"
+    },
+    "teleport_7": {
+      "textures": "textures/items/teleport_icon_07_bratt"
+    },
+    "teleport_8": {
+      "textures": "textures/items/teleport_icon_08_gru_mansion"
+    },
+    "teleport_9": {
+      "textures": "textures/items/teleport_icon_09_vector"
+    },
+    "teleport_10": {
+      "textures": "textures/items/teleportation_icon_10_recordshop"
+    },
+    "teleport_11": {
+      "textures": "textures/items/teleportation_icon_11_chowsacupuncture"
+    },
+    "teleport_12": {
+      "textures": "textures/items/teleportation_icon_12_bankofevil"
+    },
+    "teleport_13": {
+      "textures": "textures/items/teleportation_icon_13_playerlab"
+    },
+    "teleport_14": {
+      "textures": "textures/items/teleport_icon_14_dru"
+    },
+    "costume_aloha": {
+      "textures": "textures/items/costume_aloha"
+    },
+    "costume_beach": {
+      "textures": "textures/items/costume_beach"
+    },
+    "costume_builder": {
+      "textures": "textures/items/costume_builder"
+    },
+    "costume_dj": {
+      "textures": "textures/items/costume_dj"
+    },
+    "costume_firefighter": {
+      "textures": "textures/items/costume_firefighter"
+    },
+    "costume_flashlight": {
+      "textures": "textures/items/costume_flashlight"
+    },
+    "costume_glow": {
+      "textures": "textures/items/costume_glow"
+    },
+    "costume_golf": {
+      "textures": "textures/items/costume_golf"
+    },
+    "costume_knight": {
+      "textures": "textures/items/costume_knight"
+    },
+    "costume_kungfu": {
+      "textures": "textures/items/costume_kungfu"
+    },
+    "costume_magician": {
+      "textures": "textures/items/costume_magician"
+    },
+    "costume_maid": {
+      "textures": "textures/items/costume_maid"
+    },
+    "costume_minecraft": {
+      "textures": "textures/items/costume_minecraft"
+    },
+    "costume_mutant": {
+      "textures": "textures/items/costume_mutant"
+    },
+    "costume_tourist": {
+      "textures": "textures/items/costume_tourist"
+    },
+    "costume_tuba": {
+      "textures": "textures/items/costume_tuba"
+    },
+    "costume_default": {
+      "textures": "textures/items/costume_default"
+    },
+    "drill": {
+      "textures": "textures/items/drill"
+    },
+    "perkins_key": {
+      "textures": "textures/items/key"
+    },
+    "keycard": {
+      "textures": "textures/items/keycard"
+    },
+    "disguise": {
+      "textures": "textures/items/disguise"
+    },
+    "record_key": {
+      "textures": "textures/items/record"
+    },
+    "sticky_finger": {
+      "textures": "textures/items/sticky_finger"
+    },
+    "cheese_gun": {
+      "textures": "textures/items/cheese_gun"
+    },
+    "fart_grenade": {
+      "textures": "textures/items/fart_grenade"
+    },
+    "plasma_jamgun": {
+      "textures": "textures/items/jelly_launcher_plasma"
+    },
+    "shrink_ray": {
+      "textures": "textures/items/shrink_ray"
+    },
+    "jelly_launcher": {
+      "textures": "textures/items/jelly_launcher"
+    },
+    "nunchuck": {
+      "textures": "textures/items/nunchuck"
+    },
+    "dragon_medallion": {
+      "textures": "textures/items/dragon_medallion"
+    },
+    "monalisa": {
+      "textures": "textures/entity/wk/mona_lisa"
+    },
+    "evil_o_matic": {
+      "textures": "textures/items/evil_o_matic"
+    },
+    "rader": {
+      "textures": "textures/items/collectible_scanner"
+    },
+    "holomap": {
+      "textures": "textures/items/holo_map"
+    },
+    "clipboard_objective": {
+      "textures": "textures/items/clipboard_objective"
+    },
+    "bat": {
+      "textures": "textures/items/bat"
+    },
+    "CYD_ROGUE": {
+      "textures": [
+        "textures/items/vehicle_belle_bike",
+        "textures/items/vehicle_gru_bike",
+        "textures/items/vehicle_grumobile",
+        "textures/items/vehicle_jeanclawed_crab",
+        "textures/items/vehicle_nunchuck_car",
+        "textures/items/vehicle_stronghold_car",
+        "textures/items/vehicle_sven_bike",
+        "textures/items/vehicle_v6_car",
+        "textures/items/vehicle_dru_car",
+        "textures/items/vehicle_generic_car",
+        "textures/items/vehicle_generic_pickup",
+        "textures/items/minion"
+      ]
+    }
+  },
+  "texture_name": "atlas.items"
+}

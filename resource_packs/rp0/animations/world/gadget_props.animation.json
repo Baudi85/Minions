@@ -1,0 +1,95 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cheese_gun.prop_idle": {
+			"loop": true,
+			"bones": {
+				"cheese": {
+					"scale": [0.8, 1, 0.8]
+				},
+				"root": {
+					"rotation": [82.5, "22.25+query.life_time*20", 0],
+					"position": [0.5, "6.9+math.sin(query.life_time*90)*0.2", -3.15]
+				}
+			}
+		},
+		"animation.shrink_ray.prop_idle": {
+			"loop": true,
+			"bones": {
+				"shrink_ray": {
+					"rotation": [0, "query.life_time*20", 0],
+					"position": [-2, "3+math.sin(query.life_time*90)*0.2", 0]
+				},
+				"base": {
+					"rotation": [80, 0, 0],
+					"position": [0, 5.1, 2.8]
+				}
+			}
+		},
+		"animation.nunchuck.prop_idle": {
+			"loop": true,
+			"bones": {
+				"cheese": {
+					"scale": [0.8, 1, 0.8]
+				},
+				"root": {
+					"rotation": [0, "query.life_time*20", 0],
+					"position": [1, "math.sin(query.life_time*90)*0.2", 0]
+				},
+				"nunchuck": {
+					"rotation": [42.5, 2.5, 75],
+					"position": [0.05, 6.9, 1.2]
+				},
+				"chuck_1": {
+					"rotation": ["math.sin(query.life_time*40-80)*1-6.5", 0, 0]
+				},
+				"chain_1": {
+					"rotation": ["math.sin(query.life_time*30)*1-0.5", 0, 0]
+				},
+				"chain_3": {
+					"rotation": ["math.sin(query.life_time*40)*1-0.5", 0, 0]
+				},
+				"chuck_2": {
+					"rotation": ["math.sin(query.life_time*40-40)*1+2.5", 0, 0]
+				}
+			}
+		},
+		"animation.fart_grenade.prop_idle": {
+			"loop": true,
+			"bones": {
+				"cheese": {
+					"scale": [0.8, 1, 0.8]
+				},
+				"root": {
+					"rotation": ["math.sin(query.life_time*40)*3", "query.life_time*20", "math.sin(query.life_time*50)*3"],
+					"position": [0, "7+math.sin(query.life_time*90)*0.3", 0]
+				}
+			}
+		},
+		"animation.sticky_hand.prop_idle": {
+			"loop": true,
+			"bones": {
+				"cheese": {
+					"scale": [0.8, 1, 0.8]
+				},
+				"sticky_finger": {
+					"rotation": ["math.sin(query.life_time*40)*3", "query.life_time*20", "math.sin(query.life_time*50)*3"],
+					"position": [-0.05, "9.5+math.sin(query.life_time*90)*0.3", -0.6]
+				},
+				"base": {
+					"rotation": [-50, 0, 0],
+					"position": [0, -1.7, -1.5]
+				}
+			}
+		},
+		"animation.jelly_gun.prop_idle": {
+			"loop": true,
+			"bones": {
+				"jelly_gun": {
+					"rotation": [0, "query.life_time*20", 0],
+					"position": [0.5, "5.9+math.sin(query.life_time*90)*0.2", -3.15]
+				}
+			}
+		}
+	}
+}

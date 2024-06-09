@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.banana": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1 || query.skin_id == 2 || query.skin_id == 3"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger",
+            "particle"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1 && query.skin_id != 2 && query.skin_id != 3"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rp.trashcan": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "trigger": "query.skin_id == 1 || query.skin_id == 2 || query.skin_id == 3"
+            }
+          ]
+        },
+        "trigger": {
+          "animations": [
+            "trigger"
+          ],
+          "transitions": [
+            {
+              "default": "query.skin_id != 1 && query.skin_id != 2 && query.skin_id != 3"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.cyd.raids": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "raid1": "math.random_integer(1, 4) == 1 && query.skin_id == 1"
+                        },
+                        {
+                            "raid2": "math.random_integer(1, 4) == 2 && query.skin_id == 1"
+                        },
+                        {
+                            "raid3": "math.random_integer(1, 4) == 3 && query.skin_id == 1"
+                        },
+                        {
+                            "raid4": "math.random_integer(1, 4) == 4 && query.skin_id == 1"
+                        }
+                    ]
+                },
+                "raid1": {
+                    "animations":["raid1"],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "raid2": {
+                    "animations":["raid2"],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "raid3": {
+                    "animations":["raid3"],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "raid4": {
+                    "animations":["raid4"],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.cyd.raids_minion": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "point": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "point": {
+                    "animations":["point"],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

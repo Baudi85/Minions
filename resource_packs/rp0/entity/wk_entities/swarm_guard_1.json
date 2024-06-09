@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:wk_swarm_guard_1",
+      "materials": {
+        "default": "zombie",
+        "cheesed": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/wk/bank_guard_1",
+        "cheesed": "textures/particle/gadgets/cheese_tile"
+      },
+      "geometry": {
+        "default": "geometry.bank_guard_1",
+        "cheesed": "geometry.bank_guard_1_cheesed"
+      },
+      "animations": {
+          "attack_1":"animation.bank_guard_1.attack1",
+          "attack_2":"animation.bank_guard_1.attack2",
+          "die_1":"animation.bank_guard_1.death1",
+          "die_2":"animation.bank_guard_1.death2",
+          "run":"animation.bank_guard_1.run",
+          "breath":"animation.bank_guard_1.breath",
+          "cheese": "animation.bank_guard_1.cheesed",
+          "cheese_1":"animation.bank_guard_1.cheesed1",
+          "cheese_2":"animation.bank_guard_1.cheesed2",
+          "cheese_3":"animation.bank_guard_1.cheesed3",
+          "cheese_4":"animation.bank_guard_1.cheesed4",
+          "ctrl": "controller.animation.rp.swarm_guard"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl",
+              "breath"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.cyd.cheesed_bank_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:costume_kungfu",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "costume_kungfu",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

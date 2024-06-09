@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:villain_o_meter",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/villainometer"
+      },
+      "geometry": {
+        "default": "geometry.villainometer"
+      },
+      "animations": {
+        "level_0":"animation.villainometer.0",
+        "level_100":"animation.villainometer.100",
+        "level_200":"animation.villainometer.200",
+        "level_300":"animation.villainometer.300",
+        "level_400":"animation.villainometer.400",
+        "level_500":"animation.villainometer.500",
+        "level_600":"animation.villainometer.600",
+        "level_700":"animation.villainometer.700",
+        "level_800":"animation.villainometer.800",
+        "level_900":"animation.villainometer.900",
+        "level_1000":"animation.villainometer.1000",
+        "ctrl":"controller.animation.rp.villain_o_meter"
+      },
+      "scripts": {
+        "animate": ["ctrl"]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

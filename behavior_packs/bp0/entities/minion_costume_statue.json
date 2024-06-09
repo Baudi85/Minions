@@ -1,0 +1,1469 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:minion_costume_statue",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "cyd:powered": {
+                "minecraft:is_charged": {}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "cyd:sid_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "cyd:sid_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "cyd:sid_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "cyd:sid_8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "cyd:sid_9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                }
+            },
+            "cyd:sid_10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                }
+            },
+            "cyd:sid_11": {
+                "minecraft:skin_id": {
+                    "value": 11
+                }
+            },
+            "cyd:sid_12": {
+                "minecraft:skin_id": {
+                    "value": 12
+                }
+            },
+            "cyd:sid_13": {
+                "minecraft:skin_id": {
+                    "value": 13
+                }
+            },
+            "cyd:sid_14": {
+                "minecraft:skin_id": {
+                    "value": 14
+                }
+            },
+            "cyd:sid_15": {
+                "minecraft:skin_id": {
+                    "value": 15
+                }
+            },
+            "cyd:sid_16": {
+                "minecraft:skin_id": {
+                    "value": 16
+                }
+            },
+            "cyd:mv_0": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "cyd:mv_1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cyd:mv_2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "cyd:follow": {
+                "minecraft:type_family": {
+                    "family": [
+                        "pet_tame"
+                    ]
+                },
+                "minecraft:is_tamed": {},
+                "minecraft:variant": {
+                    "value": 2
+                },
+                "minecraft:behavior.look_at_player": {
+                    "priority": 7,
+                    "look_distance": 6,
+                    "probability": 0.02
+                },
+                "minecraft:behavior.follow_owner": {
+                    "priority": 2,
+                    "speed_multiplier": 2,
+                    "start_distance": 5,
+                    "stop_distance": 2
+                },
+                "minecraft:movement": {
+                    "value": 0.0
+                },
+                "minecraft:leashable": {
+                    "soft_distance": 4.0,
+                    "hard_distance": 6.0,
+                    "max_distance": 10.0,
+                    "on_leash": {
+                        "event": "minecraft:on_leash",
+                        "target": "self"
+                    },
+                    "on_unleash": {
+                        "event": "minecraft:on_unleash",
+                        "target": "self"
+                    }
+                }
+            },
+            "cyd:sit": {
+                "minecraft:is_tamed": {},
+                "minecraft:variant": {
+                    "value": 3
+                },
+                "minecraft:movement": {
+                    "value": 0.0
+                },
+                "minecraft:behavior.look_at_player": {
+                    "priority": 10,
+                    "look_distance": 0,
+                    "probability": 0.00
+                }
+            },
+            "cyd:wild": {
+                "minecraft:home": {},
+                "minecraft:behavior.look_at_player": {
+                    "priority": 7,
+                    "look_distance": 6,
+                    "probability": 0.02
+                },
+                "minecraft:behavior.go_home": {
+                    "priority": 7,
+                    "speed_multiplier": 1.0,
+                    "interval": 10,
+                    "goal_radius": 4.0
+                },
+                "minecraft:behavior.random_look_around": {
+                    "priority": 10
+                }
+            }
+        },
+        "components": {
+            "minecraft:physics": {},
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 1.0
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "pet"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:is_stackable": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:behavior.tempt": {
+                "priority": 1,
+                "speed_multiplier": 1.3,
+                "items": [
+                    "apple"
+                ]
+            },
+            "minecraft:tameable": {
+                "probability": 1,
+                "tame_items": "apple",
+                "tame_event": {
+                    "event": "cyd:follow",
+                    "target": "self"
+                }
+            },
+            "minecraft:movement": {
+                "value": 0.0
+            },
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "action.interact.follow",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_sneaking",
+                                        "subject": "player",
+                                        "operator": "equals",
+                                        "value": false
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "lead"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_default"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_aloha"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_beach"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_builder"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_flashlight"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_glowing"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_golf"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_knight"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_kungfu"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_magician"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_maid"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_minecraft"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_mutant"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_tourist"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_tuba"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_dj"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_firefighter"
+                                    },
+                                    {
+                                        "test": "is_variant",
+                                        "operator": "equals",
+                                        "value": 3
+                                    }
+                                ]
+                            },
+                            "event": "cyd:follow"
+                        }
+                    },
+                    {
+                        "interact_text": "action.interact.sit",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_sneaking",
+                                        "subject": "player",
+                                        "operator": "equals",
+                                        "value": false
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "lead"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_default"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_aloha"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_beach"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_builder"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_flashlight"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_glowing"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_golf"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_knight"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_kungfu"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_magician"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_maid"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_minecraft"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_mutant"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_tourist"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_tuba"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_dj"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "not",
+                                        "value": "cyd:costume_firefighter"
+                                    },
+                                    {
+                                        "test": "is_variant",
+                                        "operator": "equals",
+                                        "value": 2
+                                    }
+                                ]
+                            },
+                            "event": "cyd:sit"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_default"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 0
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_0"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_aloha"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_1"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_beach"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 2
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_2"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_builder"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 3
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_3"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_flashlight"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 4
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_4"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_glowing"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 5
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_5"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_golf"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 6
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_6"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_knight"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 7
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_7"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_kungfu"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 8
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_8"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_magician"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 9
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_9"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_maid"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 10
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_10"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_minecraft"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 11
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_11"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_mutant"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 12
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_12"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_tourist"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 13
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_13"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_tuba"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 14
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_14"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_dj"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 15
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_15"
+                        }
+                    },
+                    {
+                        "interact_text": "Costume Swap",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "cyd:costume_firefighter"
+                                    },
+                                    {
+                                        "test": "is_skin_id",
+                                        "operator": "not",
+                                        "value": 16
+                                    }
+                                ]
+                            },
+                            "event": "evt:sid_16"
+                        }
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned":{
+                "add":{
+                    "component_groups":[
+                        "cyd:wild"
+                    ]
+                }
+            },
+            "cyd:follow": {
+                "add": {
+                    "component_groups": [
+                        "cyd:follow"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sit",
+                        "cyd:wild"
+                    ]
+                }
+            },
+            "cyd:sit": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sit"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:follow"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_0",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_0",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_0",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_5": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_5"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_0",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_6": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_6"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_0",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_7": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_7"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_0",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_8": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_8"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_0",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_9": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_9"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_0",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_10": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_0",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_11": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_11"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_0",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_12": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_12"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_0",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_13": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_13"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_0",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_14": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_14"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_0",
+                        "cyd:sid_15",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_15": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_15"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_0",
+                        "cyd:sid_16"
+                    ]
+                }
+            },
+            "evt:sid_16": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_16"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_0"
+                    ]
+                }
+            }
+        }
+    }
+}

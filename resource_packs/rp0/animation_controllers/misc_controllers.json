@@ -1,0 +1,285 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.movement.ghoul_demon_v2": {
+      "initial_state": "idling",
+      "states": {
+        "idling": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [{
+              "moving": "query.modified_move_speed > 0.05 || !query.is_on_ground"
+            },
+            {
+              "attacking": "query.is_charged"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "moving": {
+          "animations": [
+            "move"
+          ],
+          "transitions": [{
+              "idling": "query.modified_move_speed < 0.05 && query.is_on_ground"
+            },
+            {
+              "attacking": "query.is_charged"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "attacking": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [{
+            "idling": "query.all_animations_finished"
+          }],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.chase.direction":{
+      "states":{
+        "default":{
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "north":{
+          "animations":["north"],
+          "transitions":[
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "northeast":{
+          "animations":["neast"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "east":{
+          "animations":["east"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "southeast":{
+          "animations":["seast"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "south":{
+          "animations":["south"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "southwest":{
+          "animations":["swest"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "west":"query.skin_id == 2"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "west":{
+          "animations":["west"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "northwest":"query.skin_id == 3"
+            }
+          ]
+        },
+        "northwest":{
+          "animations":["nwest"],
+          "transitions":[
+            {
+              "north":"query.skin_id == 4"
+            },
+            {
+              "northeast":"query.skin_id == 5"
+            },
+            {
+              "east":"query.skin_id == 6"
+            },
+            {
+              "southeast":"query.skin_id == 7"
+            },
+            {
+              "south":"query.skin_id == 0"
+            },
+            {
+              "southwest":"query.skin_id == 1"
+            },
+            {
+              "west":"query.skin_id == 2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:sticky_return",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "tp"
+        ]
+      },
+      "animations": {
+        "tp": "animation.sticky.stuck"
+      }
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:is_stackable": {},
+      "minecraft:type_family": {
+        "family": [
+          "minecart",
+          "inanimate",
+          "sticky_return"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.98,
+        "height": 0.7
+      },
+      "minecraft:rail_movement": {
+        "max_speed": 2
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "interact_text": "action.interact.ride.minecart",
+        "pull_in_entities": true,
+        "seats": {
+          "position": [
+            0,
+            0.7,
+            0
+          ]
+        }
+      },
+      "minecraft:rail_sensor": {
+        "eject_on_activate": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "on_damage": {}
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision":false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:jeanclawed_tree",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/jeanclawed_tree"
+      },
+      "geometry": {
+        "default": "geometry.jeanclawed_tree"
+      },
+      "animations": {
+        "trigger": "animation.jeanclawed_tree.trigger",
+        "idle1": "animation.jeanclawed_tree.idle1",
+        "idle2": "animation.jeanclawed_tree.idle2",
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_tree"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "sound_effects": {
+        "JeanClawed_Tree_Impact": "cyd.mission.race.jean.treeimpact",
+        "JeanClawed_Tree_Walk": "cyd.vehicle.jean",
+        "JeanClawed_Car_Chase_Jump": "cyd.mission.race.jean.jump"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

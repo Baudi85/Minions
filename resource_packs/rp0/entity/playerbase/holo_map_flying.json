@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:holo_map_flying",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/holo_map_projectile"
+      },
+      "geometry": {
+        "default": "geometry.holo_map_projectile"
+      },
+      "animations": {
+        "idle": "animation.holo_map_projectile.throw"
+      },
+      "scripts": {
+        "animate": ["idle"]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.lair_map_v1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:dummy",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "sound_ctrl"
+        ]
+      },
+      "animations": {
+        "sound_ctrl": "controller.animation.kunfu.dummy.sound"
+      }
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "cyd:knockback": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "spawn_entity": "cyd:nun_point",
+            "single_use": true,
+            "num_to_spawn": 1,
+            "should_leash": false
+          }
+        ],
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "time": [
+            2,
+            2
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "cyd:reset"
+          }
+        }
+      },
+      "cyd:reset": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:type_family": {
+        "family": [
+          "prop"
+        ]
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": [
+        {
+          "deals_damage": false,
+          "on_damage": {
+            "event": "cyd:hit"
+          }
+        }
+      ],
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      },
+      "cyd:hit": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:knockback"
+              ]
+            },
+            "filters": {
+              "test": "has_component",
+              "subject": "self",
+              "operator": "not",
+              "value": "minecraft:spawn_entity"
+            }
+          }
+        ]
+      },
+      "cyd:reset": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:reset"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "cyd:knockback"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

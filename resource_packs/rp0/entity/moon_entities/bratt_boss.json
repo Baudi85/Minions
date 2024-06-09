@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:bratt_boss",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/moon/bratt_keytar"
+            },
+            "geometry": {
+                "default": "geometry.bratt_keytar"
+            },
+            "sound_effects": {
+                "laser": "cyd.mission.moon.laser",
+                "Bratt_Keytar_Solo": "cyd.bratt.keytar_solo"
+            },
+            "particle_effects": {
+                "aoe_1": "cyd:bratt_aoe_1",
+                "aoe_2": "cyd:bratt_aoe_2"
+            },
+            "animations": {
+                "idle": "animation.bratt_keytar.idle",
+                "breath": "animation.bratt_keytar.breath",
+                "laser": "animation.bratt_keytar.laser",
+                "solo": "animation.bratt_keytar.solo",
+                "walk": "animation.bratt_keytar.walk",
+                "death":"animation.bratt_keytar.death",
+                "ctrl": "controller.animation.rp.boss_bratt"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl",
+                    "breath",
+                    {
+                        "walk": "query.modified_move_speed > 0.1"
+                    }
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

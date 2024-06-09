@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:crane_load",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/crane_load"
+      },
+      "geometry": {
+        "default": "geometry.crane_load"
+      },
+      "animations": {
+        "trigger": "animation.crane_load.trigger",
+        "idle": "animation.crane_load.idle",
+        "idle_triggered": "animation.crane_load.idle_triggered",
+        "ctrl": "controller.animation.rp.chase_entity.ctrl_crane"
+      },
+      "sound_effects": {
+        "JeanClawed_Wood_Pallet_Impact": "cyd.mission.race.jean.pallet"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

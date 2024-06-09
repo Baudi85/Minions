@@ -1,0 +1,1859 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "cyd.gadget.fart.impact": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Fart_Bomb_Gas"
+      ]
+    },
+    "cyd.gadget.fart.throw": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Fart_Bomb_Throw"
+      ]
+    },
+    "cyd.gadget.cheese.impact": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Cheese_Gun_Impact"
+      ]
+    },
+    "cyd.world.pot.break": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/world/Pot_Smash"
+      ]
+    },
+    "cyd.world.npc.talk": {
+      "category": "ui",
+      "sounds": [
+        {
+          "name": "sounds/Character_Talk_Pop",
+          "volume": 0.6
+        }
+      ]
+    },
+    "cyd.gadget.cheese.shoot": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Cheese_Gun_Shoot"
+      ]
+    },
+    "cyd.gadget.sticky.impact": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Sticky_Fingers_Impact"
+      ]
+    },
+    "cyd.gadget.sticky.throw": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/gadgets/Sticky_Fingers_Shoot"
+      ]
+    },
+    "cyd.gadget.jelly.impact": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/moon/Jelly_Launcher_Impact"
+      ]
+    },
+    "cyd.gadget.jelly.shoot": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/moon/Jelly_Launcher_Shoot"
+      ]
+    },
+    "cyd.gadget.shrink.shoot": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/moon/Shrink_Ray_Shoot"
+      ]
+    },
+    "cyd.gadget.shrink.impact": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/moon/Shrink_Ray_Impact"
+      ]
+    },
+    "cyd.generic.vehicle": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/vehicles/engine_jeep_1"
+      ]
+    },
+    "cyd.generic.collectible_pickup": {
+      "category": "ui",
+      "sounds": [
+        "sounds/NEW/Collectible_Pickup_Sound"
+      ]
+    },
+    "cyd.generic.fart_pickup": {
+      "category": "ui",
+      "sounds": [
+        "sounds/NEW/Fart_Bomb_Pickup"
+      ]
+    },
+    "cyd.generic.holomap_close": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Holomap_Close"
+      ]
+    },
+    "cyd.generic.holomap_open": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Holomap_Open"
+      ]
+    },
+    "cyd.generic.holomap_throw": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Holomap_Throw"
+      ]
+    },
+    "cyd.generic.manhole_open_close": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Manhole_Open_Close"
+      ]
+    },
+    "cyd.generic.minion_build": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Minion_Build"
+      ]
+    },
+    "cyd.generic.minion_change_costume": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Minion_Change_Costume"
+      ]
+    },
+    "cyd.generic.scene_transition": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW/Scene_Transition"
+      ]
+    },
+    "cyd.generic.target_door_unlock": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Target_Door_Unlock"
+      ]
+    },
+    "cyd.generic.teleporter_use": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Teleporter_Use"
+      ]
+    },
+    "cyd.generic.wooden_box_break": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW/Wooden_Box_Break"
+      ]
+    },
+    "cyd.vehicle.jean": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/JeanClawed_Car_Chase_Walk"
+      ]
+    },
+    "cyd.vehicle.nun": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Nunchuck_Car_Drive"
+      ]
+    },
+    "cyd.vehicle.sven": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Sven_Bike_Drive"
+      ]
+    },
+    "cyd.vehicle.belle.bike": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_BelleBike_Drive"
+      ]
+    },
+    "cyd.vehicle.belle.car": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/car/Vic_Six_Car_Drive"
+      ]
+    },
+    "cyd.vehicle.gru.car": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/car/Gru_Tank_Drive"
+      ]
+    },
+    "cyd.vehicle.stronghold.car": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/car/Iron_Fist_Tank_Drive"
+      ]
+    },
+    "cyd.vehicle.dru.car": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/car/Dru_Car_Drive"
+      ]
+    },
+    "cyd.mission.countdown": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        "sounds/chase/Quest_Marker_10sec_Activation"
+      ]
+    },
+    "cyd.mission.race.countdown": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/chase/Race_Coundtown",
+          "stream": true,
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.mission.race.crash": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Stronghold_Vehicle_Throw"
+      ]
+    },
+    "cyd.mission.race.bellebike": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_BelleBike_Drive"
+      ]
+    },
+    "cyd.mission.race.bellebike.idle": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_BelleBike_Idle"
+      ]
+    },
+    "cyd.mission.race.grubike": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_GruBike_Drive"
+      ]
+    },
+    "cyd.mission.race.boost": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/chase/Vehicle_GruBike_Boost",
+          "stream": true,
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.mission.race.boostfull": {
+      "category": "music",
+      "sounds": [
+        "sounds/chase/Boost_Meter_Full"
+      ]
+    },
+    "cyd.mission.race.intro1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_BelleBike_Passby"
+      ]
+    },
+    "cyd.mission.race.intro2": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/Vehicle_BelleBike_Skid"
+      ]
+    },
+    "cyd.mission.sticky.elevator": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/sticky/Elevator",
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.mission.sticky.elevator.moving": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/sticky/Elevator_Moving",
+          "volume": 1.5
+        }
+      ]
+    },
+    "cyd.mission.sticky.henchman_chasing": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Henchman_Chasing"
+      ]
+    },
+    "cyd.mission.sticky.Henchman_Knockout_1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Henchman_Knockout_1",
+        "sounds/sticky/Henchman_Knockout_2",
+        "sounds/sticky/Henchman_Knockout_3"
+      ]
+    },
+    "cyd.mission.sticky.Henchman_Notice_1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Henchman_Notice_1",
+        "sounds/sticky/Henchman_Notice_2",
+        "sounds/sticky/Henchman_Notice_3",
+        "sounds/sticky/Henchman_Notice_4"
+      ]
+    },
+    "cyd.mission.sticky.Henchman_Questioning_1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Henchman_Questioning_1",
+        "sounds/sticky/Henchman_Questioning_2",
+        "sounds/sticky/Henchman_Questioning_3"
+      ]
+    },
+    "cyd.mission.sticky.Record_Player_Play": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Record_Player_Play"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Box_Large_Impact": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Box_Large_Impact"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Box_Large_Pull": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Box_Large_Pull"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Lever": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Lever"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Vent": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Vent"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Fan_Loop": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Vent_Fan_Loop"
+      ]
+    },
+    "cyd.mission.sticky.Sticky_Fan_Power_Down": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Vent_Fan_Power_Down"
+      ]
+    },
+    "cyd.mission.sticky.blast": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/blast"
+      ]
+    },
+    "cyd.mission.sticky.mission_failed": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/sticky/Mission_Failed",
+          "volume": 0.7
+        }
+      ]
+    },
+    "cyd.mission.sticky.mission_item_received": {
+      "category": "music",
+      "sounds": [
+        "sounds/sticky/Mission_Item_Received"
+      ]
+    },
+    "cyd.mission.sticky.record_place": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Record_Place"
+      ]
+    },
+    "cyd.mission.sticky.box_grab": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Box_Grab"
+      ]
+    },
+    "cyd.mission.sticky.hit_fan": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Sticky_Hand_Hit_Fan"
+      ]
+    },
+    "cyd.mission.sticky.sticky_pickup": {
+      "category": "ui",
+      "sounds": [
+        "sounds/sticky/Sticky_Hand_Pickup"
+      ]
+    },
+    "cyd.mission.sticky.zodiac_stone_grab": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sticky/Zodiac_Stone_Grab"
+      ]
+    },
+    "cyd.gadget.chi.swing": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/gadgets/Chi_Nunchuck_Swing",
+        "sounds/gadgets/Chi_Nunchuck_Swing_2",
+        "sounds/gadgets/Chi_Nunchuck_Swing_3",
+        "sounds/gadgets/Chi_Nunchuck_Swing_4"
+      ]
+    },
+    "cyd.gadget.chi.dash": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/gadgets/Chi_Nunchuck_Dash"
+      ]
+    },
+    "cyd.gadget.chi.roar": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/gadgets/Chi_Nunchuck_Roar"
+      ]
+    },
+    "cyd.prop.dummy.spawn": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Dummy_Spawn"
+      ]
+    },
+    "cyd.prop.dummy.trigger": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Dummy_Trigger"
+      ]
+    },
+    "cyd.prop.dummy.trigger_tutorial": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Dummy_Tutorial_Trigger"
+      ]
+    },
+    "cyd.prop.firework_spawn": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Fireworks_Crate_Spawn"
+      ]
+    },
+    "cyd.prop.firework_trigger": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Fireworks_Crate_Trigger"
+      ]
+    },
+    "cyd.prop.spinner_spawn": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Spinner_Spawn"
+      ]
+    },
+    "cyd.prop.spinner_trigger_all": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Spinner_Trigger_All"
+      ]
+    },
+    "cyd.prop.spinner_trigger_single": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Spinner_Trigger_Single"
+      ]
+    },
+    "cyd.mission.bank.alarm": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/bank/Bank_Alarm_Loop",
+          "volume": 0.50
+        }
+      ]
+    },
+    "cyd.mission.bank.door_open": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bank/Bank_Door_Open",
+          "volume": 1.15
+        }
+      ]
+    },
+    "cyd.mission.bank.carpet_roll": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Carpet_Roll"
+      ]
+    },
+    "cyd.mission.bank.cheese_pickup": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Cheese_Gun_Pickup"
+      ]
+    },
+    "cyd.mission.bank.deposit_box_open": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Deposit_Box_Open"
+      ]
+    },
+    "cyd.mission.bank.vase_move": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW3/Mission 4/Pot_Move"
+      ]
+    },
+    "cyd.mission.bank.laser_loop": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/bank/Laser_Loop",
+          "volume": 0.3
+        }
+      ]
+    },
+    "cyd.mission.bank.wk_drill": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW3/Mission 4/Wild_Knuckles_Drill",
+          "volume": 1.30
+        }
+      ]
+    },
+    "cyd.mission.bank.safe_cheese": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Safe_Open_Cheese_Gun"
+      ]
+    },
+    "cyd.mission.bank.safe_laser": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Safe_Open_Laser_Room"
+      ]
+    },
+    "cyd.mission.bank.bot_idle": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Security_Bot_Idle"
+      ]
+    },
+    "cyd.mission.bank.bot_move": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Security_Bot_Movement"
+      ]
+    },
+    "cyd.mission.bank.bot_caught": {
+      "category": "music",
+      "sounds": [
+        "sounds/bank/Security_Bot_Player_Caught"
+      ]
+    },
+    "cyd.mission.bank.bank_eye_scanner": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/NEW2/Bank_Eye_Scanner",
+          "volume": 0.7
+        }
+      ]
+    },
+    "cyd.mission.bank.bank_eye_scanner_door": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Bank_Eye_Scanner_Door"
+      ]
+    },
+    "cyd.mission.moon.Bratt_Dancefloor_Wrong_Tile": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Bratt_Dancefloor_Wrong_Tile"
+      ]
+    },
+    "cyd.mission.bank.guard_cheesed": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Guard_Cheesed_1",
+        "sounds/NEW2/Guard_Cheesed_2"
+      ]
+    },
+    "cyd.mission.bank.wild_knuckles_talking": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Wild_Knuckles_Talking_1",
+        "sounds/NEW2/Wild_Knuckles_Talking_2"
+      ]
+    },
+    "cyd.mission.sticky.young_nefario_talking": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Young_Nefario_Talking_1",
+        "sounds/NEW2/Young_Nefario_Talking_2",
+        "sounds/NEW2/Young_Nefario_Talking_3",
+        "sounds/NEW2/Young_Nefario_Talking_4"
+      ]
+    },
+    "cyd.mission.sticky.end_elevator": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/NEW2/Mission_1_End_Elevator",
+          "volume": 1.2
+        }
+      ]
+    },
+    "cyd.mission.bank.picture_fall": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Picture_Frame_Fall"
+      ]
+    },
+    "cyd.mission.bank.pot_smash": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Pot_Smash"
+      ]
+    },
+    "cyd.general.teleporter_button_door_open": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Teleporter_Button_Door_Open"
+      ]
+    },
+    "cyd.general.teleporter_computer_location_select_button": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Teleporter_Computer_Location_Select_Button"
+      ]
+    },
+    "cyd.mission.kun.dash_fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Chi_Nunchuck_Dash_Fire"
+      ]
+    },
+    "cyd.mission.kun.hit_impact": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Chi_Nunchuck_Hit_Impact"
+      ]
+    },
+    "cyd.mission.kun.pickup": {
+      "category": "music",
+      "sounds": [
+        "sounds/kun/Nunchuck_Pickup"
+      ]
+    },
+    "cyd.mission.kun.allwaves": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/All_Waves_Complete_Gong"
+      ]
+    },
+    "cyd.mission.kun.waves": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Wave_Complete_Gong"
+      ]
+    },
+    "cyd.mission.kun.glass": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/glass"
+      ]
+    },
+    "cyd.mission.kun.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Henchmen_Hurt",
+        "sounds/kun/Henchmen_Hurt2",
+        "sounds/kun/Henchmen_Hurt3",
+        "sounds/kun/Henchmen_Hurt4"
+      ]
+    },
+    "cyd.mission.kun.bighurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/kun/Henchmen_Big_Hurt",
+        "sounds/kun/Henchmen_Big_Hurt2",
+        "sounds/kun/Henchmen_Big_Hurt3",
+        "sounds/kun/Henchmen_Big_Hurt4"
+      ]
+    },
+    "cyd.mission.moon.laser": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Bratt_Keytar_Laser",
+        "sounds/moon/Bratt_Keytar_Laser2",
+        "sounds/moon/Bratt_Keytar_Laser3",
+        "sounds/moon/Bratt_Keytar_Laser4"
+      ]
+    },
+    "cyd.bratt.keytar_solo": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/moon/Bratt_Keytar_Solo",
+          "volume": 1.60
+        }
+      ]
+    },
+    "cyd.mission.moon.mutantminion": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Mutant_Minion_Attack"
+      ]
+    },
+    "cyd.mission.moon.el.attack": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/El_Macho_Attack"
+      ]
+    },
+    "cyd.mission.moon.el.slam": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/El_Macho_Slam"
+      ]
+    },
+    "cyd.mission.moon.el.leap": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/El_Macho_Slam"
+      ]
+    },
+    "cyd.mission.moon.dance_beep": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Bratt_Dancefloor_Beep"
+      ]
+    },
+    "cyd.mission.moon.macho_jump_down": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/El_Macho_Jump_Down"
+      ]
+    },
+    "cyd.mission.moon.door_open": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Moon_Door_Open"
+      ]
+    },
+    "cyd.mission.moon.shrink_pickup": {
+      "category": "ui",
+      "sounds": [
+        "sounds/moon/Shrink_Ray_Pickup"
+      ]
+    },
+    "cyd.mission.moon.jelly_pickup": {
+      "category": "ui",
+      "sounds": [
+        "sounds/moon/Jelly_Launcher_Pickup"
+      ]
+    },
+    "cyd.mission.moon.squid_impact": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Squid_Impact"
+      ]
+    },
+    "cyd.mission.moon.squid_launcher": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Squid_Launcher"
+      ]
+    },
+    "cyd.mission.moon.cage.break": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/moon/Minion_Cage_Break"
+      ]
+    },
+    "cyd.mission.race.jean.jump": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/JeanClawed_Car_Chase_Jump"
+      ]
+    },
+    "cyd.mission.race.jean.trigger": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/chase/JeanClawed_Car_Chase_Trigger"
+      ]
+    },
+    "cyd.mission.race.jean.treeimpact": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/JeanClawed_Tree_Impact",
+          "volume": 3
+        }
+      ]
+    },
+    "cyd.mission.race.jean.pallet": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/JeanClawed_Wood_Pallet_Impact",
+          "volume": 4
+        }
+      ]
+    },
+    "cyd.mission.race.stall": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Market_Stall_Crash",
+          "volume": 1.30
+        }
+      ]
+    },
+    "cyd.mission.race.projectile": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Nunchuck_Projectile_Loop",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.race.throw": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Nunchuck_Throw",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.race.win": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Race_Win_Fanfare",
+          "volume": 0.7
+        }
+      ]
+    },
+    "cyd.collected": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW/Collectible_Pickup_Sound"
+      ]
+    },
+    "cyd.fart_bomb_cough": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW/Fart_Bomb_Cough"
+      ]
+    },
+    "cyd.minion_change_costume": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW/Minion_Change_Costume"
+      ]
+    },
+    "cyd.mission.race.stronghold.throw1": {
+      "category": "music",
+      "sounds": [
+        "sounds/chase/Stronhold_Throw_1"
+      ]
+    },
+    "cyd.mission.race.stronghold.throw2": {
+      "category": "music",
+      "sounds": [
+        "sounds/chase/Stronhold_Throw_2"
+      ]
+    },
+    "cyd.mission.race.stronghold.impact1": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Stronhold_Throw_Impact_1",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.race.stronghold.impact2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Stronhold_Throw_Impact_2",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.race.sven.drive": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Sven_Bike_Drive",
+          "volume": 10
+        }
+      ]
+    },
+    "cyd.mission.race.sven.intro1": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Sven_Bike_Intro_1",
+          "volume": 1.30
+        }
+      ]
+    },
+    "cyd.mission.race.sven.intro2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Sven_Bike_Intro_2",
+          "volume": 1.30
+        }
+      ]
+    },
+    "cyd.mission.race.tram.crash": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Tram_Crash",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.race.tram.idle": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/chase/Tram_Loop",
+          "volume": 2
+        }
+      ]
+    },
+    "cyd.mission.objective": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW2/Mission_Objective_Updated",
+          "volume": 1.30
+        }
+      ]
+    },
+    "cyd.mission.kun.hit_impact_small": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW2/Dummy_Small_Impact"
+      ]
+    },
+    "cyd.gadget.evil_teleporter": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW2/Evil_O_Matic_Teleport"
+      ]
+    },
+    "cyd.world.fire_ex": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW2/Fire_Extinguisher"
+      ]
+    },
+    "cyd.mission.kun.chow.talk": {
+      "category": "neutral",
+      "sounds": []
+    },
+    "cyd.mission.showdown.belle.attack": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Belle_Bottom_Attack"
+      ]
+    },
+    "cyd.mission.showdown.belle.flame": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Belle_Bottom_Flame_Buff"
+      ]
+    },
+    "cyd.mission.showdown.jean.attack1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Jean_Clawed_Attack"
+      ]
+    },
+    "cyd.mission.showdown.jean.attack2": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Jean_Clawed_Attack2"
+      ]
+    },
+    "cyd.mission.showdown.jean.idle": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Jean_Clawed_Idle"
+      ]
+    },
+    "cyd.mission.showdown.jean.intro": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Jean_Clawed_Mission_Intro"
+      ]
+    },
+    "cyd.mission.showdown.nun.attack": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Nunchuck_Attack"
+      ]
+    },
+    "cyd.mission.showdown.nun.flurry": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Nunchuck_Flurry"
+      ]
+    },
+    "cyd.mission.showdown.stronghold.attack1": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Stronghold_Attack1"
+      ]
+    },
+    "cyd.mission.showdown.stronghold.attack2": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Stronghold_Attack2"
+      ]
+    },
+    "cyd.mission.showdown.stronghold.charge": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Stronghold_Charge_Aim"
+      ]
+    },
+    "cyd.mission.showdown.stronghold.stumble": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Stronghold_Charge_Stumble"
+      ]
+    },
+    "cyd.mission.showdown.sven.attack": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Sven_Attack"
+      ]
+    },
+    "cyd.mission.showdown.sven.twister": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Sven_Twister"
+      ]
+    },
+    "cyd.mission.showdown.sven.walk": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Sven_Walk"
+      ]
+    },
+    "cyd.mission.showdown.v6.intro": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/V6_Jump_Down"
+      ]
+    },
+    "cyd.mission.showdown.v6.defeat": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/showdown/Showdown_V6_Defeat",
+          "volume": 0.6
+        }
+      ]
+    },
+    "cyd.mission.showdown.belle.intro": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Belle_Chain_Intro"
+      ]
+    },
+    "cyd.mission.showdown.belle.twirl": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/showdown/Belle_Bottom_Chain_Twirl"
+      ]
+    },
+    "cyd.minion.cheer": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Cheer",
+          "volume": 0.1
+        },
+        {
+          "name": "sounds/bounces/Minion_Cheers_Kanpai",
+          "volume": 0.1
+        },
+        {
+          "name": "sounds/bounces/Minion_Excited",
+          "volume": 0.1
+        },
+        {
+          "name": "sounds/bounces/Minion_Callout_Hey",
+          "volume": 0.1
+        },
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "cyd.collected.banana": {
+      "category": "ui",
+      "sounds": [
+        "sounds/world/Banana_Pickup_Alt"
+      ]
+    },
+    "cyd.collected.bag.spawn": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/world/Banana_Bag_Spawn"
+      ]
+    },
+    "cyd.collected.bag.trigger": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/world/Banana_Bag_Trigger"
+      ]
+    },
+    "cyd.minion.cheer_2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Cheer",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.tuba_ability": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Tuba",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh_2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh_2",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh_3": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh_3",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh_4": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh_4",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh_5": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh_5",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.laugh_6": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Laugh_6",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.yell_bahh": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Yell_Bahh",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.surprised": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Surprised",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.surprised_2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Surprised_2",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_oh_hello": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Oh_Hello",
+          "volume": 1
+        },
+        {
+          "name": "",
+          "volume": 0
+        },
+        {
+          "name": "",
+          "volume": 0
+        },
+        {
+          "name": "",
+          "volume": 0
+        }
+      ]
+    },
+    "cyd.minion.speak_hey_boss": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Hey_Boss",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.cant_breathe": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Cant_Breathe",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.humming": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Humming",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_oh_la_la": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Oh_La_La",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.singing_lair": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Singing_Lair",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.excited": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Excited",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_hmm_gopa": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Hmm_Gopa",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_ga_ga_ga_papoi": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Ga_Ga_Ga_Papoi",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.idle_gibberish": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Idle_Gibberish",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.surprise_notice": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Surprise_Notice",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.mutant.crazy": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Mutant_Minion_Crazy",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.talk_motivational_prepare_for_battle": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Talk_Motivational_Prepare_For_Battle",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.battle_cry_2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Battle_Cry_2",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_papadum_eh_giggle": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Papadum_Eh_Giggle",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_geko": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Geko",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.cant_speak": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Cant_Speak",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.confused": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Confused",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.cheers_kanpai": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Cheers_Kanpai",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.mutant.scream_3": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Mutant_Minion_Scream_3",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.minion.speak_mocha": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/bounces/Minion_Speak_Mocha",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.citizen_picnic": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/world/Citizen_Picnic",
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.world.citizen_take_photo": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/world/Citizen_Take_Photo",
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.world.fire_hose_loop": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/world/Fire_Hose_Loop",
+          "volume": 0.7
+        }
+      ]
+    },
+    "cyd.world.player_spawn_closet_door": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/world/Player_Spawn_Closet_Door",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.trash_can_trigger": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/world/Trash_Can_Trigger",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.vnc_dialogue": {
+      "category": "ui",
+      "sounds": [
+        {
+          "name": "sounds/world/VNC_Dialogue",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.vnc_jingle": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/world/VNC_Jingle",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.boy_cheesed": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Boy_Cheesed1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Boy_Cheesed2",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Boy_Cheesed3",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.man_cheesed": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Man_Cheesed1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Man_Cheesed2",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Man_Cheesed3",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.girl_cheesed": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Girl_Cheesed1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Girl_Cheesed2",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Girl_Cheesed3",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.woman_cheesed": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Woman_Cheesed1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/NEW4/Woman_Cheesed2",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.take_costume_from_statue": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Take_Costume_From_Statue",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.raid_start": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Raid_Start",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.world.picnic_group_cough": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Picnic_Group_Cough",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.mission.moon.moon_explosion": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Moon_Explosion",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.mission.moon.jelly_gun_overheat": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Jelly_Gun_Overheat",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.mission.moon.glass_break_decompress": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW4/Vector_Smash_Glass"
+      ]
+    },
+    "cyd.mission.moon.vector_jetpack_broken": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW4/Vector_Jetpack_Broken"
+      ]
+    },
+    "cyd.mission.moon.vector_jetpack_loop": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/NEW3/Mission 6/Vector_Jetpack_Loop"
+      ]
+    },
+    "cyd.mission.moon.vector_hurt": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW4/Vector_Hurt"
+      ]
+    },
+    "cyd.mission.moon.bratt_hurt": {
+      "category": "music",
+      "sounds": [
+        "sounds/NEW4/Bratt_Hurt"
+      ]
+    },
+    "cyd.mission.kun.henchmen_punch": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Henchmen_Punch",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.mission.kun.henchmen_kick": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Henchmen_Kick",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.generic.boss_defeat_jingle": {
+      "category": "ui",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Boss_Defeat_Jingle",
+          "volume": 0.6
+        }
+      ]
+    },
+    "cyd.generic.airplane_takeoff": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Airplane_Takeoff",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.generic.generic_car_loop": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Generic_Car_Loop",
+          "volume": 1
+        }
+      ]
+    },
+    "cyd.generic.cutscene_photo_sound": {
+      "category": "ui",
+      "sounds": [
+        {
+          "name": "sounds/NEW4/Cutscene_Photo_Sound",
+          "volume": 0.7
+        }
+      ]
+    },
+    "cyd.music.opening": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/opening",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.overworld.fly_solo": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/Fly_Solo",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.overworld.career_day": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/Career_Day",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m2": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m2",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m3": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m3",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m4": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m4",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m42": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m42",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m5": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m5",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    },
+    "cyd.music.m6.1": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m61",
+          "stream": true,
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.music.m6.2": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/m62",
+          "stream": true,
+          "volume": 0.5
+        }
+      ]
+    },
+    "cyd.music.end": {
+      "__use_legacy_max_distance": "true",
+      "category": "music",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/cydend",
+          "stream": true,
+          "volume": 0.2
+        }
+      ]
+    }
+  }
+}

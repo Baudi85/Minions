@@ -1,0 +1,113 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.trigger.tutorial.start": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "start": "query.skin_id == 1"
+                        },
+                        {
+                            "tamed_minion": "query.skin_id == 7"
+                        },
+                        {
+                            "got_costume": "query.skin_id == 2"
+                        },
+                        {
+                            "minion_ff": "query.skin_id == 3"
+                        },
+                        {
+                            "minion_extinguish": "query.skin_id == 4"
+                        },
+                        {
+                            "exit_tunnel": "query.skin_id == 5"
+                        },
+                        {
+                            "map_deployed": "query.skin_id == 6"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start",
+                        "tame_listener"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "tamed_minion": {
+                    "on_entry": [
+                        "/function playerbase/objectives/t_02",
+                        "/function playerbase/lair_path_arrows",
+                        "/fill -167 54 1040 -167 55 1041 air 0 replace barrier"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ]
+                },
+                "got_costume": {
+                    "on_entry": [
+                        "/event entity @e[type=cyd:lair_path_arrow] evt:despawn"
+                    ],
+                    "animations": [
+                        "got_costume"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "minion_ff": {
+                    "animations": [
+                        "minion_ff"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "minion_extinguish": {
+                    "animations": [
+                        "minion_extinguish",
+                        "detect_exit"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_exit":["/summon cyd:sewer_tp -231 57 1035"]
+                },
+                "exit_tunnel": {
+                    "animations": [
+                        "exit_tunnel",
+                        "detect_map"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "map_deployed": {
+                    "animations": [
+                        "map_deployed"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:collectable_template",
+      "materials": {
+        "default": "cyd_transparent_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/item_lightrays"
+      },
+      "particle_effects": {
+        "particle": "cyd:collect_icon_template"
+      },
+      "geometry": {
+        "default": "geometry.item_lightrays"
+      },
+      "animations": {
+        "idle": "animation.item_lightrays.idle",
+        "particle_anim": "animation.collectable.particle"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "particle_anim": "query.skin_id == 0"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

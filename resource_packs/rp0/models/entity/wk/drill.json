@@ -1,0 +1,144 @@
+{
+	"format_version": "1.10.0",
+	"geometry.drill": {
+		"texturewidth": 48,
+		"textureheight": 48,
+		"visible_bounds_width": 7,
+		"visible_bounds_height": 5,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "root",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "cape",
+				"parent": "body",
+				"pivot": [0, 24, 3]
+			},
+			{
+				"name": "leftLeg",
+				"parent": "root",
+				"pivot": [1.9, 12, 0]
+			},
+			{
+				"name": "leftPants",
+				"parent": "leftLeg",
+				"pivot": [1.9, 12, 0]
+			},
+			{
+				"name": "rightLeg",
+				"parent": "root",
+				"pivot": [-1.9, 12, 0]
+			},
+			{
+				"name": "rightPants",
+				"parent": "rightLeg",
+				"pivot": [-1.9, 12, 0]
+			},
+			{
+				"name": "rightArm",
+				"parent": "root",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [12, 12]}
+				]
+			},
+			{
+				"name": "rightSleeve",
+				"parent": "rightArm",
+				"pivot": [-5, 22, 0]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-6, 15, 1],
+				"locators": {
+					"lead_hold": [-6, 15, 1]
+				}
+			},
+			{
+				"name": "drill",
+				"parent": "rightItem",
+				"pivot": [-6, 14, -2]
+			},
+			{
+				"name": "base",
+				"parent": "drill",
+				"pivot": [-6, 13.5, 0],
+				"cubes": [
+					{"origin": [-7, 13, -3.5], "size": [2, 1, 7], "uv": [0, 21]},
+					{"origin": [-7, 12, 2.5], "size": [2, 1, 1], "uv": [0, 23]},
+					{"origin": [-7, 12, -3.5], "size": [2, 1, 1], "uv": [0, 21]},
+					{"origin": [-7.5, 8, -3.5], "size": [3, 4, 7], "uv": [16, 0]},
+					{"origin": [-8.5, 8, -4.5], "size": [5, 6, 1], "uv": [0, 29]}
+				]
+			},
+			{
+				"name": "drill_head",
+				"parent": "base",
+				"pivot": [-6, 11, -5]
+			},
+			{
+				"name": "drill_head_a",
+				"parent": "drill_head",
+				"pivot": [-6, 11, -5],
+				"cubes": [
+					{"origin": [-9.5, 7.5, -6.5], "size": [7, 7, 2], "uv": [26, 26]},
+					{"origin": [-8.5, 8.5, -10.5], "size": [5, 5, 2], "uv": [28, 19]},
+					{"origin": [-7.5, 9.5, -14.5], "size": [3, 3, 2], "uv": [0, 16]},
+					{"origin": [-6.5, 10.5, -18.5], "size": [1, 1, 2], "uv": [16, 4]}
+				]
+			},
+			{
+				"name": "drill_head_b",
+				"parent": "drill_head",
+				"pivot": [-6, 11, -6],
+				"rotation": [0, 0, -45],
+				"cubes": [
+					{"origin": [-9, 8, -8.5], "size": [6, 6, 2], "uv": [28, 11]},
+					{"origin": [-8, 9, -12.5], "size": [4, 4, 2], "uv": [12, 29]},
+					{"origin": [-7, 10, -16.5], "size": [2, 2, 2], "uv": [12, 0]}
+				]
+			},
+			{
+				"name": "leftArm",
+				"parent": "root",
+				"pivot": [5, 22, 0],
+				"cubes": [
+					{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "leftSleeve",
+				"parent": "leftArm",
+				"pivot": [5, 22, 0]
+			},
+			{
+				"name": "leftItem",
+				"parent": "leftArm",
+				"pivot": [6, 15, 1]
+			}
+		]
+	}
+}

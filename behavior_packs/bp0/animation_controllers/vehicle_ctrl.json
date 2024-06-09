@@ -1,0 +1,117 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.crash": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "illuminate": "query.has_rider"
+                        }
+                    ]
+                },
+                "illuminate": {
+                    "animations":["crash"],
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.headlights": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "illuminate": "query.is_ignited && query.has_rider"
+                        }
+                    ]
+                },
+                "illuminate": {
+                    "animations":["lights"],
+                    "on_exit":["/function vehicles/headlights_extinguish"],
+                    "transitions": [
+                        {
+                            "default": "!query.is_ignited || !query.has_rider || !query.is_alive"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.gru_seats": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "seated": "query.has_rider"
+                        }
+                    ]
+                },
+                "seated": {
+                    "animations":["seated"],
+                    "on_exit":["/event entity @s evt:rider_count"],
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider || !query.is_alive"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.speed_ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "step_up_1": "query.ground_speed >= 3.5"
+                        }
+                    ]
+                },
+                "step_up_1": {
+                    "animations":["step_up_1"],
+                    "on_exit":["/event entity @s evt:speed_1"],
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider || query.ground_speed <= 3"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.end_chase": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "step_up_1": "query.variant == 1"
+                        }
+                    ]
+                },
+                "step_up_1": {
+                    "on_entry":["/execute @e[type=cyd:trigger_chase_system] ~ ~ ~ tag @s add fail_chs"],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.crash_ctrl": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "crash": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "crash": {
+                    "on_entry":["/say crash"]
+                }
+            }
+        }
+    }
+}

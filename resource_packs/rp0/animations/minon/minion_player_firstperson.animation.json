@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.first_person.attack_rotation_minion": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * -60.0", "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 70.0", "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 20.0"],
+					"position": ["(math.clamp(-15.5 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0), -7.0, 999.0) * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0))*0.6", "(math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 100.0) * 7.5 - variable.first_person_rotation_factor * variable.attack_time * 15.0 + variable.short_arm_offset_right)*0.2", "math.sin(variable.first_person_rotation_factor * variable.attack_time * 50.0) * 0.7"]
+				}
+			}
+		},
+		"animation.player.first_person.empty_hand_minion": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["95.0 + variable.is_using_vr * 7.5", "-45.0 + variable.is_using_vr * 7.5", "115.0 + variable.is_using_vr * -2.5"],
+					"position": [13.5, -10, 12]
+				},
+				"rightArm_minion": {
+					"rotation": [0, 0, "math.sin(-query.walk_distance * 180.0) * variable.hand_bob * 20.75-query.vertical_speed*0.2+math.sin(-query.life_time * 180.0*0.5)"]
+				},
+				"rightHand_minion": {
+					"rotation": [0, 0, "-math.sin(-query.walk_distance * 180.0-40) * variable.hand_bob * 30.75-query.vertical_speed*1-math.sin(-query.life_time * 180.0*0.5-40)"]
+				}
+			}
+		}
+	}
+}

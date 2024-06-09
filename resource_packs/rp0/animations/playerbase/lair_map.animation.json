@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lair_map.idle": {
+			"loop": true,
+			"bones": {
+				"location_icon_1": {
+					"position": [15.85, -9.75, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_2": {
+					"position": [-0.9, -13.25, 0],
+					"scale": [0.3, 0.3, 1]
+				},
+				"location_icon_3": {
+					"position": [18.25, -27.2, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_4": {
+					"position": [28.4, -17.75, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_5": {
+					"position": [5.9, -20.75, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_6": {
+					"position": [15.65, -29.75, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_7": {
+					"position": [27.35, -8.1, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_8": {
+					"position": [12.9, -22.55, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_9": {
+					"position": [24.35, -1.075, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_10": {
+					"position": [7.75, 1.85, 0],
+					"scale": [0.2, 0.2, 1]
+				},
+				"location_icon_11": {
+					"scale": 0
+				},
+				"location_icon_12": {
+					"position": [15.95, -10.1, 0],
+					"scale": 0
+				}
+			}
+		}
+	}
+}

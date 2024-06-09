@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:world_pot",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/vase_01"
+      },
+      "geometry": {
+        "default": "geometry.vase"
+      },
+      "sound_effects": {
+        "trigger": "cyd.mission.bank.pot_smash"
+      },
+      "animations": {
+          "trigger": "animation.vase.trigger_break",
+          "ctrl": "controller.animation.rp.trashcan"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

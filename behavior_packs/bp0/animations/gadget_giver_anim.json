@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.trigger.hand.give": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function gadget/giver/stickyhand"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.cheese.give": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function gadget/giver/cheesegun"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.shrink.give": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function gadget/giver/shrinkray"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.jelly.give": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function gadget/giver/jellygun"
+      },
+      "animation_length": 0.2
+    },
+    "animation.trigger.jelly_upgrade.give": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function gadget/giver/jellygun_upgrade"
+      },
+      "animation_length": 0.2
+    }
+  }
+}

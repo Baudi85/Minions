@@ -1,0 +1,1060 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:wild_knuckles",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "ctrl": "controller.animation.trigger.wild_knuckles.start",
+                "dialogue1": "animation.wild_knuckles.intro",
+                "dialogue2": "animation.wild_knuckles.distraction",
+                "dialogue3": "animation.wild_knuckles.continue.1",
+                "dialogue4": "animation.wild_knuckles.hint.1",
+                "dialogue5": "animation.wild_knuckles.continue.2",
+                "dialogue6": "animation.wild_knuckles.hint.2",
+                "dialogue7": "animation.wild_knuckles.continue.3",
+                "cheesegun_hint":"animation.wild_knuckles.cheesegun_hint",
+                "dialogue8": "animation.wild_knuckles.continue.4",
+                "dialogue9": "animation.wild_knuckles.hint.3",
+                "dialogue10": "animation.wild_knuckles.hint.4",
+                "dialogue11": "animation.wild_knuckles.continue.5",
+                "dialogue12": "animation.wild_knuckles.continue.6",
+                "dialogue13": "animation.wild_knuckles.continue.7",
+                "dialogue14": "animation.wild_knuckles.continue.8",
+                "hint_trigger1": "animation.wild_knuckles.hint_trigger.1",
+                "hint_trigger2": "animation.wild_knuckles.hint_trigger.2",
+                "hint_trigger3": "animation.wild_knuckles.hint_trigger.3",
+                "hint_trigger4": "animation.wild_knuckles.hint_trigger.4",
+                "finish": "animation.wild_knuckles.finish"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl"
+                ]
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                },
+                "minecraft:movement": {
+                    "value": 0
+                },
+                "minecraft:behavior.look_at_player": {
+                    "priority": 10,
+                    "look_distance": 0,
+                    "probability": 0.0
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_11": {
+                "minecraft:skin_id": {
+                    "value": 11
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_12": {
+                "minecraft:skin_id": {
+                    "value": 12
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_13": {
+                "minecraft:skin_id": {
+                    "value": 13
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_14": {
+                "minecraft:skin_id": {
+                    "value": 14
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_15": {
+                "minecraft:skin_id": {
+                    "value": 15
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_16": {
+                "minecraft:skin_id": {
+                    "value": 16
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_17": {
+                "minecraft:skin_id": {
+                    "value": 17
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:sid_18": {
+                "minecraft:skin_id": {
+                    "value": 18
+                },
+                "minecraft:behavior.look_at_player": {
+                    "target_distance": 6.0,
+                    "probability": 1.0
+                }
+            },
+            "cyd:var_0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:despawn": {
+              "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 2
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "trigger"
+                ]
+            },
+            "minecraft:physics":{},
+            "minecraft:behavior.look_at_player": {
+                "target_distance": 6.0,
+                "probability": 1.0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:entity_sensor": {
+                "sensor_range": 3,
+                "require_all": false,
+                "event_filters": {
+                    "all_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "self",
+                            "operator": "not",
+                            "value": "intro"
+                        },
+                        {
+                            "test": "has_tag",
+                            "operator": "not",
+                            "value": "quiet"
+                        }
+                    ]
+                },
+                "event": "evt:sid_1"
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "intro_done"
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "distract"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 1
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_2"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 15
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "perkinskey"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "not",
+                                    "value": 3
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 2
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_3"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "key1"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 4
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_5"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "cheesegun"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 6
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_7"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 5
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "cheesegun"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 7
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_8"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "==",
+                                    "value": "drill"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 10
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_11"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 5
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "drill"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 11
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_12"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "operator": "equals",
+                                    "value": "mona"
+                                },
+                                {
+                                    "test": "is_skin_id",
+                                    "operator": "equals",
+                                    "value": 12
+                                },
+                                {
+                                    "test": "has_tag",
+                                    "operator": "not",
+                                    "value": "quiet"
+                                }
+                            ]
+                        },
+                        "event": "evt:sid_13"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn": {
+              "add": {
+                "component_groups": [
+                  "cyd:despawn"
+                ]
+              }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_1",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_1",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_1",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_5": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_5"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_1",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_6": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_6"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_1",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_7": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_7"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_8": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_8"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_7",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_9": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_9"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_7",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_10": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_7",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_11": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_11"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_7",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_12": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_12"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_7",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_13": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_13"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_7",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_14": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_14"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_7",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_15": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_15"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_7",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_16": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_16"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_7",
+                        "cyd:sid_17",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_17": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_17"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_7",
+                        "cyd:sid_18"
+                    ]
+                }
+            },
+            "evt:sid_18": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_18"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_1",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10",
+                        "cyd:sid_11",
+                        "cyd:sid_12",
+                        "cyd:sid_13",
+                        "cyd:sid_14",
+                        "cyd:sid_15",
+                        "cyd:sid_16",
+                        "cyd:sid_17",
+                        "cyd:sid_7"
+                    ]
+                }
+            },
+            "evt:var_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:var_0"
+                    ]
+                }
+            }
+        }
+    }
+}

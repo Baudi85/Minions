@@ -1,0 +1,183 @@
+{
+	"format_version": "1.10.0",
+	"geometry.spinner": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"locators": {
+					"smack": [0, 16, 0]
+				}
+			},
+			{
+				"name": "all_bottom",
+				"parent": "root",
+				"pivot": [0, 1, 0]
+			},
+			{
+				"name": "all_top",
+				"parent": "all_bottom",
+				"pivot": [0, 31.9, 0]
+			},
+			{
+				"name": "spinner",
+				"parent": "all_top",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "base",
+				"parent": "spinner",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "base_top",
+				"parent": "base",
+				"pivot": [0, 31.9, 0],
+				"cubes": [
+					{"origin": [-5.5, 30.9, -5.5], "size": [11, 2, 11], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "base_ground",
+				"parent": "base",
+				"pivot": [0, 1, 0],
+				"cubes": [
+					{"origin": [-5.5, 0, -5.5], "size": [11, 2, 11], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "base_pole",
+				"parent": "base",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-2, 2, -2], "size": [4, 30, 4], "uv": [0, 13]}
+				]
+			},
+			{
+				"name": "spinner_1",
+				"parent": "base",
+				"pivot": [0, 6.9, 0],
+				"rotation": [0, 20, 0],
+				"cubes": [
+					{"origin": [-3.5, 1.85, -3.5], "size": [7, 10, 7], "uv": [16, 16], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "spinner_1_poles",
+				"parent": "spinner_1",
+				"pivot": [0, 6.9, 0],
+				"cubes": [
+					{"origin": [2.9, 6.85, -1], "size": [9, 2, 2], "uv": [16, 33], "inflate": -0.35},
+					{"origin": [-11.8, 4.85, -1], "size": [9, 2, 2], "uv": [33, 0], "inflate": -0.35}
+				]
+			},
+			{
+				"name": "spinner_1_effect",
+				"parent": "spinner_1",
+				"pivot": [0, 7.1, 0]
+			},
+			{
+				"name": "spinner_1_effect_1",
+				"parent": "spinner_1_effect",
+				"pivot": [9.5, 7.975, 0.5],
+				"cubes": [
+					{"origin": [-2.5, 7.975, -0.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_1_effect_2",
+				"parent": "spinner_1_effect",
+				"pivot": [-9.5, 5.875, -0.5],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [-21.5, 5.875, -1.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_2",
+				"parent": "base",
+				"pivot": [0, 16.5, 0],
+				"rotation": [0, -60, 0],
+				"cubes": [
+					{"origin": [-3.5, 11.45, -3.5], "size": [7, 10, 7], "uv": [16, 16], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "spinner_2_poles",
+				"parent": "spinner_2",
+				"pivot": [0, 16.5, 0],
+				"cubes": [
+					{"origin": [2.9, 16.45, -1], "size": [9, 2, 2], "uv": [16, 33], "inflate": -0.35},
+					{"origin": [-11.8, 14.45, -1], "size": [9, 2, 2], "uv": [33, 0], "inflate": -0.35}
+				]
+			},
+			{
+				"name": "spinner_2_effect",
+				"parent": "spinner_2",
+				"pivot": [0, 16.5, 0]
+			},
+			{
+				"name": "spinner_2_effect_2",
+				"parent": "spinner_2_effect",
+				"pivot": [9.5, 17.475, 0.5],
+				"cubes": [
+					{"origin": [-2.5, 17.475, -0.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_2_effect_1",
+				"parent": "spinner_2_effect",
+				"pivot": [-9.5, 15.475, -0.5],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [-21.5, 15.475, -1.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_3",
+				"parent": "base",
+				"pivot": [0, 26.1, 0],
+				"rotation": [0, -20, 0],
+				"cubes": [
+					{"origin": [-3.5, 21.05, -3.5], "size": [7, 10, 7], "uv": [16, 16], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "spinner_3_effect",
+				"parent": "spinner_3",
+				"pivot": [0, 26.2, 0]
+			},
+			{
+				"name": "spinner_3_effect_1",
+				"parent": "spinner_3_effect",
+				"pivot": [9.5, 27.075, 0.5],
+				"cubes": [
+					{"origin": [-2.5, 27.075, -0.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_3_effect_2",
+				"parent": "spinner_3_effect",
+				"pivot": [-9.5, 25.075, -0.5],
+				"rotation": [0, 180, 0],
+				"cubes": [
+					{"origin": [-21.5, 25.075, -1.5], "size": [14, 0, 14], "uv": [0, 50], "mirror": true}
+				]
+			},
+			{
+				"name": "spinner_3_poles",
+				"parent": "spinner_3",
+				"pivot": [0, 26.1, 0],
+				"cubes": [
+					{"origin": [2.9, 26.05, -1], "size": [9, 2, 2], "uv": [16, 33], "inflate": -0.35},
+					{"origin": [-11.8, 24.05, -1], "size": [9, 2, 2], "uv": [33, 0], "inflate": -0.35}
+				]
+			}
+		]
+	}
+}

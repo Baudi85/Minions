@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mode_select.adventure": {
+			"loop": true,
+			"bones": {
+				"screen_left_selected": {
+					"position": [0, 0, 0.275],
+					"scale": [1.02, 1.02, 1]
+				},
+				"screen_right_selected": {
+					"position": [0, 0, 0],
+					"scale": 1
+				}
+			}
+		},
+		"animation.mode_select.sandbox": {
+			"loop": true,
+			"bones": {
+				"screen_left_selected": {
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"screen_right_selected": {
+					"position": [0, 0, 0.275],
+					"scale": [1.02, 1.02, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cyd:teleport_icon_09_vector",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "teleport_9",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

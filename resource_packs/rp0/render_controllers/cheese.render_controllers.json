@@ -1,0 +1,73 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cyd.cheesed": {
+      "geometry": "Geometry.cheesed",
+      "part_visibility": [
+        {
+          "*": "query.is_powered"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheesed"
+      ],
+      "light_color_multiplier": 1
+    },
+    "controller.render.cyd.cheesed_bank": {
+      "geometry": "Geometry.cheesed",
+      "part_visibility": [
+        {
+          "*": "query.mark_variant == 2"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheesed"
+      ],
+      "light_color_multiplier": 1
+    },
+    "controller.render.cyd.cheesed_bank_2": {
+      "geometry": "Geometry.cheesed",
+      "part_visibility": [
+        {
+          "*": "query.skin_id == 1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.cheesed"
+      ],
+      "light_color_multiplier": 1
+    },
+    "controller.render.cyd.laser": {
+      "geometry": "Geometry.shell",
+      "part_visibility": [
+        {
+          "*": "query.mark_variant == 1"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.shell"
+        }
+      ],
+      "textures": [
+        "Texture.shell"
+      ],
+      "light_color_multiplier": 1
+    }
+  }
+}

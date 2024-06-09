@@ -1,0 +1,92 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:c_item_ht_2",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": ["ctrl_switch"]
+      },
+      "animations": {"ctrl_switch": "controller.animation.trigger.collectible_item.switch"}
+    },
+    "component_groups": {
+      "cyd:sid_0": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "collectible_display",
+          "home_collectible"
+        ]
+      },
+      "minecraft:scale": {
+        "value": 0.6
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 1
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      },
+      "evt:sid_0": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        }
+      },
+      "evt:sid_1": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        }
+      }
+    }
+  }
+}

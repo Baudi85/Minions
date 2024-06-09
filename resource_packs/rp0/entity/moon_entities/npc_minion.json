@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:moon_npc_minion",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/minion_costume"
+            },
+            "geometry": {
+                "default": "geometry.minion_costume"
+            },
+            "scripts": {
+                "animate": [
+                    "breath",
+                    "mv_ctrl"
+                ]
+            },
+            "animations": {
+                "mv_ctrl": "controller.animation.rp.minion_costume",
+                "idle_1": "animation.minion_costume.idle1",
+                "idle_2": "animation.minion_costume.idle2",
+                "idle_3": "animation.minion_costume.idle3",
+                "idle_4": "animation.minion_costume.idle4",
+                "move": "animation.minion_costume.walk",
+                "breath": "animation.minion_costume.breath"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.minion_costume"
+            ]
+        }
+    }
+}

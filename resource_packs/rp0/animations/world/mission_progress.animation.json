@@ -1,0 +1,234 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mission_progress.not_started": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.0001, 1, 1]
+				},
+				"mission_icon_1": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_2": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_3": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_4": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_5": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.m1": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.1265, 1, 1]
+				},
+				"mission_icon_1": {
+					"position": [0, 0, -0.1],
+					"scale": ["1+math.sin(query.life_time*90)*0.02", "1+math.sin(query.life_time*90)*0.02", 1]
+				},
+				"mission_icon_2": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_3": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_4": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_5": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.m2": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.311, 1, 1]
+				},
+				"mission_icon_1": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_2": {
+					"position": [0, 0, -0.1],
+					"scale": ["1+math.sin(query.life_time*90)*0.02", "1+math.sin(query.life_time*90)*0.02", 1]
+				},
+				"mission_icon_3": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_4": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_5": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.m3": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.5, 1, 1]
+				},
+				"mission_icon_1": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_2": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_3": {
+					"position": [0, 0, -0.1],
+					"scale": ["1+math.sin(query.life_time*90)*0.02", "1+math.sin(query.life_time*90)*0.02", 1]
+				},
+				"mission_icon_4": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_5": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.m4": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.69, 1, 1]
+				},
+				"mission_icon_1": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_2": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_3": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_4": {
+					"position": [0, 0, -0.1],
+					"scale": ["1+math.sin(query.life_time*90)*0.02", "1+math.sin(query.life_time*90)*0.02", 1]
+				},
+				"mission_icon_5": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.m5": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": [0.88, 1, 1]
+				},
+				"mission_icon_1": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_2": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_3": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_4": {
+					"scale": [0.6, 0.6, 1]
+				},
+				"mission_icon_5": {
+					"position": [0, 0, -0.1],
+					"scale": ["1+math.sin(query.life_time*90)*0.02", "1+math.sin(query.life_time*90)*0.02", 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mission_progress.completed": {
+			"loop": true,
+			"bones": {
+				"progress_bar": {
+					"scale": 1
+				},
+				"mission_icon_1": {
+					"scale": ["0.8+math.sin(query.life_time*90*2)*0.02", "0.8+math.sin(query.life_time*90*2)*0.02", 1]
+				},
+				"mission_icon_2": {
+					"scale": ["0.8+math.sin(query.life_time*90*2-30)*0.02", "0.8+math.sin(query.life_time*90*2-30)*0.02", 1]
+				},
+				"mission_icon_3": {
+					"scale": ["0.8+math.sin(query.life_time*90*2-60)*0.02", "0.8+math.sin(query.life_time*90*2-60)*0.02", 1]
+				},
+				"mission_icon_4": {
+					"scale": ["0.8+math.sin(query.life_time*90*2-90)*0.02", "0.8+math.sin(query.life_time*90*2-90)*0.02", 1]
+				},
+				"mission_icon_5": {
+					"scale": ["0.8+math.sin(query.life_time*90*2-120)*0.02", "0.8+math.sin(query.life_time*90*2-120)*0.02", 1]
+				},
+				"root": {
+					"position": [0, "math.sin(query.life_time*90*0.5)*0.5", 0]
+				},
+				"all": {
+					"rotation": ["-math.sin(query.life_time*90*0.5-50)*2", 0, 0]
+				},
+				"mission_progress": {
+					"rotation": ["math.clamp(query.rotation_to_camera(0)*0.1,-10,10)", "query.rotation_to_camera(1)-query.body_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

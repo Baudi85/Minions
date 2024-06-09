@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:slingshot",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/gadgets/sticky_finger_projectile"
+      },
+      "geometry": {
+        "default": "geometry.sticky_finger_projectile"
+      },
+      "scripts": {
+        "animate": [
+          "direct_ctrl",
+          "shoot_grab_ctrl"
+        ]
+      },
+      "animations": {
+        "shoot":"animation.sticky_finger_projectile.shoot",
+        "grab":"animation.sticky_finger_projectile.grab",
+        "shoot_grab_ctrl":"controller.animation.rp.sticky_fingers.shoot_grab",
+        "direct_ctrl": "controller.animation.rp.sticky_fingers.direct",
+        "north":"animation.sticky_finger_projectile.rot0_n",
+        "south":"animation.sticky_finger_projectile.rot180_s",
+        "east":"animation.sticky_finger_projectile.rot90_e",
+        "west":"animation.sticky_finger_projectile.rot270_w",
+        "north_east":"animation.sticky_finger_projectile.rot45_n_e",
+        "north_west":"animation.sticky_finger_projectile.rot315_n_w",
+        "south_east":"animation.sticky_finger_projectile.rot135_s_e",
+        "south_west":"animation.sticky_finger_projectile.rot225_s_w"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

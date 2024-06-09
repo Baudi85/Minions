@@ -1,0 +1,77 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:firework_knockback",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "system",
+          "trigger",
+          "prop"
+        ]
+      },
+      "minecraft:behavior.knockback_roar": {
+        "attack_time": 2.72,
+        "cooldown_time": 30,
+        "duration": 4,
+        "knockback_range": 6,
+        "knockback_damage": 14,
+        "knockback_strength": 0,
+        "on_roar_end": {
+          "event": "evt:despawn"
+        },
+        "knockback_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "prop"
+            }
+          ]
+        },
+        "damage_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "prop"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "pet"
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

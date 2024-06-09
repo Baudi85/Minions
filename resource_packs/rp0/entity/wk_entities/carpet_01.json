@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:carpet_01",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/carpet_01"
+      },
+      "geometry": {
+        "default": "geometry.carpet"
+      },
+      "particle_effects": {
+        "particle": "cyd:inspect"
+      },
+      "sound_effects": {
+        "roll": "cyd.mission.bank.carpet_roll"
+      },
+      "animations": {
+          "trigger": "animation.carpet.trigger",
+          "ctrl": "controller.animation.rp.painting",
+          "particle":"animation.prop.particles"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

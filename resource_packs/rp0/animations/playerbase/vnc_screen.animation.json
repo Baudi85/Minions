@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vnc_screen.speaker": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"speaker_left": {
+					"position": [0, "8*(math.sin(query.anim_time*720+40-15)*0.02+math.sin(query.anim_time*720*2-100-15)*0.01)", 0],
+					"scale": ["1-math.sin(query.anim_time*720*0.5-15)*0.02+math.sin(query.anim_time*720*2-40-15)*0.01", "1+math.sin(query.anim_time*720+40-15)*0.02+math.sin(query.anim_time*720*2-100-15)*0.01", "1+math.sin(query.anim_time*720-15)*0.02+math.sin(query.anim_time*720*2-40-15)*0.01"]
+				},
+				"speaker_right": {
+					"position": [0, "6*(math.sin(query.anim_time*720+40)*0.02+math.sin(query.anim_time*720*2-100)*0.01)", 0],
+					"scale": ["1-math.sin(query.anim_time*720*0.5)*0.02+math.sin(query.anim_time*720*2-40)*0.01", "1+math.sin(query.anim_time*720+40)*0.02+math.sin(query.anim_time*720*2-100)*0.01", "1+math.sin(query.anim_time*720)*0.02+math.sin(query.anim_time*720*2-40)*0.01"]
+				}
+			}
+		}
+	}
+}

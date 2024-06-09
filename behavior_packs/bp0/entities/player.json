@@ -1,0 +1,948 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "tools_ctrl",
+          "teleport_items",
+          "sticky_ctrl",
+          "sticky_caught",
+          "chi_ctrl",
+          "chi_damage_ctrl",
+          "chi_hold_ctrl",
+          "wk_caught",
+          "mn_die",
+          "jam_ctrl",
+          "music_core",
+          "music_player",
+          "tool_notif",
+          "showdown_death_snd"
+        ]
+      },
+      "animations": {
+        "tools_ctrl": "controller.animation.player.tools_v1",
+        "showdown_death_snd": "controller.animation.player.death.sound",
+        "teleport_items": "controller.animation.items",
+        "sticky_ctrl": "controller.animation.trigger.player_detect_honey",
+        "detect_honey": "animation.detect_honey",
+        "sticky_caught": "controller.animation.trigger.player_detect_caught",
+        "wk_caught": "controller.animation.trigger.player_detect_caught_wk",
+        "mn_die": "controller.animation.trigger.player_detect_caught_mn",
+        "checkpoint": "animation.checkpoint.player_checkpoint",
+        "checkpoint_wk": "animation.checkpoint.player_checkpoint_wk",
+        "checkpoint_mn": "animation.checkpoint.player_checkpoint_moon",
+        "player_boost_forward": "animation.kunfu.player_boost_forward",
+        "chi_build": "animation.kunfu.chibuild",
+        "chi_ctrl": "controller.animation.kunfu.chi",
+        "chi_damage_ctrl": "controller.animation.kunfu.swing",
+        "chi_hold_ctrl": "controller.animation.kunfu.hold",
+        "jam_ctrl": "controller.animation.player.jam_ctrl",
+        "start_jam_cooldown": "animation.start_jam_cd",
+        "start_plasma_jam_cooldown": "animation.start_plasma_jam_cd",
+        "end_plasma_jam_cooldown": "animation.end_plasma_jam_cd",
+        "end_jam_cooldown": "animation.end_jam_cd",
+        "jam_rapid": "animation.jam_rapid",
+        "plasma_jam_rapid": "animation.plasma_jam_rapid",
+        "dummy_timer_nun": "animation.dummy.timer_nunchuck",
+        "dummy_timer_sticky": "animation.dummy.timer_sticky",
+        "dummy_timer_shrink": "animation.dummy.timer_shrink",
+        "dummy_timer_fart": "animation.dummy.timer_fart",
+        "dummy_timer_cheese": "animation.dummy.timer_cheese",
+        "dummy_timer_clipboard": "animation.dummy.timer_clipboard",
+        "holding_clipboard": "animation.holding.clipboard",
+        "music_core": "animation.coremusic",
+        "music_player": "animation.playermusic",
+        "tool_notif": "controller.animation.player.holding_tools"
+      }
+    },
+    "component_groups": {
+      "cyd:cooldown": {
+        "minecraft:is_charged": {}
+      },
+      "cyd:timer": {
+        "minecraft:timer": {
+          "time": 0.11,
+          "looping": false,
+          "time_down_event": {
+            "event": "evt:fart",
+            "target": "self"
+          }
+        }
+      },
+      "cyd:fart": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:fartgrenade",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:jam": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "filters": {
+                "test": "has_component",
+                "subject": "self",
+                "operator": "!=",
+                "value": "minecraft:is_ignited"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:jam",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:plasma_jam": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "filters": {
+                "test": "has_component",
+                "subject": "self",
+                "operator": "!=",
+                "value": "minecraft:is_ignited"
+              },
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:plasma_jam",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:shrink": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:shrink",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:sticky": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:slingshot",
+              "should_leash": true,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:holo_map": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:holo_map_flying",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:fireball": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:fireball",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:squid": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:squid",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:cheese": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "cyd:cheese",
+              "should_leash": false,
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "cyd:sid_0": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "cyd:sid_1": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      },
+      "cyd:var_0": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "cyd:var_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cyd:mv_0": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "cyd:mv_1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:mv_2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "cyd:mv_3": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+      },
+      "cyd:laser_damage": {
+        "minecraft:damage_over_time": {
+          "damage_per_hurt": 4,
+          "time_between_hurt": 0.1
+        }
+      },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0,
+            0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      },
+      "cyd:chi_damage": {
+        "minecraft:attack": {
+          "damage": 6
+        }
+      },
+      "cyd:bat_damage": {
+        "minecraft:attack": {
+          "damage": 3
+        }
+      },
+      "cyd:no_chi_damage": {
+        "minecraft:attack": {
+          "damage": 1
+        }
+      },
+      "cyd:ignite": {
+        "minecraft:is_ignited": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player",
+          "no_stick"
+        ]
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ],
+        "family_types": [
+          "parrot_tame"
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": [
+                {
+                  "test": "has_damage",
+                  "subject": "self",
+                  "value": "fatal"
+                },
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "moon"
+                }
+              ],
+              "event": "evt:mv_3"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": [
+                {
+                  "test": "has_damage",
+                  "subject": "self",
+                  "value": "fall"
+                },
+                {
+                  "test": "has_tag",
+                  "subject": "self",
+                  "value": "sticky"
+                }
+              ]
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "sticky"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "not",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:var_1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "not",
+                  "value": "sticky"
+                },
+                {
+                  "test": "is_variant",
+                  "operator": "equals",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:var_0"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "caught_sticky"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "not",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:mv_1"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "not",
+                  "value": "caught_sticky"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:mv_0"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "caught_wk"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "not",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "evt:mv_2"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "not",
+                  "value": "caught_wk"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "evt:mv_0"
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:ignite": {
+        "add": {
+          "component_groups": [
+            "cyd:ignite"
+          ]
+        }
+      },
+      "evt:rm_ignite": {
+        "remove": {
+          "component_groups": [
+            "cyd:ignite"
+          ]
+        }
+      },
+      "evt:sid_0": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        }
+      },
+      "evt:sid_1": {
+        "add": {
+          "component_groups": [
+            "cyd:sid_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:sid_0"
+          ]
+        }
+      },
+      "evt:fart": {
+        "add": {
+          "component_groups": [
+            "cyd:fart"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:timer"
+          ]
+        }
+      },
+      "evt:timer": {
+        "add": {
+          "component_groups": [
+            "cyd:timer"
+          ]
+        }
+      },
+      "evt:no_fart": {
+        "remove": {
+          "component_groups": [
+            "cyd:fart",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:jam": {
+        "add": {
+          "component_groups": [
+            "cyd:jam"
+          ]
+        }
+      },
+      "evt:no_jam": {
+        "remove": {
+          "component_groups": [
+            "cyd:jam",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:plasma_jam": {
+        "add": {
+          "component_groups": [
+            "cyd:plasma_jam"
+          ]
+        }
+      },
+      "evt:no_plasma_jam": {
+        "remove": {
+          "component_groups": [
+            "cyd:plasma_jam",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:shrink": {
+        "add": {
+          "component_groups": [
+            "cyd:shrink"
+          ]
+        }
+      },
+      "evt:no_shrink": {
+        "remove": {
+          "component_groups": [
+            "cyd:shrink",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:cheese": {
+        "add": {
+          "component_groups": [
+            "cyd:cheese"
+          ]
+        }
+      },
+      "evt:no_cheese": {
+        "remove": {
+          "component_groups": [
+            "cyd:cheese",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:sticky": {
+        "add": {
+          "component_groups": [
+            "cyd:sticky"
+          ]
+        }
+      },
+      "evt:no_sticky": {
+        "remove": {
+          "component_groups": [
+            "cyd:sticky",
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:holo_map": {
+        "add": {
+          "component_groups": [
+            "cyd:holo_map"
+          ]
+        }
+      },
+      "evt:no_holomap": {
+        "remove": {
+          "component_groups": [
+            "cyd:holo_map"
+          ]
+        }
+      },
+      "evt:fireball": {
+        "add": {
+          "component_groups": [
+            "cyd:fireball"
+          ]
+        }
+      },
+      "evt:no_fireball": {
+        "remove": {
+          "component_groups": [
+            "cyd:fireball"
+          ]
+        }
+      },
+      "evt:no_squid": {
+        "remove": {
+          "component_groups": [
+            "cyd:squid"
+          ]
+        }
+      },
+      "evt:squid": {
+        "add": {
+          "component_groups": [
+            "cyd:squid"
+          ]
+        }
+      },
+      "evt:var_0": {
+        "add": {
+          "component_groups": [
+            "cyd:var_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:var_1"
+          ]
+        }
+      },
+      "evt:var_1": {
+        "add": {
+          "component_groups": [
+            "cyd:var_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:var_0"
+          ]
+        }
+      },
+      "evt:mv_0": {
+        "add": {
+          "component_groups": [
+            "cyd:mv_0"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:mv_1",
+            "cyd:mv_2",
+            "cyd:mv_3"
+          ]
+        }
+      },
+      "evt:mv_1": {
+        "add": {
+          "component_groups": [
+            "cyd:mv_1"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:mv_0",
+            "cyd:mv_2",
+            "cyd:mv_3"
+          ]
+        }
+      },
+      "evt:mv_2": {
+        "add": {
+          "component_groups": [
+            "cyd:mv_2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:mv_0",
+            "cyd:mv_1",
+            "cyd:mv_3"
+          ]
+        }
+      },
+      "evt:mv_3": {
+        "add": {
+          "component_groups": [
+            "cyd:mv_3"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:mv_0",
+            "cyd:mv_1",
+            "cyd:mv_2"
+          ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "evt:cooldown": {
+        "add": {
+          "component_groups": [
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:remove_cooldown": {
+        "remove": {
+          "component_groups": [
+            "cyd:cooldown"
+          ]
+        }
+      },
+      "evt:player_bat": {
+        "add": {
+          "component_groups": [
+            "cyd:bat_damage"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:no_chi_damage"
+          ]
+        }
+      },
+      "evt:chi_damage": {
+        "add": {
+          "component_groups": [
+            "cyd:chi_damage"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:no_chi_damage"
+          ]
+        }
+      },
+      "evt:no_chi_damage": {
+        "remove": {
+          "component_groups": [
+            "cyd:chi_damage"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "cyd:no_chi_damage",
+            "cyd:bat_damage"
+          ]
+        }
+      },
+      "evt:laser_damage": {
+        "add": {
+          "component_groups": [
+            "cyd:laser_damage"
+          ]
+        }
+      },
+      "evt:rm_laser_damage": {
+        "remove": {
+          "component_groups": [
+            "cyd:laser_damage"
+          ]
+        }
+      }
+    }
+  }
+}

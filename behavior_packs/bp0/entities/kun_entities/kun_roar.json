@@ -1,0 +1,106 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:kun_roar",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "system",
+          "trigger"
+        ]
+      },
+      "minecraft:behavior.knockback_roar": {
+        "attack_time": 0.1,
+        "cooldown_time": 30,
+        "duration": 2,
+        "knockback_range": 5,
+        "knockback_damage": 50,
+        "knockback_strength": 4,
+        "on_roar_end": {
+          "event": "evt:despawn"
+        },
+        "knockback_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "pet"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "questnpc"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "system"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "trigger"
+            }
+          ]
+        },
+        "damage_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "pet"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "questnpc"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "system"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "trigger"
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

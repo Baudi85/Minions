@@ -1,0 +1,661 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.rp.mission_progress": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "not_started"
+                    ],
+                    "transitions": [
+                        {
+                            "m1": "query.variant == 1"
+                        },
+                        {
+                            "m2": "query.variant == 2"
+                        },
+                        {
+                            "m3": "query.variant == 3"
+                        },
+                        {
+                            "m4": "query.variant == 4"
+                        },
+                        {
+                            "m5": "query.variant == 5"
+                        },
+                        {
+                            "completed": "query.variant == 6"
+                        }
+                    ]
+                },
+                "m1": {
+                    "animations": [
+                        "m1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                },
+                "m2": {
+                    "animations": [
+                        "m2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 2"
+                        }
+                    ]
+                },
+                "m3": {
+                    "animations": [
+                        "m3"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 3"
+                        }
+                    ]
+                },
+                "m4": {
+                    "animations": [
+                        "m4"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 4"
+                        }
+                    ]
+                },
+                "m5": {
+                    "animations": [
+                        "m5"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 5"
+                        }
+                    ]
+                },
+                "completed": {
+                    "animations": [
+                        "complete"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 6"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.movement.holo_map_projectile": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "impact"
+                    ],
+                    "transitions": [
+                        {
+                            "pick_up": "query.is_transforming"
+                        },
+                        {
+                            "idle_ground": "query.is_on_ground && query.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "pick_up": {
+                    "animations": [
+                        "pick_up"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_transforming"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "idle_ground": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "pick_up": "query.is_transforming"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.rp.location.holo_map_projectile": {
+            "states": {
+                "default": {
+                    "animations": [
+                        "go_none"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "go_m1": {
+                    "animations": [
+                        "go_m1"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        },
+                        {
+                            "default": "query.is_baby"
+                        }
+                    ]
+                },
+                "go_m2": {
+                    "animations": [
+                        "go_m2"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        },
+                        {
+                            "default": "query.is_baby"
+                        }
+                    ]
+                },
+                "go_m3": {
+                    "animations": [
+                        "go_m3"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        },
+                        {
+                            "default": "query.is_baby"
+                        }
+                    ]
+                },
+                "go_m4": {
+                    "animations": [
+                        "go_m4"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        },
+                        {
+                            "default": "query.is_baby"
+                        }
+                    ]
+                },
+                "go_m5": {
+                    "animations": [
+                        "go_m5"
+                    ],
+                    "transitions": [
+                        {
+                            "go_m1": "query.is_stunned"
+                        },
+                        {
+                            "go_m2": "query.is_ignited"
+                        },
+                        {
+                            "go_m3": "query.is_powered"
+                        },
+                        {
+                            "go_m4": "query.is_sheared"
+                        },
+                        {
+                            "go_m5": "query.is_saddled"
+                        },
+                        {
+                            "default": "query.is_baby"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.movement.lair_teleporter": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "query.skin_id == 1"
+                        },
+                        {
+                            "close": "query.skin_id == 0"
+                        }
+                    ]
+                },
+                "open": {
+                    "animations": [
+                        "open"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "close": {
+                    "animations": [
+                        "close"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.pb.lock_unlock": {
+            "states": {
+                "default": {
+                    "animations":["locked"],
+                    "transitions": [
+                        {
+                            "unlocked": "query.is_saddled"
+                        }
+                    ]
+                },
+                "unlocked": {
+                    "animations": [
+                        "unlocked"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_saddled"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.movement.lair_trophy": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "display": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "display": {
+                    "animations": [
+                        "particle_anim"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.movement.wardrobe": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "trigger": "query.skin_id == 1"
+                        }
+                    ]
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.villain_o_meter": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "display_0": "query.skin_id == 0"
+                        },
+                        {
+                            "display_1": "query.skin_id == 1"
+                        },
+                        {
+                            "display_2": "query.skin_id == 2"
+                        },
+                        {
+                            "display_3": "query.skin_id == 3"
+                        },
+                        {
+                            "display_4": "query.skin_id == 4"
+                        },
+                        {
+                            "display_5": "query.skin_id == 5"
+                        },
+                        {
+                            "display_6": "query.skin_id == 6"
+                        },
+                        {
+                            "display_7": "query.skin_id == 7"
+                        },
+                        {
+                            "display_8": "query.skin_id == 8"
+                        },
+                        {
+                            "display_9": "query.skin_id == 9"
+                        },
+                        {
+                            "display_10": "query.skin_id == 10"
+                        }
+                    ]
+                },
+                "display_0": {
+                    "animations": [
+                        "level_0"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 0"
+                        }
+                    ]
+                },
+                "display_1": {
+                    "animations": [
+                        "level_100"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ]
+                },
+                "display_2": {
+                    "animations": [
+                        "level_200"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ]
+                },
+                "display_3": {
+                    "animations": [
+                        "level_300"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ]
+                },
+                "display_4": {
+                    "animations": [
+                        "level_400"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ]
+                },
+                "display_5": {
+                    "animations": [
+                        "level_500"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ]
+                },
+                "display_6": {
+                    "animations": [
+                        "level_600"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ]
+                },
+                "display_7": {
+                    "animations": [
+                        "level_700"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ]
+                },
+                "display_8": {
+                    "animations": [
+                        "level_800"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 8"
+                        }
+                    ]
+                },
+                "display_9": {
+                    "animations": [
+                        "level_900"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 9"
+                        }
+                    ]
+                },
+                "display_10": {
+                    "animations": [
+                        "level_1000"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 10"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.lair.button": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "trigger": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.lair.vnc_screen": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "trigger": "query.variant == 1"
+                        }
+                    ]
+                },
+                "trigger": {
+                    "animations": [
+                        "trigger"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.trigger.mode_select.rp": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "story": "query.variant == 1"
+                        },
+                        {
+                            "sandbox": "query.variant == 2"
+                        }
+                    ]
+                },
+                "story": {
+                    "animations": [
+                        "adventure"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                },
+                "sandbox": {
+                    "animations": [
+                        "sandbox"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.rp.minion_lair": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "temp.random_lair_minion = math.round(math.random(1,3));"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_1": "temp.random_lair_minion == 1"
+                        },
+                        {
+                            "idle_2": "temp.random_lair_minion == 2"
+                        },
+                        {
+                            "idle_3": "temp.random_lair_minion == 3"
+                        }
+                    ]
+                },
+                "idle_1": {
+                    "animations": [
+                        "idle_1"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "idle_2": {
+                    "animations": [
+                        "idle_2"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                },
+                "idle_3": {
+                    "animations": [
+                        "idle_3"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:showdown_knockback",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cyd:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "system",
+          "trigger",
+          "prop",
+          "boss"
+        ]
+      },
+      "minecraft:behavior.knockback_roar": {
+        "attack_time": 0.1,
+        "cooldown_time": 30,
+        "duration": 2,
+        "knockback_range": 2,
+        "knockback_damage": 2,
+        "knockback_strength": 2,
+        "on_roar_end": {
+          "event": "evt:despawn"
+        },
+        "knockback_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "boss"
+            }
+          ]
+        },
+        "damage_filters": {
+          "none_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "boss"
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "evt:despawn": {
+        "add": {
+          "component_groups": [
+            "cyd:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

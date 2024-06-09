@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:toilet_wall",
+      "materials": {
+        "default": "zombie",
+        "emissive": "cyd_transparent_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/wk/toilet_wall"
+      },
+      "geometry": {
+        "default": "geometry.toilet_wall"
+      },
+      "sound_effects": {
+        "trigger": "cyd.mission.bank.bank_eye_scanner"
+      },
+      "animations": {
+          "trigger": "animation.toilet_wall.trigger",
+          "ctrl": "controller.animation.rp.toilet_wall"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.toilet_wall"
+      ]
+    }
+  }
+}

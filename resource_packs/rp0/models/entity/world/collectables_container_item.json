@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"geometry.collectables_container_item": {
+		"texturewidth": 16,
+		"textureheight": 16,
+		"visible_bounds_width": 7,
+		"visible_bounds_height": 5,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"rotation": [0, 90, 0]
+			},
+			{
+				"name": "item",
+				"parent": "root",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-8, -8, 0], "size": [16, 16, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

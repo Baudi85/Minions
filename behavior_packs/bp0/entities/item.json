@@ -1,0 +1,266 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:item",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "tool"
+        ]
+      },
+      "animations": {
+        "tool": "controller.animation.item.propdisplay"
+      }
+    },
+    "component_groups": {
+      "cyd:sticky": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_sticky_prop"
+        }
+      },
+      "cyd:fart": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_fart_prop"
+        }
+      },
+      "cyd:kun": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_kun_prop"
+        }
+      },
+      "cyd:cheese": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_cheese_prop"
+        }
+      },
+      "cyd:jam": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_jam_prop"
+        }
+      },
+      "cyd:plasma": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_plasma_prop"
+        }
+      },
+      "cyd:shrink": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "cyd:item_shrink_prop"
+        }
+      }
+    },
+    "components": {
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "itemprop"
+        ],
+        "seats": {
+          "position": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "sticky"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:sticky"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "fart"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:fart"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "kun"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:kun"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "cheese"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:cheese"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "jam"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:jam"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "plasma"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:plasma"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "shrink"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:shrink"
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:sticky": {
+        "add": {
+          "component_groups": [
+            "cyd:sticky"
+          ]
+        }
+      },
+      "evt:fart": {
+        "add": {
+          "component_groups": [
+            "cyd:fart"
+          ]
+        }
+      },
+      "evt:kun": {
+        "add": {
+          "component_groups": [
+            "cyd:kun"
+          ]
+        }
+      },
+      "evt:cheese": {
+        "add": {
+          "component_groups": [
+            "cyd:cheese"
+          ]
+        }
+      },
+      "evt:jam": {
+        "add": {
+          "component_groups": [
+            "cyd:jam"
+          ]
+        }
+      },
+      "evt:plasma": {
+        "add": {
+          "component_groups": [
+            "cyd:plasma"
+          ]
+        }
+      },
+      "evt:shrink": {
+        "add": {
+          "component_groups": [
+            "cyd:shrink"
+          ]
+        }
+      }
+    }
+  }
+}

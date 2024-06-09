@@ -1,0 +1,105 @@
+{
+	"format_version": "1.10.0",
+	"geometry.lockbox": {
+		"texturewidth": 80,
+		"textureheight": 80,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"locators": {
+					"locator": [0, 9, -12]
+				}
+			},
+			{
+				"name": "all_back",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "all_front",
+				"parent": "all_back",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "lockbox",
+				"parent": "all_front",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-8, 0, -8], "size": [16, 1, 16], "uv": [0, 0]},
+					{"origin": [-8, 7.5, -8], "size": [16, 1, 16], "uv": [0, 0], "inflate": -0.25},
+					{"origin": [-8, 15, -8], "size": [16, 1, 16], "uv": [0, 0]},
+					{"origin": [7, 1, -8], "size": [1, 14, 16], "uv": [0, 17]},
+					{"origin": [-8, 1, -8], "size": [1, 14, 16], "uv": [0, 17], "mirror": true},
+					{"origin": [-7, 1, 7], "size": [14, 14, 1], "uv": [34, 34]}
+				]
+			},
+			{
+				"name": "moneystacks",
+				"parent": "lockbox",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "ms2",
+				"parent": "moneystacks",
+				"pivot": [0, 0, 0],
+				"rotation": [0, -5, 0],
+				"cubes": [
+					{"origin": [-6, 3, -3.5], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [0, 8.5, -5], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [-3, 1, -6], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [-6, 1, -5], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [-6, 1, 1], "size": [3, 2, 6], "uv": [0, 61]}
+				]
+			},
+			{
+				"name": "ms1",
+				"parent": "moneystacks",
+				"pivot": [4, 2, -2],
+				"rotation": [0, 20, 0],
+				"cubes": [
+					{"origin": [2.5, 1, -5], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [-4.5, 8.5, -7.5], "size": [3, 2, 6], "uv": [0, 61]},
+					{"origin": [-4.5, 10.5, -6.5], "size": [3, 2, 6], "uv": [0, 61]}
+				]
+			},
+			{
+				"name": "door",
+				"parent": "lockbox",
+				"pivot": [7, 8, -8],
+				"cubes": [
+					{"origin": [-7, 1, -8], "size": [14, 14, 1], "uv": [18, 18]},
+					{"origin": [-3, 11, -8.25], "size": [6, 2, 1], "uv": [0, 0]},
+					{"origin": [-6, 2, -7.25], "size": [12, 12, 1], "uv": [0, 47], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "lock_bar",
+				"parent": "door",
+				"pivot": [1, 5, -5.875],
+				"cubes": [
+					{"origin": [-8, 4, -6.375], "size": [11, 2, 1], "uv": [48, 0], "inflate": -0.25}
+				]
+			},
+			{
+				"name": "lock_1",
+				"parent": "door",
+				"pivot": [-4, 5, -7.75],
+				"cubes": [
+					{"origin": [-5, 4, -8.25], "size": [2, 2, 3], "uv": [0, 8]}
+				]
+			},
+			{
+				"name": "lock_2",
+				"parent": "door",
+				"pivot": [1, 5, -7.75],
+				"cubes": [
+					{"origin": [0, 4, -8.25], "size": [2, 2, 3], "uv": [0, 3]}
+				]
+			}
+		]
+	}
+}

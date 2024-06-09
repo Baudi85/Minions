@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:showdown_sven_outro",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/m5/showdown_svengeance"
+      },
+      "geometry": {
+        "default": "geometry.showdown_svengeance"
+      },
+      "sound_effects": {
+        "attack1": "cyd.mission.showdown.sven.attack",
+        "twister": "cyd.mission.showdown.sven.twister",
+        "walk": "cyd.mission.showdown.sven.walk",
+        "introjump": "cyd.mission.showdown.v6.intro",
+        "defeated": "cyd.mission.showdown.v6.defeat"
+      },
+      "animations": {
+        "breath": "animation.showdown_svengeance.breath",
+        "idle": "animation.showdown_svengeance.idle",
+        "walk": "animation.showdown_svengeance.walk",
+        "attack1": "animation.showdown_svengeance.attack1",
+        "attack2": "animation.showdown_svengeance.attack2",
+        "special": "animation.showdown_svengeance.twister",
+        "farted": "animation.showdown_svengeance.fart_bombed",
+        "defeated": "animation.showdown_svengeance.defeated",
+        "intro": "animation.showdown_svengeance.intro",
+        "outro": "animation.showdown_svengeance.outro",
+        "mission_intro": "animation.showdown_svengeance.mission_intro",
+        "ctrl": "controller.animation.showdown.sven",
+        "walk_ctrl": "controller.animation.showdown.movement"
+      },
+      "scripts": {
+        "animate": [
+          "breath"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"geometry.painting": {
+		"texturewidth": 48,
+		"textureheight": 48,
+		"visible_bounds_width": 11,
+		"visible_bounds_height": 6.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0],
+				"locators": {
+					"locator": [0, 27, -6]
+				}
+			},
+			{
+				"name": "all",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "painting",
+				"parent": "all",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [5, 0, -1], "size": [1, 16, 1], "uv": [21, 23]},
+					{"origin": [-6, 0, -1], "size": [1, 16, 1], "uv": [21, 23], "mirror": true},
+					{"origin": [-5, 0, -1], "size": [10, 1, 1], "uv": [0, 22]},
+					{"origin": [-5.5, 0.5, -0.85], "size": [11, 15, 1], "uv": [0, 0], "inflate": -0.25},
+					{"origin": [-5.5, 15.5, -0.1], "size": [11, 6, 0], "uv": [0, 16]},
+					{"origin": [-5, 15, -1], "size": [10, 1, 1], "uv": [21, 21]}
+				]
+			}
+		]
+	}
+}

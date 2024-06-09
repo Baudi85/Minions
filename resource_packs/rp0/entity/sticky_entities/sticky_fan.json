@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:sticky_fan",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/sticky_fan"
+      },
+      "geometry": {
+        "default": "geometry.sticky_fan"
+      },
+      "particle_effects": {
+        "sticky": "cyd:vent_sticky"
+      },
+      "animations": {
+        "tut_part_ctrl":"controller.animation.fan.sticky.ctrl",
+        "tutorial_particle": "animation.tutorial.particle",
+        "ctrl": "controller.animation.rp.sticky_fan",
+        "trigger": "animation.sticky_fan.trigger",
+        "idle_active": "animation.sticky_fan.idle_active",
+        "deactivate": "animation.sticky_fan.deactivate",
+        "trigger_fall": "animation.sticky_fan.trigger_fall"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "tut_part_ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

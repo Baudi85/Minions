@@ -1,0 +1,45 @@
+#used for laser diagonal
+execute @s[scores={laser_horiz=1..2}] ~ ~ ~ event entity @s evt:sid_2
+execute @s[scores={laser_horiz=3..4}] ~ ~ ~ event entity @s evt:sid_1
+execute @s[scores={laser_horiz=3..4}] ^-10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^-1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^-1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^ ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^ ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^1 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^2 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^3 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^4 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^5 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^6 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^7 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^8 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^9 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound
+execute @s[scores={laser_horiz=3..4}] ^10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add caught_wk
+execute @s[scores={laser_horiz=3..4}] ^10 ^ ^ execute @p[r=0.5,tag=!dev] ~ ~ ~ tag @s add laser_sound

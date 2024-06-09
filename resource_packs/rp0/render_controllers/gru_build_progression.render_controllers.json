@@ -1,0 +1,89 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.mission_progress_bar": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "progress_bar_stage_1": "query.variant == 1"
+                },
+                {
+                    "progress_bar_stage_2": "query.variant == 2"
+                },
+                {
+                    "progress_bar_stage_3": "query.variant == 3"
+                },
+                {
+                    "progress_bar_stage_4": "query.variant == 4"
+                },
+                {
+                    "progress_bar_stage_5": "query.variant == 5"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.grucar_progression_123": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "step_1*": "query.is_ignited"
+                },
+                {
+                    "step_2*": "query.is_powered"
+                },
+                {
+                    "step_3*": "query.is_sheared"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.grucar_progression_45": {
+            "geometry": "Geometry.default",
+            "part_visibility": [
+                {
+                    "jet2": "query.is_ignited"
+                },
+                {
+                    "exhaust_*": "query.is_ignited"
+                },
+                {
+                    "jet_left3": "query.is_ignited"
+                },
+                {
+                    "jet_left4": "query.is_ignited"
+                },
+                {
+                    "propeller2": "query.is_ignited"
+                },
+                {
+                    "jet_support_left2": "query.is_ignited"
+                },
+                {
+                    "jet_support_right2": "query.is_ignited"
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

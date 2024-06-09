@@ -1,0 +1,513 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.showdown.fart": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a remove chibuildup"
+        ],
+        "1.0": [
+          "/function showdown/text/fart"
+        ],
+        "5.9": [
+          "/tag @a add chibuildup",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 6
+    },
+    "animation.showdown.hand": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a remove chibuildup"
+        ],
+        "1.0": [
+          "/function showdown/text/hand"
+        ],
+        "5.9": [
+          "/tag @a add chibuildup",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 6
+    },
+    "animation.showdown.cheese": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a remove chibuildup"
+        ],
+        "0.1": [
+          "/function showdown/text/cheese"
+        ],
+        "5.9": [
+          "/tag @a add chibuildup",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 6
+    },
+    "animation.showdown.dash": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a remove chibuildup"
+        ],
+        "0.1": [
+          "/function showdown/text/dash"
+        ],
+        "5.9": [
+          "/tag @a add chibuildup"
+        ]
+      },
+      "animation_length": 6
+    },
+    "animation.showdown.roar": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a remove chibuildup"
+        ],
+        "1.0": [
+          "/function showdown/text/roar"
+        ],
+        "5.9": [
+          "/tag @a add chibuildup",
+          "/event entity @s evt:despawn"
+        ]
+      },
+      "animation_length": 6
+    },
+    "animation.showdown.charge": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function showdown/charge"
+        ]
+      },
+      "animation_length": 0.05
+    },
+    "animation.showdown.chargeface": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/effect @e[type=cyd:showdown_stronghold] slowness 1 255 true",
+          "/tp @s ~ ~ ~ facing @p true"
+        ],
+        "0.1": [
+          "/tp @s ~ ~ ~ facing @p true"
+        ],
+        "0.2": [
+          "/tp @s ~ ~ ~ facing @p true"
+        ],
+        "0.3": [
+          "/tp @s ~ ~ ~ facing @p true",
+          "/event entity @e[type=cyd:showdown_stronghold] evt:noturn"
+        ]
+      },
+      "animation_length": 0.4
+    },
+    "animation.showdown.slow": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 255 true"
+        ]
+      },
+      "animation_length": 0.5
+    },
+    "animation.showdown.cheesed": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 3 true"
+        ]
+      },
+      "animation_length": 0.5
+    },
+    "animation.showdown.cheesedani": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playanimation @s cheesed",
+          "/tag @s remove cheese"
+        ],
+        "5.0": [
+          "/event entity @s evt:nocheese"
+        ]
+      },
+      "animation_length": 5.5
+    },
+    "animation.showdown.cutscene.intro": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @a title §2",
+          "/tag @a add showdown",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @p[r=2,tag=!startedshowdown,tag=completedwk,tag=!startme] ~ ~ ~ function showdown/scenes/scene1",
+          "/function showdown/text/scene1",
+          "/spawnpoint @a -184 88 1800"
+        ],
+        "1.0": [
+          "/execute @e[type=cyd:showdown_nunchuk_cutscene,c=1] ~ ~ ~ tp @s ~ ~ ~0.5",
+          "/execute @e[type=cyd:showdown_stronghold_cutscene,c=1] ~ ~ ~ tp @s ~ ~ ~0.5",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ function showdown/scenes/scene1b"
+        ],
+        "6": [
+          "/function showdown/text/scene1_2"
+        ],
+        "12": [
+          "/function showdown/text/scene1_3"
+        ],
+        "17": [
+          "/function showdown/text/scene1_4"
+        ],
+        "20": [
+          "/function showdown/text/scene1_5"
+        ],
+        "23": [
+          "/function showdown/text/scene1_6"
+        ],
+        "28": [
+          "/function showdown/text/scene1_7",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @e[type=cyd:trigger_showdown] -168 114 1755",
+          "/tp @a -171 115 1763 facing -193 80 1802"
+        ],
+        "32": [
+          "/function showdown/text/scene1_8"
+        ],
+        "35": [
+          "/function showdown/text/scene1_9",
+          "/tp @e[type=cyd:trigger_showdown] -202 95 1800",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -191 94 1799 facing -201 95 1799",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s"
+        ],
+        "39": [
+          "/function showdown/text/scene1_10"
+        ],
+        "43.0": [
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ function showdown/scenes/scene2",
+          "/function showdown/text/scene2_1"
+        ],
+        "46.0": [
+          "/title @a title §1",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ effect @e[type=cyd:showdown_jean_cutscene,c=1] invisibility 9999 255 true",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ summon cyd:showdown_jean_clawed -184 88 1787",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ effect @a blindness 1 1 true",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ tp @a -184 88 1807 facing -184 88 1806",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @p[tag=scene1showdown,tag=!startedshowdown] ~ ~ ~ tag @a add startedshowdown",
+          "/function playerbase/objectives/m5_1",
+          "/event entity @s evt:sid_0"
+        ]
+      },
+      "animation_length": 47
+    },
+    "animation.showdown.cutscene.scene2": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.boss_defeat_jingle @s",
+          "/title @a title §2",
+          "/tag @a remove chibuildup",
+          "/tp @s -184 88 1793 180",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 2 2 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -182 88 1789 facing -184 87.4 1793",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene2_defeated"
+        ],
+        "1.0": [
+          "/playanimation @e[type=cyd:showdown_jean_outro,c=1] outro"
+        ],
+        "6.0": [
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_jean_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -193 94 1800 facing -203 96 1801",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] stop",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] intro",
+          "/function showdown/text/scene3_1"
+        ],
+        "9.0": [
+          "/title @a title §1",
+          "/effect @e[type=cyd:showdown_nunchuk_cutscene,c=1] invisibility 9999 255 true",
+          "/effect @a blindness 1 1 true",
+          "/tp @a -184 88 1807 facing -184 88 1806",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/summon cyd:showdown_nunchuk -184 88 1787",
+          "/function playerbase/objectives/m5_3"
+        ],
+        "9.1": [
+          "/title @a title §1",
+          "/event entity @e[type=cyd:showdown_jean_outro,c=1] evt:despawn",
+          "/tag @a add chibuildup"
+        ]
+      },
+      "animation_length": 13.5
+    },
+    "animation.showdown.cutscene.scene3": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.boss_defeat_jingle @s",
+          "/title @a title §2",
+          "/tag @a remove chibuildup",
+          "/tp @s -184 88 1793 180",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 2 2 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -182 88 1789 facing -184 87.4 1793",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene3_defeated"
+        ],
+        "1.0": [
+          "/playanimation @e[type=cyd:showdown_nunchuk_outro,c=1] outro"
+        ],
+        "6.0": [
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_nunchuk_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -193 94 1796 facing -200 95 1796",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] stop",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] intro",
+          "/function showdown/text/scene4_1"
+        ],
+        "9.0": [
+          "/title @a title §1",
+          "/effect @e[type=cyd:showdown_sven_cutscene,c=1] invisibility 9999 255 true",
+          "/effect @a blindness 1 1 true",
+          "/tp @a -184 88 1807 facing -184 88 1806",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/summon cyd:showdown_svengeance -184 88 1787",
+          "/function playerbase/objectives/m5_5"
+        ],
+        "9.1": [
+          "/event entity @e[type=cyd:showdown_nunchuk_outro,c=1] evt:despawn",
+          "/tag @a add chibuildup"
+        ]
+      },
+      "animation_length": 13.5
+    },
+    "animation.showdown.cutscene.scene4": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.boss_defeat_jingle @s",
+          "/title @a title §2",
+          "/tag @a remove chibuildup",
+          "/tp @s -184 88 1793 180",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 2 2 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -182 88 1789 facing -184 87.4 1793",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene4_defeated"
+        ],
+        "1.0": [
+          "/playanimation @e[type=cyd:showdown_sven_outro,c=1] outro"
+        ],
+        "6.0": [
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_sven_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -193 94 1798 facing -203 96 1797",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] stop",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] intro",
+          "/function showdown/text/scene5_1"
+        ],
+        "9.0": [
+          "/title @a title §1",
+          "/effect @e[type=cyd:showdown_sven_cutscene,c=1] invisibility 9999 255 true",
+          "/effect @a blindness 1 1 true",
+          "/tp @a -184 88 1807 facing -184 88 1806",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/summon cyd:showdown_stronghold -184 88 1787",
+          "/function playerbase/objectives/m5_7"
+        ],
+        "9.1": [
+          "/event entity @e[type=cyd:showdown_sven_outro,c=1] evt:despawn"
+        ]
+      },
+      "animation_length": 13.5
+    },
+    "animation.showdown.cutscene.scene5": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.boss_defeat_jingle @s",
+          "/title @a title §2",
+          "/tag @a remove chibuildup",
+          "/tp @s -184 88 1793 180",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 2 2 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -182 88 1789 facing -184 87.4 1793",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene5_defeated"
+        ],
+        "1.0": [
+          "/playanimation @e[type=cyd:showdown_stronghold_outro,c=1] outro"
+        ],
+        "6.0": [
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_sven_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -191 94 1799 facing -200 95 1799",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] stop",
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] intro",
+          "/function showdown/text/scene6_1"
+        ],
+        "9.0": [
+          "/title @a title §1",
+          "/effect @e[type=cyd:showdown_belle_cutscene,c=1] invisibility 9999 255 true",
+          "/effect @a blindness 1 1 true",
+          "/tp @a -184 88 1807 facing -184 88 1806",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/summon cyd:showdown_belle_bottom -184 88 1787",
+          "/function showdown/text/scene6_2",
+          "/effect @e[type=cyd:showdown_stronghold_outro] invisibility 999 255 true"
+        ],
+        "14": [
+          "/function playerbase/objectives/m5_9"
+        ],
+        "14.1": [
+          "/event entity @e[type=cyd:showdown_stronghold_outro,c=1] evt:despawn",
+          "/tag @a add chibuildup"
+        ]
+      },
+      "animation_length": 14.5
+    },
+    "animation.showdown.cutscene.scene6": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.boss_defeat_jingle @s",
+          "/title @a title §2",
+          "/tag @a remove chibuildup",
+          "/tp @s -184 88 1793 180",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 2 2 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -182 88 1789 facing -184 87.4 1793",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene6_defeated"
+        ],
+        "1.0": [
+          "/playanimation @e[type=cyd:showdown_belle_outro,c=1] outro",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @a add completedsdn",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @e[type=cyd:grucar_progression_45] add stage5",
+          
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:mission_progress_bar] evt:var_6",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @a add startworldmusic",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @e[type=cyd:collectible_storage] add grucar",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ event entity @e[type=cyd:trophy_dragon] evt:sid_1",
+          "/tag @e[type=cyd:system_storage] add bonus_mission",
+          "/tag @e[type=cyd:lair_teleporter] add bonus_trap"
+        ],
+        "6.0": [
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_belle_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -191 94 1799 facing -200 95 1799",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/function showdown/text/scene7p1"
+        ],
+        "10.0": [
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_belle_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/function showdown/text/scene7p2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -173 97 1786 facing -197 93 1809"
+        ],
+        "14.0": [
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_belle_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/effect @a blindness 1 1 true",
+          "/function showdown/text/scene7p3",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a -188 88 1808 facing -197 97 1818"
+        ],
+        "18.0": [
+          "/playanimation @e[type=cyd:showdown_belle_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_nunchuk_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_jean_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_stronghold_cutscene,c=1] defeated",
+          "/playanimation @e[type=cyd:showdown_sven_cutscene,c=1] defeated",
+          "/effect @e[type=cyd:showdown_belle_cutscene,c=1] clear",
+          "/effect @a invisibility 6 10 true",
+          "/effect @a slowness 5 5 true",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function showdown/text/scene7p4"
+        ],
+        "23.0": [
+          "/title @a title §1",
+          "/function playerbase/location_unlocks",
+          "/tag @a remove showdown",
+          "/function showdown/reset",
+          "/execute @p[tag=!sandbox] ~ ~ ~ execute @e[type=cyd:showdown_belle_outro] ~ ~ ~ summon cyd:post_m5_dialogue",
+          "/tag @a add chibuildup"
+        ],
+        "23.1": [
+          "/event entity @e[type=cyd:showdown_belle_outro,c=1] evt:despawn"
+        ]
+      },
+      "animation_length": 23.5
+    }
+  }
+}

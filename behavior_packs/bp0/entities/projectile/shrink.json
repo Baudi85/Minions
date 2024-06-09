@@ -1,0 +1,120 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:shrink",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball",
+            "animations": {
+                "ctrl": "animation.shrink_ray",
+                "shrink": "animation.shrink_ray.shrink",
+                "sound_ctrl":"controller.animation.tool.shrink.sound"
+            },
+            "scripts": {
+                "animate": [
+                    "ctrl",
+                    "sound_ctrl",
+                    "shrink"
+                ]
+            }
+        },
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 0.1,
+                    "causes_fire": false,
+                    "fire_affected_by_griefing": true,
+                    "destroy_affected_by_griefing": true
+                }
+            },
+            "cyd:var_1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.98,
+                "height": 0.98
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "filter": "snowball",
+                        "damage": 1,
+                        "knockback": false
+                    },
+                    "definition_event": {
+                        "affect_projectile": true,
+                        "event_trigger": {
+                            "event": "evt:var_1",
+                            "target": "self"
+                        }
+                    },
+                    "remove_on_hit":{}
+                },
+                "power": 1,
+                "gravity": 0,
+                "inertia": 1,
+                "liquid_inertia": 1.1,
+                "uncertainty_base": 0,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "offset": [
+                    0,
+                    -0.5,
+                    0
+                ],
+                "reflect_on_hurt": false,
+                "catch_fire": false
+            },
+            "minecraft:timer": {
+              "time": [
+                30.0,
+                30.0
+              ],
+              "looping": false,
+              "time_down_event": {
+                "event": "evt:despawn",
+                "target": "self"
+              }
+            }
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            },
+            "evt:var_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:var_1"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

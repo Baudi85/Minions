@@ -1,0 +1,1 @@
+event entity @e[type=cyd:moon_cheer_prop] evt:despawn

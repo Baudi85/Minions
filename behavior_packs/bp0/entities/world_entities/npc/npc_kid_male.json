@@ -1,0 +1,368 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:world_kid_male",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "cheese_ctrl"
+        ]
+      },
+      "animations": {
+        "cheese_ctrl": "controller.animation.vp.cheese_sound",
+        "cheese_sound": "animation.cyd.vp.boy.cheesed"
+      }
+    },
+    "component_groups": {
+      "cyd:shrunk": {
+        "minecraft:timer": {
+          "time": 60,
+          "looping": true,
+          "time_down_event": {
+            "event": "evt:normal",
+            "target": "self"
+          }
+        },
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      },
+      "cyd:normal": {
+        "minecraft:scale": {
+          "value": 1.0
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "cyd:mv_1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "cyd:mv_2": {
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:timer": {
+          "time": 60,
+          "looping": false,
+          "time_down_event": {
+            "event": "evt:normal",
+            "target": "self"
+          }
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "cyd:interact": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "barrier"
+                    }
+                  ]
+                },
+                "event": "evt:set_static"
+              },
+              "use_item": false,
+              "swing": true
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": "minecraft:is_baby"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "barrier"
+                    }
+                  ]
+                },
+                "event": "evt:set_mobile"
+              },
+              "use_item": false,
+              "swing": true
+            }
+          ]
+        }
+      },
+      "cyd:static": {
+        "minecraft:is_baby": {},
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:movement": {
+          "value": 0
+        }
+      },
+      "cyd:target_near_mod": {
+        "minecraft:is_ignited": {}
+      },
+      "cyd:no_move": {
+        "minecraft:movement": {
+          "value": 0
+        }
+      },
+      "cyd:move": {
+        "minecraft:movement": {
+          "value": 0.18
+        }
+      }
+    },
+    "components": {
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 2
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "npc",
+          "citizen",
+          "cheese"
+        ]
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:can_climb": {},
+      "minecraft:jump.static": {},
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:preferred_path": {
+        "max_fall_blocks": 1,
+        "jump_cost": 5,
+        "default_block_cost": 1.5,
+        "preferred_path_blocks": [
+          {
+            "cost": 0,
+            "blocks": [
+              "grass_path",
+              "smooth_stone",
+              "silver_glazed_terracotta"
+            ]
+          },
+          {
+            "cost": 100,
+            "blocks": [
+              "concrete"
+            ]
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 5
+      },
+      "minecraft:movement": {
+        "value": 0.18
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.25
+      },
+      "minecraft:behavior.go_home": {
+        "priority": 1,
+        "speed_multiplier": 1,
+        "interval": 60,
+        "goal_radius": 2
+      },
+      "minecraft:home": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false,
+            "on_damage": {}
+          }
+        ]
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "equals",
+                  "value": "cheese"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "evt:cheese"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": "<=",
+                  "value": 40
+                },
+                {
+                  "test": "has_component",
+                  "operator": "!=",
+                  "value": "minecraft:is_ignited"
+                }
+              ]
+            },
+            "event": "evt:activate_move"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 40
+                },
+                {
+                  "test": "has_component",
+                  "operator": "==",
+                  "value": "minecraft:is_ignited"
+                }
+              ]
+            },
+            "event": "evt:deactivate_move"
+          }
+        ]
+      }
+    },
+    "events": {
+      "evt:shrink_entity": {
+        "add": {
+          "component_groups": [
+            "cyd:shrunk"
+          ]
+        }
+      },
+      "evt:activate_move": {
+        "add": {
+          "component_groups": [
+            "cyd:target_near_mod",
+            "cyd:move"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:no_move"
+          ]
+        }
+      },
+      "evt:deactivate_move": {
+        "remove": {
+          "component_groups": [
+            "cyd:target_near_mod",
+            "cyd:move"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "cyd:no_move"
+          ]
+        }
+      },
+      "evt:normal": {
+        "add": {
+          "component_groups": [
+            "cyd:normal"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "cyd:shrunk",
+            "cyd:mv_2"
+          ]
+        }
+      },
+      "evt:cheese": {
+        "add": {
+          "component_groups": [
+            "cyd:mv_2"
+          ]
+        }
+      },
+      "evt:set_static": {
+        "add": {
+          "component_groups": [
+            "cyd:static"
+          ]
+        }
+      },
+      "evt:set_mobile": {
+        "remove": {
+          "component_groups": [
+            "cyd:static"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cyd:interact",
+                "cyd:mv_1"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

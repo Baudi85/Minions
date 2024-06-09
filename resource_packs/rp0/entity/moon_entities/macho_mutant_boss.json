@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:macho_mutant_boss",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/moon/el_macho_mutant"
+      },
+      "geometry": {
+        "default": "geometry.el_macho_mutant"
+      },
+      "sound_effects": {
+        "intro": "cyd.mission.moon.macho_jump_down",
+        "atk": "cyd.mission.moon.el.attack",
+        "slam": "cyd.mission.moon.el.slam",
+        "leap": "cyd.mission.moon.el.leap"
+      },
+      "particle_effects": {
+        "slam_el_macho": "cyd:slam_el_macho"
+      },
+      "animations": {
+        "idle": "animation.el_macho_mutant.idle",
+        "breath": "animation.el_macho_mutant.breath",
+        "slam": "animation.el_macho_mutant.slam",
+        "melee_1": "animation.el_macho_mutant.attack1",
+        "melee_2": "animation.el_macho_mutant.attack2",
+        "walk": "animation.el_macho_mutant.walk",
+        "intro": "animation.el_macho_mutant.intro",
+        "leap": "animation.el_macho_mutant.leap",
+        "death": "animation.el_macho_mutant.death",
+        "ctrl": "controller.animation.rp.boss_macho"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

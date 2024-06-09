@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:world_lockbox",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/lockbox"
+      },
+      "geometry": {
+        "default": "geometry.lockbox"
+      },
+      "sound_effects": {
+        "open": "cyd.mission.bank.deposit_box_open"
+      },
+      "animations": {
+          "trigger": "animation.lockbox.trigger",
+          "ctrl": "controller.animation.rp.world_lock_entities"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

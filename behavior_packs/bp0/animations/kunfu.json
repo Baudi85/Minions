@@ -1,0 +1,191 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kunfu.text.startmission": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/execute @p[r=2,tag=!startedkun,tag=kunintrotext,tag=kunintrotext2,tag=!dev,tag=completedchase,tag=!stillreading] ~ ~ ~ function missions/dialogue/kun/start",
+        "0.1": "/execute @a[r=3,tag=!startedkun,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ function missions/dialogue/kun/notstarted",
+        "0.2": "/execute @p[r=15] ~ ~ ~ execute @e[type=cyd:kun_master_chow_start,c=1,tag=!nobubble] ~ ~ ~ particle cyd:chatbubble ~ ~2.2 ~"
+      },
+      "animation_length": 1
+    },
+    "animation.kunfu.text.kunintro": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/tag @e[type=cyd:kun_master_chow_start,c=1,tag=!nobubble] add nobubble",
+        "0.1": "/function missions/dialogue/kun/intro",
+        "4.1": "/function missions/dialogue/kun/notstarted2",
+        "8.1": "/function missions/dialogue/kun/notstarted3",
+        "8.8": "/tag @a add kunintrotext2",
+        "8.9": "/event entity @s evt:despawn"
+      },
+      "animation_length": 9
+    },
+    "animation.kunfu.text.intro": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ summon cyd:kun_intro ~ ~ ~",
+          "/execute @p[r=3,tag=!kunintrotext,tag=!dev,tag=completedchase] ~ ~ ~ tag @a add kunintrotext"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.kunfu.text.scene1": {
+      "loop": false,
+      "timeline": {
+        "0.4": "/title @a title §2",
+        "0.5": "/function missions/dialogue/kun/scene1p1",
+        "5": "/function missions/dialogue/kun/scene1p2",
+        "10": "/function missions/dialogue/kun/scene1p3teleport",
+        "15": "/function missions/dialogue/kun/scene1p4teleport",
+        "15.1": "/title @a title §1"
+      },
+      "animation_length": 16
+    },
+    "animation.kunfu.text.scene2": {
+      "loop": false,
+      "timeline": {
+        "0.5": "/function missions/dialogue/kun/scene2p1",
+        "4.5": "/function missions/dialogue/kun/scene2p2",
+        "8.5": "/function missions/dialogue/kun/scene2p3",
+        "12.5": "/function missions/dialogue/kun/scene2p4",
+        "16.5": "/function missions/dialogue/kun/scene2p5"
+      },
+      "animation_length": 17
+    },
+    "animation.kunfu.text.scene3": {
+      "loop": false,
+      "timeline": {
+        "1.0": "/function missions/dialogue/kun/scene3p1",
+        "5": "/function missions/dialogue/kun/scene3p2",
+        "10": "/function missions/dialogue/kun/scene3p3",
+        "14": "/function missions/dialogue/kun/scene3p4"
+      },
+      "animation_length": 15
+    },
+    "animation.kunfu.text.scene4": {
+      "loop": false,
+      "timeline": {
+        "0.5": "/title @a title §2",
+        "1.0": "/function missions/dialogue/kun/scene4p1",
+        "5": "/function missions/dialogue/kun/scene4p2",
+        "9": "/function missions/dialogue/kun/scene4p3",
+        "13": "/function missions/dialogue/kun/scene4p4",
+        "17": "/function missions/dialogue/kun/scene4p5",
+        "17.1": "/title @a title §1"
+      },
+      "animation_length": 18
+    },
+    "animation.kunfu.text.scene5": {
+      "loop": false,
+      "timeline": {
+        "2.0": "/function missions/dialogue/kun/scene5p1",
+        "8": "/function missions/dialogue/kun/scene5p2",
+        "12": "/function missions/dialogue/kun/scene5p3",
+        "18": "/function missions/dialogue/kun/scene5p4",
+        "21": "/execute @p[tag=!sandbox] ~ ~ ~ execute @e[type=cyd:kun_master_chow] ~ ~ ~ summon cyd:post_m3_dialogue"
+      },
+      "animation_length": 22
+    },
+
+
+
+
+    "animation.kunfu.text.death.normal": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @a[tag=!msgdeath] ~ ~ ~ function missions/dialogue/kun/normaldeath"
+      },
+      "animation_length": 1
+    },
+    "animation.kunfu.text.death.super": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @a[tag=!msgdeath] ~ ~ ~ function missions/dialogue/kun/superdeath"
+      },
+      "animation_length": 1
+    },
+
+
+    
+    "animation.kunfu.chibuild": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function missions/kunfu/knockbacktimer"
+      },
+      "animation_length": 1
+    },
+    "animation.kun.point": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/scoreboard players add @p kuncharge 1",
+        "0.1": "/scoreboard players set @p kunchargetimer 5"
+      },
+      "animation_length": 1
+    },
+    "animation.kunfu.wave1": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/function missions/kunfu/wave1",
+        "30.0": "/function missions/kunfu/wave1b",
+        "45.0": "/function missions/kunfu/wave1c"
+      },
+      "animation_length": 61
+    },
+    "animation.kunfu.wave2": {
+      "loop": false,
+      "timeline": {
+        "1.0": "/function missions/kunfu/wave2",
+        "15.0": "/function missions/kunfu/wave2b",
+        "30.0": "/function missions/kunfu/wave2c"
+      },
+      "animation_length": 32
+    },
+    "animation.kunfu.wave3": {
+      "loop": false,
+      "timeline": {
+        "1.0": "/function missions/kunfu/wave3",
+        "20.0": "/function missions/kunfu/wave3b",
+        "40.0": "/function missions/kunfu/wave3c"
+      },
+      "animation_length": 61
+    },
+    "animation.kunfu.player_boost_forward": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.02": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /playsound cyd.gadget.chi.dash @a[r=5]",
+        "0.01": "/execute @s[scores={kuncharge=6..}] ~ ~ ~ /function missions/kunfu/knockback",
+        "0.1": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.11": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ function missions/kunfu/playerforward",
+        "0.12": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.13": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.14": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.15": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.16": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.17": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.18": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.19": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.20": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.21": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.22": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.23": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.24": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.25": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.26": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.27": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.28": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.29": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.30": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.31": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.32": "/execute @s[scores={kuncharge=..5}] ~ ~ ~ /function missions/kunfu/playerforward",
+        "0.33": "/tag @s remove roar",
+        "0.34": "/clear @s[tag=!player1] cyd:chi_nunchuk 0 1",
+        "0.43": "/give @s[tag=!player1] cyd:chi_nunchuk 1"
+      },
+      "animation_length": 2
+    }
+  }
+}

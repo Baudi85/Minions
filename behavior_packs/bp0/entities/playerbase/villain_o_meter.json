@@ -1,0 +1,398 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:villain_o_meter",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+              "animate": [
+                "prox_ctrl"
+              ]
+            },
+            "animations": {
+              "prox_ctrl": "controller.animation.prop.prox_msg",
+              "prox_msg": "animation.vp.prox"
+            }
+        },
+        "component_groups": {
+            "cyd:despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:sid_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "cyd:sid_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "cyd:sid_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "cyd:sid_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "cyd:sid_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "cyd:sid_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "cyd:sid_8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "cyd:sid_9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                }
+            },
+            "cyd:sid_10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                }
+            },
+            "cyd:ignited": {
+                "minecraft:is_ignited": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.5
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "emitter"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {}
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 3
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 4
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_ignite"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            },
+            "evt:sid_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_0",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_2": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_0",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_3": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_3"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_0",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_4": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_4"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_0",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_5": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_5"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_0",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_6": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_6"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_7": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_7"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_0",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_8": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_8"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_0",
+                        "cyd:sid_9",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_9": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_9"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_0",
+                        "cyd:sid_10"
+                    ]
+                }
+            },
+            "evt:sid_10": {
+                "add": {
+                    "component_groups": [
+                        "cyd:sid_10"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:sid_1",
+                        "cyd:sid_2",
+                        "cyd:sid_3",
+                        "cyd:sid_4",
+                        "cyd:sid_5",
+                        "cyd:sid_6",
+                        "cyd:sid_7",
+                        "cyd:sid_8",
+                        "cyd:sid_9",
+                        "cyd:sid_0"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:rm_ignite": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            }
+        }
+    }
+}

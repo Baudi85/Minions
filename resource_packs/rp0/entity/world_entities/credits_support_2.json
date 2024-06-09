@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "cyd:credits_support_2",
+        "materials": {
+          "default": "zombie"
+        },
+        "textures": {
+          "default": "textures/entity/world/credits_display_support_screen_v02"
+        },
+        "geometry": {
+          "default": "geometry.credits_display_support_screen"
+        },
+        "spawn_egg": {
+          "base_color": "#4287f5",
+          "overlay_color": "#e6efff"
+        },
+        "render_controllers": [
+          "controller.render.default"
+        ]
+      }
+    }
+  }
+  

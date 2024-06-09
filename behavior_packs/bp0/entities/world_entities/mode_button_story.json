@@ -1,0 +1,194 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:mode_button_story",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "ctrl",
+                    "prox_ctrl"
+                ]
+            },
+            "animations": {
+                "ctrl": "controller.animation.trigger.teleporter.button",
+                "activate": "animation.mode.select.story",
+                "prox_ctrl": "controller.animation.prop.prox_msg",
+                "prox_msg": "animation.lair.interact_prop"
+            }
+        },
+        "component_groups": {
+            "cyd:sid_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "cyd:sid_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "cyd:mv_0": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "cyd:mv_1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cyd:ignited": {
+                "minecraft:is_ignited": {}
+            },
+            "cyd:despawn": {
+              "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "system",
+                    "no_stick",
+                    "prop",
+                    "lair_unlocked"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 1.0
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            },
+            "minecraft:push_through": {
+                "value": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "action.interact.activate",
+                        "swing": true,
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "equals",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_mark_variant",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "event": "evt:mv_1"
+                        }
+                    }
+                ]
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": "<=",
+                                    "value": 3
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "not",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:ignite"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "distance_to_nearest_player",
+                                    "operator": ">=",
+                                    "value": 4
+                                },
+                                {
+                                    "test": "has_component",
+                                    "operator": "equals",
+                                    "value": "minecraft:is_ignited"
+                                }
+                            ]
+                        },
+                        "event": "evt:rm_ignite"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "evt:despawn": {
+              "add": {
+                "component_groups": [
+                  "cyd:despawn"
+                ]
+              }
+            },
+            "evt:mv_0": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_1"
+                    ]
+                }
+            },
+            "evt:mv_1": {
+                "add": {
+                    "component_groups": [
+                        "cyd:mv_1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cyd:mv_0"
+                    ]
+                }
+            },
+            "evt:ignite": {
+                "add": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            },
+            "evt:rm_ignite": {
+                "remove": {
+                    "component_groups": [
+                        "cyd:ignited"
+                    ]
+                }
+            }
+        }
+    }
+}

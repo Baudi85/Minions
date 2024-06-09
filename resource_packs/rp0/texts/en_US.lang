@@ -1,0 +1,1196 @@
+pack.name=Minions Resource Pack	###
+pack.description=by Cyclone	###
+
+book.tele.p1=§l§6Teleporter%1%1§r§8A self-made teleportation device.%1%1Used to get you to places quickly.	### 
+book.tele.p2=%1§1§lInstructions:%1%1§r§11. Choose the location with the arrow buttons.%1%11. Activate teleporter with the red button.%1%11. Step inside.	##
+book.map.p1=§l§6Map%1%1§r§8A map of the surrounding area.%1%1Markers show places of interest.	###
+book.map.p2=%1§1§1Legend,§r§8§o page 1:%1%1%1§r §8§oLower City%1%1%1§r §8§oUpper City%1%1%1§r §8§oChinatown	###
+book.map.p3=%1§1§1Legend,§r§8§o page 2:%1%1%1§r §8§oResidential Area%1%1%1§r §8§oFreedonia%1%1%1§r §8§oAVL Submarine	###
+book.map.p4=%1§1§1Legend,§r§8§o page 3:%1%1%1§r §8§oVector's Fortress%1%1%1§r §8§oEl Macho's Mansion%1%1%1§r §8§oBratt's Lair	###
+book.container.p1=§l§6Collectibles Container:%1%1§r§8A handy container to store all your valuables in.%1%1They are sorted by the location you found them in.	###
+book.container.p2=%1§l§1Instructions:%1%1§r§1Select which area's collectables show up with the arrow buttons.	###
+book.meter.p1=§1§6Villain-O-Meter%1%1§r§8A meter that gauges how evil you are.%1%1It increases every time you perform evil deeds.	###
+book.meter.p2=%1§l§1Rewards:%1%1§r§1Every §650 Points§1 a new Minion will become available to follow you.%1%1Additional §6rewards§1 are given at the displayed markers. 	###
+book.cars.p1=§l§6Vehicle Interface%1%1§r§8An interface used to access your available vehicles.%1%1More vehicles will unlock as you progress.	###
+book.cars.p2=%1§l§1Instructions:%1%1§r§11. Select which vehicle you would like to spawn with the arrow buttons.%1%12. Press the red button to spawn it outside your house.	###
+book.grucar.p1=§l§6Villain Wheels%1%1§r§8Your own personal villain-mobile.%1%1Currently under construction.	###
+book.grucar.p2=%1§l§1Instructions:%1%1§r§1As you continue your adventure, the Minions will continue building the vehicle.%1%1Check back in every once in a while to view the progress.	###
+book.minions.p1=§l§6Minion Costumes%1%1§r§8This is where all The Minion's costumes are stored.%1%1Try to collect them all!	###
+book.minions.p2=%1§l§1Instructions:%1%1§r§1Activate any costume to create a copy of it for your inventory.	###
+book.tools.p1=§l§6Gadgets%1%1§r§8All your evil gadgets that you found or invented.%1%1Handy things for a villain.	###
+book.tools.p2=%1§l§1Instructions:%1%1§r§1If you ever lose one of them, just come here and grab a new copy.	###
+sign.set=%1§lRecommended%1§lSettings:	###
+sign.settings=Clouds: §lOff§r%1Particles: §lOn§r%1Music: §lOn§r%1Sounds: §lOn§r	###
+sign.adv1=This map was designed to be played in adventure mode.	###
+sign.adv2=For best player experience, try adventure mode first	###
+sign.adv3=and play sandbox mode at a later time.	###
+
+teleport.failed.inmission=You cannot teleport while in a mission!	###
+
+item.cyd:banana.name=Banana	### Banana
+
+item.lodestonecompass.name=§5Mission Tracker	###
+
+item.cyd:chi_nunchuk.name=§6Gadget: Nunchuck	###Nunchuck Weapon
+item.cyd:cheesegun.name=§6Gadget: Cheeze Ray	###Cheeze Ray Weapon
+item.cyd:slingshot.name=§6Gadget: Sticky Hand	###Sticky Hand Weapon
+item.cyd:fartgrenade.name=§6Gadget: Fart Bomb	###Fart Bomb Weapon
+item.cyd:shrinkray.name=§5Gadget: Shrink Ray	###
+item.cyd:jamgun.name=§6Gadget: Jelly Launcher	###
+item.cyd:plasma_jamgun.name=§6Gadget: Plasma Jelly Launcher	###
+item.cyd:evil_o_matic.name=§5Gadget: Transport O Matic	###Transport O Matic
+
+item.cyd:record_key.name=§4Record Key	###Record Key
+item.cyd:dragon_medalion.name=§4Dragon Medalion	###Dragon Medalion
+
+
+
+item.cyd:monalisa.name=§4Mona Lisa	###Mona Lisa
+
+item.cyd:perkins_key.name=§4Perkins' Key	###EPerkins' Key
+item.cyd:key_card.name=§4Key Card	###Key Card
+item.cyd:key_card2.name=§4Safe Key	###Safe Key
+item.cyd:disguise.name=§4Wild Knuckles' Disguise	###
+item.cyd:drill.name=§4Drill	###
+item.cyd:holo_map.name=§5Holo Map	###
+item.cyd:clipboard_objective.name=§dObjective Clipboard	###
+
+item.cyd:teleport_icon_01_gru_70s_home.name=Teleport to: Gru's 70s Home	###
+item.cyd:teleport_icon_02_airport.name=Teleport to: Airport	###
+item.cyd:teleport_icon_03_wild_knuckles.name=Teleport to: Wild Knuckles	###
+item.cyd:teleport_icon_04_chinatown.name=Teleport to: Chinatown	###
+item.cyd:teleport_icon_05_elmacho_fortress.name=Teleport to: El Macho Fortress	###
+item.cyd:teleport_icon_06_gru_current_hometown.name=Teleport to: Gru's Current Hometown	###
+item.cyd:teleport_icon_07_bratt.name=Teleport to: Bratt	###
+item.cyd:teleport_icon_08_gru_mansion.name=Teleport to: Gru's Mansion	###
+item.cyd:teleport_icon_09_vector.name=Teleport to: Vector	###
+item.cyd:teleport_icon_10_recordshop.name=Teleport to: Record Shop	###
+item.cyd:teleport_icon_11_chowsacupuncture.name=Teleport to: Chow's Acupuncture	###
+item.cyd:teleport_icon_12_bankofevil.name=Teleport to: Bank of Evil	###
+item.cyd:teleport_icon_13_playerlab.name=Teleport to: Gru's Lab	###
+item.cyd:teleport_icon_14_dru.name=Teleport to: Dru's Mansion	###
+
+item.cyd:costume_aloha.name=§eAloha Costume	###'Aloha' costume
+item.cyd:costume_builder.name=§eBuilder Costume	###'Builder' costume
+item.cyd:costume_dj.name=§eDJ Costume	###'DJ' costume
+item.cyd:costume_firefighter.name=§eFire Fighter Costume	###'Fire Fighter' costume
+item.cyd:costume_flashlight.name=§eFlashlight Costume	###'Flashlight' costume
+item.cyd:costume_glowing.name=§eGlow Costume	###'Glowing' costume
+item.cyd:costume_golf.name=§eGolf Costume	###'Golfing' costume
+item.cyd:costume_knight.name=§eKnight Costume	###'Knight' costume
+item.cyd:costume_magician.name=§eMagician Costume	###'Magician' costume
+item.cyd:costume_beach.name=§eBeach Costume	###'Beach' costume
+item.cyd:costume_default.name=§eDefault Costume	###'Default' costume
+item.cyd:costume_kungfu.name=§eKung-Fu Costume	###'Kung-Fu' costume
+item.cyd:costume_maid.name=§eMaid Costume	###'Maid' costume
+item.cyd:costume_minecraft.name=§eMinecraft Costume	###'Minecraft' costume
+item.cyd:costume_mutant.name=§eMutant Costume	###'Mutant' costume
+item.cyd:costume_tourist.name=§eTourist Costume	###'Tourist' costume
+item.cyd:costume_tuba.name=§eTuba Costume	###'Tuba' costume
+
+
+entity.cyd:minion_costume.name=Minion	###
+item.spawn_egg.entity.cyd:minion_costume.name=Spawn §6Minion	###
+entity.cyd:minion_costume_statue.name=Minion Statue	###
+item.spawn_egg.entity.cyd:minion_costume_statue.name=Spawn Minion Statue	###
+entity.cyd:sticky_vent.name=Sticky Vent	###
+item.spawn_egg.entity.cyd:sticky_vent.name=Spawn Sticky Vent	###
+entity.cyd:record_player.name=Record Player	###
+item.spawn_egg.entity.cyd:record_player.name=Spawn Record Player	###
+entity.cyd:young_nefario.name=Young Nefario	###
+item.spawn_egg.entity.cyd:young_nefario.name=Spawn Young Nefario	###
+entity.cyd:stronghold_chase_entity.name=Stronghold Chase Entity	###
+item.spawn_egg.entity.cyd:stronghold_chase_entity.name=Spawn Stronghold Chase Entity	###
+entity.cyd:stronghold_chase_entity_2.name=Stronghold Chase Entity 2	###
+item.spawn_egg.entity.cyd:stronghold_chase_entity_2.name=Spawn Stronghold Chase Entity 2	###
+entity.cyd:v6_guard_1.name=Henchman 1	###
+item.spawn_egg.entity.cyd:v6_guard_1.name=Spawn Henchman 1	###
+entity.cyd:v6_guard_2.name=Henchman 2	###
+item.spawn_egg.entity.cyd:v6_guard_2.name=Spawn Henchman 2	###
+entity.cyd:v6_guard_3.name=Henchman 3	###
+item.spawn_egg.entity.cyd:v6_guard_3.name=Spawn Henchman 3	###
+entity.cyd:train_chase_2.name=Train Chase 2	###
+item.spawn_egg.entity.cyd:train_chase_2.name=Spawn Train Chase 2	###
+entity.cyd:secretary.name=Secretary	###
+item.spawn_egg.entity.cyd:secretary.name=Spawn Secretary	###
+entity.cyd:sticky_lever.name=Sticky Lever	###
+item.spawn_egg.entity.cyd:sticky_lever.name=Spawn Sticky Lever	###
+entity.cyd:sticky_fan.name=Sticky Fan	###
+item.spawn_egg.entity.cyd:sticky_fan.name=Spawn Sticky Fan	###
+entity.cyd:sticky_box_small.name=Sticky Box Small	###
+item.spawn_egg.entity.cyd:sticky_box_small.name=Spawn Sticky Box Small	###
+entity.cyd:sticky_box_large.name=Sticky Box Large	###
+item.spawn_egg.entity.cyd:sticky_box_large.name=Spawn Sticky Box Large	###
+entity.cyd:elevator.name=Elevator	###
+item.spawn_egg.entity.cyd:elevator.name=Spawn Elevator	###
+entity.cyd:train_chase_3.name=Train Chase 3	###
+item.spawn_egg.entity.cyd:train_chase_3.name=Spawn Train Chase 3	###
+entity.cyd:chase_entity.name=Chase Entity Belle	###
+item.spawn_egg.entity.cyd:chase_entity.name=Spawn Chase Entity Belle	###
+entity.cyd:tree_chase.name=Tree Chase	###
+item.spawn_egg.entity.cyd:tree_chase.name=Spawn Tree Chase	###
+entity.cyd:train_chase_1.name=Train Chase 1	###
+item.spawn_egg.entity.cyd:train_chase_1.name=Spawn Train Chase 1	###
+entity.cyd:sven_car_chase.name=Sven Car Chase	###
+item.spawn_egg.entity.cyd:sven_car_chase.name=Spawn Sven Car Chase	###
+entity.cyd:nunchuck_throw.name=Train Nunchuck Throw	###
+item.spawn_egg.entity.cyd:nunchuck_throw.name=Spawn Nunchuck Throw	###
+entity.cyd:market_stall.name=Market Stall	###
+item.spawn_egg.entity.cyd:market_stall.name=Spawn Market Stall	###
+entity.cyd:jeanclawed_car_chase.name=Jeanclawed Car Chase	###
+item.spawn_egg.entity.cyd:jeanclawed_car_chase.name=Spawn Jeanclawed Car Chase	###
+entity.cyd:crane_load.name=Crane Load	###
+item.spawn_egg.entity.cyd:crane_load.name=Spawn Crane Load	###
+entity.cyd:construction_barrier_long.name=Construction Barrier Long	###
+item.spawn_egg.entity.cyd:construction_barrier_long.name=Spawn Construction Barrier Long	###
+entity.cyd:construction_barrier_short.name=Construction Barrier Short	###
+item.spawn_egg.entity.cyd:construction_barrier_short.name=Spawn Construction Barrier Short	###
+
+entity.cyd:dru_car.name=Dru's Car	###Dru's Car
+item.spawn_egg.entity.cyd:dru_car.name=Spawn §6Vehicle: Dru's Car	###Dru's Car
+entity.cyd:belle_bike.name=Belle's Bike	###Belle's Motorcycle
+item.spawn_egg.entity.cyd:belle_bike.name=Spawn §6Vehicle: Belle's Bike	###Belle's Motorcycle
+entity.cyd:belle_car.name=Vicious 6 Car	###Vicious Six Automobile
+item.spawn_egg.entity.cyd:belle_car.name=Spawn §6Vehicle: Vicious 6 Car	###Vicious Six Automobile
+entity.cyd:gru_bike.name=Gru's Rocket Bike	###Gru's Rocket Bicycle
+item.spawn_egg.entity.cyd:gru_bike.name=Spawn §6Vehicle: Gru's Rocket Bike	###Gru's Rocket Bicycle
+entity.cyd:gru_car.name=Grumobile	###Gru's Automobile 'Grumobile'
+item.spawn_egg.entity.cyd:gru_car.name=Spawn §6Vehicle: Grumobile	###Gru's Automobile 'Grumobile'
+entity.cyd:jeanclawed_car.name=Jeanclawed's Crab	###Jeanclawed's Crab Vehicle
+item.spawn_egg.entity.cyd:jeanclawed_car.name=Spawn §6Vehicle: Jeanclawed's Crab	###Jeanclawed's Crab Vehicle
+entity.cyd:nunchuck_car.name=Nunchuck's Car	###Nunchuck's Automobile
+item.spawn_egg.entity.cyd:nunchuck_car.name=Spawn §6Vehicle: Nunchuck's Car	###Nunchuck's Automobile
+entity.cyd:stronghold_tank.name=Stronghold's Tank	###Stronghold's Tank Vehicle
+item.spawn_egg.entity.cyd:stronghold_tank.name=Spawn §6Vehicle: Stronghold's Tank	###Stronghold's Tank Vehicle
+entity.cyd:sven_car.name=Sven's Bike	###Sven's Motorcycle
+item.spawn_egg.entity.cyd:sven_car.name=Spawn §6Vehicle: Sven's Bike	###Sven's Motorcycle
+entity.cyd:vehicle_truck.name=Generic Truck	###Generic Truck
+item.spawn_egg.entity.cyd:vehicle_truck.name=Spawn §6Vehicle: Generic Truck	###
+entity.cyd:vehicle_car.name=Generic Car	###
+item.spawn_egg.entity.cyd:vehicle_car.name=Spawn §6Vehicle: Generic Car	###
+entity.cyd:flying_car.name=Gru's Airship	###
+item.spawn_egg.entity.cyd:flying_car.name=Spawn §6Vehicle: Gru's Airship	###
+
+entity.cyd:world_adult_female.name=Adult Female	###
+item.spawn_egg.entity.cyd:world_adult_female.name=Spawn Adult Female	###
+entity.cyd:world_adult_male.name=Adult Male	###
+item.spawn_egg.entity.cyd:world_adult_male.name=Spawn Adult Male	###
+entity.cyd:world_kid_female.name=Kid Female	###
+item.spawn_egg.entity.cyd:world_kid_female.name=Spawn Kid Female	###
+entity.cyd:world_kid_male.name=Kid Male	###
+item.spawn_egg.entity.cyd:world_kid_male.name=Spawn Kid Male	###
+
+entity.cyd:sticky_box_small_world.name=Sticky Box Small	###
+item.spawn_egg.entity.cyd:sticky_box_small_world.name=Spawn Sticky Box Small	###
+
+entity.cyd:world_henchman_1.name=Henchman	###
+item.spawn_egg.entity.cyd:world_henchman_1.name=Spawn Henchman	###
+entity.cyd:world_henchman_2.name=Henchman	###
+item.spawn_egg.entity.cyd:world_henchman_2.name=Spawn Henchman	###
+entity.cyd:world_henchman_3.name=Henchman	###
+item.spawn_egg.entity.cyd:world_henchman_3.name=Spawn Big Henchman	###
+
+entity.cyd:world_mutant_minion.name=Mutant Minion	###
+item.spawn_egg.entity.cyd:world_mutant_minion.name=Spawn Mutant Minion	###
+
+item.cyd:bat.name=Bat	###Bat
+item.stone_sword.name=Bat	###Bat
+item.cyd:rader.name=§dCollectible Radar	### Rader to find outfits and collectibles.
+
+
+tile.cyd:nether_brick_vertical.name=Nether Brick Vertical	###
+tile.cyd:planks_spruce_2.name=Planks Spruce 2	###
+tile.cyd:stone_tile_2.name=Stone Tile 2	###
+tile.cyd:stone_tile.name=Stone Tile	###
+tile.cyd:cactus_block.name=Cactus Block	###
+tile.cyd:hardened_clay_stained_red_smooth.name=Hardened Clay Stained Red Smooth	###
+tile.cyd:end_bricks_chiseled.name=End Bricks Chiseled	###
+tile.cyd:hardened_clay_stained_red_painted.name=Hardened Clay Stained Red Painted	###
+tile.cyd:sand_gravel.name=Sand Gravel	###
+tile.cyd:sandstone_tile.name=Sandstone Tile	###
+tile.cyd:concrete_green_smooth.name=Concrete Green Smooth	###
+tile.cyd:concrete_white_smooth.name=Concrete White Smooth	###
+tile.cyd:concrete_cyan_smooth.name=Concrete Cyan Smooth	###
+tile.cyd:concrete_purple_smooth.name=Concrete Purple Smooth	###
+tile.cyd:nether_brick_stripped.name=Nether Brick Stripped	###
+tile.cyd:nether_brick_tile.name=Nether Brick Tile	###
+tile.cyd:nether_brick_pillar.name=Nether Brick Pillar	###
+tile.cyd:hardened_clay_stained_cyan_smooth.name=Hardened Clay Stained Cyan Smooth	###
+tile.cyd:quartz_smooth_vertical.name=Quartz Smooth Vertical	###
+tile.cyd:quartz_smooth_cutline.name=Quartz Smooth Cutline	###
+tile.cyd:end_bricks_carved.name=End Bricks Carved	###
+tile.cyd:stone_granite_painted_white.name=Stone Granite Painted White	###
+tile.cyd:hardened_clay_painted.name=Hardened Clay Painted	###
+tile.cyd:stone_diorite_tile.name=Stone Diorite Tile	###
+tile.cyd:stone_granite_tile.name=Stone Granite Tile	###
+
+action.interact.costume_swap=Costume Swap	###Costume Swap
+action.interact.dispense_gadget=Dispense Gadget	###Dispense Gadget
+action.interact.dispense_costume=Dispense Costume	###Dispense Costume
+action.interact.next=Next	###Next
+action.interact.open_wardrobe=Open Wardrobe	###Open Wardrobe
+action.interact.place_record=Place Record	###Place Record
+action.interact.inspect=Inspect	###Inspect
+action.interact.take=Take	###Take
+action.interact.unlock=Unlock	###Unlock
+action.interact.follow=Follow	###Follow
+action.interact.sit=Sit	###Sit
+action.interact.activate=Activate	###Activate
+
+
+
+action.hint.exit.cyd:gru_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:belle_bike=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:belle_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:gru_bike=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:jeanclawed_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:nunchuck_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:stronghold_tank=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:sven_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:dru_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:vehicle_truck=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:vehicle_car=Sneak to exit	###Sneak to exit
+action.hint.exit.cyd:flying_car=Sneak to exit and jump to fly	###Sneak to exit and jump to fly
+
+action.hint.exit.console.cyd:gru_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:belle_bike=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:belle_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:gru_bike=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:jeanclawed_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:nunchuck_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:stronghold_tank=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:sven_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:dru_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:vehicle_truck=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:vehicle_car=Sneak to exit	###Sneak to exit
+action.hint.exit.console.cyd:flying_car=Sneak to exit and jump to fly	###Sneak to exit and jump to fly
+
+lair.buttons= Interact to activate	###
+holomap.interact= Interact to pickup	###
+costume.interact= Interact to collect costume	###
+gadget.interact= Interact to collect gadget	###
+wardrobe.interact= Interact with wardrobe to open	###
+
+
+
+sign.aloha_costume=Aloha Costume	###'Aloha' costume
+sign.builder_costume=Builder Costume	###'Builder' costume
+sign.dj_costume=DJ Costume	###'DJ' costume
+sign.firefighter_costume=Fire Fighter Costume	###'Fire Fighter' costume
+sign.flashlight_costume=Flashlight Costume	###'Flashlight' costume
+sign.glow_costume=Glow Costume	###'Glowing' costume
+sign.golfing_costume=Golf Costume	###'Golfing' costume
+sign.knight_costume=Knight Costume	###'Knight' costume
+sign.magician_costume=Magician Costume	###'Magician' costume
+sign.beach_costume=Beach Costume	###'Beach' costume
+sign.default_costume=Default Costume	###'Default' costume
+sign.kungfu_costume=Kung-Fu Costume	###'Kung-Fu' costume
+sign.maid_costume=Maid Costume	###'Maid' costume
+sign.minecraft_costume=Minecraft Costume	###'Minecraft' costume
+sign.mutant_costume=Mutant Costume	###'Mutant' costume
+sign.tourist_costume=Tourist Costume	###'Tourist' costume
+sign.tuba_costume=Tuba Costume	###'Tuba' costume
+
+robot_t_01=<§bVNC Voice§r> §3So, you think YOU can become a §6super-villain§3? Well, you're tuned to the right channel!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_02=<§bVNC Voice§r> §3I work for The §6Villain Network Channel§3. You've been watching us. But we've also been watching you.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_03=<§bVNC Voice§r> §3Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_04=<§bVNC Voice§r> §3We've also been watching §6The Minions§3. They always follow the biggest, baddest villain.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_05=<§bVNC Voice§r> §3Well, they're following you. And that's when we at the VNC also become interested.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_06=<§bVNC Voice§r> §3Turns out there might be a §6powerful artifact§3 hidden at your local §6record store§3, which is a front for a criminal organization known as the §6Vicious 6§3.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_07=<§bVNC Voice§r> §3Of course, you can do with this information what you will. Just remember... We're always watching.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_08=<§bVNC Voice§r> §3It's a §5Transport-O-Matic§3. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_09=<§bVNC Voice§r> §3By the way, I do recommend using your §6secret tunnel§3 to go out. It's the fastest way to the record shop.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_10=<§bVNC Voice§r> §3Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_11=<§bVNC Voice§r> §3I have no doubt that ANY Minion wearing this §6firefighter costume§3 can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_12=<§bVNC Voice§r> §3Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_13=<§bVNC Voice§r> §3You could of course just stay on track here. The §6record shop§3 I mentioned should be just down the road.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_14=<§bVNC Voice§r> §3However we're also very interested to see the §6Minions§3 just going around the city.	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+robot_t_15=<§bVNC Voice§r> §3There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!	### So, you think YOU can become a super-villain? Well, you're tuned to the right channel! I work for The Villain Network Channel. You've been watching us. But we've also been watching you. Who I am is unimportant. Who YOU are and what YOU plan to do is what we're interested in. We've also been watching The Minions. They always follow the biggest, baddest villain. Well, they're following you. And that's when we at the VNC also become interested. Turns out there might be a powerful artifact hidden at your local record store, which is a front for a criminal organization known as the Vicious . Of course, you can do with this information what you will. Just remember... We're always watching. It's a Transport-O-Matic. We're still working on the name. It's a brilliant device that will teleport right back to your lair. Don't overuse it, though. It's still experimental. We still don't know where the last villain who used it is. By the way, I do recommend using your secret tunnel to go out. It's the fastest way to the record shop. Minions are surprisingly simple creatures, aren't they? Put them in a costume, and they'll start playing the part! I have no doubt that ANY Minion wearing this firefighter costume can't help but start putting out fires. But it's not a Minions strength to... think. That's where their evil boss comes into the picture. You must guide them... or in this case, dress them. Yes, the big city! Everyone here is positively trembling of the chaos you will rain down upon them! You could of course just stay on track here. The record shop I mentioned should be just down the road. However we're also very interested to see the Minions just going around the city. There’s plenty of opportunities to stir the hornet’s nest. So, explore to your heart’s content!
+
+
+mode.msg.sandbox= §3Sandbox Mode	###
+mode.msg.story= §3Adventure mode	###
+
+sticky.msg= §3 Use to pull entities closer	###
+cheese.msg= §3 Use to shoot cheese	###
+shrink.msg= §3 Use to shoot a shrink ray	###
+nunchuck.msg= §3 Use to attack	###
+plasma_jamgun.msg= §3 Use to shoot plasma jam	###
+jamgun.msg= §3 Use to shoot jam	###
+fart.msg= §3 Use to throw a fart bomb	###
+bat.msg= §3 Use to attack	###
+holo.msg= §3 Use to deploy holo map	###
+
+teleport_unlock.msg= §3 All teleporter locations have been unlocked!	###
+
+objective.msg= §3Use to display objective	###
+objective.none= §6§l§nObjective:§r §3Explore and find collectibles	###
+
+objective.t_01= §6§l§nObjective:§r §3Give your Minions a banana to make them come with you	###
+objective.t_02= §6§l§nObjective:§r §3Enter the secret underground tunnel	###
+objective.t_03= §6§l§nObjective:§r §3Put firefighter costume on Minion	###
+objective.t_04= §6§l§nObjective:§r §3Proceed through the tunnel	###
+
+objective.m0_p= §6§l§nObjective:§r §3Go to the record shop to steal the artifact 	###
+objective.m1_p= §6§l§nObjective:§r §3Look for trouble near the record shop 	###
+objective.m2_p= §6§l§nObjective:§r §3Visit Master Chow in Chinatown to train your Minions 	###
+objective.m3_p= §6§l§nObjective:§r §3Find the mysterious contact inside the Bank of Evil 	###
+objective.m4_p1= §6§l§nObjective:§r §3Go back to the lair and check on your Minions	###
+objective.m4_p2= §6§l§nObjective:§r §3Listen to transmission	###
+objective.m4_p3= §6§l§nObjective:§r §3Go to Chinatown and face the thieves 	###
+objective.m5_p= §6§l§nObjective:§r §3Investigate the mysterious teleporter coordinates at the lair	###
+
+
+
+objective.m1_01= §6§l§nObjective:§r §3Talk to Nefario	###
+objective.m1_02= §6§l§nObjective:§r §3Take the listening room elevator	###
+objective.m1_03= §6§l§nObjective:§r §3Sneak around the side	###
+objective.m1_04= §6§l§nObjective:§r §3Use the Sticky Hand to proceed	###
+objective.m1_05= §6§l§nObjective:§r §3Find the Zodiac Stone	###
+objective.m1_06= §6§l§nObjective:§r §3Find another way out	###
+objective.m1_07= §6§l§nObjective:§r §3Escape back up the elevator	###
+
+objective.m2_01= §6§l§nObjective:§r §3Escape Belle Bottom	###
+
+objective.m3_01= §6§l§nObjective:§r §3Listen to Master Chow	###
+objective.m3_02= §6§l§nObjective:§r §3Activate Nunchuck to dash	###
+objective.m3_03= §6§l§nObjective:§r §3Charge the Nunchuck by hitting the dummy	###
+objective.m3_04= §6§l§nObjective:§r §3Activate charged Nunchuck to roar	###
+objective.m3_05= §6§l§nObjective:§r §3Defeat the henchmen. §lWave§r 1/3	###
+objective.m3_06= §6§l§nObjective:§r §3Defeat the henchmen. §lWave§r 2/3	###
+objective.m3_07= §6§l§nObjective:§r §3Defeat the henchmen. §lWave§r 3/3	###
+
+objective.m4_01= §6§l§nObjective:§r §3Speak to your contact person	###
+objective.m4_02= §6§l§nObjective:§r §3Steal the key	###
+objective.m4_03= §6§l§nObjective:§r §3Go to the left exhibition room	###
+objective.m4_04_painting= §6§l§nObjective:§r §3Find the keycard behind a painting	###
+objective.m4_04_carpet= §6§l§nObjective:§r §3Find the keycard under a carpet	###
+objective.m4_04_vase= §6§l§nObjective:§r §3Find the keycard in a vase	###
+objective.m4_05= §6§l§nObjective:§r §3Go to the right exhibition room	###
+objective.m4_06_painting= §6§l§nObjective:§r §3Find the next keycard behind a painting	###
+objective.m4_06_carpet= §6§l§nObjective:§r §3Find the next keycard under a carpet	###
+objective.m4_06_vase= §6§l§nObjective:§r §3Find the next keycard in a vase	###
+objective.m4_07= §6§l§nObjective:§r §3Enter the vault and steal the Cheeze Ray	###
+objective.m4_08= §6§l§nObjective:§r §3Return to Wild Knuckles	###
+objective.m4_09= §6§l§nObjective:§r §3Go to the lower bank rooms	###
+objective.m4_10= §6§l§nObjective:§r §§Find a drill and disguises	###
+objective.m4_11= §6§l§nObjective:§r §3Return to Wild Knuckles	###
+objective.m4_12= §6§l§nObjective:§r §3Get past the lasers	###
+objective.m4_13= §6§l§nObjective:§r §3Escape the bank	###
+
+objective.m5_01= §6§l§nObjective:§r §3Defeat Jean Clawed	###
+objective.m5_02= §6§l§nObjective:§r §3Find a way to get closer to him	###
+objective.m5_03= §6§l§nObjective:§r §3Defeat Nunchuck	###
+objective.m5_04= §6§l§nObjective:§r §3Find a way slow her down	###
+objective.m5_05= §6§l§nObjective:§r §3Defeat Svengeance	###
+objective.m5_06= §6§l§nObjective:§r §3Find a way to interrupt his twister	###
+objective.m5_07= §6§l§nObjective:§r §3Defeat Stronghold	###
+objective.m5_08= §6§l§nObjective:§r §3Find a way to avoid his charge attack	###
+objective.m5_09= §6§l§nObjective:§r §3Defeat Belle Bottom	###
+objective.m5_10= §6§l§nObjective:§r §3Find a way to escape her chain	###
+
+objective.m6_01= §6§l§nObjective:§r §3Escape the prison cell	###
+objective.m6_02= §6§l§nObjective:§r §3Find your fellow Minions	###
+objective.m6_03= §6§l§nObjective:§r §3Use the Jelly Launcher to defeat El Macho	###
+objective.m6_04= §6§l§nObjective:§r §3Find your fellow Minions	###
+objective.m6_05= §6§l§nObjective:§r §3Defeat Balthazar Bratt	###
+objective.m6_06= §6§l§nObjective:§r §3Open the path to Vector	###
+objective.m6_07= §6§l§nObjective:§r §3Go to Vector	###
+objective.m6_08= §6§l§nObjective:§r §3Defeat Vector	###
+objective.m6_09= §6§l§nObjective:§r §3Assemble at the designated location	###
+
+lair.machines.unlock= §3The machines in the lair are unlocked	###
+
+
+chase.1.cutscene.intro=<§bVNC Voice§r> §3Understandably, the Vicious 6 aren't happy you stole from them. They're angry. Like drop you from a bridge angry.	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.2.cutscene.intro=<§bVNC Voice§r> §3Lucky for you, we've prepared your §6getaway vehicle§3 for you. You should know how to use it, right?	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.3.cutscene.intro=<§bVNC Voice§r> §3That's their current leader: §6Belle Bottom§3. And she does not look happy. Step on it!	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.4.cutscene.intro=<§bVNC Voice§r> §3But oh no! Be careful, The other Vicious 6 are also searching around the city to stop you.	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.5.cutscene.intro=<§bVNC Voice§r> §3Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato.	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+chase.6.cutscene.intro=<§bVNC Voice§r> §3Anyway, if I were you, I'd try to make a §6run for the bridge§3. You could lose her there with the rockets on your bike.	### Understandably, the Vicious  aren't happy you stole from them. They're angry. Like drop you from a bridge angry.  Lucky for you, we've prepared your getaway vehicle for you. You should know how to use it, right? That's their current leader: Belle Bottom. And she does not look happy. Step on it! But oh no! Be careful, The other Vicious  are also searching around the city to stop you. Well, I did warn you not to steal from them, didn't I? Or did I do the exact opposite? Tomato, tomato. Anyway, if I were you, I'd try to make a run for the bridge. You could lose her there with the rockets on your bike.
+
+chase.1.cutscene.outro=§cGame Over	###Game Over
+chase.1.cutscene.win=§bMission Complete	###Mission Complete
+chase.2.cutscene.outro=§c	###Do not translate
+
+chase.text.scene1= §6Looks like you have some car trouble!	###Take this, weakling!
+chase.text.scene1b= §6And another! Haaa!	###
+
+chase.text.scene2= §dTime for a little exorcise!	### This is a pun
+chase.text.scene2b= §dGet the little demon, Belle!	###
+
+chase.text.scene3= §2I'm gonna flatten you!	###
+chase.text.scene3b= §2You won't escape!	###
+
+chase.text.scene4= §3Time to break you in two!	###
+chase.text.scene4b= §3Prepare to le suffer!	###
+chase.text.scene4c= §3THIS will stop you! Ahahaha!!	###
+
+chase.text.scene5a= §3Don't think this is over! We're coming for you!!	###
+chase.text.scene5b= §3Gimme that medalion you little punk!	###
+
+chase.text.finishline=<§bVNC Voice§r> §3Nice riding! Now get back to your lair. There's some things we need to address. §6TOP SECRET THINGS§3.	###
+chase.text.failed=§6 §3They caught you? I'm not gonna sugar coat it. That's not good.	###
+
+chase.text.boost=§6Boost Activated!	###
+
+chase.text.farted1= That stinks!	###
+chase.text.farted2= Get back here!	###
+chase.text.farted3= Where are you!?	###
+
+chase.race.countdown3=§c3	###
+chase.race.countdown2=§62	###
+chase.race.countdown1=§e1	###
+chase.race.countdowngo=§aGO!	###
+
+
+m2.post.1=<§bVNC Voice§r> §3So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone.	### So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.2=<§bVNC Voice§r> §3We looked at the §6devices§3 in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.3=<§bVNC Voice§r> §3Please walk up to each one and listen to our ideas.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.4=<§bVNC Voice§r> §3So this is just a §6digital map§3 of the surrounding area. There's some interesting §6locations marked§3 on it, supposedly ones worth checking out.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.5=<§bVNC Voice§r> §3We think this is a list of §6all locations§3 you have visited. Nice to keep track of, for nostalgic reasons, I guess.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.6=<§bVNC Voice§r> §3A §6storage box§3 for all your items. Just because you are a super-villain doesn't mean you need to be super messy.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.7=<§bVNC Voice§r> §3A room just for §6Minions§3! I guess Minions need their own space for relaxing too.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.8=<§bVNC Voice§r> §3Your wall of §6trophies§3! Did you steal these or earn them? I guess it doesn't matter since you are a villain.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.9=<§bVNC Voice§r> §3This is an outdated §6teleportation device§3, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.10=<§bVNC Voice§r> §3A tool rack for §6evil gadgets§3. Ah, the thought of ingenuity on display excites me.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+m2.post.11=<§bVNC Voice§r> §3A work in progress, yes? Villains must have their §6villain wheels§3, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.	###So you've returned. Succesfully, it seems. We've taken the liberty of... snooping around a bit while you were gone. We looked at the devices in your lair and want to confirm that they do what we think they do. Your cooperation in this would be greatly... expected. Please walk up to each one and listen to our ideas. So this is just a digital map of the surrounding area. There's some interesting locations marked on it, supposedly ones worth checking out. We think this is a list of all locations you have visited. Nice to keep track of, for nostalgic reasons, I guess. A storage box for all your items. Just because you are a super-villain doesn't mean you need to be super messy. A room just for Minions! I guess Minions need their own space for relaxing too. Your wall of trophies! Did you steal these or earn them? I guess it doesn't matter since you are a villain. This is an outdated teleportation device, is it? Not quite as advanced as the Transport-O-Matic but I suppose it gets the job done. A tool rack for evil gadgets. Ah, the thought of ingenuity on display excites me. A work in progress, yes? Villains must have their villain wheels, after all. It certainly already looks quite evil. We're looking forward to seeing the final product.
+
+
+m2.post2.1=<§bVNC Voice§r> §3So, listen. We at the §6VNC§3... we're impressed. But not impressed enough. You did get the §6Medallion§3 but it was a bit sloppy.	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.2=<§bVNC Voice§r> §3Not your fault, of course. But the §6Minions§3 aren't quite as reliable as we thought.	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.3=<§bVNC Voice§r> §3To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to §6defend§3 themselves.	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.4=<§bVNC Voice§r> §3Find a place to train them in §6martial arts§3. Hopfully they're capable of learning something. But I'm not betting on it.	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+m2.post2.5=<§bVNC Voice§r> §3We heard there's a former Master of §6Kung Fu in Chinatown§3, but you'll have to convince her to come out of retirement to train them.	###So, listen. We at the VNC... we're impressed. But not impressed enough. You did get the Medallion but it was a bit sloppy. Not your fault, of course. But the Minions aren't quite as reliable as we thought. To really push yourself to the next level of super villainy, we suggest you train your Minions to be able to defend themselves. Find a place to train them in martial arts. Hopfully they're capable of learning something. But I'm not betting on it. We heard there's a former Master of Kung Fu in Chinatown, but you'll have to convince her to come out of retirement to train them.
+
+
+sticky.prompt.reminder=<§2Young Nefario§r> §eRemember, §6pull the boxes§e around with the §6Sticky Hand§e and use them to climb.	###
+sticky.fail=<§bVNC Voice§r> §3Horrible performance, Minions! Boo! Try again!	###
+sticky.success=<§bVNC Voice§r> §3Ehehehehe! Magnificent work, Minions! Magnificent work.	###
+
+
+sticky.tutorial.1.1=<§2Young Nefario§r> §eHey! Is that you? I hacked your communication device. Listen, you just found the §6Sticky Hand§e! My latest invention.	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.1.2=<§2Young Nefario§r> §eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable.	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.1.3=<§2Young Nefario§r> §eSee that stack of boxes up on the ledge there? You should be able to pull them down with the §6Sticky Hand§e. Give it a go!	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.2.1=<§2Young Nefario§r> §eNow, you can use that to §6jump up the ledge§e! And once you're up, just grab it again to get to the next ledge!	###Hey! Is that you? I hacked your communication device. Listen, you just found the Sticky Hand! My latest invention. eI need someone to test it out for me! You seem perfect! And by perfect, I mean expendable. See that stack of boxes up on the ledge there? You should be able to pull them down with the Sticky Hand. Give it a go! Now, you can use that to jump up the ledge! And once you're up, just grab it again to get to the next ledge! Excellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.
+sticky.tutorial.3.1=<§2Young Nefario§r> §eExcellent. Now, why don't you take it for a spin some more? There should be plenty of stuff to pull around down here. Go, go, I need more test results.	###unused line
+
+sticky.proximity=<§bVNC Voice§r> §3Almost at the record shop now. And yes... we are still watching. But not in a creepy way.	###
+
+scene_m1_01=<§bVNC Voice§r> §3Astonishing, isn't it? The lair of the §6Vicious 6§3. Still surprised to hear me? We have our ways, trust me...	### Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_02=<§bVNC Voice§r> §3Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_03=<§bVNC Voice§r> §3Their tiny bodies can fit anywhere and they can be §6quite sneaky§3... if they try. And they will have to.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_04=<§bVNC Voice§r> §3The place is swarming with §6henchmen§3, so your Minions will have to be careful.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_05=<§bVNC Voice§r> §3Deep inside it, is this artifact. The §6Dragon Medallion§3.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_06=<§bVNC Voice§r> §3You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?"	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_07=<§bVNC Voice§r> §3But let me tell you, if the question is whether to steal something... the answer is §6always yes§3.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_08=<§bVNC Voice§r> §3Hmmm, yes. Listen, kid, we've also known about this person for a while. The §6salesperson§3 inside the shop.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_09=<§bVNC Voice§r> §3That is an up-and-coming mad scientist, §6Dr. Nefario§3. You're gonna wanna talk to him.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+scene_m1_10=<§bVNC Voice§r> §3Just ask for a record called §6"You're no good"§3. That's the passcode.	###Astonishing, isn't it? The lair of the Vicious 6. Still surprised to hear me? We have our ways, trust me...  Anyway, If I may be so bold to suggest, this type of mission is excellent legwork for Minions. Their tiny bodies can fit anywhere and they can be quite sneaky... if they try. And they will have to. The place is swarming with henchmen, so your Minions will have to be careful. Deep inside it, is this artifact. The Dragon Medallion. You might think to yourself something like: "But wait, they're my fellow villain colleagues, should I really steal from them?" But let me tell you, if the question is whether to steal something... the answer is always yes Hmmm, yes. Listen, kid, we've also known about this person for a while. The salesperson inside the shop. That is an up-and-coming mad scientist, Dr. Nefario. You're gonna wanna talk to him. Just ask for a record called "You're no good". That's the passcode.
+
+sticky.prompt.coordinate.0.0=<§bVNC Voice§r> §3So. Minions. Nice to talk to you personally... I guess.	###
+
+sticky.prompt.coordinate.1.1=<§bVNC Voice§r> §3See these §6guards§3. You need to avoid their §6line of sight§3, else you get caught.	### See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.1.1.2=<§bVNC Voice§r> §3I'm sure you can handle it.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.1.2=<§bVNC Voice§r> §3I'm sure you can handle it.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.2.1=<§2Young Nefario§r> §eYou know, that §6vent§e has seen better days. Try pulling on it with the §6Sticky Hand§e.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.1=<§2Young Nefario§r> §eThis §6pile of boxes§e is probably too heavy to pull towards you.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.2=<§2Young Nefario§r> §eBut a little nudge from the §6Sticky Hand§e should be enough to pull it from that ledge.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.3.3=<§2Young Nefario§r> §eI bet that §6guard§e over there will hear it and come take a look. You could use that to §6sneak past him§e.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.4.1=<§bVNC Voice§r> §3This §6lever§3 is quite unusally placed. Regardless, the §6Sticky Hand§3 should reach it.	###unused line
+sticky.prompt.coordinate.4.2=<§bVNC Voice§r> §3I have concluded a 96% probability that the guards in this lair have similar devices to pull on levers, a 3% probability that they're using stilts and a 1% probability that someone really tall also works here.	###unused line
+sticky.prompt.coordinate.5.1=<§bVNC Voice§r> §3Quite an imposing corridor... Look towards the end, Minions! There it is. §6The Dragon Medallion§3.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.6.1=<§bVNC Voice§r> §3Didn't see that scary old corridor giving way! Sorry!	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.coordinate.7.1=<§bVNC Voice§r> §3I suppose you'll have to find another way out.	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.zodiac_aquired=<§bVNC Voice§r> §3I can't believe it! They really did! I forgot to tell you. You have to §6escape§3!	###See these guards. You need to avoid their line of sight, else you get caught I'm sure you can handle it. You know, that vent has seen better days. Try pulling on it with the Sticky Hand. This pile of boxes is probably too heavy to pull towards you. But a little nudge from the Sticky Hand should be enough to pull it from that ledge. I bet that guard over there will hear it and come take a look. You could use that to sneak past him Quite an imposing corridor... Look towards the end, Minions! There it is. The Dragon Medallion. Didn't see that scary old corridor giving way! Sorry! I suppose you'll have to find another way out I can't believe it! They really did! I forgot to tell you. You have to escape! I can't believe it! They really did! I forgot to tell you. You have to escape!
+sticky.prompt.aquire_zodiac=§6§l§nHint:§r §3Grab the §6Dragon Medallion§3 with your §6Sticky Hand§3	###
+sticky.prompt.1=Speak with Young Nefario	###
+sticky.1.caught=§4You have been caught!	###
+nefario.1.text=<§2Young Nefario§r> §eA customer! Sorry, just putting away some records and new evil inventions, wink wink.	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+nefario.2.text=<§2Young Nefario§r> §eSo. How can I help you? Are you looking for something...? special?	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+nefario.3.text=<§2Young Nefario§r> "§6You're no good§e?" Say no more. May I suggest §6Listening Booth 2§e?	###A customer! Sorry, just putting away some records and new evil inventions, wink wink. So. How can I help you? Are you looking for something...? Special? "You're no good?" Say no more. May I suggest Listening Booth 2?
+sticky.guard.question.1=<§4Guard§r> §cHuh? Who's there?	###
+sticky.guard.question.2=<§4Guard§r> §cDoes anyone else smell bananas?	###
+sticky.guard.question.3=<§4Guard§r> §cI heard something.	###
+sticky.guard.question.4=<§4Guard§r> §c... Hmm?	###
+sticky.guard.question.5=<§4Guard§r> §cWhat the... ?	###
+sticky.guard.question.6=<§4Guard§r> §cIs someone there?	###
+sticky.guard.knockout.1=<§4Guard§r> §cUuurgh!	###
+sticky.guard.knockout.2=<§4Guard§r> §cBa... na... na.	###
+sticky.guard.caught.1=<§4Guard§r> §cAha! Got you!	###
+sticky.guard.caught.2=<§4Guard§r> §cCaught ya!	###
+assistant.1.text=<§cAssistant§r> §3Are you applying? The Vicious 6 aren't in right now, come back later.	###Are you applying? The Vicious 6 aren't in right now, come back later. No offense, but this isn't a job for kids. Why don't you apply to our Internship program: Li'l Villains.
+assistant.2.text=<§cAssistant§r> §3No offense, but this isn't a job for kids. Why don't you apply to our Internship program: Li'l Villains.	###Are you applying? The Vicious 6 aren't in right now, come back later. No offense, but this isn't a job for kids. Why don't you apply to our Internship program: Li'l Villains.
+
+sticky.post.1=<§bVNC Voice§r> §3Hey, kid! Listen, there's some good and some bad news.	###
+sticky.post.2=<§bVNC Voice§r> §3The good news is, your §6Minions§3 actually got the Dragon Medallion.	###
+sticky.post.3=<§bVNC Voice§r> §3The bad news is, they §6got caught§3 and it looks like they really need your help now.	###
+sticky.post.4=<§bVNC Voice§r> §3I'm not saying you should risk your life for theirs, but they DO still have the Medallion.	###
+
+
+
+wk.no_cheese= §3Interesting design. Seems like these security bots are §6impervious to cheese§3.	###
+wk.interact= §6Interact to inspect	###
+wk.mona.interact= §6Interact to take	###
+wk.cheesegun_hint= §6Use the Cheeze Ray on the guards	###
+wk.proximity=<§bVNC Voice§r> §3Here it is. It doesn't look any more evil than your average bank but wait til you're inside.	###talking about the Bank of Evil
+
+wk.1.cutscene.intro=<§bVNC Voice§r> §3That's him. He tried to be anonymous, but we know his identity.	###That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.2.cutscene.intro=<§bVNC Voice§r> §3Doesn't mean we'll tell you, though. Maybe you'll find out.	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.3.cutscene.intro=<§bVNC Voice§r> §3Now, I'm not saying we spied on him and found out he wants to rob what's behind the §6giant safe door§3.	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+wk.4.cutscene.intro=<§bVNC Voice§r> §3Just a hunch is all. You better §6talk to him§3 to confirm it, though.	### That's him. He tried to be anonymous, but we know his identity. Doesn't mean we'll tell you, though. Maybe you'll find out. Now, I'm not saying we spied on him and found out he wants to rob what's behind the giant safe door. Just a hunch is all. You better talk to him to confirm it, though.
+
+wk.mission.text.1.1=<§7Wild Knuckles§r> §4Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the §6Vicious Six§4, you gotta be a tough cookie.	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.2=<§7Wild Knuckles§r> §4I got a brilliant plan to steal what they got behind that §6giant safe§4, but I'm gonna need help. Wanna §6work together§4? I can teach you a thing or two.	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.3=<§7Wild Knuckles§r> §4We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain!	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.4=<§7Wild Knuckles§r> §4Let's have some fun! Or at least try not to get caught...	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.5=<§7Wild Knuckles§r> §4I'm gonna make a big hullabaloo and distract ‘em. You §6steal the key from the clerk§4.	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.6=<§7Wild Knuckles§r> §4Disrespectful bunch. It's time someone taught them a lesson.	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+wk.mission.text.1.6.2=<§7Wild Knuckles§r> §4If you got any device for snatching stuff, now's the time to go grab that key while I distract them.	###Who are you? Oh. I was expecting someone who has graduated middle school. But hey, you steal from the Vicious Six, you gotta be a tough cookie. I got a brilliant plan to steal what they got behind that giant safe, but I'm gonna need help. Wanna work together? I can teach you a thing or two. We split the profits, 80-20. What? I found the thing and it's my plan. Fine. 79-21. You drive a hard bargain! Let's have some fun! Or at least try not to get caught... I'm gonna make a big hullabaloo and distract ‘em. You steal the key from the clerk. Disrespectful bunch. It's time someone taught them a lesson. If you got any device for snatching stuff, now's the time to go grab that key while I distract them.
+
+wk.mission.text.2.1=<§7Wild Knuckles§r> §4Hey! Look at the crazy old man! Who knows what I'll do next?!	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.2=<§7Wild Knuckles§r> §4Ahahaha!	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.3=<§7Wild Knuckles§r> §4Hohoo!	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+wk.mission.text.2.4=<§7Wild Knuckles§r> §4Hold your applause, kid. We're not done.	###Hey! Look at the crazy old man! Who knows what I'll do next?!  Ahahaha! Hohoo! 4Hold your applause, kid. We're not done.
+
+wk.mission.text.3.1=<§7Wild Knuckles§r> §4Nice job, kid.	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.2=<§7Wild Knuckles§r> §4But there's something else I want. You gotta §6use the key§4 to §6break into the office§4 and get it.	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.3=<§7Wild Knuckles§r> §4Let's see, I've got some §6notes§4 from earlier when I was snooping around.	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.4=<§7Wild Knuckles§r> §4You'll need to go past the left corridor of the main hall and §6get a key to§4 another room to get what I want.	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+wk.mission.text.3.5=<§7Wild Knuckles§r> §4Just go, I'll fill you in.	###Nice job, kid. But there's something else I want. You gotta use the key to break into the office and get it. Let's see, I've got some notes from earlier when I was snooping around. You'll need to go past the left corridor of the main hall and get a key to another room to get what I want. Just go, I'll fill you in.
+
+wk.mission.hint.1.setup=<§7Wild Knuckles§r> §4Let's see here... Alright, kid:	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM #Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.carpet=<§7Wild Knuckles§r> §4They §6keycard§4 is hidden underneath a §6carpet§4. I don't know who designs the security here.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.vase=<§7Wild Knuckles§r> §4The §6keycard§4 is hidden inside a §6vase§4.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.painting=<§7Wild Knuckles§r> §4The §6keycard§4 is hidden behind a §6painting§4.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.1.complete=<§7Wild Knuckles§r> §4Nice, you got the card. Alright, go to the §6next room§4. Back where you came from but take a §6right this time§4.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.setup=<§7Wild Knuckles§r> §4Ok, now:	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.carpet=<§7Wild Knuckles§r> §4The §6next key§4 is underneath a §6carpet§4.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.vase=<§7Wild Knuckles§r> §4The §6next key§4 is inside a §6vase§4. Man, there's a lotta keys. Are we knocking off a car dealership?	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.painting=<§7Wild Knuckles§r> §4The §6next key§4 is behind a §6painting§4.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+wk.mission.hint.2.complete=<§7Wild Knuckles§r> §4You got it! Now get back here. If you hurry, we can make the Early Bird Special.	###THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE KEYCARD IS, NOT ALL 3 OF THEM#Let's see here... Alright, kid: They keycard is hidden underneath a carpet. I don't know who designs the security here. The keycard is hidden inside a vase. The keycard is hidden behind a painting. Nice, you got the card. Alright, go to the next room. Back where you came from but take a right this time. Ok, now: #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLANING WHERE THE KEY IS, NOT ALL 3# The next key is underneath a carpet. The next key is inside a vase. Man, there's a lotta keys. Areä we knocking off a car dealership?The next key is behind a painting. You got it! Now get back here. If you hurry, we can make the Early Bird Special.
+
+wk.mission.text.4.0=<§7Wild Knuckles§r> §4A §6Cheeze Ray§4, huh. Just my kinda weapon. Dangerous and delicious.	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.1=<§7Wild Knuckles§r> §4Now listen up, kid what I actually needed this for was to get past §6this security guard§4 over there.	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.2=<§7Wild Knuckles§r> §4Just walk up and use this baby on them! They won't be able to move. §6Say cheese§4!	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+wk.mission.text.4.3=<§7Wild Knuckles§r> §4Oh and after you've done that I also need you to §6get more stuff§4 from over there, I'll be in touch.	###A Cheeze Ray, huh. Just my kinda weapon. Dangerous and delicious. Now listen up, kid what I actually needed this for was to get past this security guard over there. Just walk up and use this baby on them! They won't be able to move. Say cheese! Oh and after you've done that I also need you to get more stuff from over there, I'll be in touch.
+
+wk.mission.hint.3.setup=<§7Wild Knuckles§r> §4Time to hit the lockers. One of my informants stashed some §6disguises§4 for us.	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+wk.mission.hint.3.mens=<§7Wild Knuckles§r> §4It's inside the §6right§4 locker room.	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+wk.mission.hint.3.womens=<§7Wild Knuckles§r> §4It's inside the §6left§4 locker room.	###Time to hit the lockers. One of my informants stashed some disguises for us. #THE GAME WILL DISPLAY EITHER OF THESE 2 LINES, NEVER BOTH# It's inside the right locker room. It's inside the left locker room. 
+
+wk.mission.hint.4.setup=<§7Wild Knuckles§r> §4Ah, and here are the §6lockboxes§4. They got something from me that I need back.	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.left=<§7Wild Knuckles§r> §4It should be in one of the §6lockboxes§4 on the §6left wall§4.	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.right=<§7Wild Knuckles§r> §4It should be in one of the §6lockboxes§4 on the §6right wall§4.	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.center=<§7Wild Knuckles§r> §4It should be in one of the §6lockboxes§4 on the §6center wall§4.	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+wk.mission.hint.4.complete=<§7Wild Knuckles§r> §4If you've got everything, §6come back here§4! We're breaking in.	###Ah, and here are the lockboxes. They got something from me that I need back. #THE GAME WILL DISPLAY ONE OF THE MESSAGES EXPLAINING WHERE THE THING IS, NOT all 3# It should be in one of the lockboxes on the left wall. It should be in one of the lockboxes on the right wall It should be in one of the lockboxes on the center wall If you've got everything, come back here! We're breaking in.
+
+wk.mission.text.5.1=<§7Wild Knuckles§r> §4Let's see, §6Cheeze Ray§4, §6disguise§4, §6enormous drill§4... yep, looks like we're ready.	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.2=<§7Wild Knuckles§r> §4That's satisfying!	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.3=<§7Wild Knuckles§r> §4Oh great, a §6wall of lasers§4. My least favorite kind of wall.	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.4=<§7Wild Knuckles§r> §4Anyway, kid, you see that §6painting§4 all the way at the end of the corridor?	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+wk.mission.text.5.5=<§7Wild Knuckles§r> §4That's what we're here for. Let's get it. But watch out §6not to trip the alarms§4.	###Let's see, Cheeze Ray, disguise, enormous drill... yep, looks like we're ready. That's satisfying! Oh great, a wall of lasers. My least favorite kind of wall. Anyway, kid, you see that painting all the way at the end of the corridor?  That's what we're here for. Let's get it. But watch out not to trip the alarms
+
+wk.mission.text.6.1=<§7Wild Knuckles§r> §4They booby trapped §6The Mona Lisa§4! Look at that smile... I should have never trusted her!	###They booby trapped The Mona Lisa! Look at that smile... I should have never trusted her! Well, kid, here goes nothing. Let's scram! Get to the bank's exit! Quick
+wk.mission.text.6.2=<§7Wild Knuckles§r> §4Well, kid, here goes nothing. Let's scram! Get to the §6bank's exit§4! §6Quick§4!	###They booby trapped The Mona Lisa! Look at that smile... I should have never trusted her! Well, kid, here goes nothing. Let's scram! Get to the bank's exit! Quick
+
+wk.mission.text.7.1=<§7Wild Knuckles§r> §4We did it! We really did it!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.2=<§7Wild Knuckles§r> §4I gotta give it to you, kid, that wasn't half bad for someone your size.	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.3=<§7Wild Knuckles§r> §4I feel alive again! But also like I need a nap!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.4=<§7Wild Knuckles§r> §4Thanks, kid. You made me feel like I'm sixty-five again!	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+wk.mission.text.7.5=<§7Wild Knuckles§r> §4You're gonna make a §6heck of a villain§4, someday. I've never seen someone so young and so despicable.	###We did it! We really did it! I gotta give it to you, kid, that wasn't half bad for someone your size. I feel alive again! But also like I need a nap! Thanks, kid. You made me feel like I'm sixty-five again! You're gonna make a §6heck of a villain, someday. I've never seen someone so young and so despicable.
+
+wk.guard.question.1=<§4Guard§r> §cThink I heard something.	###
+wk.guard.question.2=<§4Guard§r> §cWho's there? Show yourself.	###
+wk.guard.cheesed.1=<§4Guard§r> §cArgh! Can't move...	###
+wk.guard.cheesed.2=<§4Guard§r> §cNot the smelly cheese!	###
+wk.guard.cheesed.3=<§4Guard§r> §cWhat is this? Cheddar???	###
+wk.guard.cheesed.4=<§4Guard§r> §cUrgh! It smells so bad!	###
+wk.guard.caught.1=<§4Guard§r> §cHey you! What are you doing back here?	###
+wk.guard.caught.2=<§4Guard§r> §cFreeze! You're under arrest.	###
+
+wk.bot.question.1=<§2Security Bot§r> §cPOTENTIAL THREAT DETECTED! INVESTIGATING!	###
+wk.bot.question.2=<§2Security Bot§r> §cDETECTING...	###
+wk.bot.caught.1=<§2Security Bot§r> §cINTRUDER DETECTED! HALT!	###
+wk.bot.caught.2=<§2Security Bot§r> §cINTRUSION! ALARM! ALARM!	###
+
+wk.fail=<§bVNC Voice§r> §3Ouuuh! Shame.	###
+wk.success=<§bVNC Voice§r> §3You stole §6The Mona Lisa§3! Maybe the Minions were right about you.	###
+
+wk.post.1=<§bVNC Voice§r> §3Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message§3 from back in your lair:	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+wk.post.2=<§eMinions§r> §eAAAAAAAAAAHHHH!	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+wk.post.3=<§bVNC Voice§r> §3Yeah, doesn't seem too good. You might wanna go check that out.	###Hey, uhm. I'm afraid I got some more bad news for you We've recorded this §6message from back in your lair: AAAAAAAAAAHHHH! Yeah, doesn't seem too good. You might wanna go check that out.
+
+wk.intermission.1=<§bVNC Voice§r> §3Oh no... Someone §6broke into your lair§3 and stole the §6Dragon Medallion§3.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.2=<§bVNC Voice§r> §3I wonder who it was and how they found out where your lair is.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.3=<§bVNC Voice§r> §3But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.4=<§bVNC Voice§r> §3Though let's not kid ourselves. It was the §6Vicious 6§3, of course it was.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.5=<§bVNC Voice§r> §3Lucky for you, we might have some information regarding their current whereabouts. They're §6planning something in Chinatown§3.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.6=<§bVNC Voice§r> §3And wouldn't you say, if they can come and steal from you after you stole from them...	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.7=<§bVNC Voice§r> §3Well, what's stopping you from just going over there to and §6grabbing it back for yourself§3.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.8=<§bVNC Voice§r> §3I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time...	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.9=<§bVNC Voice§r> §3... you'll have to find a way to... you know, "take care" of 'em.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.10=<§bVNC Voice§r> §3I hear the §6Anti Villain League§3 might also be over there and if there were some fight between villains, §6somebody might get caught§3.	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.intermission.11=<§bVNC Voice§r> §3But hey, if they ask... you have no idea who we are, got it?	###Oh no... Someone broke into your lair and stole the Dragon Medallion. I wonder who it was and how they found out where your lair is. But I'm sure a villain of your caliber can piece those puzzle pieces together, hehehe. Though let's not kid ourselves. It was the Vicious 6, of course it was. Lucky for you, we might have some information regarding their current whereabouts. They're planning something in Chinatown. And wouldn't you say, if they can come and steal from you after you stole from them... Well, what's stopping you from just going over there to and grabbing it back for yourself. I'll let you in on a secret, even. If you don't want them to just steal it back a fourth time... ... you'll have to find a way to... you know, "take care" of 'em. I hear the Anti Villain League might also be over there and if there were some fight between villains, somebody might get caught. But hey, if they ask... you have no idea who we are, got it?
+wk.door.lever=§3Open Doors§r	###
+
+
+m5.post.1=<§bVNC Voice§r> §3So... with that I think your §6time on our show is up§3.	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.2=<§bVNC Voice§r> §3Don't forget to §6thank your Minions§3! Without them, who knows where you would've ended up.	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.3=<§bVNC Voice§r> §3If you're ever up to more mischief... maybe you'll hear from us again.	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.4=<§bVNC Voice§r> §3Until then, farewell for now.	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+m5.post.5=<§bVNC Voice§r> §3And don't forget. §6If you tell anyone, ...we'll find you§3.	###So... with that I think your time on our show is up.  Don't forget to thank your Minions! Without them, who knows where you would've ended up. If you're ever up to more mischief... maybe you'll hear from us again. Until then, farewell for now. And don't forget. If you tell anyone, ...we'll find you
+
+
+
+
+showdown.scene1.1=<§bVNC Voice§r> §3Oho, Ladies and Gentlemen, here we go. §6This is where it goes down§3.	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.2=<§bVNC Voice§r> §3It's §6Showdown O'Clock§3! It's you against the §6Vicious Six§3 and their new leader, §6Belle Bottom§3!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.3=<§cBelle Bottom§r> §5Long time no see, punk!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.4=<§cBelle Bottom§r> §5Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now.	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.5=<§cBelle Bottom§r> §5However... you §6stole§5 from us.	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.6=<§cBelle Bottom§r> §5And you're §6gonna pay§5!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.7=<§bVNC Voice§r> §3What a dramatic entrance! Criminally amazing!	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.8=<§bVNC Voice§r> §3Which option will you choose?	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.9=<§bVNC Voice§r> §3If I had to guess, it's with actions rather than words. They have a trigger finger on their §6gadgets already§3.	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+showdown.scene1.10=<§bVNC Voice§r> §3You won't wanna miss this one folks! This will be a fight for the ages.	###Oho, Ladies and Gentlemen, here we go. This is where it goes down  It's Showdown O'Clock! It's you against the Vicious Six and their new leader, Belle Bottom! Long time no see, punk! Listen, I don't usually like to do these things the hard way. So normally, I'd give you an opportunity to just scram right now. However... you stole from us. And you're gonna pay! What a dramatic entrance! Criminally amazing! Which option will you choose? If I had to guess, it's with actions rather than words. They have a trigger finger on their gadgets already. You won't wanna miss this one folks! This will be a fight for the ages.
+
+showdown.scene2.1= §3This time, I'll make sure to crack you in half!	###
+showdown.scene2.defeated= §3I can't... believe it.	###
+
+showdown.scene3.1= §dVery well, §6demon child§d! Get ready to be exorcised!	###
+showdown.scene3.defeated= §dHow could I have been... forsaken?	###
+
+showdown.scene4.1= §2It's time for §6SVENGEANCE§2!	###Svengeance is his name
+showdown.scene4.defeated= §2Noooo... defeated by a... child.	###
+
+showdown.scene5.1= §6Oooh, I can feel my blood boiling. I'm overflowing with energy! And you're gonna get it!	###
+showdown.scene5.defeated= §6Mommy... come pick me up from the... playground.	###
+
+showdown.scene6.1= §5Aaaargh! ENOUGH! You brat and your even tinier brats are §6DONE FOR§5 now!	###
+showdown.scene6.2= §5I wanna see you handle my §6chains§5!	###
+showdown.scene6.defeated= §5Urgh... but this was supposed to be... my time!	###
+
+showdown.scene7.1=<§bVNC Voice§r> §3That performance deserves a slow clap!	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.2=<§bVNC Voice§r> §3That went better than we thought!	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.3=<§bVNC Voice§r> §3And what's best, the §6Minions§3 are no longer an enigma to the VNC.	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+showdown.scene7.4=<§bVNC Voice§r> §3We're looking forward to working with you again.	###That performance deserves a slow clap!  That went better than we thought! And what's best, the Minions are no longer an enigma to the VNC. We're looking forward to working with you again.
+
+
+showdown.fart= §3Try using the §6Fart Bomb§3 to interrupt!	###
+showdown.hand= §3Try using the §6Sticky Hand§3 to pull them!	###
+showdown.dash= §3Try using the §6Nunchuck§3 to dodge!	###
+showdown.cheese= §3Try using the §6Cheeze Ray§3 to slow them down!	###
+showdown.roar= §3Try using the §6Nunchuck's roar§3 to overpower them!	###
+
+
+
+moon.hint.shrink_msg=§6§l§nHint:§r §3Shoot the squid rockets with your shrink ray	###unused line
+moon.vector.1.cutscene.intro=§2 Ahahahaha, you idiots! You just got heckin' served by §6Vector§2! Ooooh yeah!	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.2.cutscene.intro=<§6Vector§r> §2Welcome! To my §6immaculate moon trap§2. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine.	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.3.cutscene.intro=<§6Vector§r> §2Now! Enough with the pleasantries! I've got big plans with all of you.	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+moon.vector.4.cutscene.intro=<§6Vector§r> §2§5El Macho§2! §dBratt§2! Let's... Oh hang on, turn this thing off first!	###Ahahahaha, you idiots! You just got heckin' served by Vector! Ooooh yeah! Welcome! To my immaculate moon trap. I knew you silly, little, yellow beans couldn't resist the temptation and now you're all mine. Now! Enough with the pleasantries! I've got big plans with all of you. El Macho! Bratt! Let's... Oh hang on, turn this thing off first!
+
+moon.1.cutscene.intro=<§bVNC Voice§r> §3Ooooh, we gotta §6jump on this story§3 as well.	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.2.cutscene.intro=<§bVNC Voice§r> §3A true dilemma unfolds for our §6Minion heroes§3 as they find themselves trapped... on the §6MOON§3!	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.3.cutscene.intro=<§bVNC Voice§r> §3The perpetrator appears to be a young villain by the name of §6Vector§3.	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.4.cutscene.intro=<§bVNC Voice§r> §3And if you're still surprised how we found out about this one... well maybe you won't be from now on.	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+moon.5.cutscene.intro=<§bVNC Voice§r> §3Anyway, let's see how we can make this situation a bit... fairer.	###Ooooh, we gotta jump on this story as well.  A true dilemma unfolds for our Minion heroes§1 as they find themselves trapped... on the MOON! The perpetrator appears to be a young villain by the name of Vector. And if you're still surprised how we found out about this one... well maybe you won't be from now on. Anyway, let's see how we can make this situation a bit... fairer.
+
+moon.corridor.text=<§bVNC Voice§r> §3Very intriguing! Mutant Minions. I wonder what made them like this.	###
+moon.jelly.tip=<§bVNC Voice§r> §3These §6devices hanging from the wall§3 seem like some sort of defense precaution.	###
+moon.jelly.overheat= Overheated!	###
+moon.plasmajelly.overheat= Overheated!	###
+moon.macho.fight.start.1=<§5El Macho§r> §4What? You escaped?	###What? You escaped?  Let's get you back into your cell. Wahahaha!
+moon.macho.fight.start.2=<§5El Macho§r> §4Let's get you back into your cell. Wahahaha!	###What? You escaped?  Let's get you back into your cell. Wahahaha!
+
+moon.1.macho.tip=<§bVNC Voice§r> §3So Vector isn't alone, huh? Surely, this guy will barely be an obstacle for you.	###
+moon.2.macho.tip=<§bVNC Voice§r> §3I detect a chemical weakness of this transformed state to the jelly we found earlier. This further explains what the device is used for.	###unused
+moon.3.macho.tip=<§bVNC Voice§r> §3Fire away!	###unused
+
+moon.macho.fight.end.1=<§5El Macho§r> §4Aaaargh! Uuuh Raargh! Aaa... Huh? No! My glorious strength!	###unused
+moon.macho.fight.end.2=<§5El Macho§r> §4Hrr! This won't be the last of me!	###
+
+moon.post.macho.fight.1=<§6Vector§r> §2You might think you've won now, but this is all still part of my plan.	### You might think you've won now, but this is all still part of my plan. I'm ... making it up as I go, but it's a great plan, that's for sure 
+moon.post.macho.fight.2=<§6Vector§r> §2I'm ... making it up as I go, but it's a §6great plan§2, that's for sure.	### You might think you've won now, but this is all still part of my plan. I'm ... making it up as I go, but it's a great plan, that's for sure
+
+moon.macho.atk.1=<§5El Macho§r> §4Uuuu Aaaargh!	###
+moon.macho.atk.2=<§5El Macho§r> §4Taaaaaake this!	###
+moon.bratt.atk.1=<§dBalthazar Bratt§r> §bUh-uh! Wrong step!	###
+moon.bratt.atk.2=<§dBalthazar Bratt§r> §bCome on! You gotta feel the beat! Ahaha!	###
+moon.vector.atk.1=<§6Vector§r> §2Rockets go!	###
+moon.vector.atk.2=<§6Vector§r> §2Eat this, you little goober!	###
+moon.mutant.atk.1=<§5Mutant Minion§r> §eBlopa!	###
+moon.mutant.atk.2=<§5Mutant Minion§r> §eEpatoh!	###
+moon.mutant.atk.3=<§5Mutant Minion§r> §eBuddy!	###
+moon.mutant.atk.4=<§5Mutant Minion§r> §eGAHHH!	###
+moon.mutant.defeat.1=<§5Mutant Minion§r> §eAyaya!	###
+moon.mutant.defeat.2=<§5Mutant Minion§r> §eBLAAAH!	###
+
+moon.bratt.fight.start.1=<§dBalthazar Bratt§r> §bIt's the. Eye of the tiger, it's the- WHAT!? How'd you escape?	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.2=<§dBalthazar Bratt§r> §bArgh, I knew I shouldn't have trusted this §6El Macho§b guy to secure all of you.	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.3=<§dBalthazar Bratt§r> §bAnyway, while you're here...	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.4=<§dBalthazar Bratt§r> §bLet's have some fun, baby!	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+moon.bratt.fight.start.5=<§dBalthazar Bratt§r> §6Daaaaaaance Off§b! Let's go!	###It's the. Eye of the tiger, it's the- WHAT!? How'd you escape? Argh, I knew I shouldn't have trusted this El Macho guy to secure all of you. Anyway, while you're here... Let's have some fun, baby! Daaaaaaance Off! Let's go
+
+
+moon.floor.sec2=Avoid stepping on 	###
+moon.floor.sec4=Avoid stepping on 	###
+moon.floor.sec1=Avoid stepping on 	###
+moon.floor.sec3=Avoid stepping on 	###
+
+moon.1.bratt.tip=<§bVNC Voice§r> §3Not just §5El Macho§3, §dBalthazar Bratt§3, as well?	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+moon.2.bratt.tip=<§bVNC Voice§r> §3How in the world did §6Vector§3 get those two up here?	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+moon.3.bratt.tip=<§bVNC Voice§r> §3Well, he's eager to fight... or dance.	###Not just El Macho, Balthazar Bratt, as well? How in the world did Vector get those two up here? Well, he's eager to fight... or dance.
+
+moon.bratt.fight.end.1=<§dBalthazar Bratt§r> §bWhat? Don't touch that!	###unused
+moon.bratt.fight.end.2=<§dBalthazar Bratt§r> §bAAAAAAARGH!	###
+moon.bratt.fight.end.3=<§dBalthazar Bratt§r> §bUh, whatever. I'll... be back.	###
+
+moon.post.bratt.fight.1=<§6Vector§r> §2Still... according to plan. It doesn't even matter.	###Still... according to plan. It doesn't even matter. You can't get past §6the next door, I've made extra sure of that. Ooooooh yeaaah!
+moon.post.bratt.fight.2=<§6Vector§r> §2You can't get past §6the next door§2, I've made extra sure of that. Ooooooh yeaaah!	###Still... according to plan. It doesn't even matter. You can't get past §6the next door, I've made extra sure of that. Ooooooh yeaaah!
+
+
+moon.vector.fight.start.1=<§6Vector§r> §2What!? What's this?	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.2=<§6Vector§r> §2Uuurgh, why were these other guys §6so useless§2? How could a Minion manage to get past both of them!?	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.3=<§6Vector§r> §2Either way, THIS will be the end of your line for sure. Say hello to my §6ROCKET SQUIDS§2!	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+moon.vector.fight.start.4=<§6Vector§r> §2Let's see you try and get past them. Ooooh yeaaaah!	###What!? What's this?  Uuurgh, why were these other guys so useless? How could a Minion manage to get past both of them!? Either way, THIS will be the end of your line for sure. Say hello to my ROCKET SQUIDS! Let's see you try and get past them. Ooooh yeaaaah!
+
+moon.vector.fight.end.1=<§6Vector§r> §2How could I have lost... to THIS!?	###
+moon.vector.fight.end.2=<§6Vector§r> §2... those guys were so... §6USELESS§2! Uuuuugh!	###
+
+moon.fail=<§bVNC Voice§r> §3You might want to try that one again.	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success=<§bVNC Voice§r> §3Great job, §6Minion§3! You really did it, once again.	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.2=<§bVNC Voice§r> §3As a thank you for yet another great research opportunity, we've prepared a way back.	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.3=<§bVNC Voice§r> §3Quickly, §6grab all your friends§3 and assemble them before this whole place blows.	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+moon.success.4=<§bVNC Voice§r> §3Everone ready? Alright, let's get you §6back to that lair§3.	###Great job, Minion! You really did it, once again.  As a thank you for yet another great research opportunity, we've prepared a way back. Quickly, grab all your friends and assemble them before this whole place blows. Everone ready? Alright, let's get you back to that lair
+
+
+moon.outro.1=<§6Vector§r> §2Ugh... my head! Oh wait, what?	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.outro.2=<§6Vector§r> §2No, hold on you can't leave me here AGAIN!	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.outro.3=<§6Vector§r> §2Oh poop.	###Ugh... my head! Oh wait, what? No, hold on you can't leave me here AGAIN! Oh poop.
+moon.title.screen=§6Vector's Moon Base§r	###
+
+entity.cyd:kun_wk_henchman_1.name=Henchman	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_1.name=Spawn Henchman	###
+entity.cyd:kun_wk_henchman_2.name=Henchman	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_2.name=Spawn Henchman	###
+entity.cyd:kun_wk_henchman_3.name=Super Henchman	###
+item.spawn_egg.entity.cyd:kun_wk_henchman_3.name=Spawn Super Henchman	###
+
+
+dojo.intro=<§6Master Chow§r> §dI'm sorry. I'm currently working as an §6acupuncturist§d. My teaching days are over.	### 
+dojo.intro2=<§6Master Chow§r> §dIt's not for you, it's for... those little guys?	### 
+dojo.intro3=<§6Master Chow§r> §dHa! You think those guys can learn §6Kung-Fu§d? You're lucky I like an impossible challenge. §6Meet me in the back room§d.	### 
+
+
+gadget.pickup.chi=§6You've obtained the Nunchuck!	###
+gadget.pickup.cheese=§6You've obtained the Cheeze Ray!	###
+gadget.pickup.jelly=§6You've obtained the Jelly Launcher!	###
+gadget.pickup.jellyplasma=§6You've obtained the Plasma Jelly Launcher!	###
+gadget.pickup.shrink=§6You've obtained the Shrink Ray!	###
+gadget.pickup.sticky=§6You've obtained the Sticky Hand!	###
+
+dojo.notstarted=§6Speak to Master Chow	###
+
+gadget.chi0= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi1= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack 
+gadget.chi2= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi3= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi4= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi5= §6Hit to CHARGE!	###a popup telling the user to activate the tool to perform a special "roar" attack
+gadget.chi6= §6Activate to ROAR!	###a popup telling the user to activate the tool to perform a special "roar" attack
+
+dojo.cutscene1.1=<§bVNC Voice§r> §3Now let's see what your Minions can do. Besides eat bananas and slapping each other.	###Now let's see what your Minions can do. Besides eat bananas and slapping each other.  Good luck! You'll need it!
+dojo.cutscene1.2=<§bVNC Voice§r> §3Good luck! You'll need it!	###Now let's see what your Minions can do. Besides eat bananas and slapping each other.  Good luck! You'll need it!
+
+dojo.cutscene2.1=<§6Master Chow§r> §dHello, weirdos. I am §6Master Chow§d. I teach the ancient Shaolin art of §6Kung Fu§d!	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.2=<§6Master Chow§r> §dYou look so weak and pathetic. But you're about to be §6taught by the best teacher§d in the world.	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.3=<§6Master Chow§r> §dTake this §6Nunchuck§d and try not to hurt yourself.	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.4=<§6Master Chow§r> §dCollect your energy and release it by §6dashing forward§d with incredible speed!	###Hello, weirdos. I am Master Chow. I teach the ancient Shaolin art of Kung Fu!  You look so weak and pathetic. But you're about to be taught by the best teacher in the world. Take this Nunchuck and try not to hurt yourself. Collect your energy and release it by dashing forward with incredible speed!
+dojo.cutscene2.5=§6Activate the  while holding it in your hand to dash forwards.	###
+
+dojo.cutscene3.1=<§6Master Chow§r> §dWell, that wasn't terrible. You may be ready for a more advanced technique.	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.2=<§6Master Chow§r> §dThis is a §6dummy§d. No, not Stuart. This dummy.	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.3=<§6Master Chow§r> §dLook at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds.	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+dojo.cutscene3.4=<§6Master Chow§r> §dWe do not let doubt dominate our will. §6Strike the dummy§d. Charge your fury! And when you have found it deep within you! §6Unleash your Inner Beast§d!	###Well, that wasn't terrible. You may be ready for a more advanced technique.  This is a dummy. No, not Stuart. This dummy. Look at the dummy! Doubt tells you you're not strong enough to break it. But doubt exists only in your mind ...assuming you have minds. We do not let doubt dominate our will. Strike the dummy. Charge your fury! And when you have found it deep within you! Unleash your Inner Beast!
+
+dojo.cutscene4.1=<§6Master Chow§r> §dWonderful! Now, enough philosophy, let us... Oh?	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.2=<§4Henchman§r> §cGet 'em! The boss said to destroy those little monsters!	###Wonderful! Now, enough philosophy, let us... Oh?  Get ‘em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.3=<§4Henchman§r> §cYeeeeah!	### Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.4=<§6Master Chow§r> §dOho? You like picking on little guys, huh?	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+dojo.cutscene4.5=<§6Master Chow§r> §dMinions! Consider this your training, then. §6Defend my training room from these intruders§d.	###Wonderful! Now, enough philosophy, let us... Oh?  Get 'em! The boss said to destroy those little monsters! Yeeeeah! Oho? You like picking on little guys, huh? Minions! Consider this your training, then. Defend my training room from these intruders.
+
+dojo.cutscene5.1=<§6Master Chow§r> §dWow! You really whooped their butts.	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+dojo.cutscene5.2=<§6Master Chow§r> §dGood job, Minions. You have shown once again that I am the best teacher in the world.	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+dojo.cutscene5.3=<§6Master Chow§r> §dYour §6training is complete§d. Go! And try to not die... or embarrass me.	###Wow! You really whooped their butts. Good job, Minions. You have shown once again that I am the best teacher in the world. Your training is complete. Go! And try to not die... or embarrass me.
+
+dojo.success=<§bVNC Voice§r> §3They learn... Very, very interesting!	### Played when mission is complete.
+dojo.failed=<§bVNC Voice§r> §3Hmm! Disappointing.	###Played when mission failed.
+
+
+
+m3.post.1=<§bVNC Voice§r> §3Wow! Who woulda thought the Minions could learn Kung Fu?	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.2=<§bVNC Voice§r> §3Oh and hang on, before I forget. We've §6intercepted a message§3 for you.	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.3=<§bVNC Voice§r> §6Another villain§3 wishes to meet you!	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.4=<§bVNC Voice§r> §3Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media!	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.5=<§bVNC Voice§r> §3He wants to meet you at §6The Bank of Evil§3. He wants to collaborate. And by collaborate, he means §6rob the place§3.	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+m3.post.6=<§bVNC Voice§r> §3I'm sure it's not a trap. Villains are very trustworthy.	###Wow! Who woulda thought the Minions could learn Kung Fu?  Oh and hang on, before I forget. We've intercepted a message for you. Another villain wishes to meet you! Not sure how he heard of you? Not our fault! Don't blame the mainstream villain media! He wants to meet you at The Bank of Evil. He wants to collaborate. And by collaborate, he means rob the place. I'm sure it's not a trap. Villains are very trustworthy.
+
+dojo.henchman.random1=<§4Henchman§r> §cLet's get them!	###
+dojo.henchman.random2=<§4Henchman§r> §cAhahaha!	###
+dojo.henchman.death1=<§4Henchman§r> §cUrgh!	###
+dojo.henchman.death2=<§4Henchman§r> §cHow... ironic.	###
+dojo.henchman.death3=<§6Master Chow§r> §dWell done!	###
+dojo.henchman.death4=<§6Master Chow§r> §dGood!	###
+
+
+dojo.superhenchman.random1=<§cSuper Henchman§r> §4Harharhar!	###
+dojo.superhenchman.random2=<§cSuper Henchman§r> §4It's over for you now.	###
+dojo.superhenchman.death1=<§cSuper Henchman§r> §4Im... possible!	###
+dojo.superhenchman.death2=<§cSuper Henchman§r> §4Mommy...	###
+dojo.superhenchman.death3=<§6Master Chow§r> §dYou've learned well already!	###
+dojo.superhenchman.death4=<§6Master Chow§r> §dHmhm, yes. I've trained you well.	###
+
+dojo.wave1=§6Wave 1/3	###
+dojo.wave2=§6Wave 2/3	###
+dojo.wave3=§6Wave 3/3	###
+
+collect.collect1=§6You've found a §4AVL Calling card!	###
+collect.collect2=§6You've found a §4Lipstick taser!	###
+collect.collect3=§6You've found a §4AVNC magazine!	###
+collect.collect4=§6You've found a §4Evil Bratt action figure!	###
+collect.collect5=§6You've found a §4Evil Bratt VHS tape!	###
+collect.collect6=§6You've found a §4super-sticky self inflating gum!	###
+collect.collect7=§6You've found a §4Big Ben Snowglobe!	###
+collect.collect8=§6You've found a §4Eagle Hair Club wig!	###
+collect.collect9=§6You've found a §4Minion cupcake!	###
+collect.collect10=§6You've found a §4Stuart's ukulele!	###
+collect.collect11=§6You've found a §4Super mega ukulele!	###
+collect.collect12=§6You've found a §4"Tim" the teddybear!	###
+collect.collect13=§6You've found a §4El Macho's necklace!	###
+collect.collect14=§6You've found a §4Fluffy Unicorn!	###
+collect.collect15=§6You've found a §4I heart Gru cap!	###
+collect.collect16=§6You've found a §4Secret salsa recipe!	###
+collect.collect17=§6You've found a §4Taco-Guac hat!	###
+collect.collect18=§6You've found a §4357th Birthday cake!	###
+collect.collect19=§6You've found a §4"Lucky, the unicorn" plushie!	###
+collect.collect20=§6You've found a §4"The bald terror" portrait!	###
+collect.collect21=§6You've found a §4"Unicorn Bait" heap of candy!	###
+collect.collect22=§6You've found a §4Freedonian cheese!	###
+collect.collect23=§6You've found a §4Cardboard space helmet!	###
+collect.collect24=§6You've found a §4English - Minion translator!	###
+collect.collect25=§6You've found a §4Gru family photobook!	###
+collect.collect26=§6You've found a §4Gru/Dru baby picture!	###
+collect.collect27=§6You've found a §4Macaroni rocket prototype!	###
+collect.collect28=§6You've found a §4Villain Con flyer!	###
+collect.collect29=§6You've found a §4Pet Rock!	###
+collect.collect30=§6You've found a §4Hypno hat!	###
+collect.collect31=§6You've found a §4Lava lamp gun!	###
+collect.collect32=§6You've found a §4Robotic limbs!	###
+collect.collect33=§6You've found a §4Scarlet wolf doll!	###
+collect.collect34=§6You've found a §4"Sorry Scarlet" flower wreath!	###
+collect.collect35=§6You've found a §4All-berry Jelly!	###
+collect.collect36=§6You've found a §4"One Big Unicorn" book!	###
+collect.collect37=§6You've found a §4Edith's pink beanie!	###
+collect.collect38=§6You've found a §4Fart Gun!	###
+collect.collect39=§6You've found a §4Gru Ray Player!	###
+collect.collect40=§6You've found a §4Inflatable Unicorn Cannon!	###
+collect.collect41=§6You've found a §4Makeshift unicorn toy!	###
+collect.collect42=§6You've found a §4Plan to steal the moon!	###
+collect.collect43=§6You've found a §4"Sleepy Kittens" book!	###
+collect.collect44=§6You've found a §4Royal british crown!	###
+collect.collect45=§6You've found a §4Du Mont diamond!	###
+collect.collect46=§6You've found a §4"Onions" movie poster!	###
+collect.collect47=§6You've found a §4I heart Evil mug!	###
+collect.collect48=§6You've found a §4"Vector" brand toilet paper!	###
+collect.collect49=§6You've found a §4Boogie robot!	###
+collect.collect50=§6You've found a §4Cookiebot!	###
+collect.collect51=§6You've found a §4Shrunk tiny toilet!	###
+collect.collect52=§6You've found a §4Vitamin 0 milk!	###
+
+
+
+collect.num1=§6 1/52	###
+collect.num2=§6 2/52	###
+collect.num3=§6 3/52	###
+collect.num4=§6 4/52	###
+collect.num5=§6 5/52	###
+collect.num6=§6 6/52	###
+collect.num7=§6 7/52	###
+collect.num8=§6 8/52	###
+collect.num9=§6 9/52	###
+collect.num10=§6 10/52	###
+collect.num11=§6 11/52	###
+collect.num12=§6 12/52	###
+collect.num13=§6 13/52	###
+collect.num14=§6 14/52	###
+collect.num15=§6 15/52	###
+collect.num16=§6 16/52	###
+collect.num17=§6 17/52	###
+collect.num18=§6 18/52	###
+collect.num19=§6 19/52	###
+collect.num20=§6 20/52	###
+collect.num21=§6 21/52	###
+collect.num22=§6 22/52	###
+collect.num23=§6 23/52	###
+collect.num24=§6 24/52	###
+collect.num25=§6 25/52	###
+collect.num26=§6 26/52	###
+collect.num27=§6 27/52	###
+collect.num28=§6 28/52	###
+collect.num29=§6 29/52	###
+collect.num30=§6 30/52	###
+collect.num31=§6 31/52	###
+collect.num32=§6 32/52	###
+collect.num33=§6 33/52	###
+collect.num34=§6 34/52	###
+collect.num35=§6 35/52	###
+collect.num36=§6 36/52	###
+collect.num37=§6 37/52	###
+collect.num38=§6 38/52	###
+collect.num39=§6 39/52	###
+collect.num40=§6 40/52	###
+collect.num41=§6 41/52	###
+collect.num42=§6 42/52	###
+collect.num43=§6 43/52	###
+collect.num44=§6 44/52	###
+collect.num45=§6 45/52	###
+collect.num46=§6 46/52	###
+collect.num47=§6 47/52	###
+collect.num48=§6 48/52	###
+collect.num49=§6 49/52	###
+collect.num50=§6 50/52	###
+collect.num51=§6 51/52	###
+collect.num52=§6 52/52	###
+collect.num53=§6 53/52	###
+
+
+minion.saved=§eMinions Saved§r 	###
+
+minion.num1=§6 1/100	###
+minion.num2=§6 2/100	###
+minion.num3=§6 3/100	###
+minion.num4=§6 4/100	###
+minion.num5=§6 5/100	###
+minion.num6=§6 6/100	###
+minion.num7=§6 7/100	###
+minion.num8=§6 8/100	###
+minion.num9=§6 9/100	###
+minion.num10=§6 10/100	###
+minion.num11=§6 11/100	###
+minion.num12=§6 12/100	###
+minion.num13=§6 13/100	###
+minion.num14=§6 14/100	###
+minion.num15=§6 15/100	###
+minion.num16=§6 16/100	###
+minion.num17=§6 17/100	###
+minion.num18=§6 18/100	###
+minion.num19=§6 19/100	###
+minion.num20=§6 20/100	###
+minion.num21=§6 21/100	###
+minion.num22=§6 22/100	###
+minion.num23=§6 23/100	###
+minion.num24=§6 24/100	###
+minion.num25=§6 25/100	###
+minion.num26=§6 26/100	###
+minion.num27=§6 27/100	###
+minion.num28=§6 28/100	###
+minion.num29=§6 29/100	###
+minion.num30=§6 30/100	###
+minion.num31=§6 31/100	###
+minion.num32=§6 32/100	###
+minion.num33=§6 33/100	###
+minion.num34=§6 34/100	###
+minion.num35=§6 35/100	###
+minion.num36=§6 36/100	###
+minion.num37=§6 37/100	###
+minion.num38=§6 38/100	###
+minion.num39=§6 39/100	###
+minion.num40=§6 40/100	###
+minion.num41=§6 41/100	###
+minion.num42=§6 42/100	###
+minion.num43=§6 43/100	###
+minion.num44=§6 44/100	###
+minion.num45=§6 45/100	###
+minion.num46=§6 46/100	###
+minion.num47=§6 47/100	###
+minion.num48=§6 48/100	###
+minion.num49=§6 49/100	###
+minion.num50=§6 50/100	###
+minion.num51=§6 51/100	###
+minion.num52=§6 52/100	###
+minion.num53=§6 53/100	###
+minion.num54=§6 54/100	###
+minion.num55=§6 55/100	###
+minion.num56=§6 56/100	###
+minion.num57=§6 57/100	###
+minion.num58=§6 58/100	###
+minion.num59=§6 59/100	###
+minion.num60=§6 60/100	###
+minion.num61=§6 61/100	###
+minion.num62=§6 62/100	###
+minion.num63=§6 63/100	###
+minion.num64=§6 64/100	###
+minion.num65=§6 65/100	###
+minion.num66=§6 66/100	###
+minion.num67=§6 67/100	###
+minion.num68=§6 68/100	###
+minion.num69=§6 69/100	###
+minion.num70=§6 70/100	###
+minion.num71=§6 71/100	###
+minion.num72=§6 72/100	###
+minion.num73=§6 73/100	###
+minion.num74=§6 74/100	###
+minion.num75=§6 75/100	###
+minion.num76=§6 76/100	###
+minion.num77=§6 77/100	###
+minion.num78=§6 78/100	###
+minion.num79=§6 79/100	###
+minion.num80=§6 80/100	###
+minion.num81=§6 81/100	###
+minion.num82=§6 82/100	###
+minion.num83=§6 83/100	###
+minion.num84=§6 84/100	###
+minion.num85=§6 85/100	###
+minion.num86=§6 86/100	###
+minion.num87=§6 87/100	###
+minion.num88=§6 88/100	###
+minion.num89=§6 89/100	###
+minion.num90=§6 90/100	###
+minion.num91=§6 91/100	###
+minion.num92=§6 92/100	###
+minion.num93=§6 93/100	###
+minion.num94=§6 94/100	###
+minion.num95=§6 95/100	###
+minion.num96=§6 96/100	###
+minion.num97=§6 97/100	###
+minion.num98=§6 98/100	###
+minion.num99=§6 99/100	###
+minion.num100=§6 100/100	###
+
+
+collect.banana.num1=§6 1/50	###
+collect.banana.num2=§6 2/50	###
+collect.banana.num3=§6 3/50	###
+collect.banana.num4=§6 4/50	###
+collect.banana.num5=§6 5/50	###
+collect.banana.num6=§6 6/50	###
+collect.banana.num7=§6 7/50	###
+collect.banana.num8=§6 8/50	###
+collect.banana.num9=§6 9/50	###
+collect.banana.num10=§6 10/50	###
+collect.banana.num11=§6 11/50	###
+collect.banana.num12=§6 12/50	###
+collect.banana.num13=§6 13/50	###
+collect.banana.num14=§6 14/50	###
+collect.banana.num15=§6 15/50	###
+collect.banana.num16=§6 16/50	###
+collect.banana.num17=§6 17/50	###
+collect.banana.num18=§6 18/50	###
+collect.banana.num19=§6 19/50	###
+collect.banana.num20=§6 20/50	###
+collect.banana.num21=§6 21/50	###
+collect.banana.num22=§6 22/50	###
+collect.banana.num23=§6 23/50	###
+collect.banana.num24=§6 24/50	###
+collect.banana.num25=§6 25/50	###
+collect.banana.num26=§6 26/50	###
+collect.banana.num27=§6 27/50	###
+collect.banana.num28=§6 28/50	###
+collect.banana.num29=§6 29/50	###
+collect.banana.num30=§6 30/50	###
+collect.banana.num31=§6 31/50	###
+collect.banana.num32=§6 32/50	###
+collect.banana.num33=§6 33/50	###
+collect.banana.num34=§6 34/50	###
+collect.banana.num35=§6 35/50	###
+collect.banana.num36=§6 36/50	###
+collect.banana.num37=§6 37/50	###
+collect.banana.num38=§6 38/50	###
+collect.banana.num39=§6 39/50	###
+collect.banana.num40=§6 40/50	###
+collect.banana.num41=§6 41/50	###
+collect.banana.num42=§6 42/50	###
+collect.banana.num43=§6 43/50	###
+collect.banana.num44=§6 44/50	###
+collect.banana.num45=§6 45/50	###
+collect.banana.num46=§6 46/50	###
+collect.banana.num47=§6 47/50	###
+collect.banana.num48=§6 48/50	###
+collect.banana.num49=§6 49/50	###
+collect.banana.num50=§6 50/50	###
+
+
+bananatimer.num=§eTime Remaining: §6%1	###
+
+collect.banana.info=§6Collect as many  as possible!	###
+
+collect.banana.victory=§6%1 §eWon with  %2	###
+
+collect.vp.notif=§6%1 	###
+collect.vp.bar0=	###
+collect.vp.bar1=	###
+collect.vp.bar2=	###
+collect.vp.bar3=	###
+collect.vp.bar4=	###
+collect.vp.bar5=	###
+collect.vp.bar6=	###
+collect.vp.bar7=	###
+collect.vp.bar8=	###
+collect.vp.bar9=	###
+collect.vp.bar10=	###
+collect.vp.reward=§aNew §6Minions§a have arrived at the lair!	###
+collect.vp.reward.car= §aNew §6vehicles§a are unlocked!	###
+
+teleport.pet.in=§bYour §eMinions§b have returned back to base.	### Your Minions have returned back to base.
+teleport.pet.out=§bYour §eMinions§b have returned to you.	### Your Minions have returned to you.
+
+teleport.airport.town=§b Travel to your §elocal airport	### Travel to your local airport
+teleport.airport.city=§b Travel to the §ecity airport	### Travel to the city airport
+
+world.interrupt= §3Use the  §6Fart Bomb§3,  §6Cheeze Ray§3 or  §6Shrink Ray§3 to ruin their day!	###
+world.hand= §3Use the  §6Sticky Hand§3 to pull the box!	###
+world.cheese= §3Use the  §6Cheeze Ray§3 to freeze guards!	###
+world.vandalise= §3Punch to §6vandalise§3!	###
+world.lockbox= §3Interact to §6steal§3!	###
+world.bananabag=§3Interact to open the§6  banana bag!	###
+world.raid=§3You've been ambushed! Defeat the raid to earn Villain Points!	###
+
+mission.transform.player= §3You're now playing as a §6Human§3	###
+mission.transform.minion= §3You're now playing as a §6Minion§3	###
+
+collect.outfit1=§6You've found a §4Rollerskate Minion Costume!	###
+collect.outfit2=§6You've found a §4Aloha Minion Costume!	###
+collect.outfit3=§6You've found a §4Firefighter Minion Costume!	###
+collect.outfit4=§6You've found a §4Beach Minion Costume!	###
+collect.outfit5=§6You've found a §4Tuba Minion Costume!	###
+collect.outfit6=§6You've found a §4Golf Minion Costume!	###
+collect.outfit7=§6You've found a §4Kung-Fu Minion Costume!	###
+collect.outfit8=§6You've found a §4Knight Minion Costume!	###
+collect.outfit9=§6You've found a §4Maid Minion Costume!	###
+collect.outfit10=§6You've found a §4Minecraft Minion Costume!	###
+collect.outfit11=§6You've found a §4Builder Minion Costume!	###
+collect.outfit12=§6You've found a §4Magician Minion Costume!	###
+collect.outfit13=§6You've found a §4Flashlight Minion Costume!	###
+collect.outfit14=§6You've found a §4Tourist Minion Costume!	###
+collect.outfit15=§6You've found a §4Friendly Mutant Minion Costume!	###
+
+collect.outfits.number= §6%1/15	###Number of outfits unlocked
+
+vp.prox.msg=§6 §eA visual representation of how villainous you are! Current Villain Points: %1	###
+
+rader.distance50plus=§6No collectable nearby!	###
+rader.distance50=§6A collectable is within §450 blocks!	###
+rader.distance40=§6A collectable is within §440 blocks!	###
+rader.distance30=§6A collectable is within §430 blocks!	###
+rader.distance20=§6A collectable is within §420 blocks!	###
+rader.distance10=§6A collectable is within §410 blocks!	###
+rader.distance5=§6A collectable is within §45 blocks!	###
+
+
+secret.crate.info=  	###
+secret.fire.info=  	###
+secret.target.info= 	###
+secret.build.info=  	###
+secret.light.info= 	###

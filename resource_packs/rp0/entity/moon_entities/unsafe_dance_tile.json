@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "cyd:unsafe_dance_tile",
+            "materials": {
+                "default": "cyd_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/moon/dance_floor_default_2",
+                "texture_2": "textures/entity/moon/dance_floor_circle",
+                "texture_4": "textures/entity/moon/dance_floor_diamond",
+                "texture_1": "textures/entity/moon/dance_floor_square",
+                "texture_3": "textures/entity/moon/dance_floor_triangle"
+            },
+            "geometry": {
+                "default": "geometry.dance_floor"
+            },
+            "spawn_egg": {
+                "base_color": "#4287f5",
+                "overlay_color": "#e6efff"
+            },
+            "render_controllers": [
+                "controller.render.cyd.dance_floor"
+            ]
+        }
+    }
+}

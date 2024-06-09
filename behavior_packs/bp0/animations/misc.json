@@ -1,0 +1,315 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.base.caught": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @s ~ ~ ~ detect ^ ^-6 ^ lapis_block 1 title @a actionbar Caught!",
+          "/execute @s ~ ~ ~ detect ^ ^-6 ^ lapis_block 1 tag @a add caught",
+          "/execute @p[tag=caught] ~ ~ ~ tag @e[type=cyd:trigger_chase_system] remove start_chs",
+          "/execute @p[tag=caught] ~ ~ ~ tag @e[type=cyd:trigger_chase_system] add fail_chs"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.base.reset": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @s ~ ~ ~ summon cyd:chase_reset 1174 80 -272",
+        "0.2": "/execute @s ~ ~ ~ summon cyd:chase_reset 1148 87 -284",
+        "0.4": "/execute @s ~ ~ ~ summon cyd:chase_reset 1115 87 -284",
+        "0.6": "/execute @s ~ ~ ~ summon cyd:chase_reset 1081 88 -284",
+        "0.8": "/execute @s ~ ~ ~ summon cyd:chase_reset 1049 88 -284",
+        "1.0": [
+          "/tag @s remove reset",
+          "@s evt:sid_0"
+        ]
+      },
+      "animation_length": 1.2
+    },
+    "animation.base.reset_blocks": {
+      "loop": false,
+      "timeline": {
+        "0.0": "/execute @s ~ ~ ~ fill ~-20 ~2 ~-20 ~20 ~-8 ~20 stone 0 replace lapis_block",
+        "1.0": "@s evt:despawn"
+      },
+      "animation_length": 1.2
+    },
+    "animation.base.blocks": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:chase_entity,tag=cancatch] ~ ~ ~ execute @p[r=10,tag=!safe] ~ ~ ~ function chase/scene/failed"
+        ]
+      },
+      "animation_length": 0.5
+    },
+    "animation.base.resettag": {
+      "loop": true,
+      "timeline": {
+        "1.0": [
+          "/function missions/boost/boost_status"
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.base.demo": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @s ~ ~ ~ clone ~ ~-1 ~ ~ ~0 ~ ~ ~-18 ~"
+        ]
+      },
+      "animation_length": 0.01
+    },
+    "animation.chase.north": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 14 tag @e[type=cyd:chase_entity,c=1] add north"
+        ],
+        "0.01": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.south": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 11 tag @e[type=cyd:chase_entity,c=1] add south"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.east": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 13 tag @e[type=cyd:chase_entity,c=1] add east"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=nohrtwest] ~ ~ ~ tag @s remove nohrtwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.west": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 4 tag @e[type=cyd:chase_entity,c=1] add west"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.nwest": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 6 tag @e[type=cyd:chase_entity,c=1] add northwest"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.04": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.neast": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 9 tag @e[type=cyd:chase_entity,c=1] add northeast"
+        ],
+        "0.01": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.swest": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 1 tag @e[type=cyd:chase_entity,c=1] add southwest"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.07": [
+          "/execute @e[tag=southeast] ~ ~ ~ tag @s remove southeast"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.chase.seast": {
+      "loop": true,
+      "timeline": {
+        "0.00": [
+          "/execute @s ~ ~ ~ detect ^ ^-1 ^ wool 10 tag @e[type=cyd:chase_entity,c=1] add southeast"
+        ],
+        "0.01": [
+          "/execute @e[tag=north] ~ ~ ~ tag @s remove north"
+        ],
+        "0.02": [
+          "/execute @e[tag=east] ~ ~ ~ tag @s remove east"
+        ],
+        "0.03": [
+          "/execute @e[tag=west] ~ ~ ~ tag @s remove west"
+        ],
+        "0.04": [
+          "/execute @e[tag=northwest] ~ ~ ~ tag @s remove northwest"
+        ],
+        "0.05": [
+          "/execute @e[tag=northeast] ~ ~ ~ tag @s remove northeast"
+        ],
+        "0.06": [
+          "/execute @e[tag=southwest] ~ ~ ~ tag @s remove southwest"
+        ],
+        "0.07": [
+          "/execute @e[tag=south] ~ ~ ~ tag @s remove south"
+        ]
+      },
+      "animation_length": 0.1
+    },
+    "animation.texture.cheese_puddle": {
+      "loop": false,
+      "timeline": {
+        "0.48": "@s evt:var_2",
+        "0.56": "@s evt:var_3"
+      },
+      "animation_length": 1.0
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.items": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "teleport_1": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_01_gru_70s_home'"
+            },
+            {
+              "teleport_2": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_02_airport'"
+            },
+            {
+              "teleport_3": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_03_wild_knuckles'"
+            },
+            {
+              "teleport_4": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_04_chinatown'"
+            },
+            {
+              "teleport_5": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_05_elmacho_fortress'"
+            },
+            {
+              "teleport_6": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_06_gru_current_hometown'"
+            },
+            {
+              "teleport_7": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_07_bratt'"
+            },
+            {
+              "teleport_8": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_08_gru_mansion'"
+            },
+            {
+              "teleport_9": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_09_vector'"
+            },
+            {
+              "teleport_10": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_10_recordshop'"
+            },
+            {
+              "teleport_11": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_11_chowsacupuncture'"
+            },
+            {
+              "teleport_12": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_12_bankofevil'"
+            },
+            {
+              "teleport_13": "query.is_using_item && query.get_equipped_item_name(0) == 'teleport_icon_13_playerlab'"
+            },
+            {
+              "evil_o_matic": "query.is_using_item && query.get_equipped_item_name(0) == 'evil_o_matic'"
+            }
+          ]
+        },
+        "teleport_1": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -124 79 1038",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_2": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -10 80 2234",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_3": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -37 127 1991",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_4": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s 4 69 547",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_5": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s 554 133 1295",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_6": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -792 87 1175",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_7": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -738 77 1396",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_8": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -757 88 955",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_9": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -532 94 745",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_10": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -27 80 1737",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_11": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -236 88 1817",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_12": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -100 88 1664",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "teleport_13": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/tp @s -796 23 1111",
+            "/playsound beacon.power @s ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        },
+        "evil_o_matic": {
+          "on_entry": [
+            "/stopsound @a random.eat",
+            "/playsound cyd.gadget.evil_teleporter @s ~ ~ ~",
+            "/gamemode a @s[tag=!inmission]",
+            "/tp @s[tag=!inmission] -160 51 1029",
+            "/title @s[tag=inmission] title §c",
+            "/titleraw @s[tag=inmission] subtitle {\"rawtext\":[{\"translate\":\"teleport.failed.inmission\"}]}"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_using_item"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

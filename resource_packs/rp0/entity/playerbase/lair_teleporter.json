@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:lair_teleporter",
+      "materials": {
+        "default": "cyd_transparent_emissive",
+        "non_emissive": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/world/lair_teleporter"
+      },
+      "geometry": {
+        "default": "geometry.lair_teleporter"
+      },
+      "particle_effects": {
+        "lock_particle": "cyd:locked_machine"
+      },
+      "animations": {
+        "open": "animation.lair_teleporter.open",
+        "close": "animation.lair_teleporter.close",
+        "ctrl": "controller.animation.rp.movement.lair_teleporter",
+        "particle_ctrl": "controller.animation.lair.locked_particle",
+        "lock_particle": "animation.lair.locked",
+        "locked": "animation.lair_teleporter.locked",
+        "unlocked": "animation.lair_teleporter.unlocked",
+        "breath": "animation.lair_teleporter.breath",
+        "lock_ctrl":"controller.animation.rp.pb.lock_unlock"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "particle_ctrl",
+          "breath",
+          "lock_ctrl"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.lair_teleporter"
+      ]
+    }
+  }
+}

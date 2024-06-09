@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:world_market_stall",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/market_stall_01",
+        "var1": "textures/entity/chase/market_stall_02",
+        "var2": "textures/entity/chase/market_stall_03"
+      },
+      "geometry": {
+        "default": "geometry.market_stall"
+      },
+      "animations": {
+        "ctrl": "controller.animation.rp.world.ctrl_market",
+        "trigger": "animation.market_stall.trigger",
+        "idle_triggered": "animation.market_stall.idle_triggered"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.cyd.variant_3"
+      ],
+      "scripts": {
+        "animate": [
+          "ctrl"
+        ]
+      }
+    }
+  }
+}

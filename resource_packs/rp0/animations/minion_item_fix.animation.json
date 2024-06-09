@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.minion_item_fix": {
+			"loop": true,
+			"animation_length": 20,
+			"bones": {
+				"head": {
+					"rotation": ["-query.target_x_rotation", "-query.target_y_rotation", 0],
+					"position": [0, -16, 0],
+					"scale": [1.11, 1.1, 1.1]
+				},
+				"cape": {
+					"position": [0, -11, 0]
+				},
+				"leftItem": {
+					"rotation": ["-variable.tcos0*0.3", "-query.vertical_speed*1", "((math.cos(query.life_time * 103.2) * 2.865) + 2.865)"],
+					"position": ["-(-7-query.vertical_speed*0.1+query.vertical_speed*0.3)", -2, "10.5+query.vertical_speed*0.4"]
+				},
+				"rightArm": {
+					"rotation": [0, 0, 0]
+				},
+				"rightItem": {
+					"rotation": ["-variable.tcos0*0.3", "query.vertical_speed*1", "-((math.cos(query.life_time * 103.2) * 2.865) + 2.865)"],
+					"position": ["-7-query.vertical_speed*0.1+query.vertical_speed*0.3", -2, "10.5+query.vertical_speed*0.4"]
+				}
+			}
+		}
+	}
+}

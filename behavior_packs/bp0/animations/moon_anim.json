@@ -1,0 +1,706 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.macho_transform": {
+      "loop": false,
+      "timeline": {
+        "4.0": [
+          "/event entity @s evt:transform"
+        ]
+      },
+      "animation_length": 4.2
+    },
+    "animation.macho.glass_break": {
+      "loop": false,
+      "timeline": {
+        "0.28": [
+          "/fill 21 37 1991 21 32 1996 air 0 replace stained_glass",
+          "/function moon/window_break_macho"
+        ]
+      },
+      "animation_length": 0.3
+    },
+    "animation.air_particle": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/particle cyd:air_decompression ~ ~ ~"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.explosion_particle": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/particle cyd:huge_explosion_emitter ~ ~ ~"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.jam_rapid": {
+      "loop": true,
+      "timeline": {
+        "0.05": [
+          "/playsound cyd.gadget.jelly.shoot @a[r=5]",
+          "/event entity @s evt:jam"
+        ],
+        "0.25": [
+          "/event entity @s evt:no_jam"
+        ]
+      },
+      "animation_length": 0.3
+    },
+    "animation.plasma_jam_rapid": {
+      "loop": true,
+      "timeline": {
+        "0.05": [
+          "/playsound cyd.gadget.jelly.shoot @a[r=5]",
+          "/event entity @s evt:plasma_jam"
+        ],
+        "0.25": [
+          "/event entity @s evt:no_plasma_jam"
+        ]
+      },
+      "animation_length": 0.3
+    },
+    "animation.start_jam_cd": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function tools/jam_cooldown_start"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.start_plasma_jam_cd": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function tools/plasma_jam_cooldown_start"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.end_plasma_jam_cd": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function tools/plasma_jam_cooldown_stop"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.end_jam_cd": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/function tools/jam_cooldown_stop"
+        ]
+      },
+      "animation_length": 1
+    },
+    "animation.mutant_saved": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/mutant_trns_txt"
+        ],
+        "2.0": [
+          "/function moon/minions_saved"
+        ]
+      },
+      "animation_length": 5
+    },
+    "animation.vector_msg": {
+      "loop": true,
+      "timeline": {
+        "1.0": [
+          "/function moon/shrink_msg"
+        ]
+      },
+      "animation_length": 8
+    },
+    "animation.telepor.start_bonus": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ execute @a[x=-152,y=51,z=1024,dx=-1,dy=2,dz=1,tag=bonus_mission] ~ ~ ~ event entity @a evt:sid_1",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ execute @a[x=-152,y=51,z=1024,dx=-1,dy=2,dz=1,tag=bonus_mission] ~ ~ ~ tp @a @e[type=cyd:moon_mission_start]"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.boss_door_2_open": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[x=-23,y=19,z=1991,dx=-3,dy=1,dz=5,tag=!dev] ~ ~ ~ event entity @e[type=cyd:door_2] evt:sid_1",
+          "/execute @p[x=-23,y=19,z=1991,dx=-3,dy=1,dz=5,tag=!dev] ~ ~ ~ event entity @e[type=cyd:moon_boss_system] evt:sid_1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.boss_door_2_close": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[x=-19,y=19,z=1985,dx=3,dy=1,dz=17,tag=!dev] ~ ~ ~ tp @a -19 19 1993",
+          "/execute @p[x=-19,y=19,z=1985,dx=3,dy=1,dz=17,tag=!dev] ~ ~ ~ event entity @e[type=cyd:door_2] evt:sid_2",
+          "/execute @p[x=-19,y=19,z=1985,dx=3,dy=1,dz=17,tag=!dev] ~ ~ ~ event entity @e[type=cyd:moon_boss_system] evt:sid_2",
+          "/function playerbase/objectives/m6_3"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.vector_trigger": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[x=-27,y=70,z=1995,dx=6,dy=2,dz=-3,tag=!dev] ~ ~ ~ event entity @e[type=cyd:moon_boss_system] evt:sid_5"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.vector.timer_1": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function showdown/text/hand"
+        ],
+        "30.0": [
+          "/event entity @s evt:burst_atk"
+        ]
+      },
+      "animation_length": 30.2
+    },
+    "animation.vector.timer_2": {
+      "loop": false,
+      "timeline": {
+        "3.0": [
+          "/event entity @s evt:normal_atk"
+        ]
+      },
+      "animation_length": 3.2
+    },
+    "animation.shrink_ray": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/tag @e[type=cyd:rocket_entity,r=2,c=1] add shrink",
+          "/execute @e[tag=shrink] ~ ~ ~ kill @e[type=cyd:shrink]"
+        ]
+      },
+      "animation_length": 0.001
+    },
+    "animation.summon.mutant_minion": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/summon cyd:moon_mutant_minion"
+        ]
+      },
+      "animation_length": 20
+    },
+    "animation.moon.tp.one": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ tp @a[r=3] -29 36 1983 facing -29 36 1992",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.tp.two": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ tp @a[r=3] -31 70 1993 facing -19 70 1993",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.tp.three": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ tp @a[r=3] 40 31 2002 facing 41 31 1984",
+          "/execute @a[r=3,tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.tp.end": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/title @a title §2",
+          "/tickingarea add circle ~ ~ ~ 1 temp_tp",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/execute @a[tag=!dev] ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a[tag=!dev] ~ ~ ~ function moon/reset",
+          "/execute @a[tag=!dev] ~ ~ ~ function moon/end",
+          "/event entity @a evt:sid_0",
+          "/function text/player",
+          "/effect @a clear",
+          "/function missions/cutscene/moon/scene_m6_outro_1",
+          "/function moon/base_explode",
+          "/effect @e[type=cyd:vector_cutscene] clear",
+          "/event entity @e[type=cyd:air_emitter] evt:despawn"
+        ],
+        "6.0": [
+          "/function missions/dialogue/moon/dialogue/vector.outro.1",
+          "/function missions/cutscene/moon/scene_m6_outro_2"
+        ],
+        "6.3": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/playanimation @e[type=cyd:vector_cutscene,c=1] outro2"
+        ],
+        "10": [
+          "/function missions/dialogue/moon/dialogue/vector.outro.2"
+        ],
+        "14": [
+          "/function missions/dialogue/moon/dialogue/vector.outro.3"
+        ],
+        "18": [
+          "/function missions/dialogue/moon/dialogue/vector.outro.4"
+        ],
+        "19": [
+          "/fill 4 88 1990 -3 88 1997 stained_glass 11 replace air",
+          "/fill 21 37 1991 21 32 1996 stained_glass 11 replace air",
+          "/execute @a ~ ~ ~ clear @s cyd:shrinkray 0 1",
+          "/execute @a ~ ~ ~ give @s cyd:shrinkray 1",
+          "/execute @e[type=cyd:system_storage] ~ ~ ~ tag @s add shrink",
+          "/execute @a ~ ~ ~ playsound playsound cyd.generic.scene_transition @s",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/tp @a @e[type=cyd:system_storage]",
+          "/kill @e[type=cyd:vector_cutscene]",
+          "/tickingarea remove temp_tp",
+          "/event entity @s evt:sid_0",
+          "/title @a title §1"
+        ]
+      },
+      "animation_length": 20
+    },
+    "animation.moon.spawn.one": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_one",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=one] add spawn_one"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.spawn.two": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_two",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=two] add spawn_two"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.spawn.three": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_three",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=three] add spawn_three"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.spawn.four": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_four",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=four] add spawn_four"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.spawn.five": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_five",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=five] add spawn_five"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.moon.spawn.six": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @a[tag=!dev] ~ ~ ~ tag @s add spawn_six",
+          "/execute @a[tag=!dev] ~ ~ ~ tag @e[type=cyd:spawn_system,tag=six] add spawn_six"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bratt_trigger": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[x=13,y=31,z=1970,dx=5,dy=2,dz=-20,tag=!dev,tag=!triggerbratt] ~ ~ ~ summon cyd:bratt_boss 0 30 1960",
+          "/execute @p[x=13,y=31,z=1970,dx=5,dy=2,dz=-20,tag=!dev,tag=!triggerbratt] ~ ~ ~ execute @e[type=cyd:bratt_boss] ~ ~ ~ tp @s ~ ~ ~ 270"
+        ],
+        "0.1": [
+          "/execute @p[tag=!triggerbratt] ~ ~ ~ execute @e[type=cyd:bratt_boss] ~ ~ ~ effect @e[type=cyd:bratt_boss] slowness 5 255 true",
+          "/execute @p[tag=!triggerbratt,tag=!m6_5] ~ ~ ~ function playerbase/objectives/m6_5",
+          "/execute @e[type=cyd:bratt_boss] ~ ~ ~ tag @a add triggerbratt",
+          "/execute @p[tag=triggerbratt] ~ ~ ~ event entity @e[type=cyd:bratt_boss] evt:sid_1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bratt.dance.damage": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=dance] ~ ~ ~ detect ~ ~-0.5 ~ emerald_block 0 event entity @e[type=cyd:bratt_boss] evt:var_1"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.player.dance.damage": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @p[tag=dance] ~ ~ ~ event entity @s evt:laser_damage",
+          "/playsound cyd.mission.moon.Bratt_Dancefloor_Wrong_Tile @a[r=30]"
+        ],
+        "0.15": [
+          "/execute @p[tag=dance] ~ ~ ~ event entity @s evt:rm_laser_damage"
+        ],
+        "1.0": [
+          "/event entity @s evt:var_0"
+        ]
+      },
+      "animation_length": 1.1
+    },
+    "animation.bratt.dance_sequence": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @a add dance",
+          "/effect @s slowness 99999 255 true",
+          "/function missions/dialogue/moon/dialogue/bratt_fight_1"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_fight_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_fight_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_fight_4"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_fight_5"
+        ],
+        "20.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_tip_1"
+        ],
+        "24.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_tip_2"
+        ],
+        "28.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_tip_3"
+        ]
+      },
+      "animation_length": 62.2
+    },
+    "animation.bratt.fight_start": {
+      "loop": true,
+      "timeline": {
+        "0.0": [
+          "/execute @p[x=-11,y=30,z=1971,dx=19,dy=1,dz=-21] ~ ~ ~ effect @e[type=cyd:bratt_boss] clear",
+          "/execute @p[x=-11,y=30,z=1971,dx=19,dy=1,dz=-21] ~ ~ ~ fill 9 32 1950 9 38 1970 barrier 0 replace air",
+          "/execute @p[x=-11,y=30,z=1971,dx=19,dy=1,dz=-21] ~ ~ ~ tp @a @s",
+          "/execute @p[x=-11,y=30,z=1971,dx=19,dy=1,dz=-21] ~ ~ ~ event entity @e[type=cyd:bratt_boss] evt:sheared"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.bratt.dance_randomizer": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function moon/floor_randomizer"
+      },
+      "animation_length": 1.0
+    },
+    "animation.dragon.stuck": {
+      "loop": true,
+      "timeline": {
+        "0.0": "/function stuck_dragon"
+      },
+      "animation_length": 1.0
+    },
+    "animation.dialogue.intro": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @a title §2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.scene_transition @s",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/dialogue/moon/dialogue/vector.intro.1",
+          "/function missions/cutscene/moon/scene_m6_01",
+          "/tag @e[type=cyd:lair_teleporter] remove bonus_trap",
+          "/tag @a add inmission",
+          "/function moon/set_props"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/vector.intro.2",
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function moon/title_screen",
+          "/function missions/cutscene/moon/scene_m6_02"
+        ],
+        "8.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/dialogue/moon/dialogue/vector.intro.3",
+          "/function missions/cutscene/moon/scene_m6_03"
+        ],
+        "12.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/dialogue/moon/dialogue/vector.intro.4",
+          "/function missions/cutscene/moon/scene_m6_04"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/intro.1",
+          "/function playerbase/objectives/m6_1",
+          "/setblock -126 24 1993 air",
+          "/function missions/cutscene/moon/scene_m6_05"
+        ],
+        "20.0": [
+          "/function missions/dialogue/moon/dialogue/intro.2"
+        ],
+        "24.0": [
+          "/function missions/dialogue/moon/dialogue/intro.3"
+        ],
+        "28.0": [
+          "/function missions/dialogue/moon/dialogue/intro.4"
+        ],
+        "32.0": [
+          "/function missions/dialogue/moon/dialogue/intro.5",
+          "/title @a title §1",
+          "/event entity @s evt:sid_2"
+        ]
+      },
+      "animation_length": 32.5
+    },
+    "animation.dialogue.macho": {
+      "loop": false,
+      "timeline": {
+        "2.0": [
+          "/function missions/dialogue/moon/dialogue/macho_1"
+        ],
+        "6.0": [
+          "/function missions/dialogue/moon/dialogue/macho_2"
+        ],
+        "10.0": [
+          "/function missions/dialogue/moon/dialogue/macho_tip_1"
+        ]
+      },
+      "animation_length": 10.1
+    },
+    "animation.dialogue.macho_end": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/macho_4",
+          "/playsound cyd.generic.boss_defeat_jingle @a"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/macho_post_1"
+        ],
+        "8.0": [
+          "/function missions/dialogue/moon/dialogue/macho_post_2"
+        ]
+      },
+      "animation_length": 8.2
+    },
+    "animation.dialogue.bratt_end": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/effect @a instant_health 1 255 true",
+          "/function missions/dialogue/moon/dialogue/bratt_end_1",
+          "/tag @a add startm6music",
+          "/tag @a remove bmusic",
+          "/fill -11 31 1957 -10 38 1964 air 0 replace barrier",
+          "/function playerbase/objectives/m6_6",
+          "/tag @a remove dance",
+          "/playsound cyd.generic.boss_defeat_jingle @a"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_end_2"
+        ],
+        "12.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_end_3"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_post_1"
+        ],
+        "20.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_post_2"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.dialogue.vector_start": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/vector_fight_1",
+          "/function playerbase/objectives/m6_8"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/vector_fight_2"
+        ],
+        "12.0": [
+          "/function missions/dialogue/moon/dialogue/vector_fight_3"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/vector_fight_4",
+          "/event entity @s evt:sid_6"
+        ]
+      },
+      "animation_length": 16.1
+    },
+    "animation.dialogue.vector_end": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/execute @a ~ ~ ~ playsound cyd.generic.cutscene_photo_sound @s",
+          "/function missions/dialogue/moon/dialogue/vector_end_1",
+          "/function missions/cutscene/moon/scene_m6_vector_defeat_1",
+          "/event entity @e[family=cage] evt:sid_1",
+          "/event entity @e[type=cyd:moon_mutant_minion] evt:despawn",
+          "/function moon/free_all_minions",
+          "/function moon/cheerminion_load",
+          "/playsound cyd.generic.boss_defeat_jingle @a"
+        ],
+        "0.2": [
+          "/playanimation @e[type=cyd:vector_cutscene,c=1] outro1",
+          "/playsound cyd.mission.moon.vector_jetpack_broken @a"
+        ],
+        "6.2": [
+          "/fill 4 88 1990 -3 88 1997 air 0 destroy",
+          "/function moon/window_break_vector",
+          "/playsound cyd.mission.moon.glass_break_decompress @a",
+          "/summon cyd:air_emitter 0 82 1994"
+        ],
+        "8.0": [
+          "/effect @e[type=cyd:vector_cutscene] invisibility 99999 255 true",
+          "/function missions/dialogue/moon/dialogue/vector_end_2",
+          "/function missions/cutscene/moon/scene_m6_vector_defeat_2",
+          "/function playerbase/objectives/m6_9"
+        ],
+        "12.0": [
+          "/function missions/dialogue/moon/dialogue/vector_end_3"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/vector_end_4"
+        ],
+        "20.0": [
+          "/function missions/dialogue/moon/dialogue/vector_end_5"
+        ]
+      },
+      "animation_length": 20.1
+    },
+    "animation.dialogue.shrink_hint": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/shrink_hint_1"
+        ],
+        "4.0": [
+          "/function missions/dialogue/moon/dialogue/shrink_hint_2"
+        ],
+        "8.0": [
+          "/function missions/dialogue/moon/dialogue/shrink_hint_3"
+        ],
+        "12.0": [
+          "/function missions/dialogue/moon/dialogue/shrink_hint_4"
+        ],
+        "16.0": [
+          "/function missions/dialogue/moon/dialogue/shrink_hint_5"
+        ]
+      },
+      "animation_length": 16.1
+    },
+    "animation.dialogue.shoot_turret": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playanimation @e[type=cyd:rocket_turret,c=1,r=1] shoot"
+        ]
+      },
+      "animation_length": 0.2
+    },
+    "animation.sound.macho.atk": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/macho_atk_txt"
+        ],
+        "0.8": [
+          "/playsound cyd.mission.moon.el.attack @a[r=5]"
+        ]
+      },
+      "animation_length": 0.9
+    },
+    "animation.sound.macho.slam": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/macho_atk_txt"
+        ],
+        "0.8": [
+          "/playsound cyd.mission.moon.el.slam @a[r=5]"
+        ]
+      },
+      "animation_length": 1.5
+    },
+    "animation.sound.mutant_minion.atk": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/mutant_atk_txt"
+        ],
+        "0.12": [
+          "/playsound cyd.mission.moon.mutantminion @a[r=5]"
+        ]
+      },
+      "animation_length": 0.6
+    },
+    "animation.vector.atk_text": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/vector_atk_txt"
+        ]
+      },
+      "animation_length": 0.6
+    },
+    "animation.bratt.atk_text": {
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/function missions/dialogue/moon/dialogue/bratt_atk_txt"
+        ]
+      },
+      "animation_length": 0.6
+    }
+  }
+}

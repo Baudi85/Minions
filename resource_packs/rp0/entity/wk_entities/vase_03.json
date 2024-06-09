@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:vase_03",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/wk/vase_03"
+      },
+      "geometry": {
+        "default": "geometry.vase"
+      },
+      "particle_effects": {
+        "particle": "cyd:inspect"
+      },
+      "sound_effects": {
+        "trigger": "cyd.mission.bank.vase_move"
+      },
+      "animations": {
+          "trigger": "animation.vase.trigger",
+          "ctrl": "controller.animation.rp.painting",
+          "particle":"animation.prop.particles"
+      },
+      "scripts": {
+          "animate": [
+              "ctrl"
+          ]
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

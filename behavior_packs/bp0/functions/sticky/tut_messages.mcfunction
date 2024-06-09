@@ -1,0 +1,2 @@
+execute @e[type=cyd:trigger_sticky_system,tag=starttut] ~ ~ ~ execute @e[type=cyd:prop_block_yellow_mover,tag=stuck,tag=!tutdone] ~ ~ ~ execute @e[type=cyd:trigger_sticky_system] ~ ~ ~ tag @s add tut2
+execute @e[type=cyd:trigger_sticky_system,tag=tut2] ~ ~ ~ execute @e[type=cyd:prop_block_yellow_mover,tag=!tutdone] ~ ~ ~ tag @s add tutdone

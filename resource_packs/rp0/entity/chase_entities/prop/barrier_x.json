@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:barrier_x",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/chase/empty",
+        "var1": "textures/entity/chase/barrier_x"
+      },
+      "geometry": {
+        "default": "geometry.barrier_x"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.cyd.skin_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cyd:world_henchman_1_death",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "point"
+        ]
+      },
+      "animations": {
+        "point": "animation.cyd.vp.raid.point_2"
+      }
+},
+    "component_groups": {},
+    "components": {
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": "questnpc"
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:damage_sensor": [
+        {
+          "on_damage": {},
+          "deals_damage": false
+        }
+      ],
+      "minecraft:movement": {
+        "value": 1
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:explode": {
+        "fuseLength": 4.8,
+        "fuseLit": true,
+        "power": 0,
+        "maxResistance": 0,
+        "breaks_blocks": false,
+        "causesFire": false,
+        "destroyAffectedByGriefing": false
+      }
+    },
+    "events": {}
+  }
+}

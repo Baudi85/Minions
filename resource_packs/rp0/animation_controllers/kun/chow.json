@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rp.chow": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "bow": "query.mark_variant == 2"
+            },
+            {
+              "idle1": "query.mark_variant != 2 && math.random_integer(1,2) == 1"
+            },
+            {
+              "idle2": "query.mark_variant != 2 && math.random_integer(1,2) == 2"
+            }
+          ]
+        },
+        "idle1": {
+          "animations": [
+            "idle1"
+          ],
+          "transitions": [
+            {
+              "bow": "query.mark_variant == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle2": {
+          "animations": [
+            "idle2"
+          ],
+          "transitions": [
+            {
+              "bow": "query.mark_variant == 2"
+            },
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "bow": {
+          "animations": [
+            "bow"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

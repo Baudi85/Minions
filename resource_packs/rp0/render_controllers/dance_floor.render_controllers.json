@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.cyd.dance_floor": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "arrays": {
+                "textures": {
+                    "array.skins": [
+                        "Texture.default",
+                        "Texture.texture_1",
+                        "Texture.texture_2",
+                        "Texture.texture_3",
+                        "Texture.texture_4"
+                    ]
+                }
+            },
+            "textures": [
+                "Array.skins[query.skin_id]"
+            ]
+        },
+        "controller.render.cyd.vector_cutscene": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "space_helmet": "Material.helmet"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

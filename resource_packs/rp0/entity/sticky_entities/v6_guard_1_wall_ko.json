@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:v6_guard_1_wall_ko",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/sticky/v6_guard_1"
+      },
+      "geometry": {
+        "default": "geometry.v6_guard_1"
+      },
+      "particle_effects": {
+        "exclimation": "cyd:exclimation",
+        "view": "cyd:guard_fov"
+      },
+      "scripts": {
+        "animate": [
+          "ctrl",
+          "mv_ctrl",
+          "breath"
+        ]
+      },
+      "animations": {
+        "questionmark": "animation.question.particle",
+        "exclimationmark": "animation.exclimation.particle",
+        "fov": "animation.fov.guard.particle",
+        "ctrl": "controller.animation.ko_target.ctrl",
+        "mv_ctrl": "controller.animation.rp.guard_1_ko",
+        "idle_1": "animation.v6_guard_1.idle1",
+        "idle_2": "animation.v6_guard_1.idle2",
+        "idle_3": "animation.v6_guard_1.idle3",
+        "idle_4": "animation.v6_guard_1.idle4",
+        "sus_idle": "animation.v6_guard_1.idle_sus",
+        "move": "animation.v6_guard_1.walk_suspicious",
+        "ko": "animation.v6_guard_1.knockout_wall",
+        "ko_idle": "animation.v6_guard_1.knockout_wall_idle",
+        "breath": "animation.v6_guard_1.breath"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

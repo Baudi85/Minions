@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cyd:chase_entity_intro",
+      "materials": {
+        "default": "cyd_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/chase/belle_bike_chase"
+      },
+      "geometry": {
+        "default": "geometry.belle_bike_chase"
+      },
+      "animations": {
+        "cutscene": "animation.belle_bike_chase.cutscene"
+      },
+      "scripts": {
+        "animate": [
+          "cutscene"
+        ]
+      },
+      "sound_effects": {
+        "intro1": "cyd.mission.race.intro1",
+        "intro2": "cyd.mission.race.intro2",
+        "drive": "cyd.mission.race.bellebike"
+      },
+      "spawn_egg": {
+        "base_color": "#4287f5",
+        "overlay_color": "#e6efff"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

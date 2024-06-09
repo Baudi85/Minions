@@ -1,0 +1,93 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cyd:vector_rocket",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball",
+            "animations": {
+              "tools_ctrl": "controller.animation.rocket_explode"
+            },
+            "scripts": {
+              "animate": [
+                "tools_ctrl"
+              ]
+            }
+        },
+        "component_groups": {
+            "minecraft:exploding": {
+                "minecraft:explode": {
+                    "fuse_length": 0.1,
+                    "fuse_lit": true,
+                    "power": 1.5,
+                    "causes_fire": false,
+                    "breaks_blocks":false,
+                    "fire_affected_by_griefing": true,
+                    "destroy_affected_by_griefing": true
+                },
+                "minecraft:variant": {
+                    "value": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.98,
+                "height": 0.98
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 2,
+                        "knockback": false
+                    },
+                    "definition_event": {
+                        "affect_projectile": true,
+                        "event_trigger": {
+                            "event": "minecraft:explode",
+                            "target": "self"
+                        }
+                    }
+                },
+                "power": 1.6,
+                "gravity": 0.0,
+                "inertia": 1,
+                "liquid_inertia": 1,
+                "uncertainty_base": 5,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "offset": [
+                    0,
+                    -0.5,
+                    0
+                ],
+                "reflect_on_hurt": false,
+                "catch_fire": false,
+                "shoot_target":true
+            }
+        },
+        "events": {
+            "minecraft:explode": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:exploding"
+                    ]
+                }
+            },
+            "evt:despawn": {
+                "add": {
+                    "component_groups": [
+                        "cyd:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

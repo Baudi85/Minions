@@ -1,0 +1,73 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "cyd:jetpack_smoke_outro",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/fireball_large"
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.size = 0.2;variable.size_variant = 0.2;variable.spawn_radius = 0.1;variable.particle_growth = 0.4;"
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 25,
+				"max_particles": 100
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 10
+			},
+			"minecraft:emitter_shape_sphere": {
+				"radius": "variable.spawn_radius",
+				"surface_only": true,
+				"direction": [0, -1, 0]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "Math.random(0.6, 1.5)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "(variable.particle_random_3-0.5)*60",
+				"rotation_rate": "(variable.particle_random_1-0.5)*90"
+			},
+			"minecraft:particle_initial_speed": -6,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": ["(variable.particle_random_3-0.5)", 0, "(variable.particle_random_4-0.5)"],
+				"linear_drag_coefficient": 2
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["variable.size+(variable.particle_random_1*variable.size_variant)+(variable.particle_age*variable.particle_growth)", "variable.size+(variable.particle_random_1*variable.size_variant)+(variable.particle_age*variable.particle_growth)"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 32,
+					"texture_height": 96,
+					"flipbook": {
+						"base_UV": [0, 64],
+						"size_UV": [32, 32],
+						"step_UV": [0, -32],
+						"frames_per_second": 5,
+						"max_frame": 2
+					}
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"coefficient_of_restitution": 0.1,
+				"collision_radius": 0.25
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "variable.particle_age*1.5",
+					"gradient": {
+						"0.0": "#ffffffff",
+						"0.09": "#FFFFE900",
+						"0.29": "#EBE85A13",
+						"0.58": "#A6403F3F",
+						"0.8": "#B5151515",
+						"1.0": "#170F0F0F"
+					}
+				}
+			}
+		}
+	}
+}
